@@ -1,0 +1,1257 @@
+{
+  "?xml": {
+    "@_version": "1.0",
+    "@_encoding": "utf-8"
+  },
+  "defaults": {
+    "dataset": [
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1000001}",
+            "@_description": "{20003,1000002}",
+            "@_system": "100",
+            "@_image": "enc_cluster100"
+          },
+          "area": {
+            "@_sunlight": "0.13",
+            "@_economy": "0.25",
+            "@_security": "0.75"
+          }
+        },
+        "@_macro": "Cluster_100_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1000011}",
+            "@_description": "{20004,1000012}"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_terran_periphery"
+            }
+          }
+        },
+        "@_macro": "Cluster_100_Sector001_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1010001}",
+            "@_description": "{20003,1010002}",
+            "@_system": "100",
+            "@_image": "enc_cluster101"
+          },
+          "area": {
+            "@_sunlight": "0.44",
+            "@_economy": "0.75",
+            "@_security": "0.5"
+          }
+        },
+        "@_macro": "Cluster_101_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1010011}",
+            "@_description": "{20004,1010012}"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_mars"
+            }
+          },
+          "worlds": {
+            "world": {
+              "@_part": "part_mars"
+            }
+          },
+          "access": {
+            "@_licence": "outercore_access"
+          }
+        },
+        "@_macro": "Cluster_101_Sector001_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1020001}",
+            "@_description": "{20003,1020002}",
+            "@_system": "100",
+            "@_image": "enc_cluster102"
+          },
+          "area": {
+            "@_sunlight": "1.9",
+            "@_economy": "0.5",
+            "@_security": "0.5"
+          }
+        },
+        "@_macro": "Cluster_102_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1020011}",
+            "@_description": "{20004,1020012}"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_terran_core"
+            }
+          },
+          "worlds": {
+            "world": {
+              "@_part": "part_venus"
+            }
+          },
+          "access": {
+            "@_licence": "outercore_access"
+          }
+        },
+        "@_macro": "Cluster_102_Sector001_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1040001}",
+            "@_description": "{20003,1040002}",
+            "@_system": "100",
+            "@_image": "enc_cluster104"
+          },
+          "area": {
+            "@_sunlight": "1",
+            "@_economy": "0.75",
+            "@_security": "0.75"
+          }
+        },
+        "@_macro": "Cluster_104_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1040011}",
+            "@_description": "{20004,1040012}"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_earth"
+            }
+          },
+          "worlds": {
+            "world": {
+              "@_part": "part_earth"
+            }
+          },
+          "access": {
+            "@_licence": "innercore_access"
+          }
+        },
+        "@_macro": "Cluster_104_Sector001_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1040021}",
+            "@_description": "{20004,1040022}",
+            "@_image": "enc_cluster104_sector02"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_terran_core"
+            }
+          },
+          "worlds": {
+            "world": {
+              "@_part": "part_moon"
+            }
+          },
+          "access": {
+            "@_licence": "innercore_access"
+          }
+        },
+        "@_macro": "Cluster_104_Sector002_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1060001}",
+            "@_description": "{20003,1060002}",
+            "@_system": "100",
+            "@_image": "enc_clustersol"
+          },
+          "area": {
+            "@_sunlight": "6.8",
+            "@_economy": "0.5",
+            "@_security": "0.5"
+          },
+          "system": {
+            "space": {
+              "@_environment": "{1042,12011}(Clear Space)"
+            },
+            "suns": {
+              "sun": {
+                "@_class": "{1042,13021}(Yellow Dwarf)"
+              }
+            },
+            "planets": {
+              "planet": [
+                {
+                  "@_name": "{20005,7017}(Mercury)",
+                  "@_class": "{1042,14031}(Terrestrial)",
+                  "@_geology": "{1042,15101}(Barren)",
+                  "@_atmosphere": "{1042,10011}(None)",
+                  "@_population": "{1042,10011}(None)",
+                  "@_settlements": "{1042,10011}(None)",
+                  "@_part": "part_mercury"
+                },
+                {
+                  "@_name": "{20005,7013}(Venus)",
+                  "@_class": "{1042,14031}(Terrestrial)",
+                  "@_geology": "{1042,10011}(None)",
+                  "@_atmosphere": "{1042,11081}(Carbon Dioxide)",
+                  "@_population": "{1042,10011}(None)",
+                  "@_settlements": "{1042,10011}(None)",
+                  "@_part": "part_venus"
+                },
+                {
+                  "moons": {
+                    "moon": {
+                      "@_name": "{20005,7033}(The Moon)",
+                      "@_geology": "{1042,15091}(Craters)",
+                      "@_atmosphere": "{1042,10011}(None)",
+                      "@_population": "{1042,10021}",
+                      "@_maxpopulation": "500000",
+                      "@_settlements": "{1042,16021}(Mining Colonies)",
+                      "@_part": "part_moon"
+                    }
+                  },
+                  "@_name": "{20005,7015}(Earth)",
+                  "@_class": "{1042,14031}(Terrestrial)",
+                  "@_geology": "{1042,15071}(Rocks)",
+                  "@_atmosphere": "{1042,11071}(Nitrogen/Oxygen)",
+                  "@_population": "{1042,10021}",
+                  "@_maxpopulation": "18000000000",
+                  "@_settlements": "{1042,16051}(Densely Populated)",
+                  "@_part": "part_earth"
+                },
+                {
+                  "@_name": "{20005,7012}(Mars)",
+                  "@_class": "{1042,14031}(Terrestrial)",
+                  "@_geology": "{1042,15091}(Craters)",
+                  "@_atmosphere": "{1042,11081}(Carbon Dioxide)",
+                  "@_population": "{1042,10021}",
+                  "@_maxpopulation": "130000000",
+                  "@_settlements": "{1042,16071}(Megalopolis)",
+                  "@_part": "part_mars"
+                },
+                {
+                  "moons": {
+                    "moon": [
+                      {
+                        "@_name": "{20005,7034}(Io)",
+                        "@_geology": "{1042,15031}(Volcanic)",
+                        "@_atmosphere": "{1042,11091}(Sulphur Dioxide)",
+                        "@_population": "{1042,10011}(None)",
+                        "@_settlements": "{1042,10011}(None)"
+                      },
+                      {
+                        "@_name": "{20005,7032}(Europa)",
+                        "@_geology": "{1042,15051}(Rocks/Ice)",
+                        "@_atmosphere": "{1042,11031}(Oxygen)",
+                        "@_population": "{1042,10011}(None)",
+                        "@_settlements": "{1042,16031}(Research Outpost)"
+                      },
+                      {
+                        "@_name": "{20005,7031}(Ganymede)",
+                        "@_geology": "{1042,15091}(Craters)",
+                        "@_atmosphere": "{1042,11031}(Oxygen)",
+                        "@_population": "{1042,10011}(None)",
+                        "@_settlements": "{1042,10011}(None)"
+                      },
+                      {
+                        "@_name": "{20005,7030}(Callisto)",
+                        "@_geology": "{1042,15051}(Rocks/Ice)",
+                        "@_atmosphere": "{1042,11081}(Carbon Dioxide)",
+                        "@_population": "{1042,10011}(None)",
+                        "@_settlements": "{1042,10011}(None)"
+                      }
+                    ]
+                  },
+                  "@_name": "{20005,7018}(Jupiter)",
+                  "@_class": "{1042,14081}(Gas Giant)",
+                  "@_geology": "{1042,10011}(None)",
+                  "@_atmosphere": "{1042,11041}(Nitrogen)",
+                  "@_population": "{1042,10011}(None)",
+                  "@_settlements": "{1042,10011}(None)"
+                },
+                {
+                  "moons": {
+                    "moon": [
+                      {
+                        "@_name": "{20005,7016}(Titan)",
+                        "@_geology": "{1042,15051}(Rocks/Ice)",
+                        "@_atmosphere": "{1042,11041}(Nitrogen)",
+                        "@_population": "{1042,10011}(None)",
+                        "@_settlements": "{1042,10011}(None)"
+                      },
+                      {
+                        "@_name": "{20005,7035}(Dione)",
+                        "@_geology": "{1042,15081}(Ice)",
+                        "@_atmosphere": "{1042,10011}(None)",
+                        "@_population": "{1042,10011}(None)",
+                        "@_settlements": "{1042,10011}(None)"
+                      },
+                      {
+                        "@_name": "{20005,7036}(Enceladus)",
+                        "@_geology": "{1042,15091}(Craters)",
+                        "@_atmosphere": "{1042,10011}(None)",
+                        "@_population": "{1042,10011}(None)",
+                        "@_settlements": "{1042,10011}(None)"
+                      },
+                      {
+                        "@_name": "{20005,7037}(Iapetus)",
+                        "@_geology": "{1042,15081}(Ice)",
+                        "@_atmosphere": "{1042,10011}(None)",
+                        "@_population": "{1042,10011}(None)",
+                        "@_settlements": "{1042,10011}(None)"
+                      },
+                      {
+                        "@_name": "{20005,7038}(Mimas)",
+                        "@_geology": "{1042,15051}(Rocks/Ice)",
+                        "@_atmosphere": "{1042,10011}(None)",
+                        "@_population": "{1042,10011}(None)",
+                        "@_settlements": "{1042,10011}(None)"
+                      },
+                      {
+                        "@_name": "{20005,7039}(Rhea)",
+                        "@_geology": "{1042,15081}(Ice)",
+                        "@_atmosphere": "{1042,10011}(None)",
+                        "@_population": "{1042,10011}(None)",
+                        "@_settlements": "{1042,10011}(None)"
+                      },
+                      {
+                        "@_name": "{20005,7045}(Tethys)",
+                        "@_geology": "{1042,15091}(Craters)",
+                        "@_atmosphere": "{1042,10011}(None)",
+                        "@_population": "{1042,10011}(None)",
+                        "@_settlements": "{1042,10011}(None)"
+                      }
+                    ]
+                  },
+                  "@_name": "{20005,7019}(Saturn)",
+                  "@_class": "{1042,14091}(Ringed Gas Giant)",
+                  "@_geology": "{1042,10011}(None)",
+                  "@_atmosphere": "{1042,11021}(Hydrogen)",
+                  "@_population": "{1042,10011}(None)",
+                  "@_settlements": "{1042,10011}(None)"
+                },
+                {
+                  "moons": {
+                    "moon": [
+                      {
+                        "@_name": "{20005,7040}(Miranda)",
+                        "@_geology": "{1042,15081}(Ice)",
+                        "@_atmosphere": "{1042,10011}(None)",
+                        "@_population": "{1042,10011}(None)",
+                        "@_settlements": "{1042,10011}(None)"
+                      },
+                      {
+                        "@_name": "{20005,7041}(Ariel)",
+                        "@_geology": "{1042,15091}(Craters)",
+                        "@_atmosphere": "{1042,10011}(None)",
+                        "@_population": "{1042,10011}(None)",
+                        "@_settlements": "{1042,10011}(None)"
+                      },
+                      {
+                        "@_name": "{20005,7042}(Umbriel)",
+                        "@_geology": "{1042,15091}(Craters)",
+                        "@_atmosphere": "{1042,10011}(None)",
+                        "@_population": "{1042,10011}(None)",
+                        "@_settlements": "{1042,10011}(None)"
+                      },
+                      {
+                        "@_name": "{20005,7043}(Titania)",
+                        "@_geology": "{1042,15081}(Ice)",
+                        "@_atmosphere": "{1042,11081}(Carbon Dioxide)",
+                        "@_population": "{1042,10011}(None)",
+                        "@_settlements": "{1042,10011}(None)"
+                      },
+                      {
+                        "@_name": "{20005,7044}(Oberon)",
+                        "@_geology": "{1042,15051}(Rocks/Ice)",
+                        "@_atmosphere": "{1042,10011}(None)",
+                        "@_population": "{1042,10011}(None)",
+                        "@_settlements": "{1042,10011}(None)"
+                      }
+                    ]
+                  },
+                  "@_name": "{20005,7020}(Uranus)",
+                  "@_class": "{1042,14131}(Ice Giant)",
+                  "@_geology": "{1042,15081}(Ice)",
+                  "@_atmosphere": "{1042,11021}(Hydrogen)",
+                  "@_population": "{1042,10011}(None)",
+                  "@_settlements": "{1042,10011}(None)"
+                },
+                {
+                  "moons": {
+                    "moon": {
+                      "@_name": "{20005,7029}(Triton)",
+                      "@_geology": "{1042,15081}(Ice)",
+                      "@_atmosphere": "{1042,11041}(Nitrogen)",
+                      "@_population": "{1042,10011}(None)",
+                      "@_settlements": "{1042,10011}(None)"
+                    }
+                  },
+                  "@_name": "{20005,7021}(Neptune)",
+                  "@_class": "{1042,14131}(Ice Giant)",
+                  "@_geology": "{1042,15081}(Ice)",
+                  "@_atmosphere": "{1042,11021}(Hydrogen)",
+                  "@_population": "{1042,10011}(None)",
+                  "@_settlements": "{1042,10011}(None)"
+                },
+                {
+                  "@_name": "{20005,7022}(Pluto)",
+                  "@_class": "{1042,14121}(Dwarf Planet)",
+                  "@_geology": "{1042,15081}(Ice)",
+                  "@_atmosphere": "{1042,11041}(Nitrogen)",
+                  "@_population": "{1042,10011}(None)",
+                  "@_settlements": "{1042,10011}(None)"
+                }
+              ]
+            }
+          }
+        },
+        "@_macro": "Cluster_106_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1060011}",
+            "@_description": "{20004,1060012}",
+            "@_image": "enc_cluster106"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_terran_core"
+            }
+          },
+          "worlds": {
+            "world": {
+              "@_part": "part_mercury"
+            }
+          },
+          "access": {
+            "@_licence": "outercore_access"
+          }
+        },
+        "@_macro": "Cluster_106_Sector001_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1070001}",
+            "@_description": "{20003,1070002}",
+            "@_system": "100",
+            "@_image": "enc_cluster107"
+          },
+          "area": {
+            "@_sunlight": "0.03",
+            "@_economy": "0.25",
+            "@_security": "0.25"
+          }
+        },
+        "@_macro": "Cluster_107_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1070011}",
+            "@_description": "{20004,1070012}"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_jupiter_saturn"
+            }
+          }
+        },
+        "@_macro": "Cluster_107_Sector001_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1080001}",
+            "@_description": "{20003,1080002}",
+            "@_system": "100",
+            "@_image": "enc_cluster108"
+          },
+          "area": {
+            "@_sunlight": "0.02",
+            "@_economy": "0.25",
+            "@_security": "0.25"
+          }
+        },
+        "@_macro": "Cluster_108_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1080011}",
+            "@_description": "{20004,1080012}"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_jupiter_saturn"
+            }
+          }
+        },
+        "@_macro": "Cluster_108_Sector001_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1080031}",
+            "@_description": "{20004,1080032}"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_jupiter_saturn"
+            }
+          }
+        },
+        "@_macro": "Cluster_108_Sector003_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1080021}",
+            "@_description": "{20004,1080022}",
+            "@_image": "enc_cluster108_sector02"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_terran_periphery"
+            }
+          }
+        },
+        "@_macro": "Cluster_108_Sector002_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1090001}",
+            "@_description": "{20003,1090002}",
+            "@_system": "100",
+            "@_image": "enc_cluster109"
+          },
+          "area": {
+            "@_sunlight": "0.02",
+            "@_economy": "0.25",
+            "@_security": "0.25"
+          }
+        },
+        "@_macro": "Cluster_109_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1090011}",
+            "@_description": "{20004,1090012}"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_terran_pioneers"
+            }
+          }
+        },
+        "@_macro": "Cluster_109_Sector001_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1100001}",
+            "@_description": "{20003,1100002}",
+            "@_system": "100",
+            "@_image": "enc_cluster110"
+          },
+          "area": {
+            "@_sunlight": "0.02",
+            "@_economy": "0.25",
+            "@_security": "0.25"
+          }
+        },
+        "@_macro": "Cluster_110_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1100011}",
+            "@_description": "{20004,1100012}"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_terran_pioneers"
+            }
+          }
+        },
+        "@_macro": "Cluster_110_Sector001_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1110001}",
+            "@_description": "{20003,1110002}",
+            "@_system": "100",
+            "@_image": "enc_clustersol"
+          },
+          "area": {
+            "@_sunlight": "0.02",
+            "@_economy": "0.25",
+            "@_security": "0.25"
+          }
+        },
+        "@_macro": "Cluster_111_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1110011}",
+            "@_description": "{20004,1110012}",
+            "@_image": "enc_cluster111"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_terran_periphery"
+            }
+          }
+        },
+        "@_macro": "Cluster_111_Sector001_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1120001}",
+            "@_description": "{20003,1120002}",
+            "@_system": "112",
+            "@_image": "enc_cluster112"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_yaki"
+            }
+          },
+          "area": {
+            "@_sunlight": "1.22",
+            "@_economy": "0.25",
+            "@_security": "0.25"
+          },
+          "system": {
+            "space": {
+              "@_environment": "{1042,12061}(Heavy Radiation)"
+            },
+            "suns": {
+              "sun": {
+                "@_class": "{1042,13091}(Yellow Giant)"
+              }
+            },
+            "planets": {
+              "planet": {
+                "moons": {
+                  "moon": {
+                    "@_name": "{20005,9046}(Tsukuyomi)",
+                    "@_geology": "{1042,15081}(Ice)",
+                    "@_atmosphere": "{1042,10011}(None)",
+                    "@_population": "{1042,10011}(None)",
+                    "@_settlements": "{1042,10011}(None)"
+                  }
+                },
+                "@_name": "{20005,9045}(Sarutahiko)",
+                "@_class": "{1042,14031}(Terrestrial)",
+                "@_geology": "{1042,15021}(Mountains)",
+                "@_atmosphere": "{1042,10011}(None)",
+                "@_population": "{1042,10021}",
+                "@_maxpopulation": "420000",
+                "@_settlements": "{1042,16041}(Multiple Cities)",
+                "@_part": ""
+              }
+            }
+          }
+        },
+        "@_macro": "Cluster_112_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1120011}",
+            "@_description": "{20004,1120012}"
+          }
+        },
+        "@_macro": "Cluster_112_Sector001_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1120021}",
+            "@_description": "{20004,1120022}"
+          }
+        },
+        "@_macro": "Cluster_112_Sector002_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1130001}",
+            "@_description": "{20003,1130002}",
+            "@_system": "113",
+            "@_image": "enc_cluster113"
+          },
+          "area": {
+            "@_sunlight": "1.86",
+            "@_economy": "0.25",
+            "@_security": "0.25"
+          },
+          "system": {
+            "space": {
+              "@_environment": "{1042,12021}(Thin Nebula)"
+            },
+            "suns": {
+              "sun": {
+                "@_class": "{1042,13041}(White Dwarf)"
+              }
+            },
+            "planets": {
+              "planet": [
+                {
+                  "shaderparams": {
+                    "shaderparam": [
+                      {
+                        "param": [
+                          {
+                            "@_position": "0",
+                            "@_value": "-0.1"
+                          },
+                          {
+                            "@_position": "1000",
+                            "@_value": "0.00001"
+                          },
+                          {
+                            "@_position": "50000",
+                            "@_value": "0.0005"
+                          },
+                          {
+                            "@_position": "200000",
+                            "@_value": "0.002"
+                          },
+                          {
+                            "@_position": "400000",
+                            "@_value": "0.004"
+                          },
+                          {
+                            "@_position": "1000000",
+                            "@_value": "0.01"
+                          },
+                          {
+                            "@_position": "10000000",
+                            "@_value": "0.1"
+                          },
+                          {
+                            "@_position": "25000000",
+                            "@_value": "0.25"
+                          },
+                          {
+                            "@_position": "50000000",
+                            "@_value": "0.50"
+                          },
+                          {
+                            "@_position": "75000000",
+                            "@_value": "0.75"
+                          }
+                        ],
+                        "@_name": "citylevel",
+                        "@_stat": "population"
+                      },
+                      {
+                        "param": [
+                          {
+                            "@_position": "0",
+                            "@_value": "-0.01"
+                          },
+                          {
+                            "@_position": "1",
+                            "@_value": "0.21"
+                          }
+                        ],
+                        "@_name": "waterlevel",
+                        "@_stat": "population"
+                      },
+                      {
+                        "param": [
+                          {
+                            "@_position": "0",
+                            "@_value": "0.01"
+                          },
+                          {
+                            "@_position": "1",
+                            "@_value": "0.5"
+                          }
+                        ],
+                        "@_name": "fdensity",
+                        "@_stat": "population"
+                      },
+                      {
+                        "param": [
+                          {
+                            "@_position": "0",
+                            "@_value": "1.1"
+                          },
+                          {
+                            "@_position": "1",
+                            "@_value": "0.5"
+                          }
+                        ],
+                        "@_name": "cloudcutoff",
+                        "@_stat": "population"
+                      },
+                      {
+                        "param": [
+                          {
+                            "@_position": "0",
+                            "@_value": "1.1"
+                          },
+                          {
+                            "@_position": "1",
+                            "@_value": "0.5"
+                          }
+                        ],
+                        "@_name": "densecutoff",
+                        "@_stat": "population"
+                      },
+                      {
+                        "param": [
+                          {
+                            "@_position": "0",
+                            "@_value": "0.5"
+                          },
+                          {
+                            "@_position": "1",
+                            "@_value": "0.2"
+                          }
+                        ],
+                        "@_name": "base_saturation_shift",
+                        "@_stat": "population"
+                      },
+                      {
+                        "param": [
+                          {
+                            "@_position": "0",
+                            "@_value": "344.0"
+                          },
+                          {
+                            "@_position": "1",
+                            "@_value": "270.0"
+                          }
+                        ],
+                        "@_name": "base_hue_shift",
+                        "@_stat": "population"
+                      }
+                    ]
+                  },
+                  "@_name": "{20005,9048}(Terranova)",
+                  "@_class": "{1042,14031}(Terrestrial)",
+                  "@_geology": "{1042,15021}(Mountains)",
+                  "@_atmosphere": "{1042,10011}(None)",
+                  "@_population": "{1042,10011}(None)",
+                  "@_settlements": "{1042,16011}(Uninhabited)",
+                  "@_part": "part_earthlike"
+                },
+                {
+                  "@_name": "{20005,9049}(Moroz)",
+                  "@_class": "{1042,14061}(Planet)",
+                  "@_geology": "{1042,15081}(Ice)",
+                  "@_atmosphere": "{1042,10011}(None)",
+                  "@_population": "{1042,10011}(None)",
+                  "@_settlements": "{1042,10011}(None)"
+                },
+                {
+                  "@_name": "{20005,9050}(Surtr)",
+                  "@_class": "{1042,14061}(Planet)",
+                  "@_geology": "{1042,15101}(Barren)",
+                  "@_atmosphere": "{1042,10011}(None)",
+                  "@_population": "{1042,10011}(None)"
+                }
+              ]
+            }
+          }
+        },
+        "@_macro": "Cluster_113_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1130011}",
+            "@_description": "{20004,1130012}"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_pioneers"
+            }
+          },
+          "worlds": {
+            "world": {
+              "@_part": "part_earthlike"
+            }
+          }
+        },
+        "@_macro": "Cluster_113_Sector001_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1140001}",
+            "@_description": "{20003,1140002}",
+            "@_system": "114",
+            "@_image": "enc_cluster114"
+          },
+          "area": {
+            "@_sunlight": "1.86",
+            "@_economy": "0.25",
+            "@_security": "0.25"
+          },
+          "system": {
+            "space": {
+              "@_environment": "{1042,12031}(Nebula)"
+            },
+            "suns": {
+              "sun": {
+                "@_class": "{1042,13111}(White Giant)"
+              }
+            },
+            "planets": {
+              "planet": {
+                "shaderparams": {
+                  "shaderparam": [
+                    {
+                      "param": [
+                        {
+                          "@_position": "0",
+                          "@_value": "-0.1"
+                        },
+                        {
+                          "@_position": "1000",
+                          "@_value": "0.00001"
+                        },
+                        {
+                          "@_position": "50000",
+                          "@_value": "0.0005"
+                        },
+                        {
+                          "@_position": "200000",
+                          "@_value": "0.002"
+                        },
+                        {
+                          "@_position": "400000",
+                          "@_value": "0.004"
+                        },
+                        {
+                          "@_position": "1000000",
+                          "@_value": "0.01"
+                        },
+                        {
+                          "@_position": "10000000",
+                          "@_value": "0.1"
+                        },
+                        {
+                          "@_position": "25000000",
+                          "@_value": "0.25"
+                        },
+                        {
+                          "@_position": "50000000",
+                          "@_value": "0.50"
+                        },
+                        {
+                          "@_position": "75000000",
+                          "@_value": "0.75"
+                        }
+                      ],
+                      "@_name": "citylevel",
+                      "@_stat": "population"
+                    },
+                    {
+                      "param": [
+                        {
+                          "@_position": "0",
+                          "@_value": "0.82"
+                        },
+                        {
+                          "@_position": "1",
+                          "@_value": "0.5"
+                        }
+                      ],
+                      "@_name": "cloudcutoff",
+                      "@_stat": "population"
+                    },
+                    {
+                      "param": [
+                        {
+                          "@_position": "0",
+                          "@_value": "0.85"
+                        },
+                        {
+                          "@_position": "1",
+                          "@_value": "0.5"
+                        }
+                      ],
+                      "@_name": "densecutoff",
+                      "@_stat": "population"
+                    },
+                    {
+                      "param": [
+                        {
+                          "@_position": "0",
+                          "@_value": "1.0"
+                        },
+                        {
+                          "@_position": "1",
+                          "@_value": "1.2"
+                        }
+                      ],
+                      "@_name": "base_saturation_shift",
+                      "@_stat": "population"
+                    },
+                    {
+                      "param": [
+                        {
+                          "@_position": "0",
+                          "@_value": "-31.0"
+                        },
+                        {
+                          "@_position": "1",
+                          "@_value": "-31.0"
+                        }
+                      ],
+                      "@_name": "base_hue_shift",
+                      "@_stat": "population"
+                    }
+                  ]
+                },
+                "@_name": "{20005,9051}(Sutton)",
+                "@_class": "{1042,14031}(Terrestrial)",
+                "@_geology": "{1042,15021}(Mountains)",
+                "@_atmosphere": "{1042,11031}(Oxygen)",
+                "@_population": "{1042,10011}(None)",
+                "@_settlements": "{1042,10011}(None)",
+                "@_part": "planet"
+              }
+            }
+          }
+        },
+        "@_macro": "Cluster_114_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1140011}",
+            "@_description": "{20004,1140012}"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_pioneers"
+            }
+          },
+          "worlds": {
+            "world": {
+              "@_part": "planet"
+            }
+          }
+        },
+        "@_macro": "Cluster_114_Sector001_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1150001}",
+            "@_description": "{20003,1150002}",
+            "@_system": "115",
+            "@_image": "enc_cluster115"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_cluster_complete"
+            }
+          },
+          "area": {
+            "@_sunlight": "1.21",
+            "@_economy": "0.25",
+            "@_security": "0.25"
+          },
+          "system": {
+            "space": {
+              "@_environment": "{1042,12031}(Nebula)"
+            },
+            "suns": {
+              "sun": {
+                "@_class": "{1042,13111}(White Giant)"
+              }
+            },
+            "planets": {
+              "planet": [
+                {
+                  "@_name": "{20005,9052}(Taurus)",
+                  "@_class": "{1042,14031}(Terrestrial)",
+                  "@_geology": "{1042,15021}(Mountains)",
+                  "@_atmosphere": "{1042,11031}(Oxygen)",
+                  "@_population": "{1042,10021}",
+                  "@_maxpopulation": "500000",
+                  "@_settlements": "{1042,16041}(Multiple Cities)",
+                  "@_part": "part_brennans"
+                },
+                {
+                  "@_name": "{20005,9053}(Kho)",
+                  "@_class": "{1042,14061}(Planet)",
+                  "@_geology": "{1042,15081}(Ice)",
+                  "@_atmosphere": "{1042,11031}(Oxygen)",
+                  "@_population": "{1042,10011}(None)",
+                  "@_settlements": "{1042,10011}(None)"
+                },
+                {
+                  "@_name": "{20005,9054}(Serra)",
+                  "@_class": "{1042,14061}(Planet)",
+                  "@_geology": "{1042,15031}(Volcanic)",
+                  "@_atmosphere": "{1042,11091}(Sulphur Dioxide)",
+                  "@_population": "{1042,10011}(None)"
+                }
+              ]
+            }
+          }
+        },
+        "@_macro": "Cluster_115_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1150011}",
+            "@_description": "{20004,1150012}"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_brennans_triumph"
+            }
+          },
+          "worlds": {
+            "world": {
+              "@_part": "part_brennans"
+            }
+          }
+        },
+        "@_macro": "Cluster_115_Sector001_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1160001}",
+            "@_description": "{20003,1160002}",
+            "@_system": "100",
+            "@_image": "enc_cluster116"
+          },
+          "area": {
+            "@_sunlight": "0.02",
+            "@_economy": "0.25",
+            "@_security": "0.25"
+          }
+        },
+        "@_macro": "Cluster_116_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1160011}",
+            "@_description": "{20004,1160012}"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_oort_cloud"
+            }
+          }
+        },
+        "@_macro": "Cluster_116_Sector001_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1070001}",
+            "@_description": "{20003,1070002}",
+            "@_image": "enc_cluster01"
+          }
+        },
+        "@_macro": "demo_Cluster_13_macro",
+        "@_comment": "Jupiter"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1070011}",
+            "@_description": "{20004,1070012}"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_jupiter_saturn"
+            }
+          }
+        },
+        "@_macro": "demo_Cluster_13_Sector001_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1010001}",
+            "@_description": "{20003,1010002}",
+            "@_image": "enc_cluster23"
+          }
+        },
+        "@_macro": "demo_Cluster_40_macro",
+        "@_comment": "Mars"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1010011}",
+            "@_description": "{20004,1010012}"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_mars"
+            }
+          }
+        },
+        "@_macro": "demo_Cluster_40_Sector001_macro"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20003,1000001}",
+            "@_description": "{20003,1000002}",
+            "@_image": "enc_cluster35"
+          }
+        },
+        "@_macro": "demo_Cluster_41_macro",
+        "@_comment": "Asteroid Belt"
+      },
+      {
+        "properties": {
+          "identification": {
+            "@_name": "{20004,1000011}",
+            "@_description": "{20004,1000012}"
+          },
+          "sounds": {
+            "music": {
+              "@_ref": "music_dlc_terran_soundtrack_terran_periphery"
+            }
+          }
+        },
+        "@_macro": "demo_Cluster_41_Sector001_macro"
+      }
+    ],
+    "@_xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "@_xsi:noNamespaceSchemaLocation": "libraries.xsd"
+  }
+}
