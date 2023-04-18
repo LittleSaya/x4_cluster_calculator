@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.55) at 27.08.2021_12-10-22-->
+<macros>
+  <macro name="prod_gen_scrap_recycler_macro" class="production">
+    <component ref="prod_gen_scrap_recycler" />
+    <properties>
+      <identification name="{20104,130101}" description="{20104,130102}" type="moduletypes_processing" />
+      <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+        </sets>
+      </build>
+      <explosiondamage value="2000" shield="10000" />
+      <hull max="200000" />
+      <secrecy level="2" />
+      <production wares="claytronics hullparts">
+        <queue>
+          <item ware="claytronics" method="recycling" />
+          <item ware="hullparts" method="recycling" />
+        </queue>
+      </production>
+      <workforce max="1250" />
+    </properties>
+  </macro>
+</macros>

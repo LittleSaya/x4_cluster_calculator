@@ -1,0 +1,24 @@
+{
+  "Cluster_01": {
+    "coordinate": [
+      0,
+      0
+    ],
+    "sectors": {
+      "Cluster_01_Sector001": {
+        "name": "Grand Exchange｜大交易所 I",
+        "coordinate": [
+          0,
+          0
+        ]
+      },
+      "Cluster_01_Sector002": {
+        "name": "Grand Exchange｜大交易所 III",
+        "coordinate": [
+          0,
+          0
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1266 @@
+{
+  "?xml": {
+    "@_version": "1.0",
+    "@_encoding": "utf-8"
+  },
+  "macros": {
+    "macro": {
+      "component": {
+        "@_ref": "standardgalaxy"
+      },
+      "connections": {
+        "connection": [
+          {
+            "macro": {
+              "@_ref": "Cluster_01_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_01_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "15000000",
+                "@_y": "0",
+                "@_z": "25980000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_02_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_02_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "30000000",
+                "@_y": "0",
+                "@_z": "17320000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_03_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_03_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "30000000",
+                "@_y": "0",
+                "@_z": "-17320000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_04_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_04_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "0",
+                "@_y": "0",
+                "@_z": "-17320000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_05_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_05_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-15000000",
+                "@_y": "0",
+                "@_z": "-8660000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_06_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_06_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-60000000",
+                "@_y": "0",
+                "@_z": "34640000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_07_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_07_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "0",
+                "@_y": "0",
+                "@_z": "51960000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_08_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_08_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "60000000",
+                "@_y": "0",
+                "@_z": "34640000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_09_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_09_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "60000000",
+                "@_y": "0",
+                "@_z": "-17320000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_10_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_10_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "0",
+                "@_y": "0",
+                "@_z": "-51960000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_11_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_11_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-30000000",
+                "@_y": "0",
+                "@_z": "-34640000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_12_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_12_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-30000000",
+                "@_y": "0",
+                "@_z": "0"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_13_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_13_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-45000000",
+                "@_y": "0",
+                "@_z": "25980000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_14_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_14_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "105000000",
+                "@_y": "0",
+                "@_z": "25980000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_15_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_15_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "105000000",
+                "@_y": "0",
+                "@_z": "43310000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_16_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_16_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "90000000",
+                "@_y": "0",
+                "@_z": "51960000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_17_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_17_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "60000000",
+                "@_y": "0",
+                "@_z": "0"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_18_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_18_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "75000000",
+                "@_y": "0",
+                "@_z": "-8660000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_19_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_19_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "90000000",
+                "@_y": "0",
+                "@_z": "-17330000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_20_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_20_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "90000000",
+                "@_y": "0",
+                "@_z": "-34640000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_21_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_21_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "30000000",
+                "@_y": "0",
+                "@_z": "-34650000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_22_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_22_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "45000000",
+                "@_y": "0",
+                "@_z": "-60640000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_23_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_23_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-15000000",
+                "@_y": "0",
+                "@_z": "-43310000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_24_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_24_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-30000000",
+                "@_y": "0",
+                "@_z": "-51960000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_25_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_25_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-60000000",
+                "@_y": "0",
+                "@_z": "-51970000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_26_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_26_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-90000000",
+                "@_y": "0",
+                "@_z": "17320000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_27_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_27_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-105000000",
+                "@_y": "0",
+                "@_z": "8660000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_28_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_28_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-30000000",
+                "@_y": "0",
+                "@_z": "34650000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_29_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_29_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-45000000",
+                "@_y": "0",
+                "@_z": "43300000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_30_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_30_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-75000000",
+                "@_y": "0",
+                "@_z": "60630000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_31_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_31_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-30000000",
+                "@_y": "0",
+                "@_z": "69280000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_32_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_32_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-45000000",
+                "@_y": "0",
+                "@_z": "77940000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_33_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_33_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "45000000",
+                "@_y": "0",
+                "@_z": "43310000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_34_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_34_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "0",
+                "@_y": "0",
+                "@_z": "-69280000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_35_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_35_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-15000000",
+                "@_y": "0",
+                "@_z": "-60640000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_36_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_36_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "45000000",
+                "@_y": "0",
+                "@_z": "-43310000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_37_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_37_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "30000000",
+                "@_y": "0",
+                "@_z": "-51970000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_38_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_38_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "30000000",
+                "@_y": "0",
+                "@_z": "0"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_39_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_39_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-45000000",
+                "@_y": "0",
+                "@_z": "-8660000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_40_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_40_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-45000000",
+                "@_y": "0",
+                "@_z": "8660000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_41_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_41_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "90000000",
+                "@_y": "0",
+                "@_z": "0"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_42_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_42_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "90000000",
+                "@_y": "0",
+                "@_z": "17320000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_43_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_43_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "15000000",
+                "@_y": "0",
+                "@_z": "60620000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_44_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_44_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "0",
+                "@_y": "0",
+                "@_z": "69280000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_45_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_45_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-45000000",
+                "@_y": "0",
+                "@_z": "60620000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_46_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_46_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "45000000",
+                "@_y": "0",
+                "@_z": "8660000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_47_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_47_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-75000000",
+                "@_y": "0",
+                "@_z": "-8660000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_49_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_49_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "-90000000",
+                "@_y": "0",
+                "@_z": "34650000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_48_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_48_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "offset": {
+              "position": {
+                "@_x": "105000016",
+                "@_y": "0",
+                "@_z": "-25990000"
+              }
+            },
+            "macro": {
+              "@_ref": "Cluster_50_macro",
+              "@_connection": "galaxy"
+            },
+            "@_name": "Cluster_50_connection",
+            "@_ref": "clusters"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_04_connection/Cluster_04_Sector002_connection/Zone001_Cluster_04_Sector002_connection/connection_ClusterGate004To001"
+            },
+            "@_name": "ClusterGate001To004",
+            "@_ref": "destination",
+            "@_path": "../Cluster_01_connection/Cluster_01_Sector001_connection/Zone003_Cluster_01_Sector001_connection/connection_ClusterGate001To004"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_05_connection/Cluster_05_Sector001_connection/Zone001_Cluster_05_Sector001_connection/connection_ClusterGate005To001"
+            },
+            "@_name": "ClusterGate001To005",
+            "@_ref": "destination",
+            "@_path": "../Cluster_01_connection/Cluster_01_Sector001_connection/Zone001_Cluster_01_Sector001_connection/connection_ClusterGate001To005"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_06_connection/Cluster_06_Sector002_connection/Zone004_Cluster_06_Sector002_connection/connection_ClusterGate006To001"
+            },
+            "@_name": "ClusterGate001To006",
+            "@_ref": "destination",
+            "@_path": "../Cluster_01_connection/Cluster_01_Sector002_connection/Zone004_Cluster_01_Sector002_connection/connection_ClusterGate001To006"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_02_connection/Cluster_02_Sector001_connection/Zone001_Cluster_02_Sector001_connection/connection_ClusterGate002To001"
+            },
+            "@_name": "ClusterGate001To002",
+            "@_ref": "destination",
+            "@_path": "../Cluster_01_connection/Cluster_01_Sector003_connection/Zone003_Cluster_01_Sector003_connection/connection_ClusterGate001To002"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_03_connection/Cluster_03_Sector001_connection/Zone002_Cluster_03_Sector001_connection/connection_ClusterGate003To002"
+            },
+            "@_name": "ClusterGate002To003",
+            "@_ref": "destination",
+            "@_path": "../Cluster_02_connection/Cluster_02_Sector001_connection/Zone002_Cluster_02_Sector001_connection/connection_ClusterGate002To003"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_08_connection/Cluster_08_Sector001_connection/Zone003_Cluster_08_Sector001_connection/connection_ClusterGate008To002"
+            },
+            "@_name": "ClusterGate002To008",
+            "@_ref": "destination",
+            "@_path": "../Cluster_02_connection/Cluster_02_Sector001_connection/Zone003_Cluster_02_Sector001_connection/connection_ClusterGate002To008"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_09_connection/Cluster_09_Sector001_connection/Zone003_Cluster_09_Sector001_connection/connection_ClusterGate009To003"
+            },
+            "@_name": "ClusterGate003To009",
+            "@_ref": "destination",
+            "@_path": "../Cluster_03_connection/Cluster_03_Sector001_connection/Zone003_Cluster_03_Sector001_connection/connection_ClusterGate003To009"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_39_connection/Cluster_39_Sector001_connection/Zone001_Cluster_39_Sector001_connection/connection_ClusterGate039To003"
+            },
+            "@_name": "ClusterGate003To039",
+            "@_ref": "destination",
+            "@_path": "../Cluster_03_connection/Cluster_03_Sector001_connection/Zone001_Cluster_03_Sector001_connection/connection_ClusterGate003To039"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_22_connection/Cluster_22_Sector001_connection/Zone001_Cluster_22_Sector001_connection/connection_ClusterGate022To004"
+            },
+            "@_name": "ClusterGate004To022",
+            "@_ref": "destination",
+            "@_path": "../Cluster_04_connection/Cluster_04_Sector002_connection/Zone001_Cluster_04_Sector002_connection/connection_ClusterGate004To022"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_13_connection/Cluster_13_Sector001_connection/Zone001_Cluster_13_Sector001_connection/connection_ClusterGate013To006"
+            },
+            "@_name": "ClusterGate006To013",
+            "@_ref": "destination",
+            "@_path": "../Cluster_06_connection/Cluster_06_Sector001_connection/Zone003_Cluster_06_Sector001_connection/connection_ClusterGate006To013"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_14_connection/Cluster_14_Sector001_connection/Zone002_Cluster_14_Sector001_connection/connection_ClusterGate014To007"
+            },
+            "@_name": "ClusterGate007To014",
+            "@_ref": "destination",
+            "@_path": "../Cluster_07_connection/Cluster_07_Sector001_connection/Zone003_Cluster_07_Sector001_connection/connection_ClusterGate007To014"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_44_connection/Cluster_44_Sector001_connection/Zone004_Cluster_44_Sector001_connection/connection_ClusterGate044To008"
+            },
+            "@_name": "ClusterGate008To044",
+            "@_ref": "destination",
+            "@_path": "../Cluster_08_connection/Cluster_08_Sector001_connection/Zone001_Cluster_08_Sector001_connection/connection_ClusterGate008To044"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_34_connection/Cluster_34_Sector001_connection/Zone003_Cluster_34_Sector001_connection/connection_ClusterGate034To008"
+            },
+            "@_name": "ClusterGate008To034",
+            "@_ref": "destination",
+            "@_path": "../Cluster_08_connection/Cluster_08_Sector001_connection/Zone002_Cluster_08_Sector001_connection/connection_ClusterGate008To034"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_29_connection/Cluster_29_Sector001_connection/Zone002_Cluster_29_Sector001_connection/connection_ClusterGate029To008"
+            },
+            "@_name": "ClusterGate008To029",
+            "@_ref": "destination",
+            "@_path": "../Cluster_08_connection/Cluster_08_Sector001_connection/Zone004_Cluster_08_Sector001_connection/connection_ClusterGate008To029"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_34_connection/Cluster_34_Sector001_connection/Zone005_Cluster_34_Sector001_connection/connection_ClusterGate034to009"
+            },
+            "@_name": "ClusterGate009To034",
+            "@_ref": "destination",
+            "@_path": "../Cluster_09_connection/Cluster_09_Sector001_connection/Zone001_Cluster_09_Sector001_connection/connection_ClusterGate009To034"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_18_connection/Cluster_18_Sector001_connection/Zone003_Cluster_18_Sector001_connection/connection_ClusterGate018To009"
+            },
+            "@_name": "ClusterGate009To018",
+            "@_ref": "destination",
+            "@_path": "../Cluster_09_connection/Cluster_09_Sector001_connection/Zone002_Cluster_09_Sector001_connection/connection_ClusterGate009To018"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_15_connection/Cluster_15_Sector001_connection/Zone004_Cluster_15_Sector001_connection/connection_ClusterGate015To009"
+            },
+            "@_name": "ClusterGate009to015",
+            "@_ref": "destination",
+            "@_path": "../Cluster_09_connection/Cluster_09_Sector001_connection/Zone004_Cluster_09_Sector001_connection/connection_ClusterGate009to015"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_22_connection/Cluster_22_Sector001_connection/Zone002_Cluster_22_Sector001_connection/connection_ClusterGate022To010"
+            },
+            "@_name": "ClusterGate010To022",
+            "@_ref": "destination",
+            "@_path": "../Cluster_10_connection/Cluster_10_Sector001_connection/Zone001_Cluster_10_Sector001_connection/connection_ClusterGate010To022"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_18_connection/Cluster_18_Sector001_connection/Zone005_Cluster_18_Sector001_connection/connection_ClusterGate018To010"
+            },
+            "@_name": "ClusterGate010To018",
+            "@_ref": "destination",
+            "@_path": "../Cluster_10_connection/Cluster_10_Sector001_connection/Zone002_Cluster_10_Sector001_connection/connection_ClusterGate010To018"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_24_connection/Cluster_24_Sector001_connection/Zone004_Cluster_24_Sector001_connection/connection_ClusterGate024To011"
+            },
+            "@_name": "ClusterGate011To024",
+            "@_ref": "destination",
+            "@_path": "../Cluster_11_connection/Cluster_11_Sector001_connection/Zone001_Cluster_11_Sector001_connection/connection_ClusterGate011To024"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_22_connection/Cluster_22_Sector001_connection/Zone004_Cluster_22_Sector001_connection/connection_ClusterGate022To011"
+            },
+            "@_name": "ClusterGate011To022",
+            "@_ref": "destination",
+            "@_path": "../Cluster_11_connection/Cluster_11_Sector001_connection/Zone001_Cluster_11_Sector001_connection/connection_ClusterGate011To022"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_24_connection/Cluster_24_Sector001_connection/Zone002_Cluster_24_Sector001_connection/connection_ClusterGate024To012"
+            },
+            "@_name": "ClusterGate012To024",
+            "@_ref": "destination",
+            "@_path": "../Cluster_12_connection/Cluster_12_Sector001_connection/Zone001_Cluster_12_Sector001_connection/connection_ClusterGate012To024"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_13_connection/Cluster_13_Sector001_connection/Zone002_Cluster_13_Sector001_connection/connection_ClusterGate013To012"
+            },
+            "@_name": "ClusterGate012To013",
+            "@_ref": "destination",
+            "@_path": "../Cluster_12_connection/Cluster_12_Sector001_connection/Zone003_Cluster_12_Sector001_connection/connection_ClusterGate012To013"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_27_connection/Cluster_27_Sector001_connection/Zone001_Cluster_27_Sector001_connection/connection_ClusterGate027To013"
+            },
+            "@_name": "ClusterGate013To027",
+            "@_ref": "destination",
+            "@_path": "../Cluster_13_connection/Cluster_13_Sector001_connection/Zone002_Cluster_13_Sector001_connection/connection_ClusterGate013To027"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_40_connection/Cluster_40_Sector001_connection/Zone001_Cluster_40_Sector001_connection/connection_ClusterGate040To013"
+            },
+            "@_name": "ClusterGate013To040",
+            "@_ref": "destination",
+            "@_path": "../Cluster_13_connection/Cluster_13_Sector001_connection/Zone002_Cluster_13_Sector001_connection/connection_ClusterGate013To040"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_14_connection/Cluster_14_Sector001_connection/Zone001_Cluster_14_Sector001_connection/connection_ClusterGate014To013"
+            },
+            "@_name": "ClusterGate013To014",
+            "@_ref": "destination",
+            "@_path": "../Cluster_13_connection/Cluster_13_Sector001_connection/Zone003_Cluster_13_Sector001_connection/connection_ClusterGate013To014"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_29_connection/Cluster_29_Sector001_connection/Zone003_Cluster_29_Sector001_connection/connection_ClusterGate029To014"
+            },
+            "@_name": "ClusterGate014To029",
+            "@_ref": "destination",
+            "@_path": "../Cluster_14_connection/Cluster_14_Sector001_connection/Zone003_Cluster_14_Sector001_connection/connection_ClusterGate014To029"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_16_connection/Cluster_16_Sector001_connection/Zone001_Cluster_16_Sector001_connection/connection_ClusterGate016To015"
+            },
+            "@_name": "ClusterGate015To016",
+            "@_ref": "destination",
+            "@_path": "../Cluster_15_connection/Cluster_15_Sector001_connection/Zone002_Cluster_15_Sector001_connection/connection_ClusterGate015To016"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_17_connection/Cluster_17_Sector001_connection/Zone004_Cluster_17_Sector001_connection/connection_ClusterGate017To016"
+            },
+            "@_name": "ClusterGate016To017",
+            "@_ref": "destination",
+            "@_path": "../Cluster_16_connection/Cluster_16_Sector001_connection/Zone004_Cluster_16_Sector001_connection/connection_ClusterGate016To017"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_19_connection/Cluster_19_Sector001_connection/Zone003_Cluster_19_Sector001_connection/connection_ClusterGate019To018"
+            },
+            "@_name": "ClusterGate018To019",
+            "@_ref": "destination",
+            "@_path": "../Cluster_18_connection/Cluster_18_Sector001_connection/Zone002_Cluster_18_Sector001_connection/connection_ClusterGate018To019"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_47_connection/Cluster_47_Sector001_connection/Zone002_Cluster_47_Sector001_connection/connection_ClusterGate047To018"
+            },
+            "@_name": "ClusterGate018To047",
+            "@_ref": "destination",
+            "@_path": "../Cluster_18_connection/Cluster_18_Sector001_connection/Zone003_Cluster_18_Sector001_connection/connection_ClusterGate018To047"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_42_connection/Cluster_42_Sector001_connection/Zone003_Cluster_42_Sector001_connection/connection_ClusterGate042To019"
+            },
+            "@_name": "ClusterGate019To042",
+            "@_ref": "destination",
+            "@_path": "../Cluster_19_connection/Cluster_19_Sector001_connection/Zone002_Cluster_19_Sector001_connection/connection_ClusterGate019To042"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_20_connection/Cluster_20_Sector001_connection/Zone003_Cluster_20_Sector001_connection/connection_ClusterGate020To019"
+            },
+            "@_name": "ClusterGate019To020",
+            "@_ref": "destination",
+            "@_path": "../Cluster_19_connection/Cluster_19_Sector002_connection/Zone003_Cluster_19_Sector002_connection/connection_ClusterGate019To020"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_21_connection/Cluster_21_Sector001_connection/Zone001_Cluster_21_Sector001_connection/connection_ClusterGate021To020"
+            },
+            "@_name": "ClusterGate020To021",
+            "@_ref": "destination",
+            "@_path": "../Cluster_20_connection/Cluster_20_Sector001_connection/Zone004_Cluster_20_Sector001_connection/connection_ClusterGate020To021"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_37_connection/Cluster_37_Sector001_connection/Zone001_Cluster_37_Sector001_connection/connection_ClusterGate037To022"
+            },
+            "@_name": "ClusterGate022To037",
+            "@_ref": "destination",
+            "@_path": "../Cluster_22_connection/Cluster_22_Sector001_connection/Zone002_Cluster_22_Sector001_connection/connection_ClusterGate022To037"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_23_connection/Cluster_23_Sector001_connection/Zone002_Cluster_23_Sector001_connection/connection_ClusterGate023To022"
+            },
+            "@_name": "ClusterGate022To023",
+            "@_ref": "destination",
+            "@_path": "../Cluster_22_connection/Cluster_22_Sector001_connection/Zone003_Cluster_22_Sector001_connection/connection_ClusterGate022To023"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_38_connection/Cluster_38_Sector001_connection/Zone005_Cluster_38_Sector001_connection/connection_ClusterGate038To022"
+            },
+            "@_name": "ClusterGate022To038",
+            "@_ref": "destination",
+            "@_path": "../Cluster_22_connection/Cluster_22_Sector001_connection/Zone003_Cluster_22_Sector001_connection/connection_ClusterGate022To038"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_25_connection/Cluster_25_Sector001_connection/Zone003_Cluster_25_Sector001_connection/connection_ClusterGate025To024"
+            },
+            "@_name": "ClusterGate024To025",
+            "@_ref": "destination",
+            "@_path": "../Cluster_24_connection/Cluster_24_Sector001_connection/Zone003_Cluster_24_Sector001_connection/connection_ClusterGate024To025"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_36_connection/Cluster_36_Sector001_connection/Zone002_Cluster_36_Sector001_connection/connection_ClusterGate036To024"
+            },
+            "@_name": "ClusterGate024To036",
+            "@_ref": "destination",
+            "@_path": "../Cluster_24_connection/Cluster_24_Sector001_connection/Zone004_Cluster_24_Sector001_connection/connection_ClusterGate024To036"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_26_connection/Cluster_26_Sector002_connection/Zone003_Cluster_26_Sector002_connection/connection_ClusterGate026To025"
+            },
+            "@_name": "ClusterGate025To026",
+            "@_ref": "destination",
+            "@_path": "../Cluster_25_connection/Cluster_25_Sector002_connection/Zone003_Cluster_25_Sector002_connection/connection_ClusterGate025To026"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_28_connection/Cluster_28_Sector001_connection/Zone001_Cluster_28_Sector001_connection/connection_ClusterGate028To027"
+            },
+            "@_name": "ClusterGate027To028",
+            "@_ref": "destination",
+            "@_path": "../Cluster_27_connection/Cluster_27_Sector001_connection/Zone003_Cluster_27_Sector001_connection/connection_ClusterGate027To028"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_30_connection/Cluster_30_Sector001_connection/Zone001_Cluster_30_Sector001_connection/connection_ClusterGate030To029"
+            },
+            "@_name": "ClusterGate029To030",
+            "@_ref": "destination",
+            "@_path": "../Cluster_29_connection/Cluster_29_Sector001_connection/Zone001_Cluster_29_Sector001_connection/connection_ClusterGate029To030"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_32_connection/Cluster_32_Sector001_connection/Zone004_Cluster_32_Sector001_connection/connection_ClusterGate032To029"
+            },
+            "@_name": "ClusterGate029To032",
+            "@_ref": "destination",
+            "@_path": "../Cluster_29_connection/Cluster_29_Sector001_connection/Zone002_Cluster_29_Sector001_connection/connection_ClusterGate029To032"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_46_connection/Cluster_46_Sector001_connection/Zone003_Cluster_46_Sector001_connection/connection_ClusterGate046To030"
+            },
+            "@_name": "ClusterGate030To046",
+            "@_ref": "destination",
+            "@_path": "../Cluster_30_connection/Cluster_30_Sector001_connection/Zone002_Cluster_30_Sector001_connection/connection_ClusterGate030To046"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_31_connection/Cluster_31_Sector001_connection/Zone001_Cluster_31_Sector001_connection/connection_ClusterGate031To030"
+            },
+            "@_name": "ClusterGate030To031",
+            "@_ref": "destination",
+            "@_path": "../Cluster_30_connection/Cluster_30_Sector001_connection/Zone003_Cluster_30_Sector001_connection/connection_ClusterGate030To031"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_33_connection/Cluster_33_Sector001_connection/Zone001_Cluster_33_Sector001_connection/connection_ClusterGate033To032"
+            },
+            "@_name": "ClusterGate032To033",
+            "@_ref": "destination",
+            "@_path": "../Cluster_32_connection/Cluster_32_Sector002_connection/Zone003_Cluster_32_Sector002_connection/connection_ClusterGate032To033"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_36_connection/Cluster_36_Sector001_connection/Zone004_Cluster_36_Sector001_connection/connection_ClusterGate036To035"
+            },
+            "@_name": "ClusterGate035To036",
+            "@_ref": "destination",
+            "@_path": "../Cluster_35_connection/Cluster_35_Sector001_connection/Zone001_Cluster_35_Sector001_connection/connection_ClusterGate035To036"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_38_connection/Cluster_38_Sector001_connection/Zone002_Cluster_38_Sector001_connection/connection_ClusterGate038To037"
+            },
+            "@_name": "ClusterGate037To038",
+            "@_ref": "destination",
+            "@_path": "../Cluster_37_connection/Cluster_37_Sector001_connection/Zone003_Cluster_37_Sector001_connection/connection_ClusterGate037To038"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_41_connection/Cluster_41_Sector001_connection/Zone004_Cluster_41_Sector001_connection/connection_ClusterGate041To040"
+            },
+            "@_name": "ClusterGate040To041",
+            "@_ref": "destination",
+            "@_path": "../Cluster_40_connection/Cluster_40_Sector001_connection/Zone005_Cluster_40_Sector001_connection/connection_ClusterGate040To041"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_43_connection/Cluster_43_Sector001_connection/Zone003_Cluster_43_Sector001_connection/connection_ClusterGate043To042"
+            },
+            "@_name": "ClusterGate042To043",
+            "@_ref": "destination",
+            "@_path": "../Cluster_42_connection/Cluster_42_Sector001_connection/Zone001_Cluster_42_Sector001_connection/connection_ClusterGate042To043"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_45_connection/Cluster_45_Sector001_connection/Zone003_Cluster_45_Sector001_connection/connection_ClusterGate045To044"
+            },
+            "@_name": "ClusterGate044To045",
+            "@_ref": "destination",
+            "@_path": "../Cluster_44_connection/Cluster_44_Sector001_connection/Zone001_Cluster_44_Sector001_connection/connection_ClusterGate044To045"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_49_connection/Cluster_49_Sector001_connection/Zone003_Cluster_49_Sector001_connection/connection_ClusterGate049To027"
+            },
+            "@_name": "ClusterGate027To049",
+            "@_ref": "destination",
+            "@_path": "../Cluster_27_connection/Cluster_27_Sector001_connection/Zone004_Cluster_27_Sector001_connection/connection_ClusterGate027To049"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_48_connection/Cluster_48_Sector001_connection/Zone003_Cluster_48_Sector001_connection/connection_ClusterGate048To027"
+            },
+            "@_name": "ClusterGate027To048",
+            "@_ref": "destination",
+            "@_path": "../Cluster_27_connection/Cluster_27_Sector001_connection/Zone005_Cluster_27_Sector001_connection/connection_ClusterGate027To048"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_49_connection/Cluster_49_Sector001_connection/Zone001_Cluster_49_Sector001_connection/connection_ClusterGate049To026"
+            },
+            "@_name": "ClusterGate026To049",
+            "@_ref": "destination",
+            "@_path": "../Cluster_26_connection/Cluster_26_Sector001_connection/Zone004_Cluster_26_Sector001_connection/connection_ClusterGate026To049"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_50_connection/Cluster_50_Sector002_connection/Zone001_Cluster_50_Sector002_connection/connection_ClusterGate050To020"
+            },
+            "@_name": "ClusterGate020To050",
+            "@_ref": "destination",
+            "@_path": "../Cluster_20_connection/Cluster_20_Sector001_connection/Zone002_Cluster_20_Sector001_connection/connection_ClusterGate020To050"
+          },
+          {
+            "macro": {
+              "@_connection": "destination",
+              "@_path": "../../../../../Cluster_50_connection/Cluster_50_Sector002_connection/Zone004_Cluster_50_Sector002_connection/connection_ClusterGate050To021"
+            },
+            "@_name": "ClusterGate021To050",
+            "@_ref": "destination",
+            "@_path": "../Cluster_21_connection/Cluster_21_Sector002_connection/Zone003_Cluster_21_Sector002_connection/connection_ClusterGate021To050"
+          }
+        ]
+      },
+      "@_name": "XU_EP2_universe_macro",
+      "@_class": "galaxy"
+    }
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "?xml": {
+    "@_version": "1.0",
+    "@_encoding": "utf-8"
+  },
+  "diff": {
+    "add": {
+      "connection": [
+        {
+          "offset": {
+            "position": {
+              "@_x": "-1.2e+08",
+              "@_y": "0",
+              "@_z": "5.196e+07"
+            }
+          },
+          "macro": {
+            "@_ref": "Cluster_602_macro",
+            "@_connection": "galaxy"
+          },
+          "@_name": "Cluster_602_connection",
+          "@_ref": "clusters"
+        },
+        {
+          "offset": {
+            "position": {
+              "@_x": "-1.35e+08",
+              "@_y": "0",
+              "@_z": "4.33e+07"
+            }
+          },
+          "macro": {
+            "@_ref": "Cluster_603_macro",
+            "@_connection": "galaxy"
+          },
+          "@_name": "Cluster_603_connection",
+          "@_ref": "clusters"
+        },
+        {
+          "offset": {
+            "position": {
+              "@_x": "-1.5e+08",
+              "@_y": "0",
+              "@_z": "6.928e+07"
+            }
+          },
+          "macro": {
+            "@_ref": "Cluster_605_macro",
+            "@_connection": "galaxy"
+          },
+          "@_name": "Cluster_605_connection",
+          "@_ref": "clusters"
+        },
+        {
+          "offset": {
+            "position": {
+              "@_x": "-1.8e+08",
+              "@_y": "0",
+              "@_z": "8.66e+07"
+            }
+          },
+          "macro": {
+            "@_ref": "Cluster_606_macro",
+            "@_connection": "galaxy"
+          },
+          "@_name": "Cluster_606_connection",
+          "@_ref": "clusters"
+        },
+        {
+          "offset": {
+            "position": {
+              "@_x": "-1.35e+08",
+              "@_y": "0",
+              "@_z": "2.598e+07"
+            }
+          },
+          "macro": {
+            "@_ref": "Cluster_604_macro",
+            "@_connection": "galaxy"
+          },
+          "@_name": "Cluster_604_connection",
+          "@_ref": "clusters"
+        },
+        {
+          "offset": {
+            "position": {
+              "@_x": "-1.95e+08",
+              "@_y": "0",
+              "@_z": "7.794e+07"
+            }
+          },
+          "macro": {
+            "@_ref": "Cluster_607_macro",
+            "@_connection": "galaxy"
+          },
+          "@_name": "Cluster_607_connection",
+          "@_ref": "clusters"
+        },
+        {
+          "offset": {
+            "position": {
+              "@_x": "-1.05e+08",
+              "@_y": "0",
+              "@_z": "6.063e+07"
+            }
+          },
+          "macro": {
+            "@_ref": "Cluster_601_macro",
+            "@_connection": "galaxy"
+          },
+          "@_name": "Cluster_601_connection",
+          "@_ref": "clusters"
+        },
+        {
+          "offset": {
+            "position": {
+              "@_x": "-1.8e+08",
+              "@_y": "0",
+              "@_z": "6.928e+07"
+            }
+          },
+          "macro": {
+            "@_ref": "Cluster_608_macro",
+            "@_connection": "galaxy"
+          },
+          "@_name": "Cluster_608_connection",
+          "@_ref": "clusters"
+        },
+        {
+          "offset": {
+            "position": {
+              "@_x": "-1.95e+08",
+              "@_y": "0",
+              "@_z": "6.063e+07"
+            }
+          },
+          "macro": {
+            "@_ref": "Cluster_609_macro",
+            "@_connection": "galaxy"
+          },
+          "@_name": "Cluster_609_connection",
+          "@_ref": "clusters"
+        },
+        {
+          "macro": {
+            "@_path": "../../../../../Cluster_602_connection/Cluster_602_Sector001_connection/Zone003_Cluster_602_Sector001_connection/connection_ClusterGate602To601",
+            "@_connection": "destination"
+          },
+          "@_name": "ClusterGate601To602",
+          "@_ref": "destination",
+          "@_path": "../Cluster_601_connection/Cluster_601_Sector001_connection/Zone005_Cluster_601_Sector001_connection/connection_ClusterGate601To602"
+        },
+        {
+          "macro": {
+            "@_path": "../../../../../Cluster_603_connection/Cluster_603_Sector001_connection/Zone004_Cluster_603_Sector001_connection/connection_ClusterGate603To602",
+            "@_connection": "destination"
+          },
+          "@_name": "ClusterGate602To603",
+          "@_ref": "destination",
+          "@_path": "../Cluster_602_connection/Cluster_602_Sector001_connection/Zone004_Cluster_602_Sector001_connection/connection_ClusterGate602To603"
+        },
+        {
+          "macro": {
+            "@_path": "../../../../../Cluster_605_connection/Cluster_605_Sector001_connection/Zone002_Cluster_605_Sector001_connection/connection_ClusterGate605To603",
+            "@_connection": "destination"
+          },
+          "@_name": "ClusterGate603To605",
+          "@_ref": "destination",
+          "@_path": "../Cluster_603_connection/Cluster_603_Sector001_connection/Zone002_Cluster_603_Sector001_connection/connection_ClusterGate603To605"
+        },
+        {
+          "macro": {
+            "@_path": "../../../../../Cluster_604_connection/Cluster_604_Sector001_connection/Zone004_Cluster_604_Sector001_connection/connection_ClusterGate604To603",
+            "@_connection": "destination"
+          },
+          "@_name": "ClusterGate603To604",
+          "@_ref": "destination",
+          "@_path": "../Cluster_603_connection/Cluster_603_Sector001_connection/Zone005_Cluster_603_Sector001_connection/connection_ClusterGate603To604"
+        },
+        {
+          "macro": {
+            "@_path": "../../../../../Cluster_606_connection/Cluster_606_Sector003_connection/Zone002_Cluster_606_Sector003_connection/connection_ClusterGate606To605",
+            "@_connection": "destination"
+          },
+          "@_name": "ClusterGate605To606",
+          "@_ref": "destination",
+          "@_path": "../Cluster_605_connection/Cluster_605_Sector001_connection/Zone004_Cluster_605_Sector001_connection/connection_ClusterGate605To606"
+        },
+        {
+          "macro": {
+            "@_path": "../../../../../Cluster_607_connection/Cluster_607_Sector001_connection/Zone002_Cluster_607_Sector001_connection/connection_ClusterGate607To606",
+            "@_connection": "destination"
+          },
+          "@_name": "ClusterGate606To607",
+          "@_ref": "destination",
+          "@_path": "../Cluster_606_connection/Cluster_606_Sector002_connection/Zone004_Cluster_606_Sector002_connection/connection_ClusterGate606To607"
+        },
+        {
+          "macro": {
+            "@_path": "../../../../../Cluster_608_connection/Cluster_608_Sector001_connection/Zone002_Cluster_608_Sector001_connection/connection_ClusterGate608To607",
+            "@_connection": "destination"
+          },
+          "@_name": "ClusterGate607To608",
+          "@_ref": "destination",
+          "@_path": "../Cluster_607_connection/Cluster_607_Sector001_connection/Zone005_Cluster_607_Sector001_connection/connection_ClusterGate607To608"
+        },
+        {
+          "macro": {
+            "@_path": "../../../../../Cluster_609_connection/Cluster_609_Sector001_connection/Zone002_Cluster_609_Sector001_connection/connection_ClusterGate609To607",
+            "@_connection": "destination"
+          },
+          "@_name": "ClusterGate607To609",
+          "@_ref": "destination",
+          "@_path": "../Cluster_607_connection/Cluster_607_Sector001_connection/Zone004_Cluster_607_Sector001_connection/connection_ClusterGate607To609"
+        },
+        {
+          "macro": {
+            "@_path": "../../../../../Cluster_609_connection/Cluster_609_Sector001_connection/Zone004_Cluster_609_Sector001_connection/connection_ClusterGate609To608",
+            "@_connection": "destination"
+          },
+          "@_name": "ClusterGate608To609",
+          "@_ref": "destination",
+          "@_path": "../Cluster_608_connection/Cluster_608_Sector001_connection/Zone004_Cluster_608_Sector001_connection/connection_ClusterGate608To609"
+        },
+        {
+          "macro": {
+            "@_path": "../../../../../Cluster_601_connection/Cluster_601_Sector001_connection/Zone002_Cluster_601_Sector001_connection/connection_ClusterGate601To031",
+            "@_connection": "destination"
+          },
+          "@_name": "ClusterGate031To601b",
+          "@_ref": "destination",
+          "@_path": "../Cluster_31_connection/Cluster_31_Sector001_connection/Zone005_Cluster_31_Sector001_connection/connection_ClusterGate031To601b"
+        }
+      ],
+      "@_sel": "/macros/macro[@name='XU_EP2_universe_macro']/connections"
+    }
+  }
+}

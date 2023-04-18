@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.51) at 17.06.2021_17-08-01-->
+<macros>
+  <macro name="prod_spl_cheltmeat_macro" class="production">
+    <component ref="prod_spl_cheltmeat" />
+    <properties>
+      <identification name="{20104,14901}" shortname="{20104,14903}" makerrace="split" description="{20104,14902}" />
+      <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+        </sets>
+      </build>
+      <explosiondamage value="1000" shield="5000" />
+      <hull max="320000" />
+      <secrecy level="2" />
+      <production wares="cheltmeat">
+        <queue ware="cheltmeat" />
+      </production>
+      <workforce max="90" />
+    </properties>
+  </macro>
+</macros>

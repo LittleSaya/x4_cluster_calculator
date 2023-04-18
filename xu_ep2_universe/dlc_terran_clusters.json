@@ -1,0 +1,1569 @@
+{
+  "?xml": {
+    "@_version": "1.0",
+    "@_encoding": "utf-8"
+  },
+  "macros": {
+    "macro": [
+      {
+        "component": {
+          "@_ref": "standardcluster"
+        },
+        "connections": {
+          "connection": [
+            {
+              "macro": {
+                "@_ref": "Cluster_100_Sector001_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_100_Sector001_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "macro": {
+                "component": {
+                  "@_connection": "space",
+                  "@_ref": "Cluster_100"
+                }
+              },
+              "@_ref": "content"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "-70000",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "asteroidbelt_main"
+                  }
+                },
+                "@_name": "Cluster100_Sector001_Region001_macro"
+              },
+              "@_name": "Cluster100_Sector001_Region001_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_100_sector_001"
+                  }
+                },
+                "@_name": "Cluster100_Sector001_AudioRegion01_macro"
+              },
+              "@_name": "Cluster100_Sector001_AudioRegion01_connection",
+              "@_ref": "regions"
+            }
+          ]
+        },
+        "@_name": "Cluster_100_macro",
+        "@_class": "cluster"
+      },
+      {
+        "component": {
+          "@_ref": "standardcluster"
+        },
+        "connections": {
+          "connection": [
+            {
+              "macro": {
+                "@_ref": "Cluster_101_Sector001_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_101_Sector001_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "macro": {
+                "component": {
+                  "@_connection": "space",
+                  "@_ref": "Cluster_101"
+                }
+              },
+              "@_ref": "content"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_101_sector_001"
+                  }
+                },
+                "@_name": "Cluster101_Sector001_AudioRegion01_macro"
+              },
+              "@_name": "Cluster101_Sector001_AudioRegion01_connection",
+              "@_ref": "regions"
+            }
+          ]
+        },
+        "@_name": "Cluster_101_macro",
+        "@_class": "cluster"
+      },
+      {
+        "component": {
+          "@_ref": "standardcluster"
+        },
+        "connections": {
+          "connection": [
+            {
+              "macro": {
+                "@_ref": "Cluster_102_Sector001_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_102_Sector001_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "macro": {
+                "component": {
+                  "@_connection": "space",
+                  "@_ref": "Cluster_102"
+                }
+              },
+              "@_ref": "content"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_102_sector_001"
+                  }
+                },
+                "@_name": "Cluster102_Sector001_AudioRegion01_macro"
+              },
+              "@_name": "Cluster102_Sector001_AudioRegion01_connection",
+              "@_ref": "regions"
+            }
+          ]
+        },
+        "@_name": "Cluster_102_macro",
+        "@_class": "cluster"
+      },
+      {
+        "component": {
+          "@_ref": "standardcluster"
+        },
+        "connections": {
+          "connection": [
+            {
+              "macro": {
+                "@_ref": "Cluster_104_Sector001_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_104_Sector001_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "-75900",
+                  "@_y": "300.0",
+                  "@_z": "127873"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "torus_radiation_1"
+                  }
+                },
+                "@_name": "Cluster104_Sector001_Region001_macro"
+              },
+              "@_name": "Cluster104_Sector001_Region001_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "-75900",
+                  "@_y": "300.0",
+                  "@_z": "127600"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "torus_radiation_1"
+                  }
+                },
+                "@_name": "Cluster104_Sector001_Region002_macro"
+              },
+              "@_name": "Cluster104_Sector001_Region002_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "-75900",
+                  "@_y": "300.0",
+                  "@_z": "126850"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "torus_radiation_2"
+                  }
+                },
+                "@_name": "Cluster104_Sector001_Region003_macro"
+              },
+              "@_name": "Cluster104_Sector001_Region003_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "-75900",
+                  "@_y": "300.0",
+                  "@_z": "127873"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "torus_radiation1b"
+                  }
+                },
+                "@_name": "Cluster104_Sector001_Region001b_macro"
+              },
+              "@_name": "Cluster104_Sector001_Region001b_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "-75900",
+                  "@_y": "300.0",
+                  "@_z": "127610"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "torus_radiation1b"
+                  }
+                },
+                "@_name": "Cluster104_Sector001_Region002b_macro"
+              },
+              "@_name": "Cluster104_Sector001_Region002b_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "-75900",
+                  "@_y": "300.0",
+                  "@_z": "126850"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "torus_radiation2b"
+                  }
+                },
+                "@_name": "Cluster104_Sector001_Region003b_macro"
+              },
+              "@_name": "Cluster104_Sector001_Region003b_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_104_sector_001"
+                  }
+                },
+                "@_name": "Cluster104_Sector001_AudioRegion01_macro"
+              },
+              "@_name": "Cluster104_Sector001_AudioRegion01_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "-175890496"
+                }
+              },
+              "macro": {
+                "@_ref": "Cluster_104_Sector002_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_104_Sector002_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "-50000",
+                  "@_y": "0",
+                  "@_z": "-87945248"
+                }
+              },
+              "macro": {
+                "connections": {
+                  "connection": [
+                    {
+                      "macro": {
+                        "@_ref": "tzoneCluster_104_Sector001SHCon6_GateZone_macro",
+                        "@_path": "../../Cluster_104_Sector001_connection/tzoneCluster_104_Sector001SHCon6_GateZone_connection",
+                        "@_connection": "exitpoint1"
+                      },
+                      "@_ref": "entrypoint"
+                    },
+                    {
+                      "macro": {
+                        "@_ref": "tzoneCluster_104_Sector002SHCon5_GateZone_macro",
+                        "@_path": "../../Cluster_104_Sector002_connection/tzoneCluster_104_Sector002SHCon5_GateZone_connection",
+                        "@_connection": "entrypoint1"
+                      },
+                      "@_ref": "exitpoint"
+                    }
+                  ]
+                },
+                "@_ref": "SuperHighway01_Cluster104_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "SuperHighway01_Cluster104_connection",
+              "@_ref": "sechighways"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "50000",
+                  "@_y": "0",
+                  "@_z": "-87945248"
+                }
+              },
+              "macro": {
+                "connections": {
+                  "connection": [
+                    {
+                      "macro": {
+                        "@_ref": "tzoneCluster_104_Sector001SHCon10_GateZone_macro",
+                        "@_path": "../../Cluster_104_Sector001_connection/tzoneCluster_104_Sector001SHCon10_GateZone_connection",
+                        "@_connection": "entrypoint1"
+                      },
+                      "@_ref": "exitpoint"
+                    },
+                    {
+                      "macro": {
+                        "@_ref": "tzoneCluster_104_Sector002SHCon9_GateZone_macro",
+                        "@_path": "../../Cluster_104_Sector002_connection/tzoneCluster_104_Sector002SHCon9_GateZone_connection",
+                        "@_connection": "exitpoint1"
+                      },
+                      "@_ref": "entrypoint"
+                    }
+                  ]
+                },
+                "@_ref": "SuperHighway02_Cluster104_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "SuperHighway02_Cluster104_connection",
+              "@_ref": "sechighways"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "-175890496"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_104_sector_002"
+                  }
+                },
+                "@_name": "Cluster104_Sector002_AudioRegion01_macro"
+              },
+              "@_name": "Cluster104_Sector002_AudioRegion01_connection",
+              "@_ref": "regions"
+            },
+            {
+              "macro": {
+                "component": {
+                  "@_connection": "space",
+                  "@_ref": "Cluster_104"
+                }
+              },
+              "@_ref": "content"
+            }
+          ]
+        },
+        "@_name": "Cluster_104_macro",
+        "@_class": "cluster"
+      },
+      {
+        "component": {
+          "@_ref": "standardcluster"
+        },
+        "connections": {
+          "connection": [
+            {
+              "macro": {
+                "@_ref": "Cluster_106_Sector001_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_106_Sector001_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "-20000",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "mercury_field"
+                  }
+                },
+                "@_name": "Cluster106_Sector001_Region001_macro"
+              },
+              "@_name": "Cluster106_Sector001_Region001_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_106_sector_001"
+                  }
+                },
+                "@_name": "Cluster106_Sector001_AudioRegion01_macro"
+              },
+              "@_name": "Cluster106_Sector001_AudioRegion01_connection",
+              "@_ref": "regions"
+            },
+            {
+              "macro": {
+                "component": {
+                  "@_connection": "space",
+                  "@_ref": "Cluster_106"
+                }
+              },
+              "@_ref": "content"
+            }
+          ]
+        },
+        "@_name": "Cluster_106_macro",
+        "@_class": "cluster"
+      },
+      {
+        "component": {
+          "@_ref": "standardcluster"
+        },
+        "connections": {
+          "connection": [
+            {
+              "macro": {
+                "@_ref": "Cluster_107_Sector001_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_107_Sector001_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_107_sector_001"
+                  }
+                },
+                "@_name": "Cluster107_Sector001_AudioRegion01_macro"
+              },
+              "@_name": "Cluster107_Sector001_AudioRegion01_connection",
+              "@_ref": "regions"
+            },
+            {
+              "macro": {
+                "component": {
+                  "@_connection": "space",
+                  "@_ref": "Cluster_107"
+                }
+              },
+              "@_ref": "content"
+            }
+          ]
+        },
+        "@_name": "Cluster_107_macro",
+        "@_class": "cluster"
+      },
+      {
+        "component": {
+          "@_ref": "standardcluster"
+        },
+        "connections": {
+          "connection": [
+            {
+              "macro": {
+                "@_ref": "Cluster_108_Sector001_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_108_Sector001_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "-55073532",
+                  "@_y": "0",
+                  "@_z": "-159401120"
+                }
+              },
+              "macro": {
+                "@_ref": "Cluster_108_Sector002_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_108_Sector002_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "-32631400",
+                  "@_y": "0",
+                  "@_z": "134273000"
+                }
+              },
+              "macro": {
+                "@_ref": "Cluster_108_Sector003_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_108_Sector003_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "-55073532",
+                  "@_y": "-20000",
+                  "@_z": "-159401120"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "titan_field"
+                  }
+                },
+                "@_name": "Cluster108_Sector002_Region001_macro"
+              },
+              "@_name": "Cluster108_Sector002_Region001_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "92665300",
+                  "@_y": "-1000",
+                  "@_z": "134273000"
+                },
+                "quaternion": {
+                  "@_qx": "-0.233445",
+                  "@_qy": "0",
+                  "@_qz": "0",
+                  "@_qw": "-0.97237"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "saturn_field"
+                  }
+                },
+                "@_name": "Cluster108_Sector003_Region001_macro"
+              },
+              "@_name": "Cluster108_Sector003_Region001_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_108_sector_001"
+                  }
+                },
+                "@_name": "Cluster108_Sector001_AudioRegion01_macro"
+              },
+              "@_name": "Cluster108_Sector001_AudioRegion01_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "-55073532",
+                  "@_y": "0",
+                  "@_z": "-159401120"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_108_sector_002"
+                  }
+                },
+                "@_name": "Cluster108_Sector002_AudioRegion01_macro"
+              },
+              "@_name": "Cluster108_Sector002_AudioRegion01_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "-27543900",
+                  "@_y": "0",
+                  "@_z": "-79700560"
+                }
+              },
+              "macro": {
+                "connections": {
+                  "connection": [
+                    {
+                      "macro": {
+                        "@_ref": "tzoneCluster_108_Sector001SHCon6_GateZone_macro",
+                        "@_path": "../../Cluster_108_Sector001_connection/tzoneCluster_108_Sector001SHCon6_GateZone_connection",
+                        "@_connection": "exitpoint1"
+                      },
+                      "@_ref": "entrypoint"
+                    },
+                    {
+                      "macro": {
+                        "@_ref": "tzoneCluster_108_Sector002SHCon5_GateZone_macro",
+                        "@_path": "../../Cluster_108_Sector002_connection/tzoneCluster_108_Sector002SHCon5_GateZone_connection",
+                        "@_connection": "entrypoint1"
+                      },
+                      "@_ref": "exitpoint"
+                    }
+                  ]
+                },
+                "@_ref": "SuperHighway01_Cluster108_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "SuperHighway01_Cluster108_connection",
+              "@_ref": "sechighways"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "-27529510",
+                  "@_y": "0",
+                  "@_z": "-79700560"
+                }
+              },
+              "macro": {
+                "connections": {
+                  "connection": [
+                    {
+                      "macro": {
+                        "@_ref": "tzoneCluster_108_Sector001SHCon10_GateZone_macro",
+                        "@_path": "../../Cluster_108_Sector001_connection/tzoneCluster_108_Sector001SHCon10_GateZone_connection",
+                        "@_connection": "entrypoint1"
+                      },
+                      "@_ref": "exitpoint"
+                    },
+                    {
+                      "macro": {
+                        "@_ref": "tzoneCluster_108_Sector002SHCon9_GateZone_macro",
+                        "@_path": "../../Cluster_108_Sector002_connection/tzoneCluster_108_Sector002SHCon9_GateZone_connection",
+                        "@_connection": "exitpoint1"
+                      },
+                      "@_ref": "entrypoint"
+                    }
+                  ]
+                },
+                "@_ref": "SuperHighway02_Cluster108_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "SuperHighway02_Cluster108_connection",
+              "@_ref": "sechighways"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "-16351671",
+                  "@_y": "0",
+                  "@_z": "67136700"
+                }
+              },
+              "macro": {
+                "connections": {
+                  "connection": [
+                    {
+                      "macro": {
+                        "@_ref": "tzoneCluster_108_Sector001SHCon9_GateZone_macro",
+                        "@_path": "../../Cluster_108_Sector001_connection/tzoneCluster_108_Sector001SHCon9_GateZone_connection",
+                        "@_connection": "exitpoint1"
+                      },
+                      "@_ref": "entrypoint"
+                    },
+                    {
+                      "macro": {
+                        "@_ref": "tzoneCluster_108_Sector003SHCon10_GateZone_macro",
+                        "@_path": "../../Cluster_108_Sector003_connection/tzoneCluster_108_Sector003SHCon10_GateZone_connection",
+                        "@_connection": "entrypoint1"
+                      },
+                      "@_ref": "exitpoint"
+                    }
+                  ]
+                },
+                "@_ref": "SuperHighway03_Cluster108_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "SuperHighway03_Cluster108_connection",
+              "@_ref": "sechighways"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "-16365700",
+                  "@_y": "0",
+                  "@_z": "67136700"
+                }
+              },
+              "macro": {
+                "connections": {
+                  "connection": [
+                    {
+                      "macro": {
+                        "@_ref": "tzoneCluster_108_Sector001SHCon5_GateZone_macro",
+                        "@_path": "../../Cluster_108_Sector001_connection/tzoneCluster_108_Sector001SHCon5_GateZone_connection",
+                        "@_connection": "entrypoint1"
+                      },
+                      "@_ref": "exitpoint"
+                    },
+                    {
+                      "macro": {
+                        "@_ref": "tzoneCluster_108_Sector003SHCon6_GateZone_macro",
+                        "@_path": "../../Cluster_108_Sector003_connection/tzoneCluster_108_Sector003SHCon6_GateZone_connection",
+                        "@_connection": "exitpoint1"
+                      },
+                      "@_ref": "entrypoint"
+                    }
+                  ]
+                },
+                "@_ref": "SuperHighway04_Cluster108_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "SuperHighway04_Cluster108_connection",
+              "@_ref": "sechighways"
+            },
+            {
+              "macro": {
+                "component": {
+                  "@_connection": "space",
+                  "@_ref": "Cluster_108"
+                }
+              },
+              "@_ref": "content"
+            }
+          ]
+        },
+        "@_name": "Cluster_108_macro",
+        "@_class": "cluster"
+      },
+      {
+        "component": {
+          "@_ref": "standardcluster"
+        },
+        "connections": {
+          "connection": [
+            {
+              "macro": {
+                "@_ref": "Cluster_109_Sector001_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_109_Sector001_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_109_sector_001"
+                  }
+                },
+                "@_name": "Cluster109_Sector001_AudioRegion01_macro"
+              },
+              "@_name": "Cluster109_Sector001_AudioRegion01_connection",
+              "@_ref": "regions"
+            },
+            {
+              "macro": {
+                "component": {
+                  "@_connection": "space",
+                  "@_ref": "Cluster_109"
+                }
+              },
+              "@_ref": "content"
+            }
+          ]
+        },
+        "@_name": "Cluster_109_macro",
+        "@_class": "cluster"
+      },
+      {
+        "component": {
+          "@_ref": "standardcluster"
+        },
+        "connections": {
+          "connection": [
+            {
+              "macro": {
+                "@_ref": "Cluster_110_Sector001_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_110_Sector001_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "-20000",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "neptune_field"
+                  }
+                },
+                "@_name": "Cluster108_Sector002_Region001_macro"
+              },
+              "@_name": "Cluster110_Sector001_Region001_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_110_sector_001"
+                  }
+                },
+                "@_name": "Cluster110_Sector001_AudioRegion01_macro"
+              },
+              "@_name": "Cluster110_Sector001_AudioRegion01_connection",
+              "@_ref": "regions"
+            },
+            {
+              "macro": {
+                "component": {
+                  "@_connection": "space",
+                  "@_ref": "Cluster_110"
+                }
+              },
+              "@_ref": "content"
+            }
+          ]
+        },
+        "@_name": "Cluster_110_macro",
+        "@_class": "cluster"
+      },
+      {
+        "component": {
+          "@_ref": "standardcluster"
+        },
+        "connections": {
+          "connection": [
+            {
+              "macro": {
+                "@_ref": "Cluster_111_Sector001_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_111_Sector001_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_111_sector_001"
+                  }
+                },
+                "@_name": "Cluster111_Sector001_AudioRegion01_macro"
+              },
+              "@_name": "Cluster111_Sector001_AudioRegion01_connection",
+              "@_ref": "regions"
+            },
+            {
+              "macro": {
+                "component": {
+                  "@_connection": "space",
+                  "@_ref": "Cluster_111"
+                }
+              },
+              "@_ref": "content"
+            }
+          ]
+        },
+        "@_name": "Cluster_111_macro",
+        "@_class": "cluster"
+      },
+      {
+        "component": {
+          "@_ref": "standardcluster"
+        },
+        "connections": {
+          "connection": [
+            {
+              "macro": {
+                "@_ref": "Cluster_112_Sector001_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_112_Sector001_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "-51054804"
+                }
+              },
+              "macro": {
+                "@_ref": "Cluster_112_Sector002_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_112_Sector002_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_112_sector_001"
+                  }
+                },
+                "@_name": "Cluster112_Sector001_AudioRegion01_macro"
+              },
+              "@_name": "Cluster112_Sector001_AudioRegion01_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "-51054804"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_112_sector_002"
+                  }
+                },
+                "@_name": "Cluster112_Sector002_AudioRegion01_macro"
+              },
+              "@_name": "Cluster112_Sector002_AudioRegion01_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "-50000",
+                  "@_y": "0",
+                  "@_z": "-25527402"
+                }
+              },
+              "macro": {
+                "connections": {
+                  "connection": [
+                    {
+                      "macro": {
+                        "@_ref": "tzoneCluster_112_Sector001SHCon6_GateZone_macro",
+                        "@_path": "../../Cluster_112_Sector001_connection/tzoneCluster_112_Sector001SHCon6_GateZone_connection",
+                        "@_connection": "exitpoint1"
+                      },
+                      "@_ref": "entrypoint"
+                    },
+                    {
+                      "macro": {
+                        "@_ref": "tzoneCluster_112_Sector002SHCon5_GateZone_macro",
+                        "@_path": "../../Cluster_112_Sector002_connection/tzoneCluster_112_Sector002SHCon5_GateZone_connection",
+                        "@_connection": "entrypoint1"
+                      },
+                      "@_ref": "exitpoint"
+                    }
+                  ]
+                },
+                "@_ref": "SuperHighway01_Cluster112_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "SuperHighway01_Cluster112_connection",
+              "@_ref": "sechighways"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "-20000",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "cluster112_s1_region01"
+                  }
+                },
+                "@_name": "Cluster112_Sector001_Region001_macro"
+              },
+              "@_name": "Cluster112_Sector001_Region001_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "-51054804"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "cluster112_s2_region01"
+                  }
+                },
+                "@_name": "Cluster104_Sector001_Region002_macro"
+              },
+              "@_name": "Cluster112_Sector002_Region001_connection",
+              "@_ref": "regions"
+            },
+            {
+              "macro": {
+                "component": {
+                  "@_connection": "space",
+                  "@_ref": "Cluster_112"
+                }
+              },
+              "@_ref": "content"
+            }
+          ]
+        },
+        "@_name": "Cluster_112_macro",
+        "@_class": "cluster"
+      },
+      {
+        "component": {
+          "@_ref": "standardcluster"
+        },
+        "connections": {
+          "connection": [
+            {
+              "macro": {
+                "@_ref": "Cluster_113_Sector001_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_113_Sector001_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "-20000",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "cluster113_region01"
+                  }
+                },
+                "@_name": "Cluster113_Sector001_Region001_macro"
+              },
+              "@_name": "Cluster113_Sector001_Region001_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_113_sector_001"
+                  }
+                },
+                "@_name": "Cluster113_Sector001_AudioRegion01_macro"
+              },
+              "@_name": "Cluster113_Sector001_AudioRegion01_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": "",
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "cluster113_region02"
+                  }
+                },
+                "@_name": "Cluster113_Sector001_Region002_macro"
+              },
+              "@_name": "Cluster113_Sector001_Region002_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "132000",
+                  "@_y": "0",
+                  "@_z": "0"
+                },
+                "quaternion": {
+                  "@_qx": "0",
+                  "@_qy": "-0.8660253882",
+                  "@_qz": "0",
+                  "@_qw": "0.5"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "cluster113_region02"
+                  }
+                },
+                "@_name": "Cluster113_Sector001_Region003_macro"
+              },
+              "@_name": "Cluster113_Sector001_Region003_connection",
+              "@_ref": "regions"
+            },
+            {
+              "macro": {
+                "component": {
+                  "@_connection": "space",
+                  "@_ref": "Cluster_113"
+                }
+              },
+              "@_ref": "content"
+            }
+          ]
+        },
+        "@_name": "Cluster_113_macro",
+        "@_class": "cluster"
+      },
+      {
+        "component": {
+          "@_ref": "standardcluster"
+        },
+        "connections": {
+          "connection": [
+            {
+              "macro": {
+                "@_ref": "Cluster_114_Sector001_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_114_Sector001_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "-20000",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "cluster114_region01"
+                  }
+                },
+                "@_name": "Cluster114_Sector001_Region001_macro"
+              },
+              "@_name": "Cluster114_Sector001_Region001_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_114_sector_001"
+                  }
+                },
+                "@_name": "Cluster114_Sector001_AudioRegion01_macro"
+              },
+              "@_name": "Cluster114_Sector001_AudioRegion01_connection",
+              "@_ref": "regions"
+            },
+            {
+              "macro": {
+                "component": {
+                  "@_connection": "space",
+                  "@_ref": "Cluster_114"
+                }
+              },
+              "@_ref": "content"
+            }
+          ]
+        },
+        "@_name": "Cluster_114_macro",
+        "@_class": "cluster"
+      },
+      {
+        "component": {
+          "@_ref": "standardcluster"
+        },
+        "connections": {
+          "connection": [
+            {
+              "macro": {
+                "@_ref": "Cluster_115_Sector001_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_115_Sector001_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_115_sector_001"
+                  }
+                },
+                "@_name": "Cluster115_Sector001_AudioRegion01_macro"
+              },
+              "@_name": "Cluster115_Sector001_AudioRegion01_connection",
+              "@_ref": "regions"
+            },
+            {
+              "macro": {
+                "component": {
+                  "@_connection": "space",
+                  "@_ref": "Cluster_115"
+                }
+              },
+              "@_ref": "content"
+            }
+          ]
+        },
+        "@_name": "Cluster_115_macro",
+        "@_class": "cluster"
+      },
+      {
+        "component": {
+          "@_ref": "standardcluster"
+        },
+        "connections": {
+          "connection": [
+            {
+              "macro": {
+                "@_ref": "Cluster_116_Sector001_macro",
+                "@_connection": "cluster"
+              },
+              "@_name": "Cluster_116_Sector001_connection",
+              "@_ref": "sectors"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "-20000",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "oort_field"
+                  }
+                },
+                "@_name": "Cluster116_Sector001_Region001_macro"
+              },
+              "@_name": "Cluster116_Sector001_Region001_connection",
+              "@_ref": "regions"
+            },
+            {
+              "offset": {
+                "position": {
+                  "@_x": "0",
+                  "@_y": "0",
+                  "@_z": "0"
+                }
+              },
+              "macro": {
+                "component": {
+                  "@_connection": "cluster",
+                  "@_ref": "standardregion"
+                },
+                "properties": {
+                  "region": {
+                    "@_ref": "audioregion_cluster_116_sector_001"
+                  }
+                },
+                "@_name": "Cluster116_Sector001_AudioRegion01_macro"
+              },
+              "@_name": "Cluster116_Sector001_AudioRegion01_connection",
+              "@_ref": "regions"
+            },
+            {
+              "macro": {
+                "component": {
+                  "@_connection": "space",
+                  "@_ref": "Cluster_116"
+                }
+              },
+              "@_ref": "content"
+            }
+          ]
+        },
+        "@_name": "Cluster_116_macro",
+        "@_class": "cluster"
+      }
+    ]
+  }
+}

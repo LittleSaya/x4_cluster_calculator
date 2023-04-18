@@ -1,0 +1,30 @@
+{
+  "habitat": {
+    "hab_arg_l_01_macro": {
+      "name": "Argon L 居住区",
+      "race": "argon",
+      "capacity": 1000
+    }
+  },
+  "production": {
+    "prod_arg_foodrations_macro": {
+      "name": "食品配给产线",
+      "max_workforce": 1250,
+      "production_queue": [
+        {
+          "ware": "foodrations",
+          "method": "argon"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "storage_arg_l_container_01_macro": {
+      "name": "Argon L 集装仓储",
+      "cargo": {
+        "max": 1000000,
+        "tags": "container"
+      }
+    }
+  }
+}

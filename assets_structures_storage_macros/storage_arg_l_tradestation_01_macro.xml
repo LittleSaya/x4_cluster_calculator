@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.51) at 17.06.2021_17-22-50-->
+<macros>
+  <macro name="storage_arg_l_tradestation_01_macro" class="storage">
+    <component ref="storage_arg_l_tradestation_01" />
+    <properties>
+      <identification name="{20104,23301}" makerrace="argon" size="large" description="{20104,23302}" />
+      <cargo max="300000" tags="container liquid solid" />
+      <build>
+        <sets>
+          <set ref="tradestation_argon" />
+        </sets>
+      </build>
+      <explosiondamage value="1000" shield="5000" />
+      <hull max="643000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+</macros>

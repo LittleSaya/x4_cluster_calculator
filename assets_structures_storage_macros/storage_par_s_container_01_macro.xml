@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.65) at 28.06.2021_15-25-36-->
+<macros>
+  <macro name="storage_par_s_container_01_macro" class="storage">
+    <component ref="storage_par_s_container_01" />
+    <properties>
+      <identification name="{20104,20401}" shortname="{20104,20403}" makerrace="paranid" size="small" description="{20104,20402}" />
+      <cargo max="25000" tags="container" />
+      <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+          <set ref="tradestation_paranid" />
+        </sets>
+      </build>
+      <explosiondamage value="500" shield="2500" />
+      <hull max="133000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+</macros>

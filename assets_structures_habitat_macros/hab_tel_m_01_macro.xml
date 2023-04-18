@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.51) at 17.06.2021_17-17-10-->
+<macros>
+  <macro name="hab_tel_m_01_macro" class="habitation">
+    <component ref="hab_tel_m_01" />
+    <properties>
+      <identification name="{20104,30801}" shortname="{20104,30803}" makerrace="teladi" size="medium" description="{20104,30802}" />
+      <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="tradestation_teladi" />
+          <set ref="piratebase" />
+          <set ref="headquarters_player" />
+        </sets>
+      </build>
+      <explosiondamage value="1000" shield="5000" />
+      <hull max="200000" />
+      <secrecy level="3" />
+      <workforce race="teladi" capacity="500" />
+    </properties>
+  </macro>
+</macros>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Volodymyr (192.168.3.56) on 2022-11-25 12:49:01-->
+<macros>
+  <macro name="storage_bor_s_solid_01_macro" class="storage">
+    <component ref="storage_bor_s_solid_01" />
+    <properties>
+      <identification name="{20104,93301}" shortname="{20104,93303}" makerrace="boron" size="small" description="{20104,93302}" />
+      <cargo max="100000" tags="solid" />
+      <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+          <set ref="tradestation_boron" />
+        </sets>
+      </build>
+      <explosiondamage value="500" shield="2500" />
+      <hull max="132000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+</macros>

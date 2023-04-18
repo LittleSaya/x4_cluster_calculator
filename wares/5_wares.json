@@ -1,0 +1,6892 @@
+{
+  "?xml": {
+    "@_version": "1.0",
+    "@_encoding": "utf-8"
+  },
+  "diff": {
+    "add": [
+      {
+        "method": {
+          "@_id": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/production"
+      },
+      {
+        "ware": [
+          {
+            "price": {
+              "@_min": "22500",
+              "@_average": "25000",
+              "@_max": "27500"
+            },
+            "icon": {
+              "@_active": "ware_condensate",
+              "@_video": "ware_condensate_macro"
+            },
+            "@_id": "condensate",
+            "@_name": "{20201,6701}",
+            "@_description": "{20201,6702}",
+            "@_factoryname": "{20201,6704}",
+            "@_transport": "condensate",
+            "@_volume": "10",
+            "@_tags": "condensate economy"
+          },
+          {
+            "price": {
+              "@_min": "601290",
+              "@_average": "707400",
+              "@_max": "813510"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "34"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "460"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "197"
+                    }
+                  ]
+                },
+                "@_time": "20",
+                "@_amount": "1",
+                "@_method": "closedloop",
+                "@_name": "{20206,1201}"
+              },
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "antimatterconverters",
+                      "@_amount": "200"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "100"
+                    },
+                    {
+                      "@_ware": "engineparts",
+                      "@_amount": "250"
+                    }
+                  ]
+                },
+                "@_time": "20",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "engine_gen_m_yacht_01_mk1_macro"
+            },
+            "icon": {
+              "@_video": "engine_gen_m_yacht_01_mk1_video_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "engine_gen_m_yacht_01_mk1",
+            "@_name": "{20107,9004}",
+            "@_description": "{20107,9002}",
+            "@_group": "engines",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "engine equipment noplayerblueprint"
+          },
+          {
+            "price": {
+              "@_min": "45773",
+              "@_average": "53850",
+              "@_max": "61928"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "antimatterconverters",
+                      "@_amount": "11"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "45"
+                    },
+                    {
+                      "@_ware": "engineparts",
+                      "@_amount": "93"
+                    }
+                  ]
+                },
+                "@_time": "140",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "engine_pir_xl_battleship_01_allround_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "capitalequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "ownerless"
+            },
+            "@_id": "engine_pir_xl_battleship_01_allround_01_mk1",
+            "@_name": "{20107,9014}",
+            "@_description": "{20107,9012}",
+            "@_group": "engines",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "engine equipment"
+          },
+          {
+            "price": {
+              "@_min": "1",
+              "@_average": "1",
+              "@_max": "1"
+            },
+            "icon": {
+              "@_video": "ware_inventory_condensatesample_macro"
+            },
+            "@_id": "inv_condensate_sample",
+            "@_name": "{20201,55501}",
+            "@_description": "{20201,55502}",
+            "@_transport": "inventory",
+            "@_volume": "1",
+            "@_tags": "inventory missiononly"
+          },
+          {
+            "price": {
+              "@_min": "1",
+              "@_average": "1",
+              "@_max": "1"
+            },
+            "icon": {
+              "@_video": "ware_inventory_researchblackbox_macro"
+            },
+            "@_id": "inv_research_blackbox",
+            "@_name": "{20201,55601}",
+            "@_description": "{20201,55602}",
+            "@_transport": "inventory",
+            "@_volume": "1",
+            "@_tags": "inventory missiononly"
+          },
+          {
+            "price": {
+              "@_min": "38981",
+              "@_average": "42837",
+              "@_max": "46692"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "inv_agidevice_01",
+                      "@_amount": "1"
+                    },
+                    {
+                      "@_ware": "inv_interfaceunit",
+                      "@_amount": "1"
+                    },
+                    {
+                      "@_ware": "inv_securityapparatus_chip",
+                      "@_amount": "1"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "icon": {
+              "@_video": "ware_inventory_securityapparatus_macro"
+            },
+            "@_id": "inv_securityapparatus",
+            "@_name": "{20201,55201}",
+            "@_description": "{20201,55202}",
+            "@_transport": "inventory",
+            "@_volume": "1",
+            "@_tags": "crafting inventory missiononly"
+          },
+          {
+            "price": {
+              "@_min": "3956",
+              "@_average": "4347",
+              "@_max": "4738"
+            },
+            "icon": {
+              "@_video": "ware_inventory_securityapparatuschip_macro"
+            },
+            "@_id": "inv_securityapparatus_chip",
+            "@_name": "{20201,55301}",
+            "@_description": "{20201,55302}",
+            "@_transport": "inventory",
+            "@_volume": "1",
+            "@_tags": "crafting inventory missiononly"
+          },
+          {
+            "price": {
+              "@_min": "25000",
+              "@_average": "25000",
+              "@_max": "25000"
+            },
+            "icon": {
+              "@_video": "ware_inventory_wormwoodsecruityprotocols_macro"
+            },
+            "@_id": "inv_wormwood_protocols",
+            "@_name": "{20201,55401}",
+            "@_description": "{20201,55402}",
+            "@_transport": "inventory",
+            "@_volume": "1",
+            "@_tags": "inventory missiononly"
+          },
+          {
+            "price": {
+              "@_min": "405797",
+              "@_average": "504549",
+              "@_max": "603302"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "77"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "70"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "316"
+                    }
+                  ]
+                },
+                "@_time": "211",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,1201}"
+              }
+            ],
+            "component": {
+              "@_ref": "landmarks_gen_piratestation_01_core_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "module_conn_lndm_piratestation_01_core_01",
+            "@_name": "{20104,102601}",
+            "@_description": "{20104,102602}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module noblueprint"
+          },
+          {
+            "price": {
+              "@_min": "405797",
+              "@_average": "504549",
+              "@_max": "603302"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "77"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "70"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "316"
+                    }
+                  ]
+                },
+                "@_time": "211",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,1201}"
+              }
+            ],
+            "component": {
+              "@_ref": "landmarks_gen_piratestation_01_exit_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "module_conn_lndm_piratestation_01_exit_01",
+            "@_name": "{20104,102701}",
+            "@_description": "{20104,102702}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module noblueprint"
+          },
+          {
+            "price": {
+              "@_min": "4434000",
+              "@_average": "5513386",
+              "@_max": "6592772"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "841"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "765"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "3457"
+                    }
+                  ]
+                },
+                "@_time": "2309",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,1201}"
+              }
+            ],
+            "component": {
+              "@_ref": "landmarks_gen_piratestation_02_ring_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "module_def_lndm_piratestation_02_ring_01",
+            "@_name": "{20104,102801}",
+            "@_description": "{20104,102802}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module noblueprint"
+          },
+          {
+            "price": {
+              "@_min": "3311343",
+              "@_average": "3895697",
+              "@_max": "4480052"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "594"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "541"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "2445"
+                    }
+                  ]
+                },
+                "@_time": "1155",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "welfare_gen_casino_01_macro"
+            },
+            "@_id": "module_gen_welfare_casino_01",
+            "@_name": "{20104,110101}",
+            "@_description": "{20104,110102}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "missiononly module"
+          },
+          {
+            "price": {
+              "@_min": "50244904",
+              "@_average": "62479590",
+              "@_max": "74714276"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "594"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "541"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "2445"
+                    }
+                  ]
+                },
+                "@_time": "1633",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,1201}"
+              }
+            ],
+            "component": {
+              "@_ref": "landmarks_gen_piratestation_01_port_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "module_hab_lndm_piratestation_01_port_01",
+            "@_name": "{20104,102901}",
+            "@_description": "{20104,102902}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module noblueprint"
+          },
+          {
+            "price": {
+              "@_min": "50244904",
+              "@_average": "62479590",
+              "@_max": "74714276"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "594"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "541"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "2445"
+                    }
+                  ]
+                },
+                "@_time": "1633",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,1201}"
+              }
+            ],
+            "component": {
+              "@_ref": "landmarks_gen_piratestation_02_port_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "module_hab_lndm_piratestation_02_port_01",
+            "@_name": "{20104,102901}",
+            "@_description": "{20104,102902}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module noblueprint"
+          },
+          {
+            "price": {
+              "@_min": "50244904",
+              "@_average": "62479590",
+              "@_max": "74714276"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "594"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "541"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "2445"
+                    }
+                  ]
+                },
+                "@_time": "1633",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,1201}"
+              }
+            ],
+            "component": {
+              "@_ref": "landmarks_gen_piratestation_02_ring_02_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "module_hab_lndm_piratestation_02_ring_02",
+            "@_name": "{20104,103001}",
+            "@_description": "{20104,103002}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module noblueprint"
+          },
+          {
+            "price": {
+              "@_min": "17721792",
+              "@_average": "22037202",
+              "@_max": "26352612"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "420"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "383"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "1729"
+                    }
+                  ]
+                },
+                "@_time": "1155",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,1201}"
+              }
+            ],
+            "component": {
+              "@_ref": "hab_pir_l_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_advanced"
+            },
+            "owner": [
+              {
+                "@_faction": "loanshark"
+              },
+              {
+                "@_faction": "scavenger"
+              }
+            ],
+            "@_id": "module_pir_hab_l_01",
+            "@_name": "{20104,31801}",
+            "@_description": "{20104,31802}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "12530160",
+              "@_average": "15581052",
+              "@_max": "18631944"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "297"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "271"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "1222"
+                    }
+                  ]
+                },
+                "@_time": "816",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,1201}"
+              }
+            ],
+            "component": {
+              "@_ref": "hab_pir_m_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_intermediate"
+            },
+            "owner": [
+              {
+                "@_faction": "loanshark"
+              },
+              {
+                "@_faction": "scavenger"
+              }
+            ],
+            "@_id": "module_pir_hab_m_01",
+            "@_name": "{20104,31701}",
+            "@_description": "{20104,31702}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "8689428",
+              "@_average": "10804878",
+              "@_max": "12920328"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "206"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "188"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "847"
+                    }
+                  ]
+                },
+                "@_time": "566",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,1201}"
+              }
+            ],
+            "component": {
+              "@_ref": "hab_pir_s_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": [
+              {
+                "@_faction": "loanshark"
+              },
+              {
+                "@_faction": "scavenger"
+              }
+            ],
+            "@_id": "module_pir_hab_s_01",
+            "@_name": "{20104,31601}",
+            "@_description": "{20104,31602}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "1433988",
+              "@_average": "1790186",
+              "@_max": "2146384"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "291"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "265"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "1198"
+                    }
+                  ]
+                },
+                "@_time": "1033",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,1201}"
+              }
+            ],
+            "component": {
+              "@_ref": "storage_pir_l_condensate_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_advanced"
+            },
+            "owner": {
+              "@_faction": "scavenger"
+            },
+            "@_id": "module_pir_stor_condensate_l_01",
+            "@_name": "{20104,92501}",
+            "@_description": "{20104,92502}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "454298",
+              "@_average": "567097",
+              "@_max": "679896"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "92"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "84"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "379"
+                    }
+                  ]
+                },
+                "@_time": "327",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,1201}"
+              }
+            ],
+            "component": {
+              "@_ref": "storage_pir_s_condensate_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "scavenger"
+            },
+            "@_id": "module_pir_stor_condensate_s_01",
+            "@_name": "{20104,92601}",
+            "@_description": "{20104,92602}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "missiononly module nocustomgamestart"
+          },
+          {
+            "price": {
+              "@_min": "1534842",
+              "@_average": "1908590",
+              "@_max": "2282338"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "291"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "265"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "1198"
+                    }
+                  ]
+                },
+                "@_time": "1033",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,1201}"
+              }
+            ],
+            "component": {
+              "@_ref": "landmarks_gen_piratestation_01_ring_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "module_stor_lndm_piratestation_01_ring_01",
+            "@_name": "{20104,103101}",
+            "@_description": "{20104,103102}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module noblueprint"
+          },
+          {
+            "price": {
+              "@_min": "1534842",
+              "@_average": "1908590",
+              "@_max": "2282338"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "291"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "265"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "1198"
+                    }
+                  ]
+                },
+                "@_time": "1033",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,1201}"
+              }
+            ],
+            "component": {
+              "@_ref": "landmarks_gen_piratestation_02_storage_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "module_stor_lndm_piratestation_02_storage_01",
+            "@_name": "{20104,103201}",
+            "@_description": "{20104,103202}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module noblueprint"
+          },
+          {
+            "price": {
+              "@_min": "1534842",
+              "@_average": "1908590",
+              "@_max": "2282338"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "291"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "265"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "1198"
+                    }
+                  ]
+                },
+                "@_time": "1033",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,1201}"
+              }
+            ],
+            "component": {
+              "@_ref": "landmarks_gen_piratestation_02_storage_02_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "module_stor_lndm_piratestation_02_storage_02",
+            "@_name": "{20104,103201}",
+            "@_description": "{20104,103202}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module noblueprint"
+          },
+          {
+            "price": {
+              "@_min": "1",
+              "@_average": "1",
+              "@_max": "1"
+            },
+            "research": {
+              "primary": {
+                "ware": [
+                  {
+                    "@_ware": "antimattercells",
+                    "@_amount": "100"
+                  },
+                  {
+                    "@_ware": "energycells",
+                    "@_amount": "3000"
+                  },
+                  {
+                    "@_ware": "plasmaconductors",
+                    "@_amount": "500"
+                  }
+                ]
+              },
+              "research": {
+                "ware": {
+                  "@_ware": "research_condensate_sample_pre"
+                }
+              },
+              "@_time": "300"
+            },
+            "@_id": "research_condensate_sample",
+            "@_name": "{20216,1801}",
+            "@_description": "{20216,1802}",
+            "@_transport": "research",
+            "@_volume": "1",
+            "@_tags": "nocustomgamestart research",
+            "@_sortorder": "401"
+          },
+          {
+            "price": {
+              "@_min": "1",
+              "@_average": "1",
+              "@_max": "1"
+            },
+            "research": {
+              "primary": {
+                "ware": [
+                  {
+                    "@_ware": "antimattercells",
+                    "@_amount": "150"
+                  },
+                  {
+                    "@_ware": "energycells",
+                    "@_amount": "3000"
+                  },
+                  {
+                    "@_ware": "plasmaconductors",
+                    "@_amount": "1000"
+                  }
+                ]
+              },
+              "@_time": "10"
+            },
+            "@_id": "research_condensate_sample_pre",
+            "@_name": "{20216,1901}",
+            "@_description": "{20216,1902}",
+            "@_transport": "research",
+            "@_volume": "1",
+            "@_tags": "missiononly research",
+            "@_sortorder": "401"
+          },
+          {
+            "price": {
+              "@_min": "1",
+              "@_average": "1",
+              "@_max": "1"
+            },
+            "research": {
+              "primary": {
+                "ware": {
+                  "@_ware": "energycells",
+                  "@_amount": "10000"
+                }
+              },
+              "@_time": "600"
+            },
+            "@_id": "research_erlking_core",
+            "@_name": "{20216,2001}",
+            "@_description": "{20216,2002}",
+            "@_transport": "research",
+            "@_volume": "1",
+            "@_tags": "research",
+            "@_sortorder": "501"
+          },
+          {
+            "price": {
+              "@_min": "1",
+              "@_average": "1",
+              "@_max": "1"
+            },
+            "research": {
+              "research": {
+                "ware": [
+                  {
+                    "@_ware": "research_module_welfare_1"
+                  },
+                  {
+                    "@_ware": "research_module_welfare_2_pre"
+                  }
+                ]
+              },
+              "@_time": "600"
+            },
+            "@_id": "research_module_welfare_2",
+            "@_name": "{20216,2201}",
+            "@_description": "{20216,2202}",
+            "@_transport": "research",
+            "@_volume": "1",
+            "@_tags": "research",
+            "@_sortorder": "305"
+          },
+          {
+            "price": {
+              "@_min": "1",
+              "@_average": "1",
+              "@_max": "1"
+            },
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_welfare_1"
+                }
+              },
+              "@_time": "10"
+            },
+            "@_id": "research_module_welfare_2_pre",
+            "@_name": "{20216,2401}",
+            "@_description": "{20216,2402}",
+            "@_transport": "research",
+            "@_volume": "1",
+            "@_tags": "hidden missiononly research",
+            "@_sortorder": "305"
+          },
+          {
+            "price": {
+              "@_min": "52958",
+              "@_average": "62304",
+              "@_max": "71650"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "7"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "168"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "43"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "closedloop",
+                "@_name": "{20206,1201}"
+              },
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "100"
+                    },
+                    {
+                      "@_ware": "fieldcoils",
+                      "@_amount": "50"
+                    },
+                    {
+                      "@_ware": "shieldcomponents",
+                      "@_amount": "20"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "shield_gen_m_yacht_01_mk1_macro"
+            },
+            "icon": {
+              "@_video": "shield_gen_m_yacht_01_mk1_video_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "shield_gen_m_yacht_01_mk1",
+            "@_name": "{20106,9004}",
+            "@_description": "{20106,9002}",
+            "@_group": "shields",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment noplayerblueprint shield"
+          },
+          {
+            "price": {
+              "@_min": "102082",
+              "@_average": "120096",
+              "@_max": "138110"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "200"
+                    },
+                    {
+                      "@_ware": "fieldcoils",
+                      "@_amount": "100"
+                    },
+                    {
+                      "@_ware": "shieldcomponents",
+                      "@_amount": "30"
+                    }
+                  ]
+                },
+                "@_time": "20",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "shield_pir_xl_battleship_01_standard_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "capitalequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "ownerless"
+            },
+            "@_id": "shield_pir_xl_battleship_01_standard_01_mk1",
+            "@_name": "{20106,9014}",
+            "@_description": "{20106,9012}",
+            "@_group": "shields",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment shield"
+          },
+          {
+            "price": {
+              "@_min": "1844500",
+              "@_average": "2170000",
+              "@_max": "2495500"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1000"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "2000"
+                    }
+                  ]
+                },
+                "@_time": "300",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_gen_m_yacht_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "ship_gen_m_yacht_01_a",
+            "@_name": "{20101,120101}",
+            "@_description": "{20101,120111}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "noblueprint noplayerbuild ship"
+          },
+          {
+            "price": {
+              "@_min": "1090800",
+              "@_average": "1564470",
+              "@_max": "2038140"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "354"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "1470"
+                    }
+                  ]
+                },
+                "@_time": "86",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_pir_l_miner_solid_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "capitalship"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "ship_pir_l_miner_solid_01_a",
+            "@_name": "{20101,81601}",
+            "@_description": "{20101,81611}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "5382530",
+              "@_average": "7714025",
+              "@_max": "10045520"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1056"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "7301"
+                    }
+                  ]
+                },
+                "@_time": "258.75",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_pir_l_scavenger_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "capitalship"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "ship_pir_l_scavenger_01_a",
+            "@_name": "{20101,81501}",
+            "@_description": "{20101,81511}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "3909363",
+              "@_average": "4599250",
+              "@_max": "5289138"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1056"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "7301"
+                    }
+                  ]
+                },
+                "@_time": "258.75",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_pir_l_scavenger_01_a_storyhighcapacity_macro"
+            },
+            "@_id": "ship_pir_l_scavenger_01_a_storyhighcapacity",
+            "@_name": "{20101,81501}",
+            "@_description": "{20101,81511}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "noblueprint noplayerblueprint"
+          },
+          {
+            "price": {
+              "@_min": "3013480",
+              "@_average": "4322065",
+              "@_max": "5630650"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1094"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "4539"
+                    }
+                  ]
+                },
+                "@_time": "239.2",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_pir_l_scrapper_01_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseship"
+            },
+            "owner": {
+              "@_faction": "scavenger"
+            },
+            "@_id": "ship_pir_l_scrapper_01",
+            "@_name": "{20101,81201}",
+            "@_description": "{20101,81211}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "36250",
+              "@_average": "53080",
+              "@_max": "69910"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "141"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "40"
+                    }
+                  ]
+                },
+                "@_time": "10.35",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_pir_s_fighter_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryship"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "ship_pir_s_fighter_01_a",
+            "@_name": "{20101,81801}",
+            "@_description": "{20101,81811}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "122070",
+              "@_average": "175140",
+              "@_max": "228210"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "47"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "164"
+                    }
+                  ]
+                },
+                "@_time": "11.5",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_pir_s_fighter_02_a_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryship"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "ship_pir_s_fighter_02_a",
+            "@_name": "{20101,82801}",
+            "@_description": "{20101,82811}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "191310",
+              "@_average": "274485",
+              "@_max": "357660"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "74"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "257"
+                    }
+                  ]
+                },
+                "@_time": "18.4",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_pir_s_heavyfighter_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryship"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "ship_pir_s_heavyfighter_01_a",
+            "@_name": "{20101,82901}",
+            "@_description": "{20101,82911}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "151870",
+              "@_average": "217900",
+              "@_max": "283930"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "59"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "204"
+                    }
+                  ]
+                },
+                "@_time": "14.95",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_pir_s_trans_condensate_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryship"
+            },
+            "owner": [
+              {
+                "@_faction": "loanshark"
+              },
+              {
+                "@_faction": "scavenger"
+              }
+            ],
+            "@_id": "ship_pir_s_trans_condensate_01_a",
+            "@_name": "{20101,81903}",
+            "@_description": "{20101,81913}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "142180",
+              "@_average": "203995",
+              "@_max": "265810"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "55"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "191"
+                    }
+                  ]
+                },
+                "@_time": "13.8",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_pir_s_trans_container_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseship"
+            },
+            "owner": [
+              {
+                "@_faction": "loanshark"
+              },
+              {
+                "@_faction": "scavenger"
+              }
+            ],
+            "@_id": "ship_pir_s_trans_container_01_a",
+            "@_name": "{20101,81902}",
+            "@_description": "{20101,81912}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "10407890",
+              "@_average": "14920415",
+              "@_max": "19432940"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "2996"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "16569"
+                    }
+                  ]
+                },
+                "research": {
+                  "ware": {
+                    "@_ware": "research_erlking_core"
+                  }
+                },
+                "@_time": "542",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_pir_xl_battleship_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "capitalship"
+            },
+            "owner": {
+              "@_faction": "ownerless"
+            },
+            "@_id": "ship_pir_xl_battleship_01_a",
+            "@_name": "{20101,121101}",
+            "@_description": "{20101,121111}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "nocustomgamestart ship"
+          },
+          {
+            "price": {
+              "@_min": "8001560",
+              "@_average": "11470775",
+              "@_max": "14939990"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1957"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "10827"
+                    }
+                  ]
+                },
+                "@_time": "479.55",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_pir_xl_builder_01_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseship"
+            },
+            "owner": [
+              {
+                "@_faction": "loanshark"
+              },
+              {
+                "@_faction": "scavenger"
+              }
+            ],
+            "@_id": "ship_pir_xl_builder_01",
+            "@_name": "{20101,81101}",
+            "@_description": "{20101,81111}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "81192",
+              "@_average": "95520",
+              "@_max": "109848"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "4"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "145"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "26"
+                    }
+                  ]
+                },
+                "@_time": "20",
+                "@_amount": "1",
+                "@_method": "closedloop",
+                "@_name": "{20206,1201}"
+              },
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "10"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "20"
+                    },
+                    {
+                      "@_ware": "turretcomponents",
+                      "@_amount": "20"
+                    }
+                  ]
+                },
+                "@_time": "20",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "turret_gen_m_yacht_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "turret_gen_m_yacht_01_mk1",
+            "@_name": "{20105,9004}",
+            "@_description": "{20105,9002}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment noplayerblueprint turret"
+          },
+          {
+            "price": {
+              "@_min": "12105",
+              "@_average": "14242",
+              "@_max": "16378"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "4"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "15"
+                    },
+                    {
+                      "@_ware": "turretcomponents",
+                      "@_amount": "6"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "turret_pir_l_battleship_01_laser_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "capitalequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "ownerless"
+            },
+            "@_id": "turret_pir_l_battleship_01_laser_01_mk1",
+            "@_name": "{20105,9044}",
+            "@_description": "{20105,9042}",
+            "@_group": "turrets",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment turret"
+          },
+          {
+            "price": {
+              "@_min": "11451",
+              "@_average": "13471",
+              "@_max": "15492"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "4"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "12"
+                    },
+                    {
+                      "@_ware": "turretcomponents",
+                      "@_amount": "5"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "turret_pir_m_battleship_01_gatling_02_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "capitalequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "ownerless"
+            },
+            "@_id": "turret_pir_m_battleship_01_gatling_02_mk1",
+            "@_name": "{20105,9054}",
+            "@_description": "{20105,9052}",
+            "@_group": "turrets",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment turret"
+          },
+          {
+            "price": {
+              "@_min": "116382",
+              "@_average": "136920",
+              "@_max": "157458"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "19"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "340"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "113"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "closedloop",
+                "@_name": "{20206,1201}"
+              },
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "30"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "200"
+                    },
+                    {
+                      "@_ware": "weaponcomponents",
+                      "@_amount": "120"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "weapon_gen_m_yacht_01_mk1_macro"
+            },
+            "icon": {
+              "@_video": "weapon_gen_m_yacht_01_mk1_video_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "loanshark"
+            },
+            "@_id": "weapon_gen_m_yacht_01_mk1",
+            "@_name": "{20105,9014}",
+            "@_description": "{20105,9012}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment noplayerblueprint weapon"
+          },
+          {
+            "price": {
+              "@_min": "485683",
+              "@_average": "571392",
+              "@_max": "657101"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "150"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "30"
+                    },
+                    {
+                      "@_ware": "weaponcomponents",
+                      "@_amount": "300"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "weapon_pir_xl_battleship_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "capitalequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "ownerless"
+            },
+            "@_id": "weapon_pir_xl_battleship_01_mk1",
+            "@_name": "{20105,9034}",
+            "@_description": "{20105,9032}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment weapon"
+          }
+        ],
+        "@_sel": "/wares"
+      },
+      {
+        "illegal": {
+          "@_factions": "loanshark"
+        },
+        "@_sel": "/wares/ware[@id='foodrations']"
+      },
+      {
+        "illegal": {
+          "@_factions": "loanshark"
+        },
+        "@_sel": "/wares/ware[@id='ice']"
+      },
+      {
+        "illegal": {
+          "@_factions": "loanshark"
+        },
+        "@_sel": "/wares/ware[@id='water']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_l_allround_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_l_travel_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_m_allround_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_m_allround_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_m_allround_01_mk3']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_m_combat_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_m_combat_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_m_combat_01_mk3']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_m_travel_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_m_travel_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_m_travel_01_mk3']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_s_allround_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_s_allround_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_s_allround_01_mk3']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_s_combat_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_s_combat_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_s_combat_01_mk3']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_s_travel_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_s_travel_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_s_travel_01_mk3']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_xl_allround_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='engine_arg_xl_travel_01_mk1']"
+      },
+      {
+        "owner": {
+          "@_faction": "scavenger"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_proc_scrapworks']"
+      },
+      {
+        "owner": {
+          "@_faction": "scavenger"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_scrap_recycler']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='shield_arg_l_standard_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='shield_arg_l_standard_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='shield_arg_m_standard_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='shield_arg_m_standard_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='shield_arg_m_standard_02_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='shield_arg_m_standard_02_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='shield_arg_s_standard_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='shield_arg_s_standard_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='shield_arg_s_standard_01_mk3']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='shield_arg_xl_standard_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='ship_arg_xs_police_01_a']"
+      },
+      {
+        "owner": {
+          "@_faction": "scavenger"
+        },
+        "@_sel": "/wares/ware[@id='ship_gen_m_tugboat_01_a']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_l_beam_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_l_dumbfire_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_l_guided_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_l_laser_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_l_mining_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_l_plasma_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_m_beam_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_m_beam_02_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_m_dumbfire_02_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_m_gatling_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_m_gatling_02_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_m_guided_02_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_m_laser_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_m_laser_02_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_m_mining_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_m_mining_02_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_m_plasma_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_m_plasma_02_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_m_shotgun_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='turret_arg_m_shotgun_02_mk1']"
+      },
+      {
+        "owner": {
+          "@_faction": "scavenger"
+        },
+        "@_sel": "/wares/ware[@id='turret_gen_m_scrapbeam_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_beam_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_beam_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_gatling_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_gatling_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_guided_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_guided_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_laser_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_laser_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_mining_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_mining_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_plasma_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_plasma_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_shotgun_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_shotgun_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_torpedo_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_m_torpedo_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_beam_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_beam_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_dumbfire_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_dumbfire_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_gatling_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_gatling_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_guided_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_guided_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_laser_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_laser_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_mining_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_mining_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_plasma_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_plasma_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_shotgun_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_shotgun_01_mk2']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_torpedo_01_mk1']"
+      },
+      {
+        "owner": [
+          {
+            "@_faction": "loanshark"
+          },
+          {
+            "@_faction": "scavenger"
+          }
+        ],
+        "@_sel": "/wares/ware[@id='weapon_gen_s_torpedo_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "30"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "1"
+              }
+            ]
+          },
+          "@_time": "1",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='countermeasure_flares_01']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "19"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "206"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "108"
+              }
+            ]
+          },
+          "@_time": "20",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_l_allround_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "19"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "304"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "111"
+              }
+            ]
+          },
+          "@_time": "20",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_l_travel_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "99"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "3"
+              }
+            ]
+          },
+          "@_time": "15",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_m_allround_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "3"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "61"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "18"
+              }
+            ]
+          },
+          "@_time": "15",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_m_allround_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "15"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "241"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "88"
+              }
+            ]
+          },
+          "@_time": "15",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_m_allround_01_mk3']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "109"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "4"
+              }
+            ]
+          },
+          "@_time": "15",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_m_combat_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "3"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "156"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "21"
+              }
+            ]
+          },
+          "@_time": "15",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_m_combat_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "18"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "293"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "106"
+              }
+            ]
+          },
+          "@_time": "15",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_m_combat_01_mk3']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "97"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "4"
+              }
+            ]
+          },
+          "@_time": "15",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_m_travel_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "3"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "113"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "20"
+              }
+            ]
+          },
+          "@_time": "15",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_m_travel_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "17"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "318"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "101"
+              }
+            ]
+          },
+          "@_time": "15",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_m_travel_01_mk3']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "42"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "1"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_s_allround_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "79"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "8"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_s_allround_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "6"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "176"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "38"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_s_allround_01_mk3']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "52"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "2"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_s_combat_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "2"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "56"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "12"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_s_combat_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "9"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "228"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "56"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_s_combat_01_mk3']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "54"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "1"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_s_travel_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "142"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "10"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_s_travel_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "9"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "126"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "51"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_s_travel_01_mk3']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "25"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "290"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "142"
+              }
+            ]
+          },
+          "@_time": "30",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_xl_allround_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "25"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "406"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "147"
+              }
+            ]
+          },
+          "@_time": "30",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_arg_xl_travel_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "3"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "61"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "18"
+              }
+            ]
+          },
+          "@_time": "15",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_tel_m_allround_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "109"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "4"
+              }
+            ]
+          },
+          "@_time": "15",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_tel_m_combat_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "17"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "318"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "101"
+              }
+            ]
+          },
+          "@_time": "15",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='engine_tel_m_travel_01_mk3']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "37"
+              }
+            ]
+          },
+          "@_time": "3",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_cluster_heavy_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "17"
+              }
+            ]
+          },
+          "@_time": "1",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_cluster_light_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "24"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_disruptor_light_mk1']",
+        "@_silent": "1"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "10"
+              }
+            ]
+          },
+          "@_time": "1",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_dumbfire_heavy_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "28"
+              }
+            ]
+          },
+          "@_time": "1",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_dumbfire_heavy_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "6"
+              }
+            ]
+          },
+          "@_time": "1",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_dumbfire_light_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "13"
+              }
+            ]
+          },
+          "@_time": "1",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_dumbfire_light_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "16"
+              }
+            ]
+          },
+          "@_time": "1",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_emp_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "28"
+              }
+            ]
+          },
+          "@_time": "2",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_guided_heavy_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "12"
+              }
+            ]
+          },
+          "@_time": "1",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_guided_light_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "34"
+              }
+            ]
+          },
+          "@_time": "4",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_heatseeker_heavy_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "15"
+              }
+            ]
+          },
+          "@_time": "2",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_heatseeker_light_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "22"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_interceptor_light_mk1']",
+        "@_silent": "1"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "19"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_scatter_heavy_mk1']",
+        "@_silent": "1"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "36"
+              }
+            ]
+          },
+          "@_time": "2",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_smart_heavy_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "18"
+              }
+            ]
+          },
+          "@_time": "1",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_smart_light_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "29"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_starburst_heavy_mk1']",
+        "@_silent": "1"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "33"
+              }
+            ]
+          },
+          "@_time": "2",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_swarm_heavy_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "16"
+              }
+            ]
+          },
+          "@_time": "1",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_swarm_light_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "122"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "5"
+              }
+            ]
+          },
+          "@_time": "6",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_torpedo_heavy_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "36"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "1"
+              }
+            ]
+          },
+          "@_time": "3",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='missile_torpedo_light_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "54"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "2"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='resourceprobe_01']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "54"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "1"
+              }
+            ]
+          },
+          "@_time": "60",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='satellite_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "3"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "51"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "17"
+              }
+            ]
+          },
+          "@_time": "60",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='satellite_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "2"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "77"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "13"
+              }
+            ]
+          },
+          "@_time": "20",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='shield_arg_l_standard_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "11"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "136"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "63"
+              }
+            ]
+          },
+          "@_time": "20",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='shield_arg_l_standard_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "104"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "4"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='shield_arg_m_standard_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "3"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "89"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "19"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='shield_arg_m_standard_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "104"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "4"
+              }
+            ]
+          },
+          "@_time": "20",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='shield_arg_m_standard_02_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "3"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "89"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "19"
+              }
+            ]
+          },
+          "@_time": "20",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='shield_arg_m_standard_02_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "17"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='shield_arg_s_standard_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "81"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "3"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='shield_arg_s_standard_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "2"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "120"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "15"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='shield_arg_s_standard_01_mk3']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "12"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "170"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "70"
+              }
+            ]
+          },
+          "@_time": "20",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='shield_arg_xl_standard_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "104"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "4"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='shield_tel_m_standard_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "3"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "89"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "19"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='shield_tel_m_standard_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "104"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "4"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='shield_tel_m_standard_02_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "3"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "89"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "19"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='shield_tel_m_standard_02_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "104"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "3"
+              }
+            ]
+          },
+          "@_time": "60",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='ship_arg_xs_police_01_a']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "21"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "5"
+              }
+            ]
+          },
+          "@_time": "90",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='ship_gen_s_fightingdrone_01_a']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "30"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "6"
+              }
+            ]
+          },
+          "@_time": "1800",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='ship_gen_s_lasertower_01_a']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "126"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "4"
+              }
+            ]
+          },
+          "@_time": "30",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='ship_gen_s_miningdrone_liquid_01_a']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "126"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "4"
+              }
+            ]
+          },
+          "@_time": "30",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='ship_gen_s_miningdrone_solid_01_a']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "104"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "3"
+              }
+            ]
+          },
+          "@_time": "60",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='ship_gen_xs_buildingdrone_01_a']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "104"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "3"
+              }
+            ]
+          },
+          "@_time": "60",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='ship_gen_xs_cargodrone_empty_01_a']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "126"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "4"
+              }
+            ]
+          },
+          "@_time": "1800",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='ship_gen_xs_lasertower_01_a']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "104"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "3"
+              }
+            ]
+          },
+          "@_time": "60",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='ship_gen_xs_repairdrone_01_a']"
+      },
+      {
+        "production": {
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='software_dockmk1']"
+      },
+      {
+        "production": {
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='software_dockmk2']"
+      },
+      {
+        "production": {
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='software_flightassistmk1']"
+      },
+      {
+        "production": {
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='software_scannerlongrangemk1']"
+      },
+      {
+        "production": {
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='software_scannerlongrangemk2']"
+      },
+      {
+        "production": {
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='software_scannerobjectmk1']"
+      },
+      {
+        "production": {
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='software_scannerobjectmk2']"
+      },
+      {
+        "production": {
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='software_scannerobjectmk3']"
+      },
+      {
+        "production": {
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='software_targetmk1']"
+      },
+      {
+        "production": {
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='software_trademk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "15"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "175"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "86"
+              }
+            ]
+          },
+          "@_time": "20",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_l_allround_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "75"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "859"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "429"
+              }
+            ]
+          },
+          "@_time": "20",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_l_allround_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "376"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "4106"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "2145"
+              }
+            ]
+          },
+          "@_time": "20",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_l_allround_01_mk3']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "100"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "3"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_m_allround_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "3"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "62"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "18"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_m_allround_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "15"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "282"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "90"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_m_allround_01_mk3']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "131"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "4"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_m_combat_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "4"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "78"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "24"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_m_combat_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "21"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "244"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "119"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_m_combat_01_mk3']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "37"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "1"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_s_allround_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "4"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "84"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "24"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_s_allround_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "10"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "199"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "60"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_s_allround_01_mk3']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "57"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "2"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_s_combat_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "2"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "67"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "12"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_s_combat_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "8"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "162"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "48"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_s_combat_01_mk3']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "32"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "384"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "183"
+              }
+            ]
+          },
+          "@_time": "30",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_xl_allround_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "161"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "1737"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "917"
+              }
+            ]
+          },
+          "@_time": "30",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_xl_allround_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "805"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "8623"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "4585"
+              }
+            ]
+          },
+          "@_time": "30",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='thruster_gen_xl_allround_01_mk3']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "7"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "195"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "44"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_l_beam_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "3"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "166"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "22"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_l_dumbfire_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "4"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "79"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "24"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_l_guided_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "2"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "141"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "16"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_l_laser_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "2"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "121"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "14"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_l_mining_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "4"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "180"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "28"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_l_plasma_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "2"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "110"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "15"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_beam_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "2"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "110"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "15"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_beam_02_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "67"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "7"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_dumbfire_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "67"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "7"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_dumbfire_02_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "3"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "76"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "18"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_flak_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "3"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "76"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "18"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_flak_02_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "54"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "7"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_gatling_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "49"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "7"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_gatling_02_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "75"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "8"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_guided_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "75"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "8"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_guided_02_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "33"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "6"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_laser_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "33"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "6"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_laser_02_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "123"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "5"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_mining_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "123"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "5"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_mining_02_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "114"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "9"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_plasma_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "114"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "9"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_plasma_02_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "49"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "7"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_shotgun_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "54"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "7"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_shotgun_02_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "127"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "9"
+              }
+            ]
+          },
+          "@_time": "20",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_gen_m_scrapbeam_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "54"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "7"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_tel_m_gatling_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "54"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "7"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_tel_m_gatling_02_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "33"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "6"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_tel_m_laser_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "33"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "6"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_tel_m_laser_02_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "49"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "7"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_tel_m_shotgun_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "49"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "7"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='turret_tel_m_shotgun_02_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "14"
+              }
+            ]
+          },
+          "@_time": "60",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='waypointmarker_01']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "78"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "8"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_beam_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "7"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "106"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "41"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_beam_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "70"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "7"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "6"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "168"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "37"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "63"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "7"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_gatling_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "6"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "147"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "37"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_gatling_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "2"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "117"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "15"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_guided_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "13"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "175"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "75"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_guided_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "41"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "6"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_laser_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "5"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "162"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "32"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_laser_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "128"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "5"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_mining_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "4"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "114"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "25"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_mining_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "118"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "9"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_plasma_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "8"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "155"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "48"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_plasma_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "55"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "7"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_shotgun_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "6"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "121"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "36"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_shotgun_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "4"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "126"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "25"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_torpedo_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "22"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "305"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "128"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_m_torpedo_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "45"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "1"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_mine_01']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "70"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "2"
+              }
+            ]
+          },
+          "@_time": "60",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_mine_02']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "119"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "4"
+              }
+            ]
+          },
+          "@_time": "60",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_mine_03']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "73"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "7"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_beam_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "6"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "76"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "34"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_beam_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "65"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "2"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_dumbfire_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "120"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "4"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_dumbfire_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "2"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "115"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "15"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_gatling_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "13"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "175"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "75"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_gatling_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "83"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "2"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_guided_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "2"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "90"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "13"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_guided_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "20"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "5"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_laser_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "4"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "174"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "28"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_laser_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "60"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "2"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_mining_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "145"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "11"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_mining_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "105"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "4"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_plasma_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "3"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "66"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "18"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_plasma_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "103"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "9"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_shotgun_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "8"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "102"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "46"
+              }
+            ]
+          },
+          "@_time": "10",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_shotgun_01_mk2']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "1"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "70"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "7"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_torpedo_01_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "claytronics",
+                "@_amount": "6"
+              },
+              {
+                "@_ware": "energycells",
+                "@_amount": "168"
+              },
+              {
+                "@_ware": "hullparts",
+                "@_amount": "37"
+              }
+            ]
+          },
+          "@_time": "5",
+          "@_amount": "1",
+          "@_method": "closedloop",
+          "@_name": "{20206,1201}"
+        },
+        "@_sel": "/wares/ware[@id='weapon_gen_s_torpedo_01_mk2']"
+      }
+    ]
+  }
+}

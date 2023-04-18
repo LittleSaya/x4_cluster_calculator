@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Volodymyr (192.168.3.56) on 2022-11-25 12:26:26-->
+<macros>
+  <macro name="prod_bor_bogas_macro" class="production">
+    <component ref="prod_bor_bogas" />
+    <properties>
+      <identification name="{20104,16001}" shortname="{20104,16003}" makerrace="boron" description="{20104,16002}" />
+      <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+        </sets>
+      </build>
+      <explosiondamage value="1000" shield="5000" />
+      <hull max="185000" />
+      <secrecy level="2" />
+      <production wares="bogas">
+        <queue ware="bogas" />
+      </production>
+      <workforce max="100" />
+    </properties>
+  </macro>
+</macros>

@@ -1,0 +1,39 @@
+{
+  "advancedcomposites": {
+    "name": "先进复合材料",
+    "transport": "container",
+    "volume": 32,
+    "group": "hightech",
+    "price": {
+      "min": 432,
+      "average": 540,
+      "max": 648
+    },
+    "production": {
+      "default": {
+        "time": 300,
+        "amount": 54,
+        "input": {
+          "energycells": 50,
+          "graphene": 80,
+          "refinedmetals": 80
+        },
+        "effect": {
+          "work": 0.34
+        }
+      },
+      "teladi": {
+        "time": 300,
+        "amount": 54,
+        "input": {
+          "energycells": 50,
+          "graphene": 80,
+          "teladianium": 58
+        },
+        "effect": {
+          "work": 0.34
+        }
+      }
+    }
+  }
+}

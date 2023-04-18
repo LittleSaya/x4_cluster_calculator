@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.51) at 17.06.2021_17-08-26-->
+<macros>
+  <macro name="prod_gen_shieldcomponents_macro" class="production">
+    <component ref="prod_gen_shieldcomponents" />
+    <properties>
+      <identification name="{20104,12601}" shortname="{20104,12603}" description="{20104,12602}" />
+      <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+        </sets>
+      </build>
+      <explosiondamage value="1000" shield="5000" />
+      <hull max="191000" />
+      <secrecy level="2" />
+      <production wares="shieldcomponents">
+        <queue ware="shieldcomponents" />
+      </production>
+      <workforce max="225" />
+    </properties>
+  </macro>
+</macros>

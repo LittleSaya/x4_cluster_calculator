@@ -1,0 +1,6303 @@
+{
+  "?xml": {
+    "@_version": "1.0",
+    "@_encoding": "utf-8"
+  },
+  "diff": {
+    "add": [
+      {
+        "method": {
+          "default": {
+            "@_race": "boron"
+          },
+          "@_id": "boron",
+          "@_name": "{20206,801}"
+        },
+        "@_sel": "/wares/production"
+      },
+      {
+        "ware": [
+          {
+            "price": {
+              "@_min": "61",
+              "@_average": "101",
+              "@_max": "142"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "bogas",
+                      "@_amount": "40"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "40"
+                    },
+                    {
+                      "@_ware": "plankton",
+                      "@_amount": "120"
+                    }
+                  ]
+                },
+                "effects": {
+                  "effect": [
+                    {
+                      "@_type": "work",
+                      "@_product": "0.38"
+                    }
+                  ]
+                },
+                "@_time": "240",
+                "@_amount": "82",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "icon": {
+              "@_active": "ware_bofu",
+              "@_video": "ware_bofu_macro"
+            },
+            "@_id": "bofu",
+            "@_name": "{20201,7101}",
+            "@_description": "{20201,7102}",
+            "@_factoryname": "{20201,7104}",
+            "@_group": "food",
+            "@_transport": "container",
+            "@_volume": "4",
+            "@_tags": "container economy"
+          },
+          {
+            "price": {
+              "@_min": "44",
+              "@_average": "73",
+              "@_max": "102"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "40"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "100"
+                    }
+                  ]
+                },
+                "effects": {
+                  "effect": [
+                    {
+                      "@_type": "work",
+                      "@_product": "0.46"
+                    }
+                  ]
+                },
+                "@_time": "150",
+                "@_amount": "110",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "icon": {
+              "@_active": "ware_bogas",
+              "@_video": "ware_bogas_macro"
+            },
+            "@_id": "bogas",
+            "@_name": "{20201,7201}",
+            "@_description": "{20201,7202}",
+            "@_factoryname": "{20201,7204}",
+            "@_group": "refined",
+            "@_transport": "container",
+            "@_volume": "4",
+            "@_tags": "container economy"
+          },
+          {
+            "price": {
+              "@_min": "366089",
+              "@_average": "411336",
+              "@_max": "456583"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "antimatterconverters",
+                      "@_amount": "105"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "90"
+                    },
+                    {
+                      "@_ware": "engineparts",
+                      "@_amount": "185"
+                    }
+                  ]
+                },
+                "@_time": "20",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "engine_bor_l_travel_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "engine_bor_l_travel_01_mk1",
+            "@_name": "{20107,3124}",
+            "@_description": "{20107,3122}",
+            "@_group": "engines",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "engine equipment"
+          },
+          {
+            "price": {
+              "@_min": "11650",
+              "@_average": "13090",
+              "@_max": "14530"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "30"
+                    },
+                    {
+                      "@_ware": "engineparts",
+                      "@_amount": "10"
+                    }
+                  ]
+                },
+                "@_time": "15",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "engine_bor_m_allround_01_mk1_macro"
+            },
+            "icon": {
+              "@_video": "engine_bor_m_allround_01_mk1_video_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "engine_bor_m_allround_01_mk1",
+            "@_name": "{20107,2814}",
+            "@_description": "{20107,2812}",
+            "@_group": "engines",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "engine equipment"
+          },
+          {
+            "price": {
+              "@_min": "55219",
+              "@_average": "62044",
+              "@_max": "68869"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "antimatterconverters",
+                      "@_amount": "10"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "62"
+                    },
+                    {
+                      "@_ware": "engineparts",
+                      "@_amount": "35"
+                    }
+                  ]
+                },
+                "@_time": "15",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "engine_bor_m_allround_01_mk2_macro"
+            },
+            "icon": {
+              "@_video": "engine_bor_m_allround_01_mk2_video_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0.4"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "engine_bor_m_allround_01_mk2",
+            "@_name": "{20107,2824}",
+            "@_description": "{20107,2822}",
+            "@_group": "engines",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "engine equipment"
+          },
+          {
+            "price": {
+              "@_min": "265845",
+              "@_average": "298703",
+              "@_max": "331560"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "antimatterconverters",
+                      "@_amount": "84"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "80"
+                    },
+                    {
+                      "@_ware": "engineparts",
+                      "@_amount": "118"
+                    }
+                  ]
+                },
+                "@_time": "15",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "engine_bor_m_allround_01_mk3_macro"
+            },
+            "icon": {
+              "@_video": "engine_bor_m_allround_01_mk3_video_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0.7"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "engine_bor_m_allround_01_mk3",
+            "@_name": "{20107,2834}",
+            "@_description": "{20107,2832}",
+            "@_group": "engines",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "engine equipment"
+          },
+          {
+            "price": {
+              "@_min": "7912",
+              "@_average": "8890",
+              "@_max": "9868"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "18"
+                    },
+                    {
+                      "@_ware": "engineparts",
+                      "@_amount": "7"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "engine_bor_s_allround_01_mk1_macro"
+            },
+            "icon": {
+              "@_video": "engine_bor_s_allround_01_mk1_video_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "engine_bor_s_allround_01_mk1",
+            "@_name": "{20107,1804}",
+            "@_description": "{20107,1802}",
+            "@_group": "engines",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "engine equipment"
+          },
+          {
+            "price": {
+              "@_min": "38480",
+              "@_average": "43236",
+              "@_max": "47992"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "antimatterconverters",
+                      "@_amount": "4"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "45"
+                    },
+                    {
+                      "@_ware": "engineparts",
+                      "@_amount": "30"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "engine_bor_s_allround_01_mk2_macro"
+            },
+            "icon": {
+              "@_video": "engine_bor_s_allround_01_mk2_video_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0.4"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "engine_bor_s_allround_01_mk2",
+            "@_name": "{20107,1814}",
+            "@_description": "{20107,1812}",
+            "@_group": "engines",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "engine equipment"
+          },
+          {
+            "price": {
+              "@_min": "164472",
+              "@_average": "184800",
+              "@_max": "205129"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "antimatterconverters",
+                      "@_amount": "32"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "70"
+                    },
+                    {
+                      "@_ware": "engineparts",
+                      "@_amount": "110"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "engine_bor_s_allround_01_mk3_macro"
+            },
+            "icon": {
+              "@_video": "engine_bor_s_allround_01_mk3_video_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0.7"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "engine_bor_s_allround_01_mk3",
+            "@_name": "{20107,1824}",
+            "@_description": "{20107,1822}",
+            "@_group": "engines",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "engine equipment"
+          },
+          {
+            "price": {
+              "@_min": "496537",
+              "@_average": "557907",
+              "@_max": "619277"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "antimatterconverters",
+                      "@_amount": "124"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "130"
+                    },
+                    {
+                      "@_ware": "engineparts",
+                      "@_amount": "286"
+                    }
+                  ]
+                },
+                "@_time": "30",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "engine_bor_xl_travel_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "engine_bor_xl_travel_01_mk1",
+            "@_name": "{20107,4124}",
+            "@_description": "{20107,4122}",
+            "@_group": "engines",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "engine equipment"
+          },
+          {
+            "price": {
+              "@_min": "94609703",
+              "@_average": "111305533",
+              "@_max": "128001363"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "818"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "8696"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "2663"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "7875"
+                    }
+                  ]
+                },
+                "@_time": "688",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_build"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "buildmodule_bor_ships_m_dockarea_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_equip_sm"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_build_dockarea_m_01",
+            "@_name": "{20104,62501}",
+            "@_description": "{20104,62502}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "198161899",
+              "@_average": "233131646",
+              "@_max": "268101393"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "1714"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "18213"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "5577"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "16495"
+                    }
+                  ]
+                },
+                "@_time": "722",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_build"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "buildmodule_bor_ships_l_macro"
+            },
+            "restriction": {
+              "@_licence": "station_equip_lxl"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_build_l_01",
+            "@_name": "{20104,62601}",
+            "@_description": "{20104,62602}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "201558642",
+              "@_average": "237127814",
+              "@_max": "272696986"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "1744"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "18526"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "5673"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "16778"
+                    }
+                  ]
+                },
+                "@_time": "1252",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_build"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "buildmodule_bor_ships_xl_macro"
+            },
+            "restriction": {
+              "@_licence": "station_equip_lxl"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_build_xl_01",
+            "@_name": "{20104,62701}",
+            "@_description": "{20104,62702}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "83144",
+              "@_average": "97817",
+              "@_max": "112490"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "9"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "275"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "63"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "166"
+                    }
+                  ]
+                },
+                "@_time": "38",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "component": {
+              "@_ref": "struct_bor_base_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_conn_base_01",
+            "@_name": "{20104,54101}",
+            "@_description": "{20104,54102}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "10600",
+              "@_average": "119529",
+              "@_max": "137458"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "11"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "336"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "77"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "203"
+                    }
+                  ]
+                },
+                "@_time": "72",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "component": {
+              "@_ref": "struct_bor_base_02_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_conn_base_02",
+            "@_name": "{20104,54201}",
+            "@_description": "{20104,54202}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "108726",
+              "@_average": "127913",
+              "@_max": "147100"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "11"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "360"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "83"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "217"
+                    }
+                  ]
+                },
+                "@_time": "109",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "component": {
+              "@_ref": "struct_bor_base_03_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_conn_base_03",
+            "@_name": "{20104,54301}",
+            "@_description": "{20104,54302}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "114908",
+              "@_average": "135186",
+              "@_max": "155464"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "12"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "380"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "87"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "230"
+                    }
+                  ]
+                },
+                "@_time": "115",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "component": {
+              "@_ref": "struct_bor_base_04_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_conn_base_04",
+            "@_name": "{20104,54401}",
+            "@_description": "{20104,54402}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "126095",
+              "@_average": "148347",
+              "@_max": "170599"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "13"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "417"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "96"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "252"
+                    }
+                  ]
+                },
+                "@_time": "133",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "component": {
+              "@_ref": "struct_bor_base_05_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_conn_base_05",
+            "@_name": "{20104,54501}",
+            "@_description": "{20104,54502}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "71831",
+              "@_average": "84507",
+              "@_max": "97183"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "7"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "238"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "55"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "144"
+                    }
+                  ]
+                },
+                "@_time": "56",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "component": {
+              "@_ref": "struct_bor_cross_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_conn_cross_01",
+            "@_name": "{20104,54601}",
+            "@_description": "{20104,54602}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "89522",
+              "@_average": "105320",
+              "@_max": "121118"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "9"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "296"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "68"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "179"
+                    }
+                  ]
+                },
+                "@_time": "85",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "component": {
+              "@_ref": "struct_bor_cross_02_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_conn_cross_02",
+            "@_name": "{20104,54701}",
+            "@_description": "{20104,54702}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "59537",
+              "@_average": "70044",
+              "@_max": "80551"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "6"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "197"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "45"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "119"
+                    }
+                  ]
+                },
+                "@_time": "35",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "component": {
+              "@_ref": "struct_bor_vertical_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_conn_vertical_01",
+            "@_name": "{20104,54801}",
+            "@_description": "{20104,54802}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "77977",
+              "@_average": "91738",
+              "@_max": "105499"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "8"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "258"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "59"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "156"
+                    }
+                  ]
+                },
+                "@_time": "68",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "component": {
+              "@_ref": "struct_bor_vertical_02_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_conn_vertical_02",
+            "@_name": "{20104,54901}",
+            "@_description": "{20104,54902}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "819421",
+              "@_average": "964025",
+              "@_max": "1108629"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "85"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "2711"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "623"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "1637"
+                    }
+                  ]
+                },
+                "@_time": "414",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_defence"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "defence_bor_claim_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_advanced"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_def_claim_01",
+            "@_name": "{20104,95301}",
+            "@_description": "{20104,95302}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "586455",
+              "@_average": "689947",
+              "@_max": "793439"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "61"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1940"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "446"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "1172"
+                    }
+                  ]
+                },
+                "@_time": "133",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_defence"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "defence_bor_disc_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_intermediate"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_def_disc_01",
+            "@_name": "{20104,95401}",
+            "@_description": "{20104,95402}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "508960",
+              "@_average": "598777",
+              "@_max": "688594"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "53"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1684"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "387"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "1017"
+                    }
+                  ]
+                },
+                "@_time": "118",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_defence"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "defence_bor_tube_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_intermediate"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_def_tube_01",
+            "@_name": "{20104,95501}",
+            "@_description": "{20104,95502}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "497906",
+              "@_average": "585772",
+              "@_max": "673638"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "52"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1647"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "378"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "995"
+                    }
+                  ]
+                },
+                "@_time": "773",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_dock"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "dockarea_bor_m_station_01_standard_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_dock_m_01_standard",
+            "@_name": "{20104,74701}",
+            "@_description": "{20104,74702}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "28659268",
+              "@_average": "33716786",
+              "@_max": "38774304"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "595"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "6322"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "1936"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "5725"
+                    }
+                  ]
+                },
+                "@_time": "596",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_build"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "buildmodule_bor_equip_m_dockarea_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_equip_sm"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_equip_dockarea_m_01",
+            "@_name": "{20104,62201}",
+            "@_description": "{20104,62202}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "52476005",
+              "@_average": "61736477",
+              "@_max": "70996949"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "872"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "9260"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "2836"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "8387"
+                    }
+                  ]
+                },
+                "@_time": "653",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_build"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "buildmodule_bor_equip_l_macro"
+            },
+            "restriction": {
+              "@_licence": "station_equip_lxl"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_equip_l_01",
+            "@_name": "{20104,62301}",
+            "@_description": "{20104,62302}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "54208622",
+              "@_average": "63774850",
+              "@_max": "73341077"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "1125"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "11958"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "3662"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "10830"
+                    }
+                  ]
+                },
+                "@_time": "1136",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_build"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "buildmodule_bor_equip_xl_macro"
+            },
+            "restriction": {
+              "@_licence": "station_equip_lxl"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_equip_xl_01",
+            "@_name": "{20104,62401}",
+            "@_description": "{20104,62402}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "18290485",
+              "@_average": "21518218",
+              "@_max": "24745951"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "114"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "3631"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "834"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "2192"
+                    }
+                  ]
+                },
+                "@_time": "640",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_habitation"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "hab_bor_l_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_advanced"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_hab_l_01",
+            "@_name": "{20104,32101}",
+            "@_description": "{20104,32102}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "12929719",
+              "@_average": "15211434",
+              "@_max": "17493149"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "81"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "2567"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "590"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "1550"
+                    }
+                  ]
+                },
+                "@_time": "347",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_habitation"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "hab_bor_m_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_intermediate"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_hab_m_01",
+            "@_name": "{20104,32001}",
+            "@_description": "{20104,32002}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "8989883",
+              "@_average": "10576333",
+              "@_max": "12162783"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "56"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1785"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "410"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "1078"
+                    }
+                  ]
+                },
+                "@_time": "187",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_habitation"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "hab_bor_s_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_hab_s_01",
+            "@_name": "{20104,31901}",
+            "@_description": "{20104,31902}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "3240789",
+              "@_average": "3812693",
+              "@_max": "4384597"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "336"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "10723"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "2463"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "6474"
+                    }
+                  ]
+                },
+                "@_time": "739",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_dock"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "pier_bor_harbor_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_pier_l_01",
+            "@_name": "{20104,74301}",
+            "@_description": "{20104,74302}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "1871312",
+              "@_average": "2201543",
+              "@_max": "2531774"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "194"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "6192"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "1422"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "3738"
+                    }
+                  ]
+                },
+                "@_time": "283",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_dock"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "pier_bor_harbor_02_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_pier_l_02",
+            "@_name": "{20104,74201}",
+            "@_description": "{20104,74202}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "3738918",
+              "@_average": "4398727",
+              "@_max": "5058536"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "388"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "12371"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "2841"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "7470"
+                    }
+                  ]
+                },
+                "@_time": "1087",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_dock"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "pier_bor_harbor_03_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_pier_l_03",
+            "@_name": "{20104,74401}",
+            "@_description": "{20104,74402}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "2633918",
+              "@_average": "3098727",
+              "@_max": "3563536"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "273"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "8715"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "2002"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "5262"
+                    }
+                  ]
+                },
+                "@_time": "517",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_dock"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "pier_bor_harbor_04_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_pier_l_04",
+            "@_name": "{20104,74501}",
+            "@_description": "{20104,74502}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "4225512",
+              "@_average": "4730030",
+              "@_max": "5210498"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "417"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "13303"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "3055"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "8032"
+                    }
+                  ]
+                },
+                "@_time": "1087",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_dock"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "pier_bor_tradestation_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_pier_tradestation_01",
+            "@_name": "{20104,74801}",
+            "@_description": "{20104,74802}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "1568474",
+              "@_average": "1845263",
+              "@_max": "2122053"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "163"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "5190"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "1192"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "3133"
+                    }
+                  ]
+                },
+                "@_time": "367",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_production"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "prod_bor_bofu_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_prod_bofu_01",
+            "@_name": "{20104,16201}",
+            "@_description": "{20104,16202}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "1484832",
+              "@_average": "1746862",
+              "@_max": "2008891"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "154"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "4913"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "1128"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "2966"
+                    }
+                  ]
+                },
+                "@_time": "411",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_production"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "prod_bor_bogas_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_prod_bogas_01",
+            "@_name": "{20104,16001}",
+            "@_description": "{20104,16002}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "1345856",
+              "@_average": "1583360",
+              "@_max": "1820864"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "140"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "4453"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "1023"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "2689"
+                    }
+                  ]
+                },
+                "@_time": "453",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_production"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "prod_bor_medicalsupplies_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_prod_medicalsupplies_01",
+            "@_name": "{20104,15901}",
+            "@_description": "{20104,15902}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "921174",
+              "@_average": "1083734",
+              "@_max": "1246295"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "96"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "3048"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "700"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "1840"
+                    }
+                  ]
+                },
+                "@_time": "278",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_production"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "prod_bor_plankton_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_prod_plankton_01",
+            "@_name": "{20104,16101}",
+            "@_description": "{20104,16102}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "688054",
+              "@_average": "809475",
+              "@_max": "930896"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "71"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "2277"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "523"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "1375"
+                    }
+                  ]
+                },
+                "@_time": "783",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_storage"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "storage_bor_l_container_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_stor_container_l_01",
+            "@_name": "{20104,92901}",
+            "@_description": "{20104,92902}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "490022",
+              "@_average": "576497",
+              "@_max": "662972"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "51"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1621"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "372"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "979"
+                    }
+                  ]
+                },
+                "@_time": "423",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_storage"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "storage_bor_m_container_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_stor_container_m_01",
+            "@_name": "{20104,92801}",
+            "@_description": "{20104,92802}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "310446",
+              "@_average": "365231",
+              "@_max": "420016"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "32"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1027"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "236"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "620"
+                    }
+                  ]
+                },
+                "@_time": "268",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_storage"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "storage_bor_s_container_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_stor_container_s_01",
+            "@_name": "{20104,92701}",
+            "@_description": "{20104,92702}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "688054",
+              "@_average": "809475",
+              "@_max": "930896"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "71"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "2277"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "523"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "1375"
+                    }
+                  ]
+                },
+                "@_time": "783",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_storage"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "storage_bor_l_liquid_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_stor_liquid_l_01",
+            "@_name": "{20104,93201}",
+            "@_description": "{20104,93202}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "490022",
+              "@_average": "576497",
+              "@_max": "662972"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "51"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1621"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "372"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "979"
+                    }
+                  ]
+                },
+                "@_time": "423",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_storage"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "storage_bor_m_liquid_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_stor_liquid_m_01",
+            "@_name": "{20104,93101}",
+            "@_description": "{20104,93102}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "310446",
+              "@_average": "365231",
+              "@_max": "420016"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "32"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1027"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "236"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "620"
+                    }
+                  ]
+                },
+                "@_time": "268",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_storage"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "storage_bor_s_liquid_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_stor_liquid_s_01",
+            "@_name": "{20104,93001}",
+            "@_description": "{20104,93002}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "688054",
+              "@_average": "809475",
+              "@_max": "930896"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "71"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "2277"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "523"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "1375"
+                    }
+                  ]
+                },
+                "@_time": "783",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_storage"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "storage_bor_l_solid_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_stor_solid_l_01",
+            "@_name": "{20104,93501}",
+            "@_description": "{20104,93502}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "490022",
+              "@_average": "576497",
+              "@_max": "662972"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "51"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1621"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "372"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "979"
+                    }
+                  ]
+                },
+                "@_time": "423",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_storage"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "storage_bor_m_solid_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_stor_solid_m_01",
+            "@_name": "{20104,93401}",
+            "@_description": "{20104,93402}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "310446",
+              "@_average": "365231",
+              "@_max": "420016"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "32"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1027"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "236"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "620"
+                    }
+                  ]
+                },
+                "@_time": "268",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "research": {
+              "research": {
+                "ware": {
+                  "@_ware": "research_module_storage"
+                }
+              },
+              "@_time": "10"
+            },
+            "component": {
+              "@_ref": "storage_bor_s_solid_01_macro"
+            },
+            "restriction": {
+              "@_licence": "station_gen_basic"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "module_bor_stor_solid_s_01",
+            "@_name": "{20104,93301}",
+            "@_description": "{20104,93302}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "module"
+          },
+          {
+            "price": {
+              "@_min": "11",
+              "@_average": "18",
+              "@_max": "25"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "20"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "50"
+                    }
+                  ]
+                },
+                "effects": {
+                  "effect": [
+                    {
+                      "@_type": "work",
+                      "@_product": "0.4"
+                    }
+                  ]
+                },
+                "@_time": "400",
+                "@_amount": "275",
+                "@_method": "default",
+                "@_name": "{20206,801}"
+              }
+            ],
+            "icon": {
+              "@_active": "ware_plankton",
+              "@_video": "ware_plankton_macro"
+            },
+            "@_id": "plankton",
+            "@_name": "{20201,7301}",
+            "@_description": "{20201,7302}",
+            "@_factoryname": "{20201,7304}",
+            "@_group": "agricultural",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "container economy"
+          },
+          {
+            "price": {
+              "@_min": "41484",
+              "@_average": "46612",
+              "@_max": "51739"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "50"
+                    },
+                    {
+                      "@_ware": "fieldcoils",
+                      "@_amount": "13"
+                    },
+                    {
+                      "@_ware": "shieldcomponents",
+                      "@_amount": "10"
+                    }
+                  ]
+                },
+                "@_time": "20",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "shield_bor_l_standard_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "shield_bor_l_standard_01_mk1",
+            "@_name": "{20106,3134}",
+            "@_description": "{20106,3132}",
+            "@_group": "shields",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment shield"
+          },
+          {
+            "price": {
+              "@_min": "206792",
+              "@_average": "232351",
+              "@_max": "257910"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "100"
+                    },
+                    {
+                      "@_ware": "fieldcoils",
+                      "@_amount": "65"
+                    },
+                    {
+                      "@_ware": "shieldcomponents",
+                      "@_amount": "55"
+                    }
+                  ]
+                },
+                "@_time": "20",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "shield_bor_l_standard_01_mk2_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.25"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "shield_bor_l_standard_01_mk2",
+            "@_name": "{20106,3144}",
+            "@_description": "{20106,3142}",
+            "@_group": "shields",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment shield"
+          },
+          {
+            "price": {
+              "@_min": "1280548",
+              "@_average": "1438818",
+              "@_max": "1597088"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "180"
+                    },
+                    {
+                      "@_ware": "fieldcoils",
+                      "@_amount": "320"
+                    },
+                    {
+                      "@_ware": "shieldcomponents",
+                      "@_amount": "240"
+                    }
+                  ]
+                },
+                "@_time": "20",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "shield_bor_l_standard_01_mk3_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.7"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "shield_bor_l_standard_01_mk3",
+            "@_name": "{20106,3154}",
+            "@_description": "{20106,3152}",
+            "@_group": "shields",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment shield"
+          },
+          {
+            "price": {
+              "@_min": "14990",
+              "@_average": "16843",
+              "@_max": "18696"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "23"
+                    },
+                    {
+                      "@_ware": "fieldcoils",
+                      "@_amount": "5"
+                    },
+                    {
+                      "@_ware": "shieldcomponents",
+                      "@_amount": "5"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "shield_bor_m_standard_01_mk1_macro"
+            },
+            "icon": {
+              "@_video": "shield_bor_m_standard_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "shield_bor_m_standard_01_mk1",
+            "@_name": "{20106,2144}",
+            "@_description": "{20106,2142}",
+            "@_group": "shields",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment shield"
+          },
+          {
+            "price": {
+              "@_min": "66812",
+              "@_average": "75070",
+              "@_max": "83327"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "44"
+                    },
+                    {
+                      "@_ware": "fieldcoils",
+                      "@_amount": "20"
+                    },
+                    {
+                      "@_ware": "shieldcomponents",
+                      "@_amount": "25"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "shield_bor_m_standard_01_mk2_macro"
+            },
+            "icon": {
+              "@_video": "shield_bor_m_standard_01_mk2_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0.25"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "shield_bor_m_standard_01_mk2",
+            "@_name": "{20106,2154}",
+            "@_description": "{20106,2152}",
+            "@_group": "shields",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment shield"
+          },
+          {
+            "price": {
+              "@_min": "294801",
+              "@_average": "331238",
+              "@_max": "367674"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "76"
+                    },
+                    {
+                      "@_ware": "fieldcoils",
+                      "@_amount": "85"
+                    },
+                    {
+                      "@_ware": "shieldcomponents",
+                      "@_amount": "96"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "shield_bor_m_standard_01_mk3_macro"
+            },
+            "icon": {
+              "@_video": "shield_bor_m_standard_01_mk3_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0.7"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "shield_bor_m_standard_01_mk3",
+            "@_name": "{20106,2164}",
+            "@_description": "{20106,2162}",
+            "@_group": "shields",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment shield"
+          },
+          {
+            "price": {
+              "@_min": "14990",
+              "@_average": "16843",
+              "@_max": "18696"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "23"
+                    },
+                    {
+                      "@_ware": "fieldcoils",
+                      "@_amount": "5"
+                    },
+                    {
+                      "@_ware": "shieldcomponents",
+                      "@_amount": "5"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "shield_bor_m_standard_02_mk1_macro"
+            },
+            "icon": {
+              "@_video": "shield_bor_m_standard_02_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "shield_bor_m_standard_02_mk1",
+            "@_name": "{20106,2144}",
+            "@_description": "{20106,2142}",
+            "@_group": "shields",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment shield"
+          },
+          {
+            "price": {
+              "@_min": "66812",
+              "@_average": "75070",
+              "@_max": "83327"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "44"
+                    },
+                    {
+                      "@_ware": "fieldcoils",
+                      "@_amount": "20"
+                    },
+                    {
+                      "@_ware": "shieldcomponents",
+                      "@_amount": "25"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "shield_bor_m_standard_02_mk2_macro"
+            },
+            "icon": {
+              "@_video": "shield_bor_m_standard_02_mk2_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0.25"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "shield_bor_m_standard_02_mk2",
+            "@_name": "{20106,2154}",
+            "@_description": "{20106,2152}",
+            "@_group": "shields",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment shield"
+          },
+          {
+            "price": {
+              "@_min": "294801",
+              "@_average": "331238",
+              "@_max": "367674"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "76"
+                    },
+                    {
+                      "@_ware": "fieldcoils",
+                      "@_amount": "85"
+                    },
+                    {
+                      "@_ware": "shieldcomponents",
+                      "@_amount": "96"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "shield_bor_m_standard_02_mk3_macro"
+            },
+            "icon": {
+              "@_video": "shield_bor_m_standard_02_mk3_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0.7"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "shield_bor_m_standard_02_mk3",
+            "@_name": "{20106,2164}",
+            "@_description": "{20106,2162}",
+            "@_group": "shields",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment shield"
+          },
+          {
+            "price": {
+              "@_min": "2236",
+              "@_average": "2512",
+              "@_max": "2789"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "5"
+                    },
+                    {
+                      "@_ware": "shieldcomponents",
+                      "@_amount": "2"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "shield_bor_s_standard_01_mk1_macro"
+            },
+            "icon": {
+              "@_video": "shield_bor_s_standard_01_mk1_video_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "shield_bor_s_standard_01_mk1",
+            "@_name": "{20106,1194}",
+            "@_description": "{20106,1192}",
+            "@_group": "shields",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment shield"
+          },
+          {
+            "price": {
+              "@_min": "15706",
+              "@_average": "17648",
+              "@_max": "19589"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "13"
+                    },
+                    {
+                      "@_ware": "fieldcoils",
+                      "@_amount": "5"
+                    },
+                    {
+                      "@_ware": "shieldcomponents",
+                      "@_amount": "5"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "shield_bor_s_standard_01_mk2_macro"
+            },
+            "icon": {
+              "@_video": "shield_bor_s_standard_01_mk2_video_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0.25"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "shield_bor_s_standard_01_mk2",
+            "@_name": "{20106,1204}",
+            "@_description": "{20106,1202}",
+            "@_group": "shields",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment shield"
+          },
+          {
+            "price": {
+              "@_min": "74409",
+              "@_average": "83606",
+              "@_max": "92803"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "24"
+                    },
+                    {
+                      "@_ware": "fieldcoils",
+                      "@_amount": "20"
+                    },
+                    {
+                      "@_ware": "shieldcomponents",
+                      "@_amount": "27"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "shield_bor_s_standard_01_mk3_macro"
+            },
+            "icon": {
+              "@_video": "shield_bor_s_standard_01_mk3_video_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0.7"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "shield_bor_s_standard_01_mk3",
+            "@_name": "{20106,1214}",
+            "@_description": "{20106,1212}",
+            "@_group": "shields",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment shield"
+          },
+          {
+            "price": {
+              "@_min": "260362",
+              "@_average": "292542",
+              "@_max": "324722"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "150"
+                    },
+                    {
+                      "@_ware": "fieldcoils",
+                      "@_amount": "92"
+                    },
+                    {
+                      "@_ware": "shieldcomponents",
+                      "@_amount": "45"
+                    }
+                  ]
+                },
+                "@_time": "20",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "shield_bor_xl_standard_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "shield_bor_xl_standard_01_mk1",
+            "@_name": "{20106,4074}",
+            "@_description": "{20106,4072}",
+            "@_group": "shields",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment shield"
+          },
+          {
+            "price": {
+              "@_min": "1805236",
+              "@_average": "2028355",
+              "@_max": "2251474"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "250"
+                    },
+                    {
+                      "@_ware": "fieldcoils",
+                      "@_amount": "510"
+                    },
+                    {
+                      "@_ware": "shieldcomponents",
+                      "@_amount": "210"
+                    }
+                  ]
+                },
+                "@_time": "20",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "shield_bor_xl_standard_01_mk2_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.5"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "shield_bor_xl_standard_01_mk2",
+            "@_name": "{20106,4084}",
+            "@_description": "{20106,4082}",
+            "@_group": "shields",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment shield"
+          },
+          {
+            "price": {
+              "@_min": "5405973",
+              "@_average": "6513220",
+              "@_max": "7620468"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1320"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "5200"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "3660"
+                    }
+                  ]
+                },
+                "@_time": "175",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_l_carrier_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "capitalship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_l_carrier_01_a",
+            "@_name": "{20101,51801}",
+            "@_description": "{20101,51811}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "5435998",
+              "@_average": "6549396",
+              "@_max": "7662793"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1140"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "5570"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "2385"
+                    }
+                  ]
+                },
+                "@_time": "175",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_l_destroyer_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "capitalship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_l_destroyer_01_a",
+            "@_name": "{20101,50201}",
+            "@_description": "{20101,50211}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "1146506",
+              "@_average": "1381332",
+              "@_max": "1616159"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "500"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "1080"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "800"
+                    }
+                  ]
+                },
+                "@_time": "55",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_l_miner_liquid_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_l_miner_liquid_01_a",
+            "@_name": "{20101,53103}",
+            "@_description": "{20101,53113}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "1128579",
+              "@_average": "1359733",
+              "@_max": "1590888"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "500"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "1130"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "520"
+                    }
+                  ]
+                },
+                "@_time": "55",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_l_miner_solid_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_l_miner_solid_01_a",
+            "@_name": "{20101,53102}",
+            "@_description": "{20101,53112}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "3653390",
+              "@_average": "4401675",
+              "@_max": "5149960"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "1500"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "3900"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "760"
+                    }
+                  ]
+                },
+                "@_time": "130",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_l_trans_container_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_l_trans_container_01_a",
+            "@_name": "{20101,51401}",
+            "@_description": "{20101,51411}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "529993",
+              "@_average": "638546",
+              "@_max": "747099"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "110"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "540"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "245"
+                    }
+                  ]
+                },
+                "@_time": "35",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_m_corvette_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_m_corvette_01_a",
+            "@_name": "{20101,51001}",
+            "@_description": "{20101,51011}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "561714",
+              "@_average": "676764",
+              "@_max": "791814"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "110"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "574"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "255"
+                    }
+                  ]
+                },
+                "@_time": "35",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_m_corvette_02_a_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_m_corvette_02_a",
+            "@_name": "{20101,51002}",
+            "@_description": "{20101,51012}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "noblueprint nocustomgamestart noplayerbuild ship"
+          },
+          {
+            "price": {
+              "@_min": "519734",
+              "@_average": "626185",
+              "@_max": "732637"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "140"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "510"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "308"
+                    }
+                  ]
+                },
+                "@_time": "35",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_m_gunboat_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_m_gunboat_01_a",
+            "@_name": "{20101,51101}",
+            "@_description": "{20101,51111}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "136612",
+              "@_average": "164592",
+              "@_max": "192573"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "70"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "131"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "83"
+                    }
+                  ]
+                },
+                "@_time": "25",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_m_miner_liquid_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_m_miner_liquid_01_a",
+            "@_name": "{20101,52203}",
+            "@_description": "{20101,52213}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "12142835",
+              "@_average": "172090",
+              "@_max": "201346"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "73"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "145"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "55"
+                    }
+                  ]
+                },
+                "@_time": "25",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_m_miner_solid_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_m_miner_solid_01_a",
+            "@_name": "{20101,52202}",
+            "@_description": "{20101,52212}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "212164",
+              "@_average": "255620",
+              "@_max": "299075"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "92"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "210"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "108"
+                    }
+                  ]
+                },
+                "@_time": "18",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_m_trans_container_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_m_trans_container_01_a",
+            "@_name": "{20101,50501}",
+            "@_description": "{20101,50511}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "110527",
+              "@_average": "133165",
+              "@_max": "155803"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "65"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "118"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "25"
+                    }
+                  ]
+                },
+                "@_time": "12",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_s_fighter_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_s_fighter_01_a",
+            "@_name": "{20101,50801}",
+            "@_description": "{20101,50811}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "203922",
+              "@_average": "245690",
+              "@_max": "287457"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "79"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "201"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "110"
+                    }
+                  ]
+                },
+                "@_time": "15",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_s_heavyfighter_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_s_heavyfighter_01_a",
+            "@_name": "{20101,50601}",
+            "@_description": "{20101,50611}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "69490",
+              "@_average": "83723",
+              "@_max": "97955"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "39"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "74"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "12"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_s_miner_solid_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_s_miner_solid_01_a",
+            "@_name": "{20101,52702}",
+            "@_description": "{20101,52712}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "69490",
+              "@_average": "83723",
+              "@_max": "97955"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "39"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "74"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "12"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_s_miner_solid_01_story_macro"
+            },
+            "@_id": "ship_bor_s_miner_solid_01_story",
+            "@_name": "{20101,52702}",
+            "@_description": "{20101,52712}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "noblueprint noplayerblueprint"
+          },
+          {
+            "price": {
+              "@_min": "85205",
+              "@_average": "102657",
+              "@_max": "120109"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "40"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "90"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "20"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_s_scout_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_s_scout_01_a",
+            "@_name": "{20101,52501}",
+            "@_description": "{20101,52511}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "99353",
+              "@_average": "119702",
+              "@_max": "140052"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "40"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "102"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "37"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_s_scout_02_a_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_s_scout_02_a",
+            "@_name": "{20101,53001}",
+            "@_description": "{20101,53011}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "164834",
+              "@_average": "198595",
+              "@_max": "232356"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "62"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "180"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "20"
+                    }
+                  ]
+                },
+                "@_time": "15",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_s_trans_container_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_s_trans_container_01_a",
+            "@_name": "{20101,51901}",
+            "@_description": "{20101,51911}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "9921974",
+              "@_average": "11954185",
+              "@_max": "13986397"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "2866"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "9575"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "6440"
+                    }
+                  ]
+                },
+                "@_time": "527",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_xl_builder_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_xl_builder_01_a",
+            "@_name": "{20101,52901}",
+            "@_description": "{20101,52911}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "18129693",
+              "@_average": "21843004",
+              "@_max": "25556315"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "4425"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "18800"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "6880"
+                    }
+                  ]
+                },
+                "@_time": "780",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_xl_carrier_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "capitalship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_xl_carrier_01_a",
+            "@_name": "{20101,50101}",
+            "@_description": "{20101,50111}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "14605352",
+              "@_average": "17596810",
+              "@_max": "20588268"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "3738"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "15380"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "4560"
+                    }
+                  ]
+                },
+                "@_time": "780",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "ship_bor_xl_resupplier_01_a_macro"
+            },
+            "restriction": {
+              "@_licence": "capitalship"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "ship_bor_xl_resupplier_01_a",
+            "@_name": "{20101,50401}",
+            "@_description": "{20101,50411}",
+            "@_transport": "ship",
+            "@_volume": "1",
+            "@_tags": "ship"
+          },
+          {
+            "price": {
+              "@_min": "106913",
+              "@_average": "128811",
+              "@_max": "150709"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "10"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "25"
+                    },
+                    {
+                      "@_ware": "turretcomponents",
+                      "@_amount": "40"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "turret_bor_l_disruptor_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "1"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "turret_bor_l_disruptor_01_mk1",
+            "@_name": "{20105,5434}",
+            "@_description": "{20105,5432}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment turret"
+          },
+          {
+            "price": {
+              "@_min": "105154",
+              "@_average": "126692",
+              "@_max": "148229"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "10"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "20"
+                    },
+                    {
+                      "@_ware": "turretcomponents",
+                      "@_amount": "39"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "turret_bor_l_flak_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0.8"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "turret_bor_l_flak_01_mk1",
+            "@_name": "{20105,5444}",
+            "@_description": "{20105,5442}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment turret"
+          },
+          {
+            "price": {
+              "@_min": "58702",
+              "@_average": "70725",
+              "@_max": "82748"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "5"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "10"
+                    },
+                    {
+                      "@_ware": "turretcomponents",
+                      "@_amount": "24"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "turret_bor_l_laser_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "turret_bor_l_laser_01_mk1",
+            "@_name": "{20105,5454}",
+            "@_description": "{20105,5452}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment turret"
+          },
+          {
+            "price": {
+              "@_min": "49166",
+              "@_average": "54629",
+              "@_max": "60092"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "3"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "10"
+                    },
+                    {
+                      "@_ware": "turretcomponents",
+                      "@_amount": "21"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "turret_bor_l_mining_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0",
+              "@_purposes": "mine"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "turret_bor_l_mining_01_mk1",
+            "@_name": "{20105,5464}",
+            "@_description": "{20105,5462}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment turret"
+          },
+          {
+            "price": {
+              "@_min": "31707",
+              "@_average": "38201",
+              "@_max": "44696"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "2"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "15"
+                    },
+                    {
+                      "@_ware": "turretcomponents",
+                      "@_amount": "15"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "turret_bor_m_arc_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.4"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "turret_bor_m_arc_01_mk1",
+            "@_name": "{20105,4964}",
+            "@_description": "{20105,4962}",
+            "@_group": "turrets",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment turret"
+          },
+          {
+            "price": {
+              "@_min": "31707",
+              "@_average": "38201",
+              "@_max": "44696"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "2"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "15"
+                    },
+                    {
+                      "@_ware": "turretcomponents",
+                      "@_amount": "15"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "turret_bor_m_arc_02_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.4"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "turret_bor_m_arc_02_mk1",
+            "@_name": "{20105,4964}",
+            "@_description": "{20105,4962}",
+            "@_group": "turrets",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment turret"
+          },
+          {
+            "price": {
+              "@_min": "23749",
+              "@_average": "27436",
+              "@_max": "28233"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "3"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "10"
+                    },
+                    {
+                      "@_ware": "turretcomponents",
+                      "@_amount": "6"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "turret_bor_m_dumbfire_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.55"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "turret_bor_m_dumbfire_01_mk1",
+            "@_name": "{20105,7004}",
+            "@_description": "{20105,7002}",
+            "@_group": "turrets",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment turret"
+          },
+          {
+            "price": {
+              "@_min": "27540",
+              "@_average": "31850",
+              "@_max": "34339"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "2"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "10"
+                    },
+                    {
+                      "@_ware": "turretcomponents",
+                      "@_amount": "12"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "turret_bor_m_guided_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.75"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "turret_bor_m_guided_01_mk1",
+            "@_name": "{20105,4994}",
+            "@_description": "{20105,4992}",
+            "@_group": "turrets",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment turret"
+          },
+          {
+            "price": {
+              "@_min": "21779",
+              "@_average": "26240",
+              "@_max": "30701"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "1"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "5"
+                    },
+                    {
+                      "@_ware": "turretcomponents",
+                      "@_amount": "12"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "turret_bor_m_laser_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "turret_bor_m_laser_01_mk1",
+            "@_name": "{20105,4954}",
+            "@_description": "{20105,4952}",
+            "@_group": "turrets",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment turret"
+          },
+          {
+            "price": {
+              "@_min": "21779",
+              "@_average": "26240",
+              "@_max": "30701"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "1"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "5"
+                    },
+                    {
+                      "@_ware": "turretcomponents",
+                      "@_amount": "12"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "turret_bor_m_laser_02_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "turret_bor_m_laser_02_mk1",
+            "@_name": "{20105,4954}",
+            "@_description": "{20105,4952}",
+            "@_group": "turrets",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment turret"
+          },
+          {
+            "price": {
+              "@_min": "16446",
+              "@_average": "18274",
+              "@_max": "20101"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "1"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "5"
+                    },
+                    {
+                      "@_ware": "turretcomponents",
+                      "@_amount": "7"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "turret_bor_m_mining_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0",
+              "@_purposes": "mine"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "turret_bor_m_mining_01_mk1",
+            "@_name": "{20105,4984}",
+            "@_description": "{20105,4982}",
+            "@_group": "turrets",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment turret"
+          },
+          {
+            "price": {
+              "@_min": "16446",
+              "@_average": "18274",
+              "@_max": "20101"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "1"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "5"
+                    },
+                    {
+                      "@_ware": "turretcomponents",
+                      "@_amount": "7"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "turret_bor_m_mining_02_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0",
+              "@_purposes": "mine"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "turret_bor_m_mining_02_mk1",
+            "@_name": "{20105,4984}",
+            "@_description": "{20105,4982}",
+            "@_group": "turrets",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment turret"
+          },
+          {
+            "price": {
+              "@_min": "49405",
+              "@_average": "59524",
+              "@_max": "69643"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "4"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "25"
+                    },
+                    {
+                      "@_ware": "turretcomponents",
+                      "@_amount": "20"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "turret_bor_m_railgun_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.8"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "turret_bor_m_railgun_01_mk1",
+            "@_name": "{20105,4974}",
+            "@_description": "{20105,4972}",
+            "@_group": "turrets",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment turret"
+          },
+          {
+            "price": {
+              "@_min": "49405",
+              "@_average": "59524",
+              "@_max": "69643"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "4"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "25"
+                    },
+                    {
+                      "@_ware": "turretcomponents",
+                      "@_amount": "20"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "turret_bor_m_railgun_02_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.8"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "turret_bor_m_railgun_02_mk1",
+            "@_name": "{20105,4974}",
+            "@_description": "{20105,4972}",
+            "@_group": "turrets",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment turret"
+          },
+          {
+            "price": {
+              "@_min": "1200610",
+              "@_average": "1600814",
+              "@_max": "2049042"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "161"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "78"
+                    },
+                    {
+                      "@_ware": "weaponcomponents",
+                      "@_amount": "380"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "weapon_bor_l_beam_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "capitalequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "weapon_bor_l_beam_01_mk1",
+            "@_name": "{20105,3064}",
+            "@_description": "{20105,3062}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment weapon"
+          },
+          {
+            "price": {
+              "@_min": "22558",
+              "@_average": "25064",
+              "@_max": "27571"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "3"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "10"
+                    },
+                    {
+                      "@_ware": "weaponcomponents",
+                      "@_amount": "5"
+                    }
+                  ]
+                },
+                "@_time": "5",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "weapon_bor_m_dumbfire_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.3"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "weapon_bor_m_dumbfire_01_mk1",
+            "@_name": "{20105,2534}",
+            "@_description": "{20105,2532}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment weapon"
+          },
+          {
+            "price": {
+              "@_min": "196125",
+              "@_average": "261500",
+              "@_max": "334720"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "29"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "45"
+                    },
+                    {
+                      "@_ware": "weaponcomponents",
+                      "@_amount": "50"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "weapon_bor_m_flak_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.2"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "weapon_bor_m_flak_01_mk1",
+            "@_name": "{20105,2504}",
+            "@_description": "{20105,2502}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment weapon"
+          },
+          {
+            "price": {
+              "@_min": "44770",
+              "@_average": "49745",
+              "@_max": "54719"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "6"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "10"
+                    },
+                    {
+                      "@_ware": "weaponcomponents",
+                      "@_amount": "10"
+                    }
+                  ]
+                },
+                "@_time": "5",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "weapon_bor_m_guided_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.7"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "weapon_bor_m_guided_01_mk1",
+            "@_name": "{20105,2544}",
+            "@_description": "{20105,2542}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment weapon"
+          },
+          {
+            "price": {
+              "@_min": "67261",
+              "@_average": "89681",
+              "@_max": "114792"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "3"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "37"
+                    },
+                    {
+                      "@_ware": "weaponcomponents",
+                      "@_amount": "42"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "weapon_bor_m_laser_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "weapon_bor_m_laser_01_mk1",
+            "@_name": "{20105,2494}",
+            "@_description": "{20105,2492}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment weapon"
+          },
+          {
+            "price": {
+              "@_min": "27033",
+              "@_average": "34536",
+              "@_max": "43394"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "1"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "16"
+                    },
+                    {
+                      "@_ware": "weaponcomponents",
+                      "@_amount": "8"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "weapon_bor_m_mining_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0",
+              "@_purposes": "mine"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "weapon_bor_m_mining_01_mk1",
+            "@_name": "{20105,2524}",
+            "@_description": "{20105,2522}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment weapon"
+          },
+          {
+            "price": {
+              "@_min": "759116",
+              "@_average": "1012155",
+              "@_max": "1295558"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "111"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "60"
+                    },
+                    {
+                      "@_ware": "weaponcomponents",
+                      "@_amount": "205"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "weapon_bor_m_railgun_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.6"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "weapon_bor_m_railgun_01_mk1",
+            "@_name": "{20105,2514}",
+            "@_description": "{20105,2512}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment weapon"
+          },
+          {
+            "price": {
+              "@_min": "78039",
+              "@_average": "86710",
+              "@_max": "95381"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "8"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "10"
+                    },
+                    {
+                      "@_ware": "weaponcomponents",
+                      "@_amount": "25"
+                    }
+                  ]
+                },
+                "@_time": "5",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "weapon_bor_m_torpedo_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.6"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "weapon_bor_m_torpedo_01_mk1",
+            "@_name": "{20105,2554}",
+            "@_description": "{20105,2552}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment weapon"
+          },
+          {
+            "price": {
+              "@_min": "177955",
+              "@_average": "237273",
+              "@_max": "303710"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "30"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "55"
+                    },
+                    {
+                      "@_ware": "weaponcomponents",
+                      "@_amount": "44"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "weapon_bor_s_arc_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.6"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "weapon_bor_s_arc_01_mk1",
+            "@_name": "{20105,1494}",
+            "@_description": "{20105,1492}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment weapon"
+          },
+          {
+            "price": {
+              "@_min": "6695",
+              "@_average": "7439",
+              "@_max": "8183"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "1"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "10"
+                    },
+                    {
+                      "@_ware": "weaponcomponents",
+                      "@_amount": "1"
+                    }
+                  ]
+                },
+                "@_time": "5",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "weapon_bor_s_dumbfire_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.1"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "weapon_bor_s_dumbfire_01_mk1",
+            "@_name": "{20105,1524}",
+            "@_description": "{20105,1522}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment weapon"
+          },
+          {
+            "price": {
+              "@_min": "85489",
+              "@_average": "113985",
+              "@_max": "145901"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "12"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "30"
+                    },
+                    {
+                      "@_ware": "weaponcomponents",
+                      "@_amount": "30"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "weapon_bor_s_gatling_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.2"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "weapon_bor_s_gatling_01_mk1",
+            "@_name": "{20105,1504}",
+            "@_description": "{20105,1502}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment weapon"
+          },
+          {
+            "price": {
+              "@_min": "8277",
+              "@_average": "9197",
+              "@_max": "10117"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "1"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "10"
+                    },
+                    {
+                      "@_ware": "weaponcomponents",
+                      "@_amount": "2"
+                    }
+                  ]
+                },
+                "@_time": "5",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "weapon_bor_s_guided_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.23"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "weapon_bor_s_guided_01_mk1",
+            "@_name": "{20105,1534}",
+            "@_description": "{20105,1532}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment weapon"
+          },
+          {
+            "price": {
+              "@_min": "46814",
+              "@_average": "62419",
+              "@_max": "79896"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "4"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "35"
+                    },
+                    {
+                      "@_ware": "weaponcomponents",
+                      "@_amount": "25"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "weapon_bor_s_laser_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "weapon_bor_s_laser_01_mk1",
+            "@_name": "{20105,1484}",
+            "@_description": "{20105,1482}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment weapon"
+          },
+          {
+            "price": {
+              "@_min": "15844",
+              "@_average": "17328",
+              "@_max": "19129"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "2"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "10"
+                    },
+                    {
+                      "@_ware": "weaponcomponents",
+                      "@_amount": "5"
+                    }
+                  ]
+                },
+                "@_time": "10",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "weapon_bor_s_mining_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "generaluseequipment"
+            },
+            "use": {
+              "@_threshold": "0",
+              "@_purposes": "mine"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "weapon_bor_s_mining_01_mk1",
+            "@_name": "{20105,1514}",
+            "@_description": "{20105,1512}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment weapon"
+          },
+          {
+            "price": {
+              "@_min": "22558",
+              "@_average": "25064",
+              "@_max": "27571"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "advancedelectronics",
+                      "@_amount": "3"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "10"
+                    },
+                    {
+                      "@_ware": "weaponcomponents",
+                      "@_amount": "5"
+                    }
+                  ]
+                },
+                "@_time": "5",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "weapon_bor_s_torpedo_01_mk1_macro"
+            },
+            "restriction": {
+              "@_licence": "militaryequipment"
+            },
+            "use": {
+              "@_threshold": "0.3"
+            },
+            "owner": {
+              "@_faction": "boron"
+            },
+            "@_id": "weapon_bor_s_torpedo_01_mk1",
+            "@_name": "{20105,1544}",
+            "@_description": "{20105,1542}",
+            "@_group": "weapons",
+            "@_transport": "equipment",
+            "@_volume": "1",
+            "@_tags": "equipment weapon"
+          },
+          {
+            "price": {
+              "@_min": "4967013",
+              "@_average": "5843545",
+              "@_max": "6720077"
+            },
+            "production": [
+              {
+                "primary": {
+                  "ware": [
+                    {
+                      "@_ware": "claytronics",
+                      "@_amount": "516"
+                    },
+                    {
+                      "@_ware": "energycells",
+                      "@_amount": "16435"
+                    },
+                    {
+                      "@_ware": "hullparts",
+                      "@_amount": "3775"
+                    },
+                    {
+                      "@_ware": "water",
+                      "@_amount": "9923"
+                    }
+                  ]
+                },
+                "@_time": "1155",
+                "@_amount": "1",
+                "@_method": "default",
+                "@_name": "{20206,101}"
+              }
+            ],
+            "component": {
+              "@_ref": "welfare_bor_artacademy_01_macro"
+            },
+            "@_id": "welfare_bor_artacademy_01",
+            "@_name": "{20104,110301}",
+            "@_description": "{20104,110302}",
+            "@_transport": "container",
+            "@_volume": "1",
+            "@_tags": "missiononly module"
+          }
+        ],
+        "@_sel": "/wares"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_advancedcomposites_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_advancedelectronics_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_antimattercells_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_antimatterconverters_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_claytronics_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_dronecomponents_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_energycells_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_engineparts_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_fieldcoils_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_graphene_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_hullparts_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_microchips_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_missilecomponents_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_plasmaconductors_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_quantumtubes_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_refinedmetals_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_scanningarrays_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_shieldcomponents_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_siliconwafers_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_smartchips_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_superfluidcoolant_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_turretcomponents_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_water_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='module_gen_prod_weaponcomponents_01']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='shield_arg_m_standard_01_mk1']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='shield_arg_m_standard_01_mk2']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='shield_arg_m_standard_02_mk1']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='shield_arg_m_standard_02_mk2']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='ship_arg_xs_police_01_a']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_dumbfire_02_mk1']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_gatling_02_mk1']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_guided_02_mk1']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_laser_02_mk1']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_mining_02_mk1']"
+      },
+      {
+        "owner": {
+          "@_faction": "boron"
+        },
+        "@_sel": "/wares/ware[@id='turret_arg_m_shotgun_02_mk1']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "energycells",
+                "@_amount": "100"
+              },
+              {
+                "@_ware": "plankton",
+                "@_amount": "95"
+              },
+              {
+                "@_ware": "water",
+                "@_amount": "60"
+              }
+            ]
+          },
+          "effects": {
+            "effect": [
+              {
+                "@_type": "work",
+                "@_product": "0.28"
+              }
+            ]
+          },
+          "@_time": "300",
+          "@_amount": "208",
+          "@_method": "boron",
+          "@_name": "{20206,801}"
+        },
+        "@_sel": "/wares/ware[@id='medicalsupplies']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "bofu",
+                "@_amount": "15"
+              },
+              {
+                "@_ware": "medicalsupplies",
+                "@_amount": "33"
+              },
+              {
+                "@_ware": "water",
+                "@_amount": "27"
+              }
+            ]
+          },
+          "@_time": "600",
+          "@_amount": "200",
+          "@_method": "boron",
+          "@_name": "{20206,801}"
+        },
+        "@_sel": "/wares/ware[@id='workunit_busy']"
+      },
+      {
+        "production": {
+          "primary": {
+            "ware": [
+              {
+                "@_ware": "bofu",
+                "@_amount": "10"
+              },
+              {
+                "@_ware": "medicalsupplies",
+                "@_amount": "22"
+              },
+              {
+                "@_ware": "water",
+                "@_amount": "18"
+              }
+            ]
+          },
+          "@_time": "600",
+          "@_amount": "200",
+          "@_method": "boron",
+          "@_name": "{20206,801}"
+        },
+        "@_sel": "/wares/ware[@id='workunit_idle']"
+      }
+    ]
+  }
+}
