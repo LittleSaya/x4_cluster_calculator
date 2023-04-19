@@ -17,3 +17,4 @@ const map = new Map({
     zoom: 2,
   }),
 });
+

@@ -1,0 +1,6 @@
+/**
+ * @type {{
+ *  
+ * }}
+ */
+const database = {};
