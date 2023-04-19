@@ -1,6 +1,1 @@
-/**
- * @type {{
- *  
- * }}
- */
-const database = {};
+const factories = [];
