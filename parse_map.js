@@ -69,6 +69,7 @@ function parse_galaxy_connection (connection) {
     parsed_map[reg_cluster_name_result[1]] = {
       coordinate: [
         Number(connection.offset.position['@_x']),
+        Number(connection.offset.position['@_y']),
         Number(connection.offset.position['@_z']),
       ],
       sectors: {}
@@ -77,6 +78,7 @@ function parse_galaxy_connection (connection) {
     // console.log('cluster at center: ' + reg_cluster_name_result[1]);
     parsed_map[reg_cluster_name_result[1]] = {
       coordinate: [
+        0,
         0,
         0
       ],
@@ -114,6 +116,7 @@ function parse_cluster_connection (connection) {
     parsed_map[cluster_id].sectors[full_sector_id] = {
       coordinate: [
         Number(connection.offset.position['@_x']),
+        Number(connection.offset.position['@_y']),
         Number(connection.offset.position['@_z']),
       ]
     };
@@ -121,6 +124,7 @@ function parse_cluster_connection (connection) {
     // console.log('sector at center: ' + full_sector_id);
     parsed_map[cluster_id].sectors[full_sector_id] = {
       coordinate: [
+        0,
         0,
         0
       ]

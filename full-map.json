@@ -2,11 +2,13 @@
   "Cluster_01": {
     "coordinate": [
       0,
+      0,
       0
     ],
     "sectors": {
       "Cluster_01_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -15,6 +17,7 @@
       "Cluster_01_Sector002": {
         "coordinate": [
           -21113958,
+          0,
           7381814.5
         ],
         "name": "Grand Exchange｜大交易所 III"
@@ -22,6 +25,7 @@
       "Cluster_01_Sector003": {
         "coordinate": [
           38620000,
+          0,
           53635320
         ],
         "name": "Grand Exchange｜大交易所 IV"
@@ -31,11 +35,13 @@
   "Cluster_02": {
     "coordinate": [
       15000000,
+      0,
       25980000
     ],
     "sectors": {
       "Cluster_02_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -46,11 +52,13 @@
   "Cluster_03": {
     "coordinate": [
       30000000,
+      0,
       17320000
     ],
     "sectors": {
       "Cluster_03_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -61,11 +69,13 @@
   "Cluster_04": {
     "coordinate": [
       30000000,
+      0,
       -17320000
     ],
     "sectors": {
       "Cluster_04_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -74,6 +84,7 @@
       "Cluster_04_Sector002": {
         "coordinate": [
           1046580.8125,
+          0,
           -20353148
         ],
         "name": "Nopileos\\' Fortune｜诺皮利奥的财富 VI"
@@ -83,11 +94,13 @@
   "Cluster_05": {
     "coordinate": [
       0,
+      0,
       -17320000
     ],
     "sectors": {
       "Cluster_05_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -98,11 +111,13 @@
   "Cluster_06": {
     "coordinate": [
       -15000000,
+      0,
       -8660000
     ],
     "sectors": {
       "Cluster_06_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -111,6 +126,7 @@
       "Cluster_06_Sector002": {
         "coordinate": [
           47759560,
+          0,
           -5868100.5
         ],
         "name": "Black Hole Sun｜黑洞太阳 V"
@@ -120,11 +136,13 @@
   "Cluster_07": {
     "coordinate": [
       -60000000,
+      0,
       34640000
     ],
     "sectors": {
       "Cluster_07_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -135,11 +153,13 @@
   "Cluster_08": {
     "coordinate": [
       0,
+      0,
       51960000
     ],
     "sectors": {
       "Cluster_08_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -150,11 +170,13 @@
   "Cluster_09": {
     "coordinate": [
       60000000,
+      0,
       34640000
     ],
     "sectors": {
       "Cluster_09_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -165,11 +187,13 @@
   "Cluster_10": {
     "coordinate": [
       60000000,
+      0,
       -17320000
     ],
     "sectors": {
       "Cluster_10_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -180,11 +204,13 @@
   "Cluster_11": {
     "coordinate": [
       0,
+      0,
       -51960000
     ],
     "sectors": {
       "Cluster_11_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -195,11 +221,13 @@
   "Cluster_12": {
     "coordinate": [
       -30000000,
+      0,
       -34640000
     ],
     "sectors": {
       "Cluster_12_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -210,11 +238,13 @@
   "Cluster_13": {
     "coordinate": [
       -30000000,
+      0,
       0
     ],
     "sectors": {
       "Cluster_13_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -225,11 +255,13 @@
   "Cluster_14": {
     "coordinate": [
       -45000000,
+      0,
       25980000
     ],
     "sectors": {
       "Cluster_14_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -240,11 +272,13 @@
   "Cluster_15": {
     "coordinate": [
       105000000,
+      0,
       25980000
     ],
     "sectors": {
       "Cluster_15_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -253,6 +287,7 @@
       "Cluster_15_Sector002": {
         "coordinate": [
           109979864,
+          0,
           0
         ],
         "name": "Ianamus Zura｜依阿那姆斯祖拉 VII"
@@ -262,11 +297,13 @@
   "Cluster_16": {
     "coordinate": [
       105000000,
+      0,
       43310000
     ],
     "sectors": {
       "Cluster_16_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -277,11 +314,13 @@
   "Cluster_17": {
     "coordinate": [
       90000000,
+      0,
       51960000
     ],
     "sectors": {
       "Cluster_17_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -292,11 +331,13 @@
   "Cluster_18": {
     "coordinate": [
       60000000,
+      0,
       0
     ],
     "sectors": {
       "Cluster_18_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -307,11 +348,13 @@
   "Cluster_19": {
     "coordinate": [
       75000000,
+      0,
       -8660000
     ],
     "sectors": {
       "Cluster_19_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -320,6 +363,7 @@
       "Cluster_19_Sector002": {
         "coordinate": [
           112672928,
+          0,
           0
         ],
         "name": "Hewa\\'s Twin｜赫瓦双子 II"
@@ -329,11 +373,13 @@
   "Cluster_20": {
     "coordinate": [
       90000000,
+      0,
       -17330000
     ],
     "sectors": {
       "Cluster_20_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -344,11 +390,13 @@
   "Cluster_21": {
     "coordinate": [
       90000000,
+      0,
       -34640000
     ],
     "sectors": {
       "Cluster_21_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -357,6 +405,7 @@
       "Cluster_21_Sector002": {
         "coordinate": [
           -186899.40625,
+          0,
           46710032
         ],
         "name": "Scale Plate Green｜鳞片之绿 VII"
@@ -366,11 +415,13 @@
   "Cluster_22": {
     "coordinate": [
       30000000,
+      0,
       -34650000
     ],
     "sectors": {
       "Cluster_22_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -381,11 +432,13 @@
   "Cluster_23": {
     "coordinate": [
       45000000,
+      0,
       -60640000
     ],
     "sectors": {
       "Cluster_23_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -396,11 +449,13 @@
   "Cluster_24": {
     "coordinate": [
       -15000000,
+      0,
       -43310000
     ],
     "sectors": {
       "Cluster_24_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -411,11 +466,13 @@
   "Cluster_25": {
     "coordinate": [
       -30000000,
+      0,
       -51960000
     ],
     "sectors": {
       "Cluster_25_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -423,6 +480,7 @@
       },
       "Cluster_25_Sector002": {
         "coordinate": [
+          0,
           0,
           -37855016
         ],
@@ -433,11 +491,13 @@
   "Cluster_26": {
     "coordinate": [
       -60000000,
+      0,
       -51970000
     ],
     "sectors": {
       "Cluster_26_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -446,6 +506,7 @@
       "Cluster_26_Sector002": {
         "coordinate": [
           26673982,
+          0,
           -55409964
         ],
         "name": "Atiya\\'s Misfortune｜安提亚的不幸 III"
@@ -455,11 +516,13 @@
   "Cluster_27": {
     "coordinate": [
       -90000000,
+      0,
       17320000
     ],
     "sectors": {
       "Cluster_27_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -470,11 +533,13 @@
   "Cluster_28": {
     "coordinate": [
       -105000000,
+      0,
       8660000
     ],
     "sectors": {
       "Cluster_28_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -485,11 +550,13 @@
   "Cluster_29": {
     "coordinate": [
       -30000000,
+      0,
       34650000
     ],
     "sectors": {
       "Cluster_29_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -498,6 +565,7 @@
       "Cluster_29_Sector002": {
         "coordinate": [
           80377000,
+          0,
           27158380
         ],
         "name": "Hatikvah\\'s Choice｜希望之歌的选择 III"
@@ -507,11 +575,13 @@
   "Cluster_30": {
     "coordinate": [
       -45000000,
+      0,
       43300000
     ],
     "sectors": {
       "Cluster_30_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -522,11 +592,13 @@
   "Cluster_31": {
     "coordinate": [
       -75000000,
+      0,
       60630000
     ],
     "sectors": {
       "Cluster_31_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -537,11 +609,13 @@
   "Cluster_32": {
     "coordinate": [
       -30000000,
+      0,
       69280000
     ],
     "sectors": {
       "Cluster_32_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -549,6 +623,7 @@
       },
       "Cluster_32_Sector002": {
         "coordinate": [
+          0,
           0,
           33149454
         ],
@@ -559,11 +634,13 @@
   "Cluster_33": {
     "coordinate": [
       -45000000,
+      0,
       77940000
     ],
     "sectors": {
       "Cluster_33_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -574,11 +651,13 @@
   "Cluster_34": {
     "coordinate": [
       45000000,
+      0,
       43310000
     ],
     "sectors": {
       "Cluster_34_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -589,11 +668,13 @@
   "Cluster_35": {
     "coordinate": [
       0,
+      0,
       -69280000
     ],
     "sectors": {
       "Cluster_35_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -604,11 +685,13 @@
   "Cluster_36": {
     "coordinate": [
       -15000000,
+      0,
       -60640000
     ],
     "sectors": {
       "Cluster_36_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -619,11 +702,13 @@
   "Cluster_37": {
     "coordinate": [
       45000000,
+      0,
       -43310000
     ],
     "sectors": {
       "Cluster_37_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -634,11 +719,13 @@
   "Cluster_38": {
     "coordinate": [
       30000000,
+      0,
       -51970000
     ],
     "sectors": {
       "Cluster_38_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -649,11 +736,13 @@
   "Cluster_39": {
     "coordinate": [
       30000000,
+      0,
       0
     ],
     "sectors": {
       "Cluster_39_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -664,11 +753,13 @@
   "Cluster_40": {
     "coordinate": [
       -45000000,
+      0,
       -8660000
     ],
     "sectors": {
       "Cluster_40_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -679,11 +770,13 @@
   "Cluster_41": {
     "coordinate": [
       -45000000,
+      0,
       8660000
     ],
     "sectors": {
       "Cluster_41_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -694,11 +787,13 @@
   "Cluster_42": {
     "coordinate": [
       90000000,
+      0,
       0
     ],
     "sectors": {
       "Cluster_42_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -707,6 +802,7 @@
       "Cluster_42_Sector002": {
         "coordinate": [
           112672928,
+          0,
           0
         ],
         "name": "Hewa\\'s Twin｜赫瓦双子 IV The Cove｜海湾"
@@ -716,11 +812,13 @@
   "Cluster_43": {
     "coordinate": [
       90000000,
+      0,
       17320000
     ],
     "sectors": {
       "Cluster_43_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -731,11 +829,13 @@
   "Cluster_44": {
     "coordinate": [
       15000000,
+      0,
       60620000
     ],
     "sectors": {
       "Cluster_44_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -746,11 +846,13 @@
   "Cluster_45": {
     "coordinate": [
       0,
+      0,
       69280000
     ],
     "sectors": {
       "Cluster_45_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -761,11 +863,13 @@
   "Cluster_46": {
     "coordinate": [
       -45000000,
+      0,
       60620000
     ],
     "sectors": {
       "Cluster_46_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -776,11 +880,13 @@
   "Cluster_47": {
     "coordinate": [
       45000000,
+      0,
       8660000
     ],
     "sectors": {
       "Cluster_47_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -791,11 +897,13 @@
   "Cluster_49": {
     "coordinate": [
       -75000000,
+      0,
       -8660000
     ],
     "sectors": {
       "Cluster_49_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -806,11 +914,13 @@
   "Cluster_48": {
     "coordinate": [
       -90000000,
+      0,
       34650000
     ],
     "sectors": {
       "Cluster_48_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -821,11 +931,13 @@
   "Cluster_50": {
     "coordinate": [
       105000016,
+      0,
       -25990000
     ],
     "sectors": {
       "Cluster_50_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -834,6 +946,7 @@
       "Cluster_50_Sector002": {
         "coordinate": [
           26673982,
+          0,
           -55409964
         ],
         "name": "Turquoise Sea｜绿宝石之海 X"
@@ -843,11 +956,13 @@
   "Cluster_602": {
     "coordinate": [
       -120000000,
+      0,
       51960000
     ],
     "sectors": {
       "Cluster_602_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -858,11 +973,13 @@
   "Cluster_603": {
     "coordinate": [
       -135000000,
+      0,
       43300000
     ],
     "sectors": {
       "Cluster_603_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -873,11 +990,13 @@
   "Cluster_605": {
     "coordinate": [
       -150000000,
+      0,
       69280000
     ],
     "sectors": {
       "Cluster_605_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -888,11 +1007,13 @@
   "Cluster_606": {
     "coordinate": [
       -180000000,
+      0,
       86600000
     ],
     "sectors": {
       "Cluster_606_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -901,6 +1022,7 @@
       "Cluster_606_Sector002": {
         "coordinate": [
           -622191.4,
+          0,
           -41743070
         ],
         "name": "Reflected Stars｜反射星"
@@ -908,6 +1030,7 @@
       "Cluster_606_Sector003": {
         "coordinate": [
           59111760,
+          0,
           -2041270
         ],
         "name": "Towering Wave｜滔天巨浪"
@@ -917,11 +1040,13 @@
   "Cluster_604": {
     "coordinate": [
       -135000000,
+      0,
       25980000
     ],
     "sectors": {
       "Cluster_604_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -932,11 +1057,13 @@
   "Cluster_607": {
     "coordinate": [
       -195000000,
+      0,
       77940000
     ],
     "sectors": {
       "Cluster_607_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -947,11 +1074,13 @@
   "Cluster_601": {
     "coordinate": [
       -105000000,
+      0,
       60630000
     ],
     "sectors": {
       "Cluster_601_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -962,11 +1091,13 @@
   "Cluster_608": {
     "coordinate": [
       -180000000,
+      0,
       69280000
     ],
     "sectors": {
       "Cluster_608_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -977,11 +1108,13 @@
   "Cluster_609": {
     "coordinate": [
       -195000000,
+      0,
       60630000
     ],
     "sectors": {
       "Cluster_609_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -992,11 +1125,13 @@
   "Cluster_401": {
     "coordinate": [
       -30000000,
+      0,
       86600000
     ],
     "sectors": {
       "Cluster_401_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1007,11 +1142,13 @@
   "Cluster_402": {
     "coordinate": [
       -30000000,
+      0,
       103920000
     ],
     "sectors": {
       "Cluster_402_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1022,11 +1159,13 @@
   "Cluster_403": {
     "coordinate": [
       -75000000,
+      0,
       77940000
     ],
     "sectors": {
       "Cluster_403_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1037,11 +1176,13 @@
   "Cluster_400": {
     "coordinate": [
       -60000000,
+      0,
       86600000
     ],
     "sectors": {
       "Cluster_400_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1052,11 +1193,13 @@
   "Cluster_408": {
     "coordinate": [
       120000000,
+      0,
       34640000
     ],
     "sectors": {
       "Cluster_408_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1065,6 +1208,7 @@
       "Cluster_408_Sector002": {
         "coordinate": [
           -18203762,
+          0,
           14011029
         ],
         "name": "Thuruk\\'s Demise｜苏鲁克的消亡 II 首次冲撞"
@@ -1074,11 +1218,13 @@
   "Cluster_407": {
     "coordinate": [
       120000000,
+      0,
       51960000
     ],
     "sectors": {
       "Cluster_407_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1089,11 +1235,13 @@
   "Cluster_409": {
     "coordinate": [
       135000000,
+      0,
       60620000
     ],
     "sectors": {
       "Cluster_409_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1104,11 +1252,13 @@
   "Cluster_410": {
     "coordinate": [
       150000000,
+      0,
       69280000
     ],
     "sectors": {
       "Cluster_410_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1119,11 +1269,13 @@
   "Cluster_411": {
     "coordinate": [
       150000000,
+      0,
       86600000
     ],
     "sectors": {
       "Cluster_411_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1134,11 +1286,13 @@
   "Cluster_405": {
     "coordinate": [
       45000000,
+      0,
       95260000
     ],
     "sectors": {
       "Cluster_405_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1149,11 +1303,13 @@
   "Cluster_406": {
     "coordinate": [
       45000000,
+      0,
       112580000
     ],
     "sectors": {
       "Cluster_406_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1164,11 +1320,13 @@
   "Cluster_404": {
     "coordinate": [
       30000000,
+      0,
       103920000
     ],
     "sectors": {
       "Cluster_404_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1179,11 +1337,13 @@
   "Cluster_418": {
     "coordinate": [
       30000000,
+      0,
       86600000
     ],
     "sectors": {
       "Cluster_418_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1194,11 +1354,13 @@
   "Cluster_419": {
     "coordinate": [
       45000000,
+      0,
       77940000
     ],
     "sectors": {
       "Cluster_419_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1209,11 +1371,13 @@
   "Cluster_420": {
     "coordinate": [
       60000000,
+      0,
       69280000
     ],
     "sectors": {
       "Cluster_420_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1224,11 +1388,13 @@
   "Cluster_416": {
     "coordinate": [
       75000000,
+      0,
       95260000
     ],
     "sectors": {
       "Cluster_416_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1237,6 +1403,7 @@
       "Cluster_416_Sector002": {
         "coordinate": [
           -9526876,
+          9695406,
           24569310
         ],
         "name": "Guiding Star｜引导之星 VII"
@@ -1246,11 +1413,13 @@
   "Cluster_417": {
     "coordinate": [
       75000000,
+      0,
       129900000
     ],
     "sectors": {
       "Cluster_417_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1261,11 +1430,13 @@
   "Cluster_421": {
     "coordinate": [
       120000000,
+      0,
       69280000
     ],
     "sectors": {
       "Cluster_421_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1276,11 +1447,13 @@
   "Cluster_422": {
     "coordinate": [
       -90000000,
+      0,
       86600000
     ],
     "sectors": {
       "Cluster_422_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1291,11 +1464,13 @@
   "Cluster_423": {
     "coordinate": [
       -120000000,
+      0,
       86600000
     ],
     "sectors": {
       "Cluster_423_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1304,6 +1479,7 @@
       "Cluster_423_Sector002": {
         "coordinate": [
           130226256,
+          0,
           112144392
         ],
         "name": "Litany of Fury｜愤怒祷文 XII"
@@ -1313,11 +1489,13 @@
   "Cluster_412": {
     "coordinate": [
       165000000,
+      0,
       60620000
     ],
     "sectors": {
       "Cluster_412_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1328,11 +1506,13 @@
   "Cluster_413": {
     "coordinate": [
       180000000,
+      0,
       69280000
     ],
     "sectors": {
       "Cluster_413_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1343,11 +1523,13 @@
   "Cluster_414": {
     "coordinate": [
       -30000000,
+      0,
       121240000
     ],
     "sectors": {
       "Cluster_414_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1358,11 +1540,13 @@
   "Cluster_415": {
     "coordinate": [
       -15000000,
+      0,
       129900000
     ],
     "sectors": {
       "Cluster_415_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1373,11 +1557,13 @@
   "Cluster_424": {
     "coordinate": [
       -135000000,
+      0,
       95260000
     ],
     "sectors": {
       "Cluster_424_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1386,6 +1572,7 @@
       "Cluster_424_Sector002": {
         "coordinate": [
           136719008,
+          0,
           3677055.75
         ],
         "name": "Emperor\\'s Pride｜帝王的骄傲 VI"
@@ -1395,11 +1582,13 @@
   "Cluster_425": {
     "coordinate": [
       135000000,
+      0,
       95260000
     ],
     "sectors": {
       "Cluster_425_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1410,11 +1599,13 @@
   "Cluster_100": {
     "coordinate": [
       -150000000,
+      0,
       0
     ],
     "sectors": {
       "Cluster_100_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1425,11 +1616,13 @@
   "Cluster_101": {
     "coordinate": [
       -165000000,
+      0,
       8660000
     ],
     "sectors": {
       "Cluster_101_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1440,11 +1633,13 @@
   "Cluster_102": {
     "coordinate": [
       -180000000,
+      0,
       17320000
     ],
     "sectors": {
       "Cluster_102_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1455,11 +1650,13 @@
   "Cluster_104": {
     "coordinate": [
       -165000000,
+      0,
       25980000
     ],
     "sectors": {
       "Cluster_104_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1467,6 +1664,7 @@
       },
       "Cluster_104_Sector002": {
         "coordinate": [
+          0,
           0,
           -175890496
         ],
@@ -1477,11 +1675,13 @@
   "Cluster_106": {
     "coordinate": [
       -180000000,
+      0,
       34640000
     ],
     "sectors": {
       "Cluster_106_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1492,11 +1692,13 @@
   "Cluster_107": {
     "coordinate": [
       -165000000,
+      0,
       -25980000
     ],
     "sectors": {
       "Cluster_107_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1507,11 +1709,13 @@
   "Cluster_108": {
     "coordinate": [
       -180000000,
+      0,
       -34640000
     ],
     "sectors": {
       "Cluster_108_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1520,6 +1724,7 @@
       "Cluster_108_Sector002": {
         "coordinate": [
           -55073532,
+          0,
           -159401120
         ],
         "name": "Titan｜土卫六泰坦"
@@ -1527,6 +1732,7 @@
       "Cluster_108_Sector003": {
         "coordinate": [
           -32631400,
+          0,
           134273000
         ],
         "name": "Saturn｜土星 2"
@@ -1536,11 +1742,13 @@
   "Cluster_109": {
     "coordinate": [
       -195000000,
+      0,
       -43300000
     ],
     "sectors": {
       "Cluster_109_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1551,11 +1759,13 @@
   "Cluster_110": {
     "coordinate": [
       -180000000,
+      0,
       -51970000
     ],
     "sectors": {
       "Cluster_110_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1566,11 +1776,13 @@
   "Cluster_111": {
     "coordinate": [
       -195000000,
+      0,
       -60620000
     ],
     "sectors": {
       "Cluster_111_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1581,11 +1793,13 @@
   "Cluster_112": {
     "coordinate": [
       -75000000,
+      0,
       43300000
     ],
     "sectors": {
       "Cluster_112_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1593,6 +1807,7 @@
       },
       "Cluster_112_Sector002": {
         "coordinate": [
+          0,
           0,
           -51054804
         ],
@@ -1603,11 +1818,13 @@
   "Cluster_113": {
     "coordinate": [
       -105000000,
+      0,
       -60620000
     ],
     "sectors": {
       "Cluster_113_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1618,11 +1835,13 @@
   "Cluster_114": {
     "coordinate": [
       -120000000,
+      0,
       -69280000
     ],
     "sectors": {
       "Cluster_114_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1633,11 +1852,13 @@
   "Cluster_115": {
     "coordinate": [
       -135000000,
+      0,
       -60620000
     ],
     "sectors": {
       "Cluster_115_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1648,11 +1869,13 @@
   "Cluster_116": {
     "coordinate": [
       -210000000,
+      0,
       -69280000
     ],
     "sectors": {
       "Cluster_116_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1663,12 +1886,14 @@
   "Cluster_500": {
     "coordinate": [
       0,
+      0,
       17320000
     ],
     "sectors": {
       "Cluster_500_Sector001": {
         "coordinate": [
           35038240,
+          0,
           55106290
         ],
         "name": "Avarice｜贪婪 I"
@@ -1676,6 +1901,7 @@
       "Cluster_500_Sector002": {
         "coordinate": [
           986167.6,
+          0,
           -210804500
         ],
         "name": "Avarice｜贪婪 V Dead End | 死胡同"
@@ -1683,6 +1909,7 @@
       "Cluster_500_Sector003": {
         "coordinate": [
           -110379200,
+          0,
           -45945560
         ],
         "name": "Avarice｜贪婪 IV"
@@ -1692,11 +1919,13 @@
   "Cluster_501": {
     "coordinate": [
       0,
+      0,
       34650000
     ],
     "sectors": {
       "Cluster_501_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1707,11 +1936,13 @@
   "Cluster_502": {
     "coordinate": [
       -15000000,
+      0,
       25980000
     ],
     "sectors": {
       "Cluster_502_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1722,11 +1953,13 @@
   "Cluster_503": {
     "coordinate": [
       -15000000,
+      0,
       8660000
     ],
     "sectors": {
       "Cluster_503_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
@@ -1737,11 +1970,13 @@
   "Cluster_504": {
     "coordinate": [
       15000000,
+      0,
       8660000
     ],
     "sectors": {
       "Cluster_504_Sector001": {
         "coordinate": [
+          0,
           0,
           0
         ],
