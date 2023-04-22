@@ -1,11 +1,11 @@
 import fullMap from '../full-map.json'
 
-const COS_30 = Math.cos(Math.PI / 6);
-const COS_PI_6 = COS_30;
-const RE_COS_30 = 1 / COS_30;
-const RE_COS_PI_6 = RE_COS_30;
+export const COS_30 = Math.cos(Math.PI / 6);
+export const COS_PI_6 = COS_30;
+export const RE_COS_30 = 1 / COS_30;
+export const RE_COS_PI_6 = RE_COS_30;
 
-const ORIGINAL_RESIZE_RATIO = 1e-4;
+export const ORIGINAL_RESIZE_RATIO = 1e-4;
 
 export const metadata = {
   ORIGINAL_RESIZE_RATIO,
@@ -19,6 +19,8 @@ export const metadata = {
   mapMinZ: undefined,
   mapMaxZ: undefined,
   clusterRadius: undefined,
+  sectorRadius: undefined,
+  exclusiveSectorRadius: undefined,
 };
 
 export function calculateMetadata () {
@@ -63,6 +65,8 @@ export function calculateMetadata () {
     const radius = distance / 2 * RE_COS_30;
     metadata.originalClusterRadius = radius;
     metadata.clusterRadius = radius * ORIGINAL_RESIZE_RATIO;
+    metadata.exclusiveSectorRadius = metadata.clusterRadius;
+    metadata.sectorRadius = metadata.clusterRadius / 2;
   }
 
   console.log('metadata', metadata);
