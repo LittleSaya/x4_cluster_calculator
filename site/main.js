@@ -8,6 +8,13 @@ import { FontLoader } from 'three/examples/jsm/loaders/FontLoader'
 
 calculateMetadata();
 
+const raycaster = new THREE.Raycaster();
+const pointer = new THREE.Vector2(0, 0);
+window.addEventListener('mousemove', function (e) {
+  pointer.x = (e.clientX / window.innerWidth) * 2 - 1;
+  pointer.y = -(e.clientY / window.innerHeight) * 2 + 1;
+});
+
 const fontLoader = new FontLoader();
 const font = await fontLoader.loadAsync('./Alibaba PuHuiTi_Regular.json');
 
@@ -192,8 +199,17 @@ for (const clusterId in fullMap) {
   scene.add(clusterRing);
 }
 
-function animate() {
+function animate () {
   requestAnimationFrame(animate);
+  render();
+}
+
+function render () {
+  raycaster.setFromCamera(pointer, camera);
+  const intersects = raycaster.intersectObjects(scene.children);
+  for (let i = 0; i < intersects.length; i++) {
+		intersects[i].object.material.color.set(0xff0000);
+	}
   renderer.render(scene, camera);
 }
 
