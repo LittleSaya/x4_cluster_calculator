@@ -21,9 +21,14 @@ const OBJECT_TYPE_CLUSTER_HEXAGON = 0
 const OBJECT_TYPE_SECTOR_HEXAGON = 1;
 
 /**
+ * 对象类型：sector六边形的面
+ */
+const OBJECT_TYPE_SECTOR_HEXAGON_PLANE = 3;
+
+/**
  * 对象类型：sector名称
  */
-const OBJECT_TYPE_SECTOR_NAME = 2;
+const OBJECT_TYPE_SECTOR_NAME = 4;
 
 // ========== 射线捡取 ==========
 
@@ -35,7 +40,7 @@ window.addEventListener('mousemove', function (e) {
 });
 
 /**
- * 上一次鼠标选中的sector
+ * @type {THREE.Object3D|undefined} 上一次鼠标选中的sector
  */
 let lastIntersectSector;
 
@@ -101,9 +106,9 @@ function createClusterHexagon (cluster) {
   clusterRing.position.y = cluster.coordinate[1] * metadata.ORIGINAL_RESIZE_RATIO;
   clusterRing.position.z = cluster.coordinate[2] * metadata.ORIGINAL_RESIZE_RATIO;
 
-  const sectorRings = createSectorHexagon(cluster);
-  for (const sectorRing of sectorRings) {
-    clusterRing.add(sectorRing);
+  const sectors = createSectorHexagon(cluster);
+  for (const sector of sectors) {
+    clusterRing.add(sector);
   }
 
   return clusterRing;
@@ -193,6 +198,11 @@ function createSectorHexagon(cluster) {
   const objects = [];
   for (let i = 0; i < sectorCenters.length; ++i) {
     const coordinate = sectorCenters[i];
+
+    const sector = new THREE.Object3D();
+    sector.position.set(coordinate[0], coordinate[1], coordinate[2]);
+    
+    // 六边形的边
     let geometry;
     if (sectorCenters.length === 1) {
       // 独占一个cluster的sector的半径和cluster一样大
@@ -211,7 +221,22 @@ function createSectorHexagon(cluster) {
     geometry.rotateX(Math.PI / 2); // THREE的RingGeometry是在XY平面上的，X4的游戏地图在XZ平面上
     const ring = new THREE.Mesh(geometry, materials.cluster);
     ring.userData.type = OBJECT_TYPE_SECTOR_HEXAGON;
-    ring.position.set(coordinate[0], coordinate[1], coordinate[2]);
+    convertToThreeJsPosition(ring);
+    sector.add(ring);
+
+    // 六边形的面
+    let hexagonPlaneGeometry;
+    if (sectorCenters.length === 1) {
+      // 独占一个cluster的sector的半径和cluster一样大
+      hexagonPlaneGeometry = new THREE.CircleGeometry(metadata.exclusiveSectorRadius, 6);
+    } else {
+      hexagonPlaneGeometry = new THREE.CircleGeometry(metadata.sectorRadius, 6);
+    }
+    hexagonPlaneGeometry.rotateX(Math.PI / 2);
+    const circle = new THREE.Mesh(hexagonPlaneGeometry, materials.sectorPlane);
+    circle.userData.type = OBJECT_TYPE_SECTOR_HEXAGON_PLANE;
+    convertToThreeJsPosition(circle);
+    sector.add(circle);
 
     // sector的名称
     const textGeometry = new TextGeometry(cluster.sectors[sectorIds[i]].name, {
@@ -223,10 +248,9 @@ function createSectorHexagon(cluster) {
     const textObject = new THREE.Mesh(textGeometry, materials.sectorName);
     textObject.userData.type = OBJECT_TYPE_SECTOR_NAME;
     textObject.visible = false;
-    ring.add(textObject);
+    sector.add(textObject);
 
-    convertToThreeJsPosition(ring);
-    objects.push(ring);
+    objects.push(sector);
   }
   return objects;
 }
@@ -249,9 +273,41 @@ function render () {
   // 处理射线捡取
   raycaster.setFromCamera(pointer, camera);
   const intersects = raycaster.intersectObjects(scene.children);
+  let currentIntersectSector;
   for (let i = 0; i < intersects.length; i++) {
-		intersects[i].object.material.color.set(0xff0000);
-	}
+    const object = intersects[i].object;
+    if (object.userData.type === OBJECT_TYPE_SECTOR_HEXAGON_PLANE) {
+      currentIntersectSector = object.parent;
+    }
+  }
+  
+  if (currentIntersectSector) {
+    // 鼠标与某个sector相交
+    if (currentIntersectSector === lastIntersectSector) {
+      // 还是同一个sector，什么都不需要做
+    } else {
+      // 不是同一个sector
+      const currentIntersectSectorNameObject = currentIntersectSector.children.find(childObject => childObject.userData.type === OBJECT_TYPE_SECTOR_NAME);
+      currentIntersectSectorNameObject.visible = true;
+      if (lastIntersectSector) {
+        // 鼠标移动到新的sector，隐藏上一个sector的名称
+        const lastIntersectSectorNameObject = lastIntersectSector.children.find(childObject => childObject.userData.type === OBJECT_TYPE_SECTOR_NAME);
+        lastIntersectSectorNameObject.visible = false;
+      } else {
+        // 从无到有，没有上一个sector名称可以隐藏
+      }
+      lastIntersectSector = currentIntersectSector;
+    }
+  } else {
+    // 鼠标不与某个sector相交
+    if (lastIntersectSector) {
+      // 隐藏上一个sector的名称
+      const lastIntersectSectorNameObject = lastIntersectSector.children.find(childObject => childObject.userData.type === OBJECT_TYPE_SECTOR_NAME);
+      lastIntersectSectorNameObject.visible = false;
+      lastIntersectSector = undefined;
+    }
+  }
+
   renderer.render(scene, camera);
 }
 
