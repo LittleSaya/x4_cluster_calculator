@@ -6,7 +6,26 @@ import { MapControls } from 'three/examples/jsm/controls/MapControls'
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry'
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader'
 
+// ========== 常量、元数据 ==========
+
 calculateMetadata();
+
+/**
+ * 对象类型：cluster六边形
+ */
+const OBJECT_TYPE_CLUSTER_HEXAGON = 0
+
+/**
+ * 对象类型：sector六边形
+ */
+const OBJECT_TYPE_SECTOR_HEXAGON = 1;
+
+/**
+ * 对象类型：sector名称
+ */
+const OBJECT_TYPE_SECTOR_NAME = 2;
+
+// ========== 射线捡取 ==========
 
 const raycaster = new THREE.Raycaster();
 const pointer = new THREE.Vector2(0, 0);
@@ -15,16 +34,29 @@ window.addEventListener('mousemove', function (e) {
   pointer.y = -(e.clientY / window.innerHeight) * 2 + 1;
 });
 
+/**
+ * 上一次鼠标选中的sector
+ */
+let lastIntersectSector;
+
+// ========== 字体加载 ==========
+
 const fontLoader = new FontLoader();
 const font = await fontLoader.loadAsync('./Alibaba PuHuiTi_Regular.json');
+
+// ========== 相机 ==========
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100000);
 camera.position.set(0, 20000, 0);
 camera.lookAt(0, 0, 0);
 
+// ========== 渲染器 ==========
+
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
+
+// ========== 地图控制 ==========
 
 const controls = new MapControls(camera, renderer.domElement);
 controls.screenSpacePanning = false;
@@ -32,7 +64,10 @@ controls.minDistance = 800;
 controls.maxDistance = 20000;
 controls.maxPolarAngle = Math.PI / 2;
 
+// ========== 原始的场景搭建 ==========
+
 const scene = new THREE.Scene();
+
 const axesHelper = new THREE.AxesHelper(5000);
 axesHelper.position.set(metadata.mapMinX - 2 * metadata.clusterRadius, 0, -(metadata.mapMaxZ + 2 * metadata.clusterRadius));
 scene.add(axesHelper);
@@ -61,6 +96,7 @@ function createClusterHexagon (cluster) {
   );
   geometry.rotateX(Math.PI / 2); // THREE的RingGeometry是在XY平面上的，X4的游戏地图在XZ平面上
   const clusterRing = new THREE.Mesh(geometry, materials.cluster);
+  clusterRing.userData.type = OBJECT_TYPE_CLUSTER_HEXAGON;
   clusterRing.position.x = cluster.coordinate[0] * metadata.ORIGINAL_RESIZE_RATIO;
   clusterRing.position.y = cluster.coordinate[1] * metadata.ORIGINAL_RESIZE_RATIO;
   clusterRing.position.z = cluster.coordinate[2] * metadata.ORIGINAL_RESIZE_RATIO;
@@ -174,6 +210,7 @@ function createSectorHexagon(cluster) {
     }
     geometry.rotateX(Math.PI / 2); // THREE的RingGeometry是在XY平面上的，X4的游戏地图在XZ平面上
     const ring = new THREE.Mesh(geometry, materials.cluster);
+    ring.userData.type = OBJECT_TYPE_SECTOR_HEXAGON;
     ring.position.set(coordinate[0], coordinate[1], coordinate[2]);
 
     // sector的名称
@@ -184,6 +221,8 @@ function createSectorHexagon(cluster) {
     });
     textGeometry.rotateX(-Math.PI / 2); // TextGeometry默认是在XY平面上的，X4的游戏地图在XZ平面上
     const textObject = new THREE.Mesh(textGeometry, materials.sectorName);
+    textObject.userData.type = OBJECT_TYPE_SECTOR_NAME;
+    textObject.visible = false;
     ring.add(textObject);
 
     convertToThreeJsPosition(ring);
@@ -199,12 +238,15 @@ for (const clusterId in fullMap) {
   scene.add(clusterRing);
 }
 
+// ========== 渲染循环 ==========
+
 function animate () {
   requestAnimationFrame(animate);
   render();
 }
 
 function render () {
+  // 处理射线捡取
   raycaster.setFromCamera(pointer, camera);
   const intersects = raycaster.intersectObjects(scene.children);
   for (let i = 0; i < intersects.length; i++) {
