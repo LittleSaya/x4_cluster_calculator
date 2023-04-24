@@ -269,6 +269,20 @@ function animate () {
   render();
 }
 
+/**
+ * @param {THREE.Object3D} object 
+ * @param {Number} type 
+ * @param {THREE.Object3D|undefined}
+ */
+function findFirstChildWithType (object, type) {
+  for (const child of object.children) {
+    if (child.userData.type === type) {
+      return child;
+    }
+  }
+  return undefined;
+}
+
 function render () {
   // 处理射线捡取
   raycaster.setFromCamera(pointer, camera);
@@ -306,6 +320,14 @@ function render () {
       lastIntersectSectorNameObject.visible = false;
       lastIntersectSector = undefined;
     }
+  }
+
+  // 更新当前鼠标所指星区的名称大小，使得星区名称不管距离相机多远，其视觉上的大小始终保持不变
+  // 同时，使星区名称尽可能正对相机
+  if (lastIntersectSector) {
+    const sectorNameObject = findFirstChildWithType(lastIntersectSector, OBJECT_TYPE_SECTOR_NAME);
+    const textScale = sectorNameObject.position.distanceTo(camera.position) / 10000;
+    sectorNameObject.scale.set(textScale, textScale, textScale);
   }
 
   renderer.render(scene, camera);
