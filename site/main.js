@@ -325,8 +325,58 @@ function render () {
   // 更新当前鼠标所指星区的名称大小，使得星区名称不管距离相机多远，其视觉上的大小始终保持不变
   // 同时，使星区名称尽可能正对相机
   if (lastIntersectSector) {
+    // 星区名称有6个可能的位置，每个位置对应六边形的一条边
+    let possibleLocations = [
+      {
+        vector: new THREE.Vector3(0, 0, -metadata.clusterRadius), // 位置1：正上方
+        rotation: 0,
+      },
+      {
+        vector: new THREE.Vector3(0, 0, -metadata.clusterRadius).applyAxisAngle(new THREE.Vector3(0, 1, 0), Math.PI / 3), // 位置2：右上
+        rotation: Math.PI / 3,
+      },
+      {
+        vector: new THREE.Vector3(0, 0, -metadata.clusterRadius).applyAxisAngle(new THREE.Vector3(0, 1, 0), Math.PI / 3 * 2), // 位置3：右下
+        rotation: Math.PI / 3 * 2,
+      },
+      {
+        vector: new THREE.Vector3(0, 0, -metadata.clusterRadius).applyAxisAngle(new THREE.Vector3(0, 1, 0), Math.PI), // 位置4：正下方
+        rotation: Math.PI,
+      },
+      {
+        vector: new THREE.Vector3(0, 0, -metadata.clusterRadius).applyAxisAngle(new THREE.Vector3(0, 1, 0), Math.PI / 3 * 4), // 位置5：左下
+        rotation: Math.PI / 3 * 4,
+      },
+      {
+        vector: new THREE.Vector3(0, 0, -metadata.clusterRadius).applyAxisAngle(new THREE.Vector3(0, 1, 0), Math.PI / 3 * 5), // 位置6：左上
+        rotation: Math.PI / 3 * 5,
+      }
+    ];
+    // 遍历每一个可能的位置，找到最正对摄像机的那一个
+    const sectorPosition = new THREE.Vector2(lastIntersectSector.position.x, lastIntersectSector.position.z);
+    const cameraPosition = new THREE.Vector2(camera.position.x, camera.position.z);
+    const vector0 = new THREE.Vector2().subVectors(sectorPosition, cameraPosition).normalize(); // 从相机到星区中心的向量
+    let maxCosIndex = 0, maxCos = Number.NEGATIVE_INFINITY;
+    for (let i = 0; i < possibleLocations.length; ++i) {
+      const possibleLocation = possibleLocations[i];
+      const vector1 = new THREE.Vector2(possibleLocation.vector.x, possibleLocation.vector.z).normalize(); // 从星区中心到可能位置的向量
+      const cos = vector0.x * vector1.x + vector0.y * vector1.y; // 计算两个向量夹角的cos值，这个值越大，就意味着这个位置越正对摄像机
+      if (cos > maxCos) {
+        maxCosIndex = i;
+        maxCos = cos;
+      }
+    }
+    const bestLocation = possibleLocations[maxCosIndex].vector;
+    // 找到星区名称对象，设置新的位置
     const sectorNameObject = findFirstChildWithType(lastIntersectSector, OBJECT_TYPE_SECTOR_NAME);
-    const textScale = sectorNameObject.position.distanceTo(camera.position) / 10000;
+    sectorNameObject.position.set(bestLocation.x, bestLocation.y, bestLocation.z);
+    sectorNameObject.rotateY(possibleLocations[maxCosIndex].rotation);
+    // 根据新的位置计算scale
+    const sectorNameObjectWorldPosition = new THREE.Vector3();
+    sectorNameObject.getWorldPosition(sectorNameObjectWorldPosition);
+    const cameraWorldPosition = new THREE.Vector3();
+    camera.getWorldPosition(cameraWorldPosition);
+    const textScale = sectorNameObjectWorldPosition.distanceTo(cameraWorldPosition) / 10000;
     sectorNameObject.scale.set(textScale, textScale, textScale);
   }
 
