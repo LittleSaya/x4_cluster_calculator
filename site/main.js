@@ -1,6 +1,7 @@
 import { calculateMetadata, metadata, COS_30 } from './metadata'
 import * as materials from './materials'
-import fullMap from '../full-map.json'
+// 手动设置了阵营和sector位置的地图数据
+import fullMap from '../full-map-manually.json'
 import * as THREE from 'three'
 import { MapControls } from 'three/examples/jsm/controls/MapControls'
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry'
@@ -16,9 +17,14 @@ calculateMetadata();
 const OBJECT_TYPE_CLUSTER_HEXAGON = 0
 
 /**
+ * 对象类型：sector
+ */
+const OBJECT_TYPE_SECTOR = 1;
+
+/**
  * 对象类型：sector六边形
  */
-const OBJECT_TYPE_SECTOR_HEXAGON = 1;
+const OBJECT_TYPE_SECTOR_HEXAGON = 2;
 
 /**
  * 对象类型：sector六边形的面
@@ -57,7 +63,7 @@ camera.lookAt(0, 0, 0);
 
 // ========== 渲染器 ==========
 
-const renderer = new THREE.WebGLRenderer();
+const renderer = new THREE.WebGLRenderer({ antialias: true, logarithmicDepthBuffer: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
@@ -100,7 +106,12 @@ function createClusterHexagon (cluster) {
     6, 1
   );
   geometry.rotateX(Math.PI / 2); // THREE的RingGeometry是在XY平面上的，X4的游戏地图在XZ平面上
-  const clusterRing = new THREE.Mesh(geometry, materials.cluster);
+  // 设置cluster六边形边缘的材质
+  let material = materials.clusterHexagonEdge[cluster.ownership];
+  if (!material) {
+    material = materials.clusterHexagonEdge['undefined'];
+  }
+  const clusterRing = new THREE.Mesh(geometry, material);
   clusterRing.userData.type = OBJECT_TYPE_CLUSTER_HEXAGON;
   clusterRing.position.x = cluster.coordinate[0] * metadata.ORIGINAL_RESIZE_RATIO;
   clusterRing.position.y = cluster.coordinate[1] * metadata.ORIGINAL_RESIZE_RATIO;
@@ -139,14 +150,14 @@ function createSectorHexagon(cluster) {
       if (x0 <= x1) {
         // 点0在左下角，点1在右上角
         sectorCenters.push(
-          [xLeft, 0, zBottom],
-          [xRight, 0, zTop],
+          [xLeft, 0, -zBottom], // 转换到three.js的坐标系，需要反转z坐标
+          [xRight, 0, -zTop], // 转换到three.js的坐标系，需要反转z坐标
         );
       } else {
         // 点0在右上角，点1在左下角
         sectorCenters.push(
-          [xRight, 0, zTop],
-          [xLeft, 0, zBottom],
+          [xRight, 0, -zTop], // 转换到three.js的坐标系，需要反转z坐标
+          [xLeft, 0, -zBottom], // 转换到three.js的坐标系，需要反转z坐标
         );
       }
     } else {
@@ -154,14 +165,14 @@ function createSectorHexagon(cluster) {
       if (x0 <= x1) {
         // 点0在左上角，点1在右下角
         sectorCenters.push(
-          [xLeft, 0, zTop],
-          [xRight, 0, zBottom],
+          [xLeft, 0, -zTop], // 转换到three.js的坐标系，需要反转z坐标
+          [xRight, 0, -zBottom], // 转换到three.js的坐标系，需要反转z坐标
         );
       } else {
         // 点0在右下角，点1在左上角
         sectorCenters.push(
-          [xRight, 0, zBottom],
-          [xLeft, 0, zTop],
+          [xRight, 0, -zBottom], // 转换到three.js的坐标系，需要反转z坐标
+          [xLeft, 0, -zTop], // 转换到three.js的坐标系，需要反转z坐标
         );
       }
     }
@@ -187,9 +198,9 @@ function createSectorHexagon(cluster) {
       x2 = x0;
     }
     sectorCenters.push(
-      [x0, 0, z0],
-      [x1, 0, z1],
-      [x2, 0, z2],
+      [x0, 0, -z0], // 转换到three.js的坐标系，需要反转z坐标
+      [x1, 0, -z1], // 转换到three.js的坐标系，需要反转z坐标
+      [x2, 0, -z2], // 转换到three.js的坐标系，需要反转z坐标
     );
   } else {
     throw new Error('Unsuppoeted sector amount: ' + sectorIds.length);
@@ -200,26 +211,37 @@ function createSectorHexagon(cluster) {
     const coordinate = sectorCenters[i];
 
     const sector = new THREE.Object3D();
-    sector.position.set(coordinate[0], coordinate[1], coordinate[2]);
+    sector.userData.type = OBJECT_TYPE_SECTOR;
+    sector.position.set(coordinate[0], coordinate[1] + 10, coordinate[2]); // sector比cluster略高一点点
     
     // 六边形的边
     let geometry;
+    let sectorRadius;
     if (sectorCenters.length === 1) {
       // 独占一个cluster的sector的半径和cluster一样大
+      sectorRadius = metadata.exclusiveSectorRadius;
       geometry = new THREE.RingGeometry(
         metadata.exclusiveSectorRadius * 46 / 50,
         metadata.exclusiveSectorRadius,
         6, 1
       );
     } else {
+      sectorRadius = metadata.sectorRadius;
       geometry = new THREE.RingGeometry(
         metadata.sectorRadius * 46 / 50,
         metadata.sectorRadius,
         6, 1
       );
     }
+    sector.userData.radius = sectorRadius;
     geometry.rotateX(Math.PI / 2); // THREE的RingGeometry是在XY平面上的，X4的游戏地图在XZ平面上
-    const ring = new THREE.Mesh(geometry, materials.cluster);
+    // 设置sector六边形的边的材质
+    let edgeMaterial = materials.sectorHexagonEdge[cluster.sectors[sectorIds[i]].ownership];
+    if (!edgeMaterial) {
+      edgeMaterial = materials.sectorHexagonEdge['undefined'];
+    }
+    const ring = new THREE.Mesh(geometry, edgeMaterial);
+    ring.position.y += 10; // sector六边形的边比面要略高一点点
     ring.userData.type = OBJECT_TYPE_SECTOR_HEXAGON;
     convertToThreeJsPosition(ring);
     sector.add(ring);
@@ -233,7 +255,12 @@ function createSectorHexagon(cluster) {
       hexagonPlaneGeometry = new THREE.CircleGeometry(metadata.sectorRadius, 6);
     }
     hexagonPlaneGeometry.rotateX(Math.PI / 2);
-    const circle = new THREE.Mesh(hexagonPlaneGeometry, materials.sectorPlane);
+    // 设置sector六边形的面的材质
+    let planeMaterial = materials.sectorHexagonPlane[cluster.sectors[sectorIds[i]].ownership];
+    if (!planeMaterial) {
+      planeMaterial = materials.sectorHexagonPlane['undefined'];
+    }
+    const circle = new THREE.Mesh(hexagonPlaneGeometry, planeMaterial);
     circle.userData.type = OBJECT_TYPE_SECTOR_HEXAGON_PLANE;
     convertToThreeJsPosition(circle);
     sector.add(circle);
@@ -244,9 +271,19 @@ function createSectorHexagon(cluster) {
       size: 160,
       height: 1,
     });
-    textGeometry.rotateX(-Math.PI / 2); // TextGeometry默认是在XY平面上的，X4的游戏地图在XZ平面上
+    
+    // TextGeometry默认是在XY平面上的，X4的游戏地图在XZ平面上
+    textGeometry.rotateX(-Math.PI / 2);
+    
+    // 计算bounding box，移动文字几何体的位置，使得文字能够居中显示
+    textGeometry.computeBoundingBox();
+    const textCenter = new THREE.Vector3();
+    textGeometry.boundingBox.getCenter(textCenter);
+    textGeometry.translate(-textCenter.x, 0, -textCenter.z);
+
     const textObject = new THREE.Mesh(textGeometry, materials.sectorName);
     textObject.userData.type = OBJECT_TYPE_SECTOR_NAME;
+    // sector的名称默认是不显示的，只有当用户将鼠标移动到sector之上后才会显示
     textObject.visible = false;
     sector.add(textObject);
 
@@ -328,45 +365,39 @@ function render () {
     // 星区名称有6个可能的位置，每个位置对应六边形的一条边
     let possibleLocations = [
       {
-        vector: new THREE.Vector3(0, 0, -metadata.clusterRadius), // 位置1
+        vector: new THREE.Vector3(0, 0, -lastIntersectSector.userData.radius), // 位置1
         rotation: 0,
       },
       {
-        vector: new THREE.Vector3(0, 0, -metadata.clusterRadius).applyAxisAngle(new THREE.Vector3(0, 1, 0), Math.PI / 3), // 位置2
+        vector: new THREE.Vector3(0, 0, -lastIntersectSector.userData.radius).applyAxisAngle(new THREE.Vector3(0, 1, 0), Math.PI / 3), // 位置2
         rotation: Math.PI / 3,
       },
       {
-        vector: new THREE.Vector3(0, 0, -metadata.clusterRadius).applyAxisAngle(new THREE.Vector3(0, 1, 0), Math.PI / 3 * 2), // 位置3
+        vector: new THREE.Vector3(0, 0, -lastIntersectSector.userData.radius).applyAxisAngle(new THREE.Vector3(0, 1, 0), Math.PI / 3 * 2), // 位置3
         rotation: Math.PI / 3 * 2,
       },
       {
-        vector: new THREE.Vector3(0, 0, -metadata.clusterRadius).applyAxisAngle(new THREE.Vector3(0, 1, 0), Math.PI), // 位置4
+        vector: new THREE.Vector3(0, 0, -lastIntersectSector.userData.radius).applyAxisAngle(new THREE.Vector3(0, 1, 0), Math.PI), // 位置4
         rotation: Math.PI,
       },
       {
-        vector: new THREE.Vector3(0, 0, -metadata.clusterRadius).applyAxisAngle(new THREE.Vector3(0, 1, 0), -Math.PI / 3), // 位置5（此处旋转角度超过 PI 应该从另一个方向旋转）
-        rotation: Math.PI / 3 * 4,
+        vector: new THREE.Vector3(0, 0, -lastIntersectSector.userData.radius).applyAxisAngle(new THREE.Vector3(0, 1, 0), -Math.PI / 3), // 位置5（此处旋转角度超过 PI 应该从另一个方向旋转）
+        rotation: -Math.PI / 3,
       },
       {
-        vector: new THREE.Vector3(0, 0, -metadata.clusterRadius).applyAxisAngle(new THREE.Vector3(0, 1, 0), -Math.PI / 3 * 2), // 位置6（此处旋转角度超过 PI 应该从另一个方向旋转）
-        rotation: Math.PI / 3 * 5,
+        vector: new THREE.Vector3(0, 0, -lastIntersectSector.userData.radius).applyAxisAngle(new THREE.Vector3(0, 1, 0), -Math.PI / 3 * 2), // 位置6（此处旋转角度超过 PI 应该从另一个方向旋转）
+        rotation: -Math.PI / 3 * 2,
       }
     ];
     // 遍历每一个可能的位置，找到最正对摄像机的那一个
-    const sectorPosition = new THREE.Vector2(lastIntersectSector.position.x, lastIntersectSector.position.z);
-    console.log('dbg sectorPosition', sectorPosition);
-    const cameraPosition = new THREE.Vector2(camera.position.x, camera.position.z);
-    console.log('dbg cameraPosition', cameraPosition);
-    const vector0 = new THREE.Vector2().subVectors(sectorPosition, cameraPosition).normalize(); // 从相机到星区中心的向量
-    console.log('dbg vector0', vector0);
+    const cameraDirection = new THREE.Vector3(0, 0, -1);
+    cameraDirection.applyQuaternion(camera.quaternion);
+    const vector0 = new THREE.Vector2(cameraDirection.x, cameraDirection.z).normalize(); // 相机的方向向量
     let maxCosIndex = 0, maxCos = Number.NEGATIVE_INFINITY;
     for (let i = 0; i < possibleLocations.length; ++i) {
       const possibleLocation = possibleLocations[i];
       const vector1 = new THREE.Vector2(possibleLocation.vector.x, possibleLocation.vector.z).normalize(); // 从星区中心到可能位置的向量
       const cos = vector0.x * vector1.x + vector0.y * vector1.y; // 计算两个向量夹角的cos值，这个值越大，就意味着这个位置越正对摄像机
-      console.log('dbg i', i);
-      console.log('dbg vector1', vector1);
-
       if (cos > maxCos) {
         maxCosIndex = i;
         maxCos = cos;
@@ -382,8 +413,10 @@ function render () {
     sectorNameObject.getWorldPosition(sectorNameObjectWorldPosition);
     const cameraWorldPosition = new THREE.Vector3();
     camera.getWorldPosition(cameraWorldPosition);
-    const textScale = sectorNameObjectWorldPosition.distanceTo(cameraWorldPosition) / 10000;
+    const textScale = sectorNameObjectWorldPosition.distanceTo(cameraWorldPosition) / 8000;
     sectorNameObject.scale.set(textScale, textScale, textScale);
+    // sector的名称比六边形的边、六边形的面都要高
+    sectorNameObject.position.y = 40;
   }
 
   renderer.render(scene, camera);
