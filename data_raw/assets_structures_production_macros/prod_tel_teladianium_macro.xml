@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.51) at 17.06.2021_17-07-51-->
+<macros>
+  <macro name="prod_tel_teladianium_macro" class="production">
+    <component ref="prod_tel_teladianium" />
+    <properties>
+      <identification name="{20104,14601}" shortname="{20104,14603}" makerrace="teladi" description="{20104,14602}" />
+      <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+        </sets>
+      </build>
+      <explosiondamage value="1000" shield="5000" />
+      <hull max="226000" />
+      <secrecy level="2" />
+      <production wares="teladianium">
+        <queue ware="teladianium" method="teladi" />
+      </production>
+      <workforce max="225" />
+    </properties>
+  </macro>
+</macros>

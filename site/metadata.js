@@ -1,4 +1,4 @@
-import fullMap from '../full-map.json'
+import fullMap from '../data_manually_modified/full-map-manually.json'
 
 export const COS_30 = Math.cos(Math.PI / 6);
 export const COS_PI_6 = COS_30;

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.71) at 14.01.2022_10-58-17-->
+<macros>
+  <macro name="storage_pir_s_condensate_01_macro" class="storage">
+    <component ref="storage_pir_s_condensate_01" />
+    <properties>
+      <identification name="{20104,92601}" shortname="{20104,92603}" size="small" description="{20104,92602}" />
+      <cargo max="10000" tags="condensate" />
+      <explosiondamage value="500" shield="2500" />
+      <hull max="100000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+</macros>

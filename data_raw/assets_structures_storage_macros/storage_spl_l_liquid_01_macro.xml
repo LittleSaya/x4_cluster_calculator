@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.51) at 17.06.2021_17-21-38-->
+<macros>
+  <macro name="storage_spl_l_liquid_01_macro" class="storage">
+    <component ref="storage_spl_l_liquid_01" />
+    <properties>
+      <identification name="{20104,26301}" shortname="{20104,26303}" makerrace="split" size="large" description="{20104,26302}" />
+      <cargo max="1000000" tags="liquid" />
+      <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+          <set ref="tradestation_split" />
+          <set ref="piratebase" />
+        </sets>
+      </build>
+      <explosiondamage value="1000" shield="5000" />
+      <hull max="778000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+</macros>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.51) at 17.06.2021_17-07-53-->
+<macros>
+  <macro name="prod_par_sojabeans_macro" class="production">
+    <component ref="prod_par_sojabeans" />
+    <properties>
+      <identification name="{20104,14001}" shortname="{20104,14003}" makerrace="paranid" description="{20104,14002}" />
+      <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+        </sets>
+      </build>
+      <explosiondamage value="1000" shield="5000" />
+      <hull max="259000" />
+      <secrecy level="2" />
+      <production wares="sojabeans">
+        <queue ware="sojabeans" method="paranid" />
+      </production>
+      <workforce max="175" />
+    </properties>
+  </macro>
+</macros>

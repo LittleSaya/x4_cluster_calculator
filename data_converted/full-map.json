@@ -1,0 +1,1987 @@
+{
+  "Cluster_01": {
+    "coordinate": [
+      0,
+      0,
+      0
+    ],
+    "sectors": {
+      "Cluster_01_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Grand Exchange｜大交易所 I"
+      },
+      "Cluster_01_Sector002": {
+        "coordinate": [
+          -21113958,
+          0,
+          7381814.5
+        ],
+        "name": "Grand Exchange｜大交易所 III"
+      },
+      "Cluster_01_Sector003": {
+        "coordinate": [
+          38620000,
+          0,
+          53635320
+        ],
+        "name": "Grand Exchange｜大交易所 IV"
+      }
+    }
+  },
+  "Cluster_02": {
+    "coordinate": [
+      15000000,
+      0,
+      25980000
+    ],
+    "sectors": {
+      "Cluster_02_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Eighteen Billion｜一百八十亿"
+      }
+    }
+  },
+  "Cluster_03": {
+    "coordinate": [
+      30000000,
+      0,
+      17320000
+    ],
+    "sectors": {
+      "Cluster_03_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Memory of Profit｜利润的回忆 IX"
+      }
+    }
+  },
+  "Cluster_04": {
+    "coordinate": [
+      30000000,
+      0,
+      -17320000
+    ],
+    "sectors": {
+      "Cluster_04_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Nopileos\\' Fortune｜诺皮利奥的财富 II"
+      },
+      "Cluster_04_Sector002": {
+        "coordinate": [
+          1046580.8125,
+          0,
+          -20353148
+        ],
+        "name": "Nopileos\\' Fortune｜诺皮利奥的财富 VI"
+      }
+    }
+  },
+  "Cluster_05": {
+    "coordinate": [
+      0,
+      0,
+      -17320000
+    ],
+    "sectors": {
+      "Cluster_05_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Path to Profit｜财富之路"
+      }
+    }
+  },
+  "Cluster_06": {
+    "coordinate": [
+      -15000000,
+      0,
+      -8660000
+    ],
+    "sectors": {
+      "Cluster_06_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Black Hole Sun｜黑洞太阳 IV"
+      },
+      "Cluster_06_Sector002": {
+        "coordinate": [
+          47759560,
+          0,
+          -5868100.5
+        ],
+        "name": "Black Hole Sun｜黑洞太阳 V"
+      }
+    }
+  },
+  "Cluster_07": {
+    "coordinate": [
+      -60000000,
+      0,
+      34640000
+    ],
+    "sectors": {
+      "Cluster_07_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "The Reach｜抵达"
+      }
+    }
+  },
+  "Cluster_08": {
+    "coordinate": [
+      0,
+      0,
+      51960000
+    ],
+    "sectors": {
+      "Cluster_08_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Silent Witness｜沉默的证人 I"
+      }
+    }
+  },
+  "Cluster_09": {
+    "coordinate": [
+      60000000,
+      0,
+      34640000
+    ],
+    "sectors": {
+      "Cluster_09_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Bright Promise｜鲜明的承诺"
+      }
+    }
+  },
+  "Cluster_10": {
+    "coordinate": [
+      60000000,
+      0,
+      -17320000
+    ],
+    "sectors": {
+      "Cluster_10_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Unholy Retribution｜邪恶的报复"
+      }
+    }
+  },
+  "Cluster_11": {
+    "coordinate": [
+      0,
+      0,
+      -51960000
+    ],
+    "sectors": {
+      "Cluster_11_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Pontifex\\'s Claim｜教皇的声明"
+      }
+    }
+  },
+  "Cluster_12": {
+    "coordinate": [
+      -30000000,
+      0,
+      -34640000
+    ],
+    "sectors": {
+      "Cluster_12_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "True Sight｜真视"
+      }
+    }
+  },
+  "Cluster_13": {
+    "coordinate": [
+      -30000000,
+      0,
+      0
+    ],
+    "sectors": {
+      "Cluster_13_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Second Contact｜第二次接触 II Flashpoint｜闪点"
+      }
+    }
+  },
+  "Cluster_14": {
+    "coordinate": [
+      -45000000,
+      0,
+      25980000
+    ],
+    "sectors": {
+      "Cluster_14_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Argon Prime｜Argon之都"
+      }
+    }
+  },
+  "Cluster_15": {
+    "coordinate": [
+      105000000,
+      0,
+      25980000
+    ],
+    "sectors": {
+      "Cluster_15_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Ianamus Zura｜依阿那姆斯祖拉 IV"
+      },
+      "Cluster_15_Sector002": {
+        "coordinate": [
+          109979864,
+          0,
+          0
+        ],
+        "name": "Ianamus Zura｜依阿那姆斯祖拉 VII"
+      }
+    }
+  },
+  "Cluster_16": {
+    "coordinate": [
+      105000000,
+      0,
+      43310000
+    ],
+    "sectors": {
+      "Cluster_16_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "矩阵 #451"
+      }
+    }
+  },
+  "Cluster_17": {
+    "coordinate": [
+      90000000,
+      0,
+      51960000
+    ],
+    "sectors": {
+      "Cluster_17_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "矩阵 #9"
+      }
+    }
+  },
+  "Cluster_18": {
+    "coordinate": [
+      60000000,
+      0,
+      0
+    ],
+    "sectors": {
+      "Cluster_18_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Trinity Sanctum｜三圣殿 III"
+      }
+    }
+  },
+  "Cluster_19": {
+    "coordinate": [
+      75000000,
+      0,
+      -8660000
+    ],
+    "sectors": {
+      "Cluster_19_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Hewa\\'s Twin｜赫瓦双子 I"
+      },
+      "Cluster_19_Sector002": {
+        "coordinate": [
+          112672928,
+          0,
+          0
+        ],
+        "name": "Hewa\\'s Twin｜赫瓦双子 II"
+      }
+    }
+  },
+  "Cluster_20": {
+    "coordinate": [
+      90000000,
+      0,
+      -17330000
+    ],
+    "sectors": {
+      "Cluster_20_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Company Regard｜公司关注"
+      }
+    }
+  },
+  "Cluster_21": {
+    "coordinate": [
+      90000000,
+      0,
+      -34640000
+    ],
+    "sectors": {
+      "Cluster_21_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Scale Plate Green｜鳞片之绿 I"
+      },
+      "Cluster_21_Sector002": {
+        "coordinate": [
+          -186899.40625,
+          0,
+          46710032
+        ],
+        "name": "Scale Plate Green｜鳞片之绿 VII"
+      }
+    }
+  },
+  "Cluster_22": {
+    "coordinate": [
+      30000000,
+      0,
+      -34650000
+    ],
+    "sectors": {
+      "Cluster_22_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Pious Mists｜虔诚之雾 II"
+      }
+    }
+  },
+  "Cluster_23": {
+    "coordinate": [
+      45000000,
+      0,
+      -60640000
+    ],
+    "sectors": {
+      "Cluster_23_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Sacred Relic｜神圣遗迹"
+      }
+    }
+  },
+  "Cluster_24": {
+    "coordinate": [
+      -15000000,
+      0,
+      -43310000
+    ],
+    "sectors": {
+      "Cluster_24_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Holy Vision｜神圣眼光"
+      }
+    }
+  },
+  "Cluster_25": {
+    "coordinate": [
+      -30000000,
+      0,
+      -51960000
+    ],
+    "sectors": {
+      "Cluster_25_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Faulty Logic｜错误逻辑 I"
+      },
+      "Cluster_25_Sector002": {
+        "coordinate": [
+          0,
+          0,
+          -37855016
+        ],
+        "name": "Faulty Logic｜错误逻辑 VII"
+      }
+    }
+  },
+  "Cluster_26": {
+    "coordinate": [
+      -60000000,
+      0,
+      -51970000
+    ],
+    "sectors": {
+      "Cluster_26_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Atiya\\'s Misfortune｜安提亚的不幸 I"
+      },
+      "Cluster_26_Sector002": {
+        "coordinate": [
+          26673982,
+          0,
+          -55409964
+        ],
+        "name": "Atiya\\'s Misfortune｜安提亚的不幸 III"
+      }
+    }
+  },
+  "Cluster_27": {
+    "coordinate": [
+      -90000000,
+      0,
+      17320000
+    ],
+    "sectors": {
+      "Cluster_27_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "The Void｜虚空"
+      }
+    }
+  },
+  "Cluster_28": {
+    "coordinate": [
+      -105000000,
+      0,
+      8660000
+    ],
+    "sectors": {
+      "Cluster_28_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Antigone Memorial｜安提戈涅纪念碑"
+      }
+    }
+  },
+  "Cluster_29": {
+    "coordinate": [
+      -30000000,
+      0,
+      34650000
+    ],
+    "sectors": {
+      "Cluster_29_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Hatikvah\\'s Choice｜希望之歌的选择 I"
+      },
+      "Cluster_29_Sector002": {
+        "coordinate": [
+          80377000,
+          0,
+          27158380
+        ],
+        "name": "Hatikvah\\'s Choice｜希望之歌的选择 III"
+      }
+    }
+  },
+  "Cluster_30": {
+    "coordinate": [
+      -45000000,
+      0,
+      43300000
+    ],
+    "sectors": {
+      "Cluster_30_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Morning Star｜晨星 III"
+      }
+    }
+  },
+  "Cluster_31": {
+    "coordinate": [
+      -75000000,
+      0,
+      60630000
+    ],
+    "sectors": {
+      "Cluster_31_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Heretic\\'s End｜异端的终结"
+      }
+    }
+  },
+  "Cluster_32": {
+    "coordinate": [
+      -30000000,
+      0,
+      69280000
+    ],
+    "sectors": {
+      "Cluster_32_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Tharka\\'s Cascade｜塔卡的瀑布 XV"
+      },
+      "Cluster_32_Sector002": {
+        "coordinate": [
+          0,
+          0,
+          33149454
+        ],
+        "name": "Tharka\\'s Cascade｜塔卡的瀑布 XVII"
+      }
+    }
+  },
+  "Cluster_33": {
+    "coordinate": [
+      -45000000,
+      0,
+      77940000
+    ],
+    "sectors": {
+      "Cluster_33_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "矩阵 #79B"
+      }
+    }
+  },
+  "Cluster_34": {
+    "coordinate": [
+      45000000,
+      0,
+      43310000
+    ],
+    "sectors": {
+      "Cluster_34_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Profit Center Alpha｜利润中心阿尔法"
+      }
+    }
+  },
+  "Cluster_35": {
+    "coordinate": [
+      0,
+      0,
+      -69280000
+    ],
+    "sectors": {
+      "Cluster_35_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Lasting Vengeance｜无尽的复仇"
+      }
+    }
+  },
+  "Cluster_36": {
+    "coordinate": [
+      -15000000,
+      0,
+      -60640000
+    ],
+    "sectors": {
+      "Cluster_36_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Cardinal\\'s Redress｜主教的平反"
+      }
+    }
+  },
+  "Cluster_37": {
+    "coordinate": [
+      45000000,
+      0,
+      -43310000
+    ],
+    "sectors": {
+      "Cluster_37_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Pious Mists｜虔诚之雾 IV"
+      }
+    }
+  },
+  "Cluster_38": {
+    "coordinate": [
+      30000000,
+      0,
+      -51970000
+    ],
+    "sectors": {
+      "Cluster_38_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Pious Mists｜虔诚之雾 XI"
+      }
+    }
+  },
+  "Cluster_39": {
+    "coordinate": [
+      30000000,
+      0,
+      0
+    ],
+    "sectors": {
+      "Cluster_39_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Memory of Profit｜利润的回忆 X"
+      }
+    }
+  },
+  "Cluster_40": {
+    "coordinate": [
+      -45000000,
+      0,
+      -8660000
+    ],
+    "sectors": {
+      "Cluster_40_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Second Contact｜第二次接触 VII"
+      }
+    }
+  },
+  "Cluster_41": {
+    "coordinate": [
+      -45000000,
+      0,
+      8660000
+    ],
+    "sectors": {
+      "Cluster_41_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Second Contact｜第二次接触 XI"
+      }
+    }
+  },
+  "Cluster_42": {
+    "coordinate": [
+      90000000,
+      0,
+      0
+    ],
+    "sectors": {
+      "Cluster_42_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Hewa\\'s Twin｜赫瓦双子 III"
+      },
+      "Cluster_42_Sector002": {
+        "coordinate": [
+          112672928,
+          0,
+          0
+        ],
+        "name": "Hewa\\'s Twin｜赫瓦双子 IV The Cove｜海湾"
+      }
+    }
+  },
+  "Cluster_43": {
+    "coordinate": [
+      90000000,
+      0,
+      17320000
+    ],
+    "sectors": {
+      "Cluster_43_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Hewa\\'s Twin｜赫瓦双子 V"
+      }
+    }
+  },
+  "Cluster_44": {
+    "coordinate": [
+      15000000,
+      0,
+      60620000
+    ],
+    "sectors": {
+      "Cluster_44_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Silent Witness｜沉默的证人 XI"
+      }
+    }
+  },
+  "Cluster_45": {
+    "coordinate": [
+      0,
+      0,
+      69280000
+    ],
+    "sectors": {
+      "Cluster_45_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Silent Witness｜沉默的证人 XII"
+      }
+    }
+  },
+  "Cluster_46": {
+    "coordinate": [
+      -45000000,
+      0,
+      60620000
+    ],
+    "sectors": {
+      "Cluster_46_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Morning Star｜晨星 IV"
+      }
+    }
+  },
+  "Cluster_47": {
+    "coordinate": [
+      45000000,
+      0,
+      8660000
+    ],
+    "sectors": {
+      "Cluster_47_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Trinity Sanctum｜三圣殿 VII"
+      }
+    }
+  },
+  "Cluster_49": {
+    "coordinate": [
+      -75000000,
+      0,
+      -8660000
+    ],
+    "sectors": {
+      "Cluster_49_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Frontier Edge｜疆域边陲"
+      }
+    }
+  },
+  "Cluster_48": {
+    "coordinate": [
+      -90000000,
+      0,
+      34650000
+    ],
+    "sectors": {
+      "Cluster_48_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Getsu Fune｜月之舟"
+      }
+    }
+  },
+  "Cluster_50": {
+    "coordinate": [
+      105000016,
+      0,
+      -25990000
+    ],
+    "sectors": {
+      "Cluster_50_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Turquoise Sea｜绿宝石之海 IX"
+      },
+      "Cluster_50_Sector002": {
+        "coordinate": [
+          26673982,
+          0,
+          -55409964
+        ],
+        "name": "Turquoise Sea｜绿宝石之海 X"
+      }
+    }
+  },
+  "Cluster_602": {
+    "coordinate": [
+      -120000000,
+      0,
+      51960000
+    ],
+    "sectors": {
+      "Cluster_602_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Barren Shores｜贫瘠海岸"
+      }
+    }
+  },
+  "Cluster_603": {
+    "coordinate": [
+      -135000000,
+      0,
+      43300000
+    ],
+    "sectors": {
+      "Cluster_603_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Great Reef｜大暗礁"
+      }
+    }
+  },
+  "Cluster_605": {
+    "coordinate": [
+      -150000000,
+      0,
+      69280000
+    ],
+    "sectors": {
+      "Cluster_605_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Sanctuary of Darkness｜黑暗庇护所"
+      }
+    }
+  },
+  "Cluster_606": {
+    "coordinate": [
+      -180000000,
+      0,
+      86600000
+    ],
+    "sectors": {
+      "Cluster_606_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Kingdom End｜王国末路 I"
+      },
+      "Cluster_606_Sector002": {
+        "coordinate": [
+          -622191.4,
+          0,
+          -41743070
+        ],
+        "name": "Reflected Stars｜反射星"
+      },
+      "Cluster_606_Sector003": {
+        "coordinate": [
+          59111760,
+          0,
+          -2041270
+        ],
+        "name": "Towering Wave｜滔天巨浪"
+      }
+    }
+  },
+  "Cluster_604": {
+    "coordinate": [
+      -135000000,
+      0,
+      25980000
+    ],
+    "sectors": {
+      "Cluster_604_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Ocean of Fantasy｜梦幻海洋"
+      }
+    }
+  },
+  "Cluster_607": {
+    "coordinate": [
+      -195000000,
+      0,
+      77940000
+    ],
+    "sectors": {
+      "Cluster_607_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Rolk\\'s Demise｜洛克的消亡"
+      }
+    }
+  },
+  "Cluster_601": {
+    "coordinate": [
+      -105000000,
+      0,
+      60630000
+    ],
+    "sectors": {
+      "Cluster_601_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Watchful Gaze｜警惕凝视"
+      }
+    }
+  },
+  "Cluster_608": {
+    "coordinate": [
+      -180000000,
+      0,
+      69280000
+    ],
+    "sectors": {
+      "Cluster_608_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Atreus\\' Clouds｜阿特柔斯之云"
+      }
+    }
+  },
+  "Cluster_609": {
+    "coordinate": [
+      -195000000,
+      0,
+      60630000
+    ],
+    "sectors": {
+      "Cluster_609_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Menelaus\\' Oasis｜梅涅劳斯绿洲"
+      }
+    }
+  },
+  "Cluster_401": {
+    "coordinate": [
+      -30000000,
+      0,
+      86600000
+    ],
+    "sectors": {
+      "Cluster_401_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Family Zhin | 金氏家族"
+      }
+    }
+  },
+  "Cluster_402": {
+    "coordinate": [
+      -30000000,
+      0,
+      103920000
+    ],
+    "sectors": {
+      "Cluster_402_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Family Kritt | 科瑞特家族"
+      }
+    }
+  },
+  "Cluster_403": {
+    "coordinate": [
+      -75000000,
+      0,
+      77940000
+    ],
+    "sectors": {
+      "Cluster_403_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Wretched Skies｜悲惨的天空 V Family Phi | 菲氏家族"
+      }
+    }
+  },
+  "Cluster_400": {
+    "coordinate": [
+      -60000000,
+      0,
+      86600000
+    ],
+    "sectors": {
+      "Cluster_400_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Wretched Skies｜悲惨的天空 IV Family Valka | 维尔卡家族"
+      }
+    }
+  },
+  "Cluster_408": {
+    "coordinate": [
+      120000000,
+      0,
+      34640000
+    ],
+    "sectors": {
+      "Cluster_408_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Thuruk\\'s Demise｜苏鲁克的消亡 III"
+      },
+      "Cluster_408_Sector002": {
+        "coordinate": [
+          -18203762,
+          0,
+          14011029
+        ],
+        "name": "Thuruk\\'s Demise｜苏鲁克的消亡 II 首次冲撞"
+      }
+    }
+  },
+  "Cluster_407": {
+    "coordinate": [
+      120000000,
+      0,
+      51960000
+    ],
+    "sectors": {
+      "Cluster_407_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Family Tkr｜提克家族"
+      }
+    }
+  },
+  "Cluster_409": {
+    "coordinate": [
+      135000000,
+      0,
+      60620000
+    ],
+    "sectors": {
+      "Cluster_409_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Tharka\\'s Ravine｜塔卡的溪谷 XXIV"
+      }
+    }
+  },
+  "Cluster_410": {
+    "coordinate": [
+      150000000,
+      0,
+      69280000
+    ],
+    "sectors": {
+      "Cluster_410_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Tharka\\'s Ravine｜塔卡的溪谷 XVI"
+      }
+    }
+  },
+  "Cluster_411": {
+    "coordinate": [
+      150000000,
+      0,
+      86600000
+    ],
+    "sectors": {
+      "Cluster_411_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Heart of Acrimony｜刻薄之心 II"
+      }
+    }
+  },
+  "Cluster_405": {
+    "coordinate": [
+      45000000,
+      0,
+      95260000
+    ],
+    "sectors": {
+      "Cluster_405_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Zyarth\\'s Dominion｜扎亚斯的领土 IV"
+      }
+    }
+  },
+  "Cluster_406": {
+    "coordinate": [
+      45000000,
+      0,
+      112580000
+    ],
+    "sectors": {
+      "Cluster_406_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Zyarth\\'s Dominion｜扎亚斯的领土 X"
+      }
+    }
+  },
+  "Cluster_404": {
+    "coordinate": [
+      30000000,
+      0,
+      103920000
+    ],
+    "sectors": {
+      "Cluster_404_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Zyarth\\'s Dominion｜扎亚斯的领土 I"
+      }
+    }
+  },
+  "Cluster_418": {
+    "coordinate": [
+      30000000,
+      0,
+      86600000
+    ],
+    "sectors": {
+      "Cluster_418_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Family Nhuut | 纽特家族"
+      }
+    }
+  },
+  "Cluster_419": {
+    "coordinate": [
+      45000000,
+      0,
+      77940000
+    ],
+    "sectors": {
+      "Cluster_419_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Open Market｜开放市场"
+      }
+    }
+  },
+  "Cluster_420": {
+    "coordinate": [
+      60000000,
+      0,
+      69280000
+    ],
+    "sectors": {
+      "Cluster_420_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Two Grand｜两千元大钞"
+      }
+    }
+  },
+  "Cluster_416": {
+    "coordinate": [
+      75000000,
+      0,
+      95260000
+    ],
+    "sectors": {
+      "Cluster_416_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Guiding Star｜引导之星 V"
+      },
+      "Cluster_416_Sector002": {
+        "coordinate": [
+          -9526876,
+          9695406,
+          24569310
+        ],
+        "name": "Guiding Star｜引导之星 VII"
+      }
+    }
+  },
+  "Cluster_417": {
+    "coordinate": [
+      75000000,
+      0,
+      129900000
+    ],
+    "sectors": {
+      "Cluster_417_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Eleventh Hour｜第十一小时"
+      }
+    }
+  },
+  "Cluster_421": {
+    "coordinate": [
+      120000000,
+      0,
+      69280000
+    ],
+    "sectors": {
+      "Cluster_421_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "失败之火"
+      }
+    }
+  },
+  "Cluster_422": {
+    "coordinate": [
+      -90000000,
+      0,
+      86600000
+    ],
+    "sectors": {
+      "Cluster_422_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Wretched Skies｜悲惨的天空 X"
+      }
+    }
+  },
+  "Cluster_423": {
+    "coordinate": [
+      -120000000,
+      0,
+      86600000
+    ],
+    "sectors": {
+      "Cluster_423_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Litany of Fury｜愤怒祷文 IX"
+      },
+      "Cluster_423_Sector002": {
+        "coordinate": [
+          130226256,
+          0,
+          112144392
+        ],
+        "name": "Litany of Fury｜愤怒祷文 XII"
+      }
+    }
+  },
+  "Cluster_412": {
+    "coordinate": [
+      165000000,
+      0,
+      60620000
+    ],
+    "sectors": {
+      "Cluster_412_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Tharka\\'s Ravine｜塔卡的溪谷 VIII"
+      }
+    }
+  },
+  "Cluster_413": {
+    "coordinate": [
+      180000000,
+      0,
+      69280000
+    ],
+    "sectors": {
+      "Cluster_413_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Tharka\\'s Ravine｜塔卡的溪谷 IV Tharka\\'s Fall｜塔卡的堕落"
+      }
+    }
+  },
+  "Cluster_414": {
+    "coordinate": [
+      -30000000,
+      0,
+      121240000
+    ],
+    "sectors": {
+      "Cluster_414_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Rhy\\'s Defiance｜雷氏的挑战"
+      }
+    }
+  },
+  "Cluster_415": {
+    "coordinate": [
+      -15000000,
+      0,
+      129900000
+    ],
+    "sectors": {
+      "Cluster_415_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "矩阵 #598"
+      }
+    }
+  },
+  "Cluster_424": {
+    "coordinate": [
+      -135000000,
+      0,
+      95260000
+    ],
+    "sectors": {
+      "Cluster_424_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Emperor\\'s Pride｜帝王的骄傲 IV"
+      },
+      "Cluster_424_Sector002": {
+        "coordinate": [
+          136719008,
+          0,
+          3677055.75
+        ],
+        "name": "Emperor\\'s Pride｜帝王的骄傲 VI"
+      }
+    }
+  },
+  "Cluster_425": {
+    "coordinate": [
+      135000000,
+      0,
+      95260000
+    ],
+    "sectors": {
+      "Cluster_425_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Heart of Acrimony｜刻薄之心 I The Boneyard | 埋骨之地"
+      }
+    }
+  },
+  "Cluster_100": {
+    "coordinate": [
+      -150000000,
+      0,
+      0
+    ],
+    "sectors": {
+      "Cluster_100_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Asteroid Belt｜小行星带"
+      }
+    }
+  },
+  "Cluster_101": {
+    "coordinate": [
+      -165000000,
+      0,
+      8660000
+    ],
+    "sectors": {
+      "Cluster_101_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Mars｜火星"
+      }
+    }
+  },
+  "Cluster_102": {
+    "coordinate": [
+      -180000000,
+      0,
+      17320000
+    ],
+    "sectors": {
+      "Cluster_102_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Venus｜金星"
+      }
+    }
+  },
+  "Cluster_104": {
+    "coordinate": [
+      -165000000,
+      0,
+      25980000
+    ],
+    "sectors": {
+      "Cluster_104_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Earth｜地球"
+      },
+      "Cluster_104_Sector002": {
+        "coordinate": [
+          0,
+          0,
+          -175890496
+        ],
+        "name": "The Moon | 月球"
+      }
+    }
+  },
+  "Cluster_106": {
+    "coordinate": [
+      -180000000,
+      0,
+      34640000
+    ],
+    "sectors": {
+      "Cluster_106_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Mercury｜水星"
+      }
+    }
+  },
+  "Cluster_107": {
+    "coordinate": [
+      -165000000,
+      0,
+      -25980000
+    ],
+    "sectors": {
+      "Cluster_107_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Jupiter｜木星"
+      }
+    }
+  },
+  "Cluster_108": {
+    "coordinate": [
+      -180000000,
+      0,
+      -34640000
+    ],
+    "sectors": {
+      "Cluster_108_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Saturn｜土星 1"
+      },
+      "Cluster_108_Sector002": {
+        "coordinate": [
+          -55073532,
+          0,
+          -159401120
+        ],
+        "name": "Titan｜土卫六泰坦"
+      },
+      "Cluster_108_Sector003": {
+        "coordinate": [
+          -32631400,
+          0,
+          134273000
+        ],
+        "name": "Saturn｜土星 2"
+      }
+    }
+  },
+  "Cluster_109": {
+    "coordinate": [
+      -195000000,
+      0,
+      -43300000
+    ],
+    "sectors": {
+      "Cluster_109_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Uranus｜天王星"
+      }
+    }
+  },
+  "Cluster_110": {
+    "coordinate": [
+      -180000000,
+      0,
+      -51970000
+    ],
+    "sectors": {
+      "Cluster_110_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Neptune｜海王星"
+      }
+    }
+  },
+  "Cluster_111": {
+    "coordinate": [
+      -195000000,
+      0,
+      -60620000
+    ],
+    "sectors": {
+      "Cluster_111_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Pluto｜冥王星"
+      }
+    }
+  },
+  "Cluster_112": {
+    "coordinate": [
+      -75000000,
+      0,
+      43300000
+    ],
+    "sectors": {
+      "Cluster_112_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Savage Spur | 野蛮疾驰 I"
+      },
+      "Cluster_112_Sector002": {
+        "coordinate": [
+          0,
+          0,
+          -51054804
+        ],
+        "name": "Savage Spur | 野蛮疾驰 II"
+      }
+    }
+  },
+  "Cluster_113": {
+    "coordinate": [
+      -105000000,
+      0,
+      -60620000
+    ],
+    "sectors": {
+      "Cluster_113_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Segaris | 赛格瑞斯"
+      }
+    }
+  },
+  "Cluster_114": {
+    "coordinate": [
+      -120000000,
+      0,
+      -69280000
+    ],
+    "sectors": {
+      "Cluster_114_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Gaian Prophecy｜盖安预言"
+      }
+    }
+  },
+  "Cluster_115": {
+    "coordinate": [
+      -135000000,
+      0,
+      -60620000
+    ],
+    "sectors": {
+      "Cluster_115_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Brennan\\'s Triumph｜布伦南的凯旋"
+      }
+    }
+  },
+  "Cluster_116": {
+    "coordinate": [
+      -210000000,
+      0,
+      -69280000
+    ],
+    "sectors": {
+      "Cluster_116_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Oort Cloud | 奥尔特云"
+      }
+    }
+  },
+  "Cluster_500": {
+    "coordinate": [
+      0,
+      0,
+      17320000
+    ],
+    "sectors": {
+      "Cluster_500_Sector001": {
+        "coordinate": [
+          35038240,
+          0,
+          55106290
+        ],
+        "name": "Avarice｜贪婪 I"
+      },
+      "Cluster_500_Sector002": {
+        "coordinate": [
+          986167.6,
+          0,
+          -210804500
+        ],
+        "name": "Avarice｜贪婪 V Dead End | 死胡同"
+      },
+      "Cluster_500_Sector003": {
+        "coordinate": [
+          -110379200,
+          0,
+          -45945560
+        ],
+        "name": "Avarice｜贪婪 IV"
+      }
+    }
+  },
+  "Cluster_501": {
+    "coordinate": [
+      0,
+      0,
+      34650000
+    ],
+    "sectors": {
+      "Cluster_501_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Windfall | 横财 I Union Summit | 联盟峰会"
+      }
+    }
+  },
+  "Cluster_502": {
+    "coordinate": [
+      -15000000,
+      0,
+      25980000
+    ],
+    "sectors": {
+      "Cluster_502_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Windfall | 横财 III The Hoard | 囤积居奇"
+      }
+    }
+  },
+  "Cluster_503": {
+    "coordinate": [
+      -15000000,
+      0,
+      8660000
+    ],
+    "sectors": {
+      "Cluster_503_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Windfall | 横财 IV Aurora's Dream | 欧若拉幻梦"
+      }
+    }
+  },
+  "Cluster_504": {
+    "coordinate": [
+      15000000,
+      0,
+      8660000
+    ],
+    "sectors": {
+      "Cluster_504_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "未知星系"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.51) at 17.06.2021_17-22-02-->
+<macros>
+  <macro name="storage_ter_s_solid_01_macro" class="storage">
+    <component ref="storage_ter_s_solid_01" />
+    <properties>
+      <identification name="{20104,90701}" shortname="{20104,90703}" makerrace="terran" size="small" description="{20104,90702}" />
+      <cargo max="100000" tags="solid" />
+      <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+          <set ref="piratebase" />
+        </sets>
+      </build>
+      <explosiondamage value="500" shield="2500" />
+      <hull max="150000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+</macros>

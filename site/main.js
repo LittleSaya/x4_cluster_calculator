@@ -1,7 +1,7 @@
 import { calculateMetadata, metadata, COS_30 } from './metadata'
 import * as materials from './materials'
 // 手动设置了阵营和sector位置的地图数据
-import fullMap from '../full-map-manually.json'
+import fullMap from '../data_manually_modified/full-map-manually.json'
 import * as THREE from 'three'
 import { MapControls } from 'three/examples/jsm/controls/MapControls'
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry'
@@ -53,7 +53,7 @@ let lastIntersectSector;
 // ========== 字体加载 ==========
 
 const fontLoader = new FontLoader();
-const font = await fontLoader.loadAsync('./Alibaba PuHuiTi_Regular.json');
+const font = await fontLoader.loadAsync('/assets/Alibaba PuHuiTi_Regular.json');
 
 // ========== 相机 ==========
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.51) at 17.06.2021_17-07-23-->
+<macros>
+  <macro name="prod_ter_stimulants_macro" class="production">
+    <component ref="prod_ter_stimulants" />
+    <properties>
+      <identification name="{20104,15801}" shortname="{20104,15803}" makerrace="terran" description="{20104,15802}" />
+      <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+          <set ref="piratebase" />
+        </sets>
+      </build>
+      <explosiondamage value="2000" shield="10000" />
+      <hull max="300000" />
+      <production wares="stimulants">
+        <queue ware="stimulants" />
+      </production>
+      <workforce max="300" />
+    </properties>
+  </macro>
+</macros>

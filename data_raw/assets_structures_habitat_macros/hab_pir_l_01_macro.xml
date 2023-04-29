@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.123) at 27.09.2021_17-06-41-->
+<macros>
+  <macro name="hab_pir_l_01_macro" class="habitation">
+    <component ref="hab_pir_l_01" />
+    <properties>
+      <identification name="{20104,31801}" shortname="{20104,31803}" makerrace="argon" size="large" description="{20104,31802}" />
+      <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+          <set ref="piratebase" />
+        </sets>
+      </build>
+      <explosiondamage value="1000" shield="5000" />
+      <hull max="500000" />
+      <secrecy level="3" />
+      <workforce race="argon" capacity="1000" />
+    </properties>
+  </macro>
+</macros>

@@ -1,0 +1,2222 @@
+{
+  "Cluster_01": {
+    "coordinate": [
+      0,
+      0,
+      0
+    ],
+    "sectors": {
+      "Cluster_01_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Grand Exchange｜大交易所 I",
+        "ownership": "tel"
+      },
+      "Cluster_01_Sector002": {
+        "coordinate": [
+          -1,
+          0,
+          0.5
+        ],
+        "name": "Grand Exchange｜大交易所 III",
+        "ownership": "tel"
+      },
+      "Cluster_01_Sector003": {
+        "coordinate": [
+          0,
+          0,
+          1
+        ],
+        "name": "Grand Exchange｜大交易所 IV",
+        "ownership": "tel"
+      }
+    },
+    "ownership": "tel"
+  },
+  "Cluster_02": {
+    "coordinate": [
+      15000000,
+      0,
+      25980000
+    ],
+    "sectors": {
+      "Cluster_02_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Eighteen Billion｜一百八十亿",
+        "ownership": "tel"
+      }
+    },
+    "ownership": "tel"
+  },
+  "Cluster_03": {
+    "coordinate": [
+      30000000,
+      0,
+      17320000
+    ],
+    "sectors": {
+      "Cluster_03_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Memory of Profit｜利润的回忆 IX",
+        "ownership": "tel"
+      }
+    },
+    "ownership": "tel"
+  },
+  "Cluster_04": {
+    "coordinate": [
+      30000000,
+      0,
+      -17320000
+    ],
+    "sectors": {
+      "Cluster_04_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Nopileos' Fortune｜诺皮利奥的财富 II",
+        "ownership": "unclaimed"
+      },
+      "Cluster_04_Sector002": {
+        "coordinate": [
+          1,
+          0,
+          -1
+        ],
+        "name": "Nopileos' Fortune｜诺皮利奥的财富 VI",
+        "ownership": "unclaimed"
+      }
+    },
+    "ownership": "unclaimed"
+  },
+  "Cluster_05": {
+    "coordinate": [
+      0,
+      0,
+      -17320000
+    ],
+    "sectors": {
+      "Cluster_05_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Path to Profit｜财富之路",
+        "ownership": "tel"
+      }
+    },
+    "ownership": "tel"
+  },
+  "Cluster_06": {
+    "coordinate": [
+      -15000000,
+      0,
+      -8660000
+    ],
+    "sectors": {
+      "Cluster_06_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Black Hole Sun｜黑洞太阳 IV",
+        "ownership": "arg"
+      },
+      "Cluster_06_Sector002": {
+        "coordinate": [
+          1,
+          0,
+          -1
+        ],
+        "name": "Black Hole Sun｜黑洞太阳 V",
+        "ownership": "arg"
+      }
+    },
+    "ownership": "arg"
+  },
+  "Cluster_07": {
+    "coordinate": [
+      -60000000,
+      0,
+      34640000
+    ],
+    "sectors": {
+      "Cluster_07_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "The Reach｜抵达",
+        "ownership": "arg"
+      }
+    },
+    "ownership": "arg"
+  },
+  "Cluster_08": {
+    "coordinate": [
+      0,
+      0,
+      51960000
+    ],
+    "sectors": {
+      "Cluster_08_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Silent Witness｜沉默的证人 I",
+        "ownership": "arg"
+      }
+    },
+    "ownership": "arg"
+  },
+  "Cluster_09": {
+    "coordinate": [
+      60000000,
+      0,
+      34640000
+    ],
+    "sectors": {
+      "Cluster_09_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Bright Promise｜鲜明的承诺",
+        "ownership": "tel"
+      }
+    },
+    "ownership": "tel"
+  },
+  "Cluster_10": {
+    "coordinate": [
+      60000000,
+      0,
+      -17320000
+    ],
+    "sectors": {
+      "Cluster_10_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Unholy Retribution｜邪恶的报复",
+        "ownership": "par"
+      }
+    },
+    "ownership": "par"
+  },
+  "Cluster_11": {
+    "coordinate": [
+      0,
+      0,
+      -51960000
+    ],
+    "sectors": {
+      "Cluster_11_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Pontifex\\'s Claim｜教皇的声明",
+        "ownership": "hop"
+      }
+    },
+    "ownership": "hop"
+  },
+  "Cluster_12": {
+    "coordinate": [
+      -30000000,
+      0,
+      -34640000
+    ],
+    "sectors": {
+      "Cluster_12_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "True Sight｜真视",
+        "ownership": "hop"
+      }
+    },
+    "ownership": "hop"
+  },
+  "Cluster_13": {
+    "coordinate": [
+      -30000000,
+      0,
+      0
+    ],
+    "sectors": {
+      "Cluster_13_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Second Contact｜第二次接触 II Flashpoint｜闪点",
+        "ownership": "ant"
+      }
+    },
+    "ownership": "ant"
+  },
+  "Cluster_14": {
+    "coordinate": [
+      -45000000,
+      0,
+      25980000
+    ],
+    "sectors": {
+      "Cluster_14_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Argon Prime｜Argon之都",
+        "ownership": "arg"
+      }
+    },
+    "ownership": "arg"
+  },
+  "Cluster_15": {
+    "coordinate": [
+      105000000,
+      0,
+      25980000
+    ],
+    "sectors": {
+      "Cluster_15_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Ianamus Zura｜依阿那姆斯祖拉 IV",
+        "ownership": "tel"
+      },
+      "Cluster_15_Sector002": {
+        "coordinate": [
+          1,
+          0,
+          1
+        ],
+        "name": "Ianamus Zura｜依阿那姆斯祖拉 VII",
+        "ownership": "tel"
+      }
+    },
+    "ownership": "tel"
+  },
+  "Cluster_16": {
+    "coordinate": [
+      105000000,
+      0,
+      43310000
+    ],
+    "sectors": {
+      "Cluster_16_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "矩阵 #451",
+        "ownership": "xen"
+      }
+    },
+    "ownership": "xen"
+  },
+  "Cluster_17": {
+    "coordinate": [
+      90000000,
+      0,
+      51960000
+    ],
+    "sectors": {
+      "Cluster_17_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "矩阵 #9",
+        "ownership": "xen"
+      }
+    },
+    "ownership": "xen"
+  },
+  "Cluster_18": {
+    "coordinate": [
+      60000000,
+      0,
+      0
+    ],
+    "sectors": {
+      "Cluster_18_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Trinity Sanctum｜三圣殿 III",
+        "ownership": "par"
+      }
+    },
+    "ownership": "par"
+  },
+  "Cluster_19": {
+    "coordinate": [
+      75000000,
+      0,
+      -8660000
+    ],
+    "sectors": {
+      "Cluster_19_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Hewa's Twin｜赫瓦双子 I",
+        "ownership": "tel"
+      },
+      "Cluster_19_Sector002": {
+        "coordinate": [
+          1,
+          0,
+          1
+        ],
+        "name": "Hewa's Twin｜赫瓦双子 II",
+        "ownership": "tel"
+      }
+    },
+    "ownership": "tel"
+  },
+  "Cluster_20": {
+    "coordinate": [
+      90000000,
+      0,
+      -17330000
+    ],
+    "sectors": {
+      "Cluster_20_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Company Regard｜公司关注",
+        "ownership": "tel"
+      }
+    },
+    "ownership": "tel"
+  },
+  "Cluster_21": {
+    "coordinate": [
+      90000000,
+      0,
+      -34640000
+    ],
+    "sectors": {
+      "Cluster_21_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Scale Plate Green｜鳞片之绿 I",
+        "ownership": "xen"
+      },
+      "Cluster_21_Sector002": {
+        "coordinate": [
+          -1,
+          0,
+          1
+        ],
+        "name": "Scale Plate Green｜鳞片之绿 VII",
+        "ownership": "xen"
+      }
+    },
+    "ownership": "xen"
+  },
+  "Cluster_22": {
+    "coordinate": [
+      30000000,
+      0,
+      -34650000
+    ],
+    "sectors": {
+      "Cluster_22_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Pious Mists｜虔诚之雾 II",
+        "ownership": "par"
+      }
+    },
+    "ownership": "par"
+  },
+  "Cluster_23": {
+    "coordinate": [
+      45000000,
+      0,
+      -60640000
+    ],
+    "sectors": {
+      "Cluster_23_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Sacred Relic｜神圣遗迹",
+        "ownership": "par"
+      }
+    },
+    "ownership": "par"
+  },
+  "Cluster_24": {
+    "coordinate": [
+      -15000000,
+      0,
+      -43310000
+    ],
+    "sectors": {
+      "Cluster_24_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Holy Vision｜神圣眼光",
+        "ownership": "hop"
+      }
+    },
+    "ownership": "hop"
+  },
+  "Cluster_25": {
+    "coordinate": [
+      -30000000,
+      0,
+      -51960000
+    ],
+    "sectors": {
+      "Cluster_25_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Faulty Logic｜错误逻辑 I",
+        "ownership": "xen"
+      },
+      "Cluster_25_Sector002": {
+        "coordinate": [
+          -1,
+          0,
+          -1
+        ],
+        "name": "Faulty Logic｜错误逻辑 VII",
+        "ownership": "xen"
+      }
+    },
+    "ownership": "xen"
+  },
+  "Cluster_26": {
+    "coordinate": [
+      -60000000,
+      0,
+      -51970000
+    ],
+    "sectors": {
+      "Cluster_26_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Atiya's Misfortune｜安提亚的不幸 I",
+        "ownership": "xen"
+      },
+      "Cluster_26_Sector002": {
+        "coordinate": [
+          1,
+          0,
+          -1
+        ],
+        "name": "Atiya's Misfortune｜安提亚的不幸 III",
+        "ownership": "xen"
+      }
+    },
+    "ownership": "xen"
+  },
+  "Cluster_27": {
+    "coordinate": [
+      -90000000,
+      0,
+      17320000
+    ],
+    "sectors": {
+      "Cluster_27_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "The Void｜虚空",
+        "ownership": "ant"
+      }
+    },
+    "ownership": "ant"
+  },
+  "Cluster_28": {
+    "coordinate": [
+      -105000000,
+      0,
+      8660000
+    ],
+    "sectors": {
+      "Cluster_28_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Antigone Memorial｜安提戈涅纪念碑",
+        "ownership": "ant"
+      }
+    },
+    "ownership": "ant"
+  },
+  "Cluster_29": {
+    "coordinate": [
+      -30000000,
+      0,
+      34650000
+    ],
+    "sectors": {
+      "Cluster_29_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Hatikvah's Choice｜希望之歌的选择 I",
+        "ownership": "hat"
+      },
+      "Cluster_29_Sector002": {
+        "coordinate": [
+          1,
+          0,
+          1
+        ],
+        "name": "Hatikvah's Choice｜希望之歌的选择 III",
+        "ownership": "arg"
+      }
+    },
+    "ownership": "mix"
+  },
+  "Cluster_30": {
+    "coordinate": [
+      -45000000,
+      0,
+      43300000
+    ],
+    "sectors": {
+      "Cluster_30_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Morning Star｜晨星 III",
+        "ownership": "arg"
+      }
+    },
+    "ownership": "arg"
+  },
+  "Cluster_31": {
+    "coordinate": [
+      -75000000,
+      0,
+      60630000
+    ],
+    "sectors": {
+      "Cluster_31_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Heretic's End｜异端的终结",
+        "ownership": "unclaimed"
+      }
+    },
+    "ownership": "unclaimed"
+  },
+  "Cluster_32": {
+    "coordinate": [
+      -30000000,
+      0,
+      69280000
+    ],
+    "sectors": {
+      "Cluster_32_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Tharka's Cascade｜塔卡的瀑布 XV",
+        "ownership": "xen"
+      },
+      "Cluster_32_Sector002": {
+        "coordinate": [
+          -1,
+          0,
+          1
+        ],
+        "name": "Tharka's Cascade｜塔卡的瀑布 XVII",
+        "ownership": "xen"
+      }
+    },
+    "ownership": "xen"
+  },
+  "Cluster_33": {
+    "coordinate": [
+      -45000000,
+      0,
+      77940000
+    ],
+    "sectors": {
+      "Cluster_33_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "矩阵 #79B",
+        "ownership": "xen"
+      }
+    },
+    "ownership": "xen"
+  },
+  "Cluster_34": {
+    "coordinate": [
+      45000000,
+      0,
+      43310000
+    ],
+    "sectors": {
+      "Cluster_34_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Profit Center Alpha｜利润中心阿尔法",
+        "ownership": "tel"
+      }
+    },
+    "ownership": "tel"
+  },
+  "Cluster_35": {
+    "coordinate": [
+      0,
+      0,
+      -69280000
+    ],
+    "sectors": {
+      "Cluster_35_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Lasting Vengeance｜无尽的复仇",
+        "ownership": "hop"
+      }
+    },
+    "ownership": "hop"
+  },
+  "Cluster_36": {
+    "coordinate": [
+      -15000000,
+      0,
+      -60640000
+    ],
+    "sectors": {
+      "Cluster_36_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Cardinal's Redress｜主教的平反",
+        "ownership": "hop"
+      }
+    },
+    "ownership": "hop"
+  },
+  "Cluster_37": {
+    "coordinate": [
+      45000000,
+      0,
+      -43310000
+    ],
+    "sectors": {
+      "Cluster_37_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Pious Mists｜虔诚之雾 IV",
+        "ownership": "par"
+      }
+    },
+    "ownership": "par"
+  },
+  "Cluster_38": {
+    "coordinate": [
+      30000000,
+      0,
+      -51970000
+    ],
+    "sectors": {
+      "Cluster_38_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Pious Mists｜虔诚之雾 XI",
+        "ownership": "par"
+      }
+    },
+    "ownership": "par"
+  },
+  "Cluster_39": {
+    "coordinate": [
+      30000000,
+      0,
+      0
+    ],
+    "sectors": {
+      "Cluster_39_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Memory of Profit｜利润的回忆 X",
+        "ownership": "tel"
+      }
+    },
+    "ownership": "tel"
+  },
+  "Cluster_40": {
+    "coordinate": [
+      -45000000,
+      0,
+      -8660000
+    ],
+    "sectors": {
+      "Cluster_40_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Second Contact｜第二次接触 VII",
+        "ownership": "ant"
+      }
+    },
+    "ownership": "ant"
+  },
+  "Cluster_41": {
+    "coordinate": [
+      -45000000,
+      0,
+      8660000
+    ],
+    "sectors": {
+      "Cluster_41_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Second Contact｜第二次接触 XI",
+        "ownership": "ant"
+      }
+    },
+    "ownership": "ant"
+  },
+  "Cluster_42": {
+    "coordinate": [
+      90000000,
+      0,
+      0
+    ],
+    "sectors": {
+      "Cluster_42_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Hewa's Twin｜赫瓦双子 III",
+        "ownership": "tel"
+      },
+      "Cluster_42_Sector002": {
+        "coordinate": [
+          1,
+          0,
+          -1
+        ],
+        "name": "Hewa's Twin｜赫瓦双子 IV The Cove｜海湾",
+        "ownership": "unclaimed"
+      }
+    },
+    "ownership": "mix"
+  },
+  "Cluster_43": {
+    "coordinate": [
+      90000000,
+      0,
+      17320000
+    ],
+    "sectors": {
+      "Cluster_43_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Hewa's Twin｜赫瓦双子 V",
+        "ownership": "tel"
+      }
+    },
+    "ownership": "tel"
+  },
+  "Cluster_44": {
+    "coordinate": [
+      15000000,
+      0,
+      60620000
+    ],
+    "sectors": {
+      "Cluster_44_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Silent Witness｜沉默的证人 XI",
+        "ownership": "unclaimed"
+      }
+    },
+    "ownership": "unclaimed"
+  },
+  "Cluster_45": {
+    "coordinate": [
+      0,
+      0,
+      69280000
+    ],
+    "sectors": {
+      "Cluster_45_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Silent Witness｜沉默的证人 XII",
+        "ownership": "unclaimed"
+      }
+    },
+    "ownership": "unclaimed"
+  },
+  "Cluster_46": {
+    "coordinate": [
+      -45000000,
+      0,
+      60620000
+    ],
+    "sectors": {
+      "Cluster_46_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Morning Star｜晨星 IV",
+        "ownership": "arg"
+      }
+    },
+    "ownership": "arg"
+  },
+  "Cluster_47": {
+    "coordinate": [
+      45000000,
+      0,
+      8660000
+    ],
+    "sectors": {
+      "Cluster_47_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Trinity Sanctum｜三圣殿 VII",
+        "ownership": "par"
+      }
+    },
+    "ownership": "par"
+  },
+  "Cluster_49": {
+    "coordinate": [
+      -75000000,
+      0,
+      -8660000
+    ],
+    "sectors": {
+      "Cluster_49_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Frontier Edge｜疆域边陲",
+        "ownership": "unclaimed"
+      }
+    },
+    "ownership": "unclaimed"
+  },
+  "Cluster_48": {
+    "coordinate": [
+      -90000000,
+      0,
+      34650000
+    ],
+    "sectors": {
+      "Cluster_48_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Getsu Fune｜月之舟",
+        "ownership": "unclaimed"
+      }
+    },
+    "ownership": "unclaimed"
+  },
+  "Cluster_50": {
+    "coordinate": [
+      105000016,
+      0,
+      -25990000
+    ],
+    "sectors": {
+      "Cluster_50_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Turquoise Sea｜绿宝石之海 IX",
+        "ownership": "unclaimed"
+      },
+      "Cluster_50_Sector002": {
+        "coordinate": [
+          1,
+          0,
+          -1
+        ],
+        "name": "Turquoise Sea｜绿宝石之海 X",
+        "ownership": "unclaimed"
+      }
+    },
+    "ownership": "unclaimed"
+  },
+  "Cluster_602": {
+    "coordinate": [
+      -120000000,
+      0,
+      51960000
+    ],
+    "sectors": {
+      "Cluster_602_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Barren Shores｜贫瘠海岸",
+        "ownership": "bor"
+      }
+    },
+    "ownership": "bor"
+  },
+  "Cluster_603": {
+    "coordinate": [
+      -135000000,
+      0,
+      43300000
+    ],
+    "sectors": {
+      "Cluster_603_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Great Reef｜大暗礁",
+        "ownership": "bor"
+      }
+    },
+    "ownership": "bor"
+  },
+  "Cluster_605": {
+    "coordinate": [
+      -150000000,
+      0,
+      69280000
+    ],
+    "sectors": {
+      "Cluster_605_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Sanctuary of Darkness｜黑暗庇护所",
+        "ownership": "unclaimed"
+      }
+    },
+    "ownership": "unclaimed"
+  },
+  "Cluster_606": {
+    "coordinate": [
+      -180000000,
+      0,
+      86600000
+    ],
+    "sectors": {
+      "Cluster_606_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Kingdom End｜王国末路 I",
+        "ownership": "bor"
+      },
+      "Cluster_606_Sector002": {
+        "coordinate": [
+          0,
+          0,
+          -1
+        ],
+        "name": "Reflected Stars｜反射星",
+        "ownership": "bor"
+      },
+      "Cluster_606_Sector003": {
+        "coordinate": [
+          1,
+          0,
+          -0.5
+        ],
+        "name": "Towering Wave｜滔天巨浪",
+        "ownership": "bor"
+      }
+    },
+    "ownership": "bor"
+  },
+  "Cluster_604": {
+    "coordinate": [
+      -135000000,
+      0,
+      25980000
+    ],
+    "sectors": {
+      "Cluster_604_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Ocean of Fantasy｜梦幻海洋",
+        "ownership": "bor"
+      }
+    },
+    "ownership": "bor"
+  },
+  "Cluster_607": {
+    "coordinate": [
+      -195000000,
+      0,
+      77940000
+    ],
+    "sectors": {
+      "Cluster_607_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Rolk's Demise｜洛克的消亡",
+        "ownership": "bor"
+      }
+    },
+    "ownership": "bor"
+  },
+  "Cluster_601": {
+    "coordinate": [
+      -105000000,
+      0,
+      60630000
+    ],
+    "sectors": {
+      "Cluster_601_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Watchful Gaze｜警惕凝视",
+        "ownership": "unclaimed"
+      }
+    },
+    "ownership": "unclaimed"
+  },
+  "Cluster_608": {
+    "coordinate": [
+      -180000000,
+      0,
+      69280000
+    ],
+    "sectors": {
+      "Cluster_608_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Atreus' Clouds｜阿特柔斯之云",
+        "ownership": "bor"
+      }
+    },
+    "ownership": "bor"
+  },
+  "Cluster_609": {
+    "coordinate": [
+      -195000000,
+      0,
+      60630000
+    ],
+    "sectors": {
+      "Cluster_609_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Menelaus' Oasis｜梅涅劳斯绿洲",
+        "ownership": "bor"
+      }
+    },
+    "ownership": "bor"
+  },
+  "Cluster_401": {
+    "coordinate": [
+      -30000000,
+      0,
+      86600000
+    ],
+    "sectors": {
+      "Cluster_401_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Family Zhin | 金氏家族",
+        "ownership": "zya"
+      }
+    },
+    "ownership": "zya"
+  },
+  "Cluster_402": {
+    "coordinate": [
+      -30000000,
+      0,
+      103920000
+    ],
+    "sectors": {
+      "Cluster_402_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Family Kritt | 科瑞特家族",
+        "ownership": "zya"
+      }
+    },
+    "ownership": "zya"
+  },
+  "Cluster_403": {
+    "coordinate": [
+      -75000000,
+      0,
+      77940000
+    ],
+    "sectors": {
+      "Cluster_403_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Wretched Skies｜悲惨的天空 V Family Phi | 菲氏家族",
+        "ownership": "zya"
+      }
+    },
+    "ownership": "zya"
+  },
+  "Cluster_400": {
+    "coordinate": [
+      -60000000,
+      0,
+      86600000
+    ],
+    "sectors": {
+      "Cluster_400_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Wretched Skies｜悲惨的天空 IV Family Valka | 维尔卡家族",
+        "ownership": "zya"
+      }
+    },
+    "ownership": "zya"
+  },
+  "Cluster_408": {
+    "coordinate": [
+      120000000,
+      0,
+      34640000
+    ],
+    "sectors": {
+      "Cluster_408_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Thuruk's Demise｜苏鲁克的消亡 III",
+        "ownership": "frf"
+      },
+      "Cluster_408_Sector002": {
+        "coordinate": [
+          -1,
+          0,
+          1
+        ],
+        "name": "Thuruk's Demise｜苏鲁克的消亡 II 首次冲撞",
+        "ownership": "frf"
+      }
+    },
+    "ownership": "frf"
+  },
+  "Cluster_407": {
+    "coordinate": [
+      120000000,
+      0,
+      51960000
+    ],
+    "sectors": {
+      "Cluster_407_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Family Tkr｜提克家族",
+        "ownership": "frf"
+      }
+    },
+    "ownership": "frf"
+  },
+  "Cluster_409": {
+    "coordinate": [
+      135000000,
+      0,
+      60620000
+    ],
+    "sectors": {
+      "Cluster_409_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Tharka's Ravine｜塔卡的溪谷 XXIV",
+        "ownership": "frf"
+      }
+    },
+    "ownership": "frf"
+  },
+  "Cluster_410": {
+    "coordinate": [
+      150000000,
+      0,
+      69280000
+    ],
+    "sectors": {
+      "Cluster_410_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Tharka's Ravine｜塔卡的溪谷 XVI",
+        "ownership": "frf"
+      }
+    },
+    "ownership": "frf"
+  },
+  "Cluster_411": {
+    "coordinate": [
+      150000000,
+      0,
+      86600000
+    ],
+    "sectors": {
+      "Cluster_411_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Heart of Acrimony｜刻薄之心 II",
+        "ownership": "frf"
+      }
+    },
+    "ownership": "frf"
+  },
+  "Cluster_405": {
+    "coordinate": [
+      45000000,
+      0,
+      95260000
+    ],
+    "sectors": {
+      "Cluster_405_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Zyarth's Dominion｜扎亚斯的领土 IV",
+        "ownership": "zya"
+      }
+    },
+    "ownership": "zya"
+  },
+  "Cluster_406": {
+    "coordinate": [
+      45000000,
+      0,
+      112580000
+    ],
+    "sectors": {
+      "Cluster_406_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Zyarth's Dominion｜扎亚斯的领土 X",
+        "ownership": "zya"
+      }
+    },
+    "ownership": "zya"
+  },
+  "Cluster_404": {
+    "coordinate": [
+      30000000,
+      0,
+      103920000
+    ],
+    "sectors": {
+      "Cluster_404_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Zyarth's Dominion｜扎亚斯的领土 I",
+        "ownership": "zya"
+      }
+    },
+    "ownership": "zya"
+  },
+  "Cluster_418": {
+    "coordinate": [
+      30000000,
+      0,
+      86600000
+    ],
+    "sectors": {
+      "Cluster_418_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Family Nhuut | 纽特家族",
+        "ownership": "zya"
+      }
+    },
+    "ownership": "zya"
+  },
+  "Cluster_419": {
+    "coordinate": [
+      45000000,
+      0,
+      77940000
+    ],
+    "sectors": {
+      "Cluster_419_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Open Market｜开放市场",
+        "ownership": "tel"
+      }
+    },
+    "ownership": "tel"
+  },
+  "Cluster_420": {
+    "coordinate": [
+      60000000,
+      0,
+      69280000
+    ],
+    "sectors": {
+      "Cluster_420_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Two Grand｜两千元大钞",
+        "ownership": "tel"
+      }
+    },
+    "ownership": "tel"
+  },
+  "Cluster_416": {
+    "coordinate": [
+      75000000,
+      0,
+      95260000
+    ],
+    "sectors": {
+      "Cluster_416_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Guiding Star｜引导之星 V",
+        "ownership": "arg"
+      },
+      "Cluster_416_Sector002": {
+        "coordinate": [
+          -1,
+          0,
+          1
+        ],
+        "name": "Guiding Star｜引导之星 VII",
+        "ownership": "arg"
+      }
+    },
+    "ownership": "arg"
+  },
+  "Cluster_417": {
+    "coordinate": [
+      75000000,
+      0,
+      129900000
+    ],
+    "sectors": {
+      "Cluster_417_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Eleventh Hour｜第十一小时",
+        "ownership": "arg"
+      }
+    },
+    "ownership": "arg"
+  },
+  "Cluster_421": {
+    "coordinate": [
+      120000000,
+      0,
+      69280000
+    ],
+    "sectors": {
+      "Cluster_421_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "失败之火",
+        "ownership": "frf"
+      }
+    },
+    "ownership": "frf"
+  },
+  "Cluster_422": {
+    "coordinate": [
+      -90000000,
+      0,
+      86600000
+    ],
+    "sectors": {
+      "Cluster_422_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Wretched Skies｜悲惨的天空 X",
+        "ownership": "par"
+      }
+    },
+    "ownership": "par"
+  },
+  "Cluster_423": {
+    "coordinate": [
+      -120000000,
+      0,
+      86600000
+    ],
+    "sectors": {
+      "Cluster_423_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Litany of Fury｜愤怒祷文 IX",
+        "ownership": "par"
+      },
+      "Cluster_423_Sector002": {
+        "coordinate": [
+          -1,
+          0,
+          1
+        ],
+        "name": "Litany of Fury｜愤怒祷文 XII",
+        "ownership": "par"
+      }
+    },
+    "ownership": "par"
+  },
+  "Cluster_412": {
+    "coordinate": [
+      165000000,
+      0,
+      60620000
+    ],
+    "sectors": {
+      "Cluster_412_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Tharka's Ravine｜塔卡的溪谷 VIII",
+        "ownership": "frf"
+      }
+    },
+    "ownership": "frf"
+  },
+  "Cluster_413": {
+    "coordinate": [
+      180000000,
+      0,
+      69280000
+    ],
+    "sectors": {
+      "Cluster_413_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Tharka's Ravine｜塔卡的溪谷 IV Tharka's Fall｜塔卡的堕落",
+        "ownership": "xen"
+      }
+    },
+    "ownership": "xen"
+  },
+  "Cluster_414": {
+    "coordinate": [
+      -30000000,
+      0,
+      121240000
+    ],
+    "sectors": {
+      "Cluster_414_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Rhy's Defiance｜雷氏的挑战",
+        "ownership": "xen"
+      }
+    },
+    "ownership": "xen"
+  },
+  "Cluster_415": {
+    "coordinate": [
+      -15000000,
+      0,
+      129900000
+    ],
+    "sectors": {
+      "Cluster_415_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "矩阵 #598",
+        "ownership": "xen"
+      }
+    },
+    "ownership": "xen"
+  },
+  "Cluster_424": {
+    "coordinate": [
+      -135000000,
+      0,
+      95260000
+    ],
+    "sectors": {
+      "Cluster_424_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Emperor's Pride｜帝王的骄傲 IV",
+        "ownership": "xen"
+      },
+      "Cluster_424_Sector002": {
+        "coordinate": [
+          1,
+          0,
+          1
+        ],
+        "name": "Emperor's Pride｜帝王的骄傲 VI",
+        "ownership": "xen"
+      }
+    },
+    "ownership": "xen"
+  },
+  "Cluster_425": {
+    "coordinate": [
+      135000000,
+      0,
+      95260000
+    ],
+    "sectors": {
+      "Cluster_425_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Heart of Acrimony｜刻薄之心 I The Boneyard | 埋骨之地",
+        "ownership": "unclaimed"
+      }
+    },
+    "ownership": "unclaimed"
+  },
+  "Cluster_100": {
+    "coordinate": [
+      -150000000,
+      0,
+      0
+    ],
+    "sectors": {
+      "Cluster_100_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Asteroid Belt｜小行星带",
+        "ownership": "ter"
+      }
+    },
+    "ownership": "ter"
+  },
+  "Cluster_101": {
+    "coordinate": [
+      -165000000,
+      0,
+      8660000
+    ],
+    "sectors": {
+      "Cluster_101_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Mars｜火星",
+        "ownership": "ter"
+      }
+    },
+    "ownership": "ter"
+  },
+  "Cluster_102": {
+    "coordinate": [
+      -180000000,
+      0,
+      17320000
+    ],
+    "sectors": {
+      "Cluster_102_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Venus｜金星",
+        "ownership": "ter"
+      }
+    },
+    "ownership": "ter"
+  },
+  "Cluster_104": {
+    "coordinate": [
+      -165000000,
+      0,
+      25980000
+    ],
+    "sectors": {
+      "Cluster_104_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Earth｜地球",
+        "ownership": "ter"
+      },
+      "Cluster_104_Sector002": {
+        "coordinate": [
+          1,
+          0,
+          -1
+        ],
+        "name": "The Moon | 月球",
+        "ownership": "ter"
+      }
+    },
+    "ownership": "ter"
+  },
+  "Cluster_106": {
+    "coordinate": [
+      -180000000,
+      0,
+      34640000
+    ],
+    "sectors": {
+      "Cluster_106_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Mercury｜水星",
+        "ownership": "ter"
+      }
+    },
+    "ownership": "ter"
+  },
+  "Cluster_107": {
+    "coordinate": [
+      -165000000,
+      0,
+      -25980000
+    ],
+    "sectors": {
+      "Cluster_107_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Jupiter｜木星",
+        "ownership": "ter"
+      }
+    },
+    "ownership": "ter"
+  },
+  "Cluster_108": {
+    "coordinate": [
+      -180000000,
+      0,
+      -34640000
+    ],
+    "sectors": {
+      "Cluster_108_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Saturn｜土星 1",
+        "ownership": "ter"
+      },
+      "Cluster_108_Sector002": {
+        "coordinate": [
+          -1,
+          0,
+          -1
+        ],
+        "name": "Titan｜土卫六泰坦",
+        "ownership": "ter"
+      },
+      "Cluster_108_Sector003": {
+        "coordinate": [
+          -1,
+          0,
+          1
+        ],
+        "name": "Saturn｜土星 2",
+        "ownership": "ter"
+      }
+    },
+    "ownership": "ter"
+  },
+  "Cluster_109": {
+    "coordinate": [
+      -195000000,
+      0,
+      -43300000
+    ],
+    "sectors": {
+      "Cluster_109_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Uranus｜天王星",
+        "ownership": "ter"
+      }
+    },
+    "ownership": "ter"
+  },
+  "Cluster_110": {
+    "coordinate": [
+      -180000000,
+      0,
+      -51970000
+    ],
+    "sectors": {
+      "Cluster_110_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Neptune｜海王星",
+        "ownership": "ter"
+      }
+    },
+    "ownership": "ter"
+  },
+  "Cluster_111": {
+    "coordinate": [
+      -195000000,
+      0,
+      -60620000
+    ],
+    "sectors": {
+      "Cluster_111_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Pluto｜冥王星",
+        "ownership": "ter"
+      }
+    },
+    "ownership": "ter"
+  },
+  "Cluster_112": {
+    "coordinate": [
+      -75000000,
+      0,
+      43300000
+    ],
+    "sectors": {
+      "Cluster_112_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Savage Spur | 野蛮疾驰 I",
+        "ownership": "xen"
+      },
+      "Cluster_112_Sector002": {
+        "coordinate": [
+          -1,
+          0,
+          -1
+        ],
+        "name": "Savage Spur | 野蛮疾驰 II",
+        "ownership": "xen"
+      }
+    },
+    "ownership": "xen"
+  },
+  "Cluster_113": {
+    "coordinate": [
+      -105000000,
+      0,
+      -60620000
+    ],
+    "sectors": {
+      "Cluster_113_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Segaris | 赛格瑞斯",
+        "ownership": "pio"
+      }
+    },
+    "ownership": "pio"
+  },
+  "Cluster_114": {
+    "coordinate": [
+      -120000000,
+      0,
+      -69280000
+    ],
+    "sectors": {
+      "Cluster_114_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Gaian Prophecy｜盖安预言",
+        "ownership": "pio"
+      }
+    },
+    "ownership": "pio"
+  },
+  "Cluster_115": {
+    "coordinate": [
+      -135000000,
+      0,
+      -60620000
+    ],
+    "sectors": {
+      "Cluster_115_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Brennan's Triumph｜布伦南的凯旋",
+        "ownership": "pio"
+      }
+    },
+    "ownership": "pio"
+  },
+  "Cluster_116": {
+    "coordinate": [
+      -210000000,
+      0,
+      -69280000
+    ],
+    "sectors": {
+      "Cluster_116_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Oort Cloud | 奥尔特云",
+        "ownership": "ter"
+      }
+    },
+    "ownership": "ter"
+  },
+  "Cluster_500": {
+    "coordinate": [
+      0,
+      0,
+      17320000
+    ],
+    "sectors": {
+      "Cluster_500_Sector001": {
+        "coordinate": [
+          1,
+          0,
+          1
+        ],
+        "name": "Avarice｜贪婪 I",
+        "ownership": "rip"
+      },
+      "Cluster_500_Sector002": {
+        "coordinate": [
+          1,
+          0,
+          -1
+        ],
+        "name": "Avarice｜贪婪 V Dead End | 死胡同",
+        "ownership": "rip"
+      },
+      "Cluster_500_Sector003": {
+        "coordinate": [
+          -1,
+          0,
+          0
+        ],
+        "name": "Avarice｜贪婪 IV",
+        "ownership": "rip"
+      }
+    },
+    "ownership": "rip"
+  },
+  "Cluster_501": {
+    "coordinate": [
+      0,
+      0,
+      34650000
+    ],
+    "sectors": {
+      "Cluster_501_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Windfall | 横财 I Union Summit | 联盟峰会",
+        "ownership": "vig"
+      }
+    },
+    "ownership": "vig"
+  },
+  "Cluster_502": {
+    "coordinate": [
+      -15000000,
+      0,
+      25980000
+    ],
+    "sectors": {
+      "Cluster_502_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Windfall | 横财 III The Hoard | 囤积居奇",
+        "ownership": "vig"
+      }
+    },
+    "ownership": "vig"
+  },
+  "Cluster_503": {
+    "coordinate": [
+      -15000000,
+      0,
+      8660000
+    ],
+    "sectors": {
+      "Cluster_503_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "Windfall | 横财 IV Aurora's Dream | 欧若拉幻梦",
+        "ownership": "vig"
+      }
+    },
+    "ownership": "vig"
+  },
+  "Cluster_504": {
+    "coordinate": [
+      15000000,
+      0,
+      8660000
+    ],
+    "sectors": {
+      "Cluster_504_Sector001": {
+        "coordinate": [
+          0,
+          0,
+          0
+        ],
+        "name": "未知星系",
+        "ownership": "unclaimed"
+      }
+    },
+    "ownership": "unclaimed"
+  }
+}

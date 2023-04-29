@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.51) at 17.06.2021_17-21-51-->
+<macros>
+  <macro name="storage_tel_s_liquid_01_macro" class="storage">
+    <component ref="storage_tel_s_liquid_01" />
+    <properties>
+      <identification name="{20104,21701}" shortname="{20104,21703}" makerrace="teladi" size="small" description="{20104,21702}" />
+      <cargo max="100000" tags="liquid" />
+      <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+          <set ref="piratebase" />
+        </sets>
+      </build>
+      <explosiondamage value="500" shield="2500" />
+      <hull max="111000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+</macros>
