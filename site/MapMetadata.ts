@@ -1,42 +1,57 @@
 /**
- * 提供一系列关于地图尺寸的数据
+ * 提供一系列关于地图尺寸的数据和常用的三角函数值
  */
 
 import { ClusterId, ClusterDef } from './map_data_parser'
 
+export const COS_30 = Math.cos(Math.PI / 6);
+export const COS_PI_6 = COS_30;
+export const RE_COS_30 = 1 / COS_30;
+export const RE_COS_PI_6 = RE_COS_30;
+
+export const RAW_RESIZE_RATIO = 1e-4;
+
 export class MapMetadata {
 
-  clusterRadius: Number;
+  rawClusterRadius: number;
 
-  sectorRadius1: Number;
+  /** 经过缩放后的cluster半径 */
+  clusterRadius: number;
 
-  sectorRadius2: Number;
+  /** 经过缩放后的sector半径（cluster内只有一个sector时） */
+  sectorRadius1: number;
 
-  sectorRadius3: Number;
+  /** 经过缩放后的sector半径（cluster内包含两个sector时） */
+  sectorRadius2: number;
+
+  /** 经过缩放后的sector半径（cluster内包含三个sector时） */
+  sectorRadius3: number;
 
   constructor (galaxyMap: Map<ClusterId, ClusterDef>) {
-    // 使用Argon Prime和The Reach之间的距离计算相邻两个cluster之间的距离
+    // 使用Argon Prime和The Reach之间的距离计算相邻两个cluster之间的（实际）距离
     // Cluster_14应该是Argon Prime
     // Cluster_07应该是The Reach
-    const key1 = 'Cluster_14', key2 = 'Cluster_07';
-    const cluster14 = galaxyMap.get(key1), cluster07 = galaxyMap.get(key2);
-    if (!cluster14 || !cluster07) {
-      throw new Error(`The constructor of '${MapMetadata.name}' requires parameter 'galaxyMap' contains key '${key1}' and key '${key2}'`);
+    const clusterId1 = 'Cluster_14', sectorId1 = 'Cluster_14_Sector001', clusterId2 = 'Cluster_07', sectorId2 = 'Cluster_07_Sector001';
+    const cluster1 = galaxyMap.get(clusterId1), cluster2 = galaxyMap.get(clusterId2);
+    if (!cluster1 || !cluster2) {
+      throw new Error(`The constructor of '${MapMetadata.name}' requires parameter 'galaxyMap' contains key '${clusterId1}' and key '${clusterId2}'`);
+    }
+    const sector1 = cluster1.sectors.get(sectorId1), sector2 = cluster2.sectors.get(sectorId2);
+    if (!sector1 || !sector2) {
+      throw new Error(`The constructor of '${MapMetadata.name}' requires cluster '${clusterId1}' has sector '${sector1}, and cluster '${clusterId2} has sector '${sectorId2}'`);
     }
     if (
-      .sectors['Cluster_14_Sector001'].name.toLowerCase().indexOf('argon prime') !== -1 &&
-      galaxyMap['Cluster_07'].sectors['Cluster_07_Sector001'].name.toLowerCase().indexOf('the reach') !== -1
+      sector1.name.toLowerCase().indexOf('argon prime') === -1 ||
+      sector2.name.toLowerCase().indexOf('the reach') === -1
     ) {
-      const argonPrimeCoordinate = galaxyMap['Cluster_14'].coordinate,
-        theReachCoordinate = galaxyMap['Cluster_07'].coordinate;
-      const x1 = argonPrimeCoordinate[0], z1 = argonPrimeCoordinate[2];
-      const x2 = theReachCoordinate[0], z2 = theReachCoordinate[2];
-      const distance = Math.sqrt((x1 - x2) * (x1 - x2) + (z1 - z2) * (z1 - z2));
-      const radius = distance / 2 * RE_COS_30;
-      metadata.originalClusterRadius = radius;
-      metadata.clusterRadius = radius * ORIGINAL_RESIZE_RATIO;
-      metadata.exclusiveSectorRadius = metadata.clusterRadius;
-      metadata.sectorRadius = metadata.clusterRadius / 2;
+      throw new Error(`The constructor of '${MapMetadata.name}' requires '${cluster1}' is 'argon prime' and '${cluster2}' is 'the reach'`);
     }
+    const coordinate1 = cluster1.coordinate, coordinate2 = cluster2.coordinate;
+    const distance = coordinate1.distanceTo(coordinate2)
+    const radius = distance / 2 * RE_COS_30;
+    this.rawClusterRadius = radius;
+    this.clusterRadius = radius * RAW_RESIZE_RATIO;
+    this.sectorRadius1 = this.clusterRadius;
+    this.sectorRadius2 = this.sectorRadius3 = this.clusterRadius / 2;
   }
 };

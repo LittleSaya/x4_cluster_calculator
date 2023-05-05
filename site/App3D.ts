@@ -3,6 +3,7 @@
  */
 
 import { ClusterId, ClusterDef } from './map_data_parser'
+import { MapMetadata } from './MapMetadata'
 import { WebGLRenderer, Scene, PerspectiveCamera, Vector3 } from 'three'
 import { MapControls } from 'three/examples/jsm/controls/MapControls'
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry'
@@ -77,7 +78,7 @@ class ThreeContext {
     this.font = undefined;
   }
 
-  async loadFont () {
+  async loadFont (): Promise<void> {
     if (this.font) {
       return;
     }
@@ -95,19 +96,42 @@ export class App3D {
 
   threeContext: ThreeContext;
 
+  mapMetaData: MapMetadata;
+
+  boundRenderLoop: (time: number) => void;
+
   /**
    * @param galaxyMap 游戏地图数据
    * @param threeContext Three.js对象集合，其中所有对象都应该已经初始化完成
    */
-  constructor (galaxyMap: Map<ClusterId, ClusterDef>, threeContext: ThreeContext) {
+  constructor (galaxyMap: Map<ClusterId, ClusterDef>) {
     this.galaxyMap = galaxyMap;
-    this.threeContext = threeContext;
+    this.threeContext = new ThreeContext();
+    this.mapMetaData = new MapMetadata(galaxyMap);
+    this.boundRenderLoop = this.renderLoop.bind(this);
+  }
+
+  async loadAssets (): Promise<void> {
+    await this.threeContext.loadFont();
+  }
+
+  getCanvas (): HTMLCanvasElement {
+    return this.threeContext.renderer.domElement;
+  }
+
+  renderLoop (time: number): void {
+    this.render(time);
+    requestAnimationFrame(this.boundRenderLoop);
+  }
+
+  render (time: number): void {
+
   }
 
   /**
    * 初始化场景（只有地图、没有工厂的场景）
    */
-  initializeScene () {
+  initializeScene (): void {
     this.threeContext.scene.clear();
 
     this.galaxyMap.forEach((clusterDef, clusterId) => {
