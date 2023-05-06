@@ -11,6 +11,11 @@ export const RE_COS_PI_6 = RE_COS_30;
 
 export const RAW_RESIZE_RATIO = 1e-4;
 
+export const CLUSTER_RING_WIDTH = 100;
+export const SECTOR1_RING_WIDTH = 100;
+export const SECTOR2_RING_WIDTH = 50;
+export const SECTOR3_RING_WIDTH = 50;
+
 export class MapMetadata {
 
   rawClusterRadius: number;

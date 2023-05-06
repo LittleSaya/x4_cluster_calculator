@@ -2,9 +2,9 @@
  * 该类型提供展示地图、操作地图、摆放工厂、配置工厂、导出工厂数据的功能
  */
 
-import { ClusterId, ClusterDef } from './map_data_parser'
-import { MapMetadata } from './MapMetadata'
-import { WebGLRenderer, Scene, PerspectiveCamera, Vector3 } from 'three'
+import { ClusterId, ClusterDef } from './util/map_data_parser'
+import { MapMetadata, CLUSTER_RING_WIDTH, SECTOR1_RING_WIDTH, SECTOR2_RING_WIDTH, SECTOR3_RING_WIDTH } from './util/MapMetadata'
+import { WebGLRenderer, Scene, PerspectiveCamera, Vector3, RingGeometry } from 'three'
 import { MapControls } from 'three/examples/jsm/controls/MapControls'
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry'
 import { FontLoader, Font } from 'three/examples/jsm/loaders/FontLoader'
@@ -134,7 +134,21 @@ export class App3D {
   initializeScene (): void {
     this.threeContext.scene.clear();
 
+    // 创建几何体，几何体是共享的
+    const clusterRingGeometry = new RingGeometry(
+      this.mapMetaData.clusterRadius - CLUSTER_RING_WIDTH,
+      this.mapMetaData.clusterRadius,
+      6,
+      1
+    );
+    clusterRingGeometry.rotateX(Math.PI / 2);
+
+    const sector1RingGeometry = new RingGeometry(
+      this.mapMetaData.clusterRadius
+    )
+
     this.galaxyMap.forEach((clusterDef, clusterId) => {
+
     });
   }
 };
