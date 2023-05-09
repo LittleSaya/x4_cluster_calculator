@@ -4,19 +4,22 @@
 
 import { Vector3 } from 'three'
 
-export type ClusterId = String;
+export type ClusterId = string;
 
-export type SectorId = String;
+export type SectorId = string;
 
 export class SectorDef {
 
+  /**
+   * 原始坐标
+   */
   coordinate: Vector3;
 
-  name: String;
+  name: string;
 
-  ownership: String;
+  ownership: string;
 
-  constructor (coordinate: Vector3, name: String, ownership: String) {
+  constructor (coordinate: Vector3, name: string, ownership: string) {
     this.coordinate = coordinate;
     this.name = name;
     this.ownership = ownership;
@@ -25,19 +28,26 @@ export class SectorDef {
 
 export class ClusterDef {
 
+  /**
+   * 原始坐标
+   */
   coordinate: Vector3;
 
   sectors: Map<SectorId, SectorDef>;
 
-  ownership: String;
+  ownership: string;
 
-  constructor (coordinate: Vector3, sectors: Map<SectorId, SectorDef>, ownership: String) {
+  constructor (coordinate: Vector3, sectors: Map<SectorId, SectorDef>, ownership: string) {
     this.coordinate = coordinate;
     this.sectors = sectors;
     this.ownership = ownership;
   }
 };
 
+/**
+ * @param json 原始的地图数据
+ * @returns 
+ */
 export function parseMapData (json: any): Map<ClusterId, ClusterDef> {
   const galaxyMap = new Map<ClusterId, ClusterDef>();
   for (const clusterId in json) {

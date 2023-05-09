@@ -94,10 +94,8 @@ export const clusterHexagonEdge = {
   ter: new THREE.MeshBasicMaterial({ color: factionColors.ter.hexagonEdge, side: THREE.BackSide }),
   pio: new THREE.MeshBasicMaterial({ color: factionColors.pio.hexagonEdge, side: THREE.BackSide }),
   vig: new THREE.MeshBasicMaterial({ color: factionColors.vig.hexagonEdge, side: THREE.BackSide }),
-  vig: new THREE.MeshBasicMaterial({ color: factionColors.vig.hexagonEdge, side: THREE.BackSide }),
   rip: new THREE.MeshBasicMaterial({ color: factionColors.rip.hexagonEdge, side: THREE.BackSide }),
   bor: new THREE.MeshBasicMaterial({ color: factionColors.bor.hexagonEdge, side: THREE.BackSide }),
-  vig: new THREE.MeshBasicMaterial({ color: factionColors.vig.hexagonEdge, side: THREE.BackSide }),
   undefined: new THREE.MeshBasicMaterial({ color: new THREE.Color(1.0, 1.0, 1.0), side: THREE.BackSide }),
   mix: new THREE.MeshBasicMaterial({ color: new THREE.Color(1.0, 1.0, 1.0), side: THREE.BackSide }),
 };
@@ -116,10 +114,8 @@ export const sectorHexagonEdge = {
   ter: new THREE.MeshBasicMaterial({ color: factionColors.ter.hexagonEdge, side: THREE.BackSide }),
   pio: new THREE.MeshBasicMaterial({ color: factionColors.pio.hexagonEdge, side: THREE.BackSide }),
   vig: new THREE.MeshBasicMaterial({ color: factionColors.vig.hexagonEdge, side: THREE.BackSide }),
-  vig: new THREE.MeshBasicMaterial({ color: factionColors.vig.hexagonEdge, side: THREE.BackSide }),
   rip: new THREE.MeshBasicMaterial({ color: factionColors.rip.hexagonEdge, side: THREE.BackSide }),
   bor: new THREE.MeshBasicMaterial({ color: factionColors.bor.hexagonEdge, side: THREE.BackSide }),
-  vig: new THREE.MeshBasicMaterial({ color: factionColors.vig.hexagonEdge, side: THREE.BackSide }),
   undefined: new THREE.MeshBasicMaterial({ color: new THREE.Color(1.0, 1.0, 1.0), side: THREE.BackSide }),
   mix: new THREE.MeshBasicMaterial({ color: new THREE.Color(1.0, 1.0, 1.0), side: THREE.BackSide }),
 };
@@ -138,10 +134,8 @@ export const sectorHexagonPlane = {
   ter: new THREE.MeshBasicMaterial({ color: factionColors.ter.hexagonPlane, opacity: 0.25, side: THREE.BackSide }),
   pio: new THREE.MeshBasicMaterial({ color: factionColors.pio.hexagonPlane, opacity: 0.25, side: THREE.BackSide }),
   vig: new THREE.MeshBasicMaterial({ color: factionColors.vig.hexagonPlane, opacity: 0.25, side: THREE.BackSide }),
-  vig: new THREE.MeshBasicMaterial({ color: factionColors.vig.hexagonPlane, opacity: 0.25, side: THREE.BackSide }),
   rip: new THREE.MeshBasicMaterial({ color: factionColors.rip.hexagonPlane, opacity: 0.25, side: THREE.BackSide }),
   bor: new THREE.MeshBasicMaterial({ color: factionColors.bor.hexagonPlane, opacity: 0.25, side: THREE.BackSide }),
-  vig: new THREE.MeshBasicMaterial({ color: factionColors.vig.hexagonPlane, opacity: 0.25, side: THREE.BackSide }),
   undefined: new THREE.MeshBasicMaterial({ color: new THREE.Color(1.0, 1.0, 1.0), opacity: 0.25, side: THREE.BackSide }),
   mix: new THREE.MeshBasicMaterial({ color: new THREE.Color(1.0, 1.0, 1.0), opacity: 0.25, side: THREE.BackSide }),
 };

@@ -2,9 +2,10 @@
  * 该类型提供展示地图、操作地图、摆放工厂、配置工厂、导出工厂数据的功能
  */
 
-import { ClusterId, ClusterDef } from './util/map_data_parser'
-import { MapMetadata, CLUSTER_RING_WIDTH, SECTOR1_RING_WIDTH, SECTOR2_RING_WIDTH, SECTOR3_RING_WIDTH } from './util/MapMetadata'
-import { WebGLRenderer, Scene, PerspectiveCamera, Vector3, RingGeometry } from 'three'
+import { ClusterId, ClusterDef, SectorDef, SectorId } from './util/map_data_parser'
+import { MapMetadata, CLUSTER_RING_WIDTH, SECTOR1_RING_WIDTH, SECTOR2_RING_WIDTH, SECTOR3_RING_WIDTH, RAW_RESIZE_RATIO } from './util/MapMetadata'
+import * as materials from './App3D/materials'
+import { WebGLRenderer, Scene, PerspectiveCamera, Vector3, RingGeometry, CircleGeometry, Object3D, Mesh } from 'three'
 import { MapControls } from 'three/examples/jsm/controls/MapControls'
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry'
 import { FontLoader, Font } from 'three/examples/jsm/loaders/FontLoader'
@@ -30,10 +31,17 @@ enum ObjectUserDataType {
  * Three.js对象中的userData属性中存储的数据
  */
 type ObjectUserData = {
-  type: ObjectUserDataType.Cluster | ObjectUserDataType.Sector,
-  ownership: String,
+  type: ObjectUserDataType.Cluster,
+  ownership: string,
 } | {
-  type: ObjectUserDataType.ClusterHexagonEdge | ObjectUserDataType.SectorHexagonEdge | ObjectUserDataType.SectorHexagonPlane | ObjectUserDataType.SectorName
+  type: ObjectUserDataType.Sector,
+  ownership: string,
+  name: string,
+} | {
+  type: ObjectUserDataType.ClusterHexagonEdge |
+  ObjectUserDataType.SectorHexagonEdge |
+  ObjectUserDataType.SectorHexagonPlane |
+  ObjectUserDataType.SectorName
 }
 
 /**
@@ -135,6 +143,7 @@ export class App3D {
     this.threeContext.scene.clear();
 
     // 创建几何体，几何体是共享的
+    // cluster的六边形的环
     const clusterRingGeometry = new RingGeometry(
       this.mapMetaData.clusterRadius - CLUSTER_RING_WIDTH,
       this.mapMetaData.clusterRadius,
@@ -143,11 +152,126 @@ export class App3D {
     );
     clusterRingGeometry.rotateX(Math.PI / 2);
 
+    // 只有一个sector的cluster中的sector的六边形的环
     const sector1RingGeometry = new RingGeometry(
-      this.mapMetaData.clusterRadius
-    )
+      this.mapMetaData.sectorRadius1 - SECTOR1_RING_WIDTH,
+      this.mapMetaData.sectorRadius1,
+      6,
+      1
+    );
+    sector1RingGeometry.rotateX(Math.PI / 2);
+
+    // 只有一个sector的cluster中的sector的六边形的面
+    const sector1PlaneGeometry = new CircleGeometry(this.mapMetaData.sectorRadius1, 6);
+    sector1PlaneGeometry.rotateX(Math.PI / 2);
+
+    // 有两个sector的cluster中的sector的六边形的环
+    const sector2RingGeometry = new RingGeometry(
+      this.mapMetaData.sectorRadius2 - SECTOR2_RING_WIDTH,
+      this.mapMetaData.sectorRadius2,
+      6,
+      1
+    );
+    sector2RingGeometry.rotateX(Math.PI / 2);
+
+    // 有两个sector的cluster中的sector的六边形的面
+    const sector2PlaneGeometry = new CircleGeometry(this.mapMetaData.sectorRadius2, 6);
+    sector2PlaneGeometry.rotateX(Math.PI / 2);
+
+    // 有三个sector的cluster中的sector的六边形的环
+    const sector3RingGeometry = new RingGeometry(
+      this.mapMetaData.sectorRadius3 - SECTOR3_RING_WIDTH,
+      this.mapMetaData.sectorRadius3,
+      6,
+      1
+    );
+    sector3RingGeometry.rotateX(Math.PI / 2);
+
+    // 有三个sector的cluster中的sector的六边形的面
+    const sector3PlaneGeometry = new CircleGeometry(this.mapMetaData.sectorRadius3, 6);
+    sector3PlaneGeometry.rotateX(Math.PI / 2);
 
     this.galaxyMap.forEach((clusterDef, clusterId) => {
+      const cluster = new Object3D();
+      const clusterCoordinate = clusterDef.coordinate.clone().multiplyScalar(RAW_RESIZE_RATIO);
+      cluster.position.copy(clusterCoordinate);
+      const clusterUserData: ObjectUserData = {
+        type: ObjectUserDataType.Cluster,
+        ownership: clusterDef.ownership,
+      };
+      cluster.userData = clusterUserData;
+      this.threeContext.scene.add(cluster);
+
+      const clusterHexagonEdge = new Mesh(clusterRingGeometry, materials.clusterHexagonEdge[clusterDef.ownership]);
+      const clusterHexagonEdgeUserData: ObjectUserData = {
+        type: ObjectUserDataType.ClusterHexagonEdge,
+      };
+      clusterHexagonEdge.userData = clusterHexagonEdgeUserData;
+      cluster.add(clusterHexagonEdge);
+
+      // 第一次只添加sector对象和sector名称，并且保留sector的原始坐标
+      let sectorCount = 0;
+      clusterDef.sectors.forEach((sectorDef, sectorId) => {
+        const sector = new Object3D();
+        const sectorCoordinate = sectorDef.coordinate.clone();
+        sector.position.copy(sectorCoordinate);
+        const sectorUserData: ObjectUserData = {
+          type: ObjectUserDataType.Sector,
+          ownership: sectorDef.ownership,
+          name: sectorDef.name,
+        };
+        sector.userData = sectorUserData;
+        cluster.add(sector);
+
+        if (this.threeContext.font === undefined) {
+          throw new Error(`${App3D.name}.${this.initializeScene.name} requires threeContext.font been initialized first`);
+        }
+        const sectorNameGeometry = new TextGeometry(sectorDef.name, {
+          font: this.threeContext.font,
+          size: 160,
+          height: 1,
+        });
+        sectorNameGeometry.rotateX(Math.PI / 2);
+        // 计算bounding box，移动文字几何体的位置，使得文字能够居中显示
+        sectorNameGeometry.computeBoundingBox();
+        const textCenter = new Vector3();
+        sectorNameGeometry.boundingBox!.getCenter(textCenter);
+        sectorNameGeometry.translate(-textCenter.x, 0, -textCenter.z);
+        const sectorName = new Mesh(sectorNameGeometry, materials.sectorName);
+        const sectorNameUserData: ObjectUserData = {
+          type: ObjectUserDataType.SectorName,
+        };
+        sectorName.userData = sectorNameUserData;
+        sector.add(sectorName);
+
+        ++sectorCount;
+      });
+
+      // 根据sectorCount的值，再补充sector的边和面
+      for (const child of cluster.children) {
+        const userData = child.userData as ObjectUserData;
+        if (userData.type !== ObjectUserDataType.Sector) {
+          continue;
+        }
+        const sector = child;
+
+        let sectorHexagonEdge: Mesh, sectorHexagonPlane: Mesh;
+        if (sectorCount === 1) {
+          sectorHexagonEdge = new Mesh(sector1RingGeometry, materials.sectorHexagonEdge[userData.ownership]).rotateX(Math.PI / 2);
+          sectorHexagonPlane = new Mesh(sector1PlaneGeometry, materials.sectorHexagonPlane[userData.ownership]).rotateX(Math.PI / 2);
+        } else if (sectorCount === 2) {
+          sectorHexagonEdge = new Mesh(sector2RingGeometry, materials.sectorHexagonEdge[userData.ownership]).rotateX(Math.PI / 2);
+          sectorHexagonPlane = new Mesh(sector2PlaneGeometry, materials.sectorHexagonPlane[userData.ownership]).rotateX(Math.PI / 2);
+        } else if (sectorCount === 3) {
+          sectorHexagonEdge = new Mesh(sector3RingGeometry, materials.sectorHexagonEdge[userData.ownership]).rotateX(Math.PI / 2);
+          sectorHexagonPlane = new Mesh(sector3PlaneGeometry, materials.sectorHexagonPlane[userData.ownership]).rotateX(Math.PI / 2);
+        } else {
+          throw new Error(`${App3D.name}.${this.initializeScene.name} requires a cluster has 1~3 sectors, but ${clusterId} has ${sectorCount} sectors`);
+        }
+        sector.add(sectorHexagonEdge, sectorHexagonPlane);
+      }
+
+      // 根据sector原始坐标之间的相对位置，重新设置sector的坐标，使得每一个sector都位于地图上的正确位置
 
     });
   }
