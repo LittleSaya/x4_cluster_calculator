@@ -6,7 +6,7 @@ import { ClusterId, ClusterDef, SectorDef, SectorId } from './util/map_data_pars
 import { MapMetadata, CLUSTER_RING_WIDTH, SECTOR1_RING_WIDTH, SECTOR2_RING_WIDTH, SECTOR3_RING_WIDTH, RAW_RESIZE_RATIO } from './util/MapMetadata'
 import { COS_30 } from './util/math_constants'
 import * as materials from './App3D/materials'
-import { WebGLRenderer, Scene, PerspectiveCamera, Vector3, RingGeometry, CircleGeometry, Object3D, Mesh } from 'three'
+import { WebGLRenderer, Scene, PerspectiveCamera, Vector3, RingGeometry, CircleGeometry, Object3D, Mesh, AxesHelper } from 'three'
 import { MapControls } from 'three/examples/jsm/controls/MapControls'
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry'
 import { FontLoader, Font } from 'three/examples/jsm/loaders/FontLoader'
@@ -14,7 +14,11 @@ import { FontLoader, Font } from 'three/examples/jsm/loaders/FontLoader'
 const CAMERA_FOV = 75;
 const CAMERA_NEAR = 100;
 const CAMERA_FAR = 100000;
-const CAMERA_INIT_POS = new Vector3(0, 20000, 0);
+const CAMERA_INIT_POS = new Vector3(0, -20000, -100);
+
+const SECTOR_EDGE_Y_OFFSET = -20;
+const SECTOR_PLANE_Y_OFFSET = -10;
+const SECTOR_NAME_Y_OFFSET = -30;
 
 /**
  * 场景中的对象类型，缩进代表了对象的上下级关系
@@ -73,7 +77,7 @@ class ThreeContext {
 
     const camera = new PerspectiveCamera(CAMERA_FOV, window.innerWidth / window.innerHeight, CAMERA_NEAR, CAMERA_FAR);
     camera.position.set(CAMERA_INIT_POS.x, CAMERA_INIT_POS.y, CAMERA_INIT_POS.z);
-    camera.up = new Vector3(0, 0, 1); // 将Z轴正方向作为相机的上方，与游戏内的地图保持一致
+    camera.up = new Vector3(0, -1, 0);
     camera.lookAt(0, 0, 0);
     this.camera = camera;
 
@@ -134,7 +138,7 @@ export class App3D {
   }
 
   render (time: number): void {
-
+    this.threeContext.renderer.render(this.threeContext.scene, this.threeContext.camera);
   }
 
   /**
@@ -192,6 +196,7 @@ export class App3D {
     const sector3PlaneGeometry = new CircleGeometry(this.mapMetaData.sectorRadius3, 6);
     sector3PlaneGeometry.rotateX(Math.PI / 2);
 
+    // 下面这个大循环用于创建地图中的基本要素：cluster的边、sector的边和面、sector的名称以及各种容器对象
     this.galaxyMap.forEach((clusterDef, clusterId) => {
       const cluster = new Object3D();
       const clusterCoordinate = clusterDef.coordinate.clone().multiplyScalar(RAW_RESIZE_RATIO);
@@ -243,6 +248,7 @@ export class App3D {
           type: ObjectUserDataType.SectorName,
         };
         sectorName.userData = sectorNameUserData;
+        sectorName.position.y = SECTOR_NAME_Y_OFFSET;
         sector.add(sectorName);
 
         ++sectorCount;
@@ -258,17 +264,19 @@ export class App3D {
 
         let sectorHexagonEdge: Mesh, sectorHexagonPlane: Mesh;
         if (sectorCount === 1) {
-          sectorHexagonEdge = new Mesh(sector1RingGeometry, materials.sectorHexagonEdge[userData.ownership]).rotateX(Math.PI / 2);
-          sectorHexagonPlane = new Mesh(sector1PlaneGeometry, materials.sectorHexagonPlane[userData.ownership]).rotateX(Math.PI / 2);
+          sectorHexagonEdge = new Mesh(sector1RingGeometry, materials.sectorHexagonEdge[userData.ownership]);
+          sectorHexagonPlane = new Mesh(sector1PlaneGeometry, materials.sectorHexagonPlane[userData.ownership]);
         } else if (sectorCount === 2) {
-          sectorHexagonEdge = new Mesh(sector2RingGeometry, materials.sectorHexagonEdge[userData.ownership]).rotateX(Math.PI / 2);
-          sectorHexagonPlane = new Mesh(sector2PlaneGeometry, materials.sectorHexagonPlane[userData.ownership]).rotateX(Math.PI / 2);
+          sectorHexagonEdge = new Mesh(sector2RingGeometry, materials.sectorHexagonEdge[userData.ownership]);
+          sectorHexagonPlane = new Mesh(sector2PlaneGeometry, materials.sectorHexagonPlane[userData.ownership]);
         } else if (sectorCount === 3) {
-          sectorHexagonEdge = new Mesh(sector3RingGeometry, materials.sectorHexagonEdge[userData.ownership]).rotateX(Math.PI / 2);
-          sectorHexagonPlane = new Mesh(sector3PlaneGeometry, materials.sectorHexagonPlane[userData.ownership]).rotateX(Math.PI / 2);
+          sectorHexagonEdge = new Mesh(sector3RingGeometry, materials.sectorHexagonEdge[userData.ownership]);
+          sectorHexagonPlane = new Mesh(sector3PlaneGeometry, materials.sectorHexagonPlane[userData.ownership]);
         } else {
           throw new Error(`${App3D.name}.${this.initializeScene.name} requires a cluster has 1~3 sectors, but ${clusterId} has ${sectorCount} sectors`);
         }
+        sectorHexagonEdge.position.y = SECTOR_EDGE_Y_OFFSET;
+        sectorHexagonPlane.position.y = SECTOR_PLANE_Y_OFFSET;
         sector.add(sectorHexagonEdge, sectorHexagonPlane);
       }
 
@@ -281,6 +289,7 @@ export class App3D {
         }
         sectorArray.push({ sectorRef: child });
       }
+
       if (sectorArray.length === 1) {
         sectorArray[0].newCoordinate = new Vector3(0, 0, 0);
       } else if (sectorArray.length === 2) {
@@ -317,10 +326,44 @@ export class App3D {
           }
         }
       } else if (sectorArray.length === 3) {
-
+        // 先按Z的大小从小到大排序
+        sectorArray.sort((a, b) => a.sectorRef.position.z - b.sectorRef.position.z);
+        // 重新计算三个点的x坐标（相对于cluster中心，即大六边形的中心）
+        const z0 = -COS_30 * this.mapMetaData.clusterRadius / 2;
+        const z1 = 0;
+        const z2 = -z0;
+        let x0: number, x1: number, x2: number;
+        // 根据三个点x坐标的相对大小重新计算三个点的x坐标
+        // 判断中间这个点在左侧还是在右侧
+        const middleX = (sectorArray[0].sectorRef.position.x + sectorArray[2].sectorRef.position.x) / 2;
+        if (sectorArray[1].sectorRef.position.x > middleX) {
+          // 中间这个点在右侧
+          x0 = -this.mapMetaData.clusterRadius / 4;
+          x1 = this.mapMetaData.clusterRadius / 2;
+          x2 = x0;
+        } else {
+          // 中间这个点在左侧
+          x0 = this.mapMetaData.clusterRadius / 4;
+          x1 = -this.mapMetaData.clusterRadius / 2;
+          x2 = x0;
+        }
+        sectorArray[0].newCoordinate = new Vector3(x0, 0, z0);
+        sectorArray[1].newCoordinate = new Vector3(x1, 0, z1);
+        sectorArray[2].newCoordinate = new Vector3(x2, 0, z2);
       } else {
-        throw new Error('sectorArray.length === ' + sectorArray.length);
+        throw new Error(`Variable 'sectorArray' has a length of ${sectorArray.length}, which is unexpected`);
+      }
+
+      for (const i of sectorArray) {
+        if (!i.newCoordinate) {
+          throw new Error('Expression \'i.newCoordinate\' is equivalent to false, which is unexpected');
+        }
+        i.sectorRef.position.copy(i.newCoordinate);
       }
     });
+
+    // 坐标轴辅助
+    const axesHelper = new AxesHelper(5000);
+    this.threeContext.scene.add(axesHelper);
   }
 };
