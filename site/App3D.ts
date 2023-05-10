@@ -4,6 +4,7 @@
 
 import { ClusterId, ClusterDef, SectorDef, SectorId } from './util/map_data_parser'
 import { MapMetadata, CLUSTER_RING_WIDTH, SECTOR1_RING_WIDTH, SECTOR2_RING_WIDTH, SECTOR3_RING_WIDTH, RAW_RESIZE_RATIO } from './util/MapMetadata'
+import { COS_30 } from './util/math_constants'
 import * as materials from './App3D/materials'
 import { WebGLRenderer, Scene, PerspectiveCamera, Vector3, RingGeometry, CircleGeometry, Object3D, Mesh } from 'three'
 import { MapControls } from 'three/examples/jsm/controls/MapControls'
@@ -272,7 +273,54 @@ export class App3D {
       }
 
       // 根据sector原始坐标之间的相对位置，重新设置sector的坐标，使得每一个sector都位于地图上的正确位置
+      const sectorArray: Array<{ sectorRef: Object3D, newCoordinate?: Vector3 }> = [];
+      for (const child of cluster.children) {
+        const userData = child.userData as ObjectUserData;
+        if (userData.type !== ObjectUserDataType.Sector) {
+          continue;
+        }
+        sectorArray.push({ sectorRef: child });
+      }
+      if (sectorArray.length === 1) {
+        sectorArray[0].newCoordinate = new Vector3(0, 0, 0);
+      } else if (sectorArray.length === 2) {
+        const z0 = sectorArray[0].sectorRef.position.z;
+        const z1 = sectorArray[1].sectorRef.position.z;
+        const x0 = sectorArray[0].sectorRef.position.x;
+        const x1 = sectorArray[1].sectorRef.position.x;
+        const slope = (z1 - z0) / (x1 - x0);
+        const xLeft = -this.mapMetaData.clusterRadius / 4;
+        const xRight = -xLeft;
+        const zTop = COS_30 * this.mapMetaData.clusterRadius / 2;
+        const zBottom = -zTop;
+        if (slope >= 0) {
+          // 如果斜率大于0（或等于0），那么X小的在左下角，X大的在右上角
+          if (x0 <= x1) {
+            // 点0在左下角，点1在右上角
+            sectorArray[0].newCoordinate = new Vector3(xLeft, 0, zBottom);
+            sectorArray[1].newCoordinate = new Vector3(xRight, 0, zTop);
+          } else {
+            // 点0在右上角，点1在左下角
+            sectorArray[0].newCoordinate = new Vector3(xRight, 0, zTop);
+            sectorArray[1].newCoordinate = new Vector3(xLeft, 0, zBottom);
+          }
+        } else {
+          // 如果斜率小于0，那么X小的在左上角，X大的在右下角
+          if (x0 <= x1) {
+            // 点0在左上角，点1在右下角
+            sectorArray[0].newCoordinate = new Vector3(xLeft, 0, zTop);
+            sectorArray[1].newCoordinate = new Vector3(xRight, 0, zBottom);
+          } else {
+            // 点0在右下角，点1在左上角
+            sectorArray[0].newCoordinate = new Vector3(xRight, 0, zBottom);
+            sectorArray[1].newCoordinate = new Vector3(xLeft, 0, zTop);
+          }
+        }
+      } else if (sectorArray.length === 3) {
 
+      } else {
+        throw new Error('sectorArray.length === ' + sectorArray.length);
+      }
     });
   }
 };
