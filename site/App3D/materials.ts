@@ -80,7 +80,7 @@ const factionColors = {
   },
 };
 
-export const sectorName = new MeshBasicMaterial({ color: 0xFFFFFF });
+export const sectorName = new MeshBasicMaterial({ color: 0xFFFFFF, side: SIDE });
 
 export const clusterHexagonEdge = {
   unclaimed: new MeshBasicMaterial({ color: factionColors.unclaimed.hexagonEdge, side: SIDE }),

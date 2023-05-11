@@ -6,7 +6,12 @@ import { ClusterId, ClusterDef, SectorDef, SectorId } from './util/map_data_pars
 import { MapMetadata, CLUSTER_RING_WIDTH, SECTOR1_RING_WIDTH, SECTOR2_RING_WIDTH, SECTOR3_RING_WIDTH, RAW_RESIZE_RATIO } from './util/MapMetadata'
 import { COS_30 } from './util/math_constants'
 import * as materials from './App3D/materials'
-import { WebGLRenderer, Scene, PerspectiveCamera, Vector3, RingGeometry, CircleGeometry, Object3D, Mesh, AxesHelper } from 'three'
+import {
+  WebGLRenderer, Scene, PerspectiveCamera,
+  RingGeometry, CircleGeometry, Object3D, Mesh, AxesHelper,
+  Raycaster, Intersection,
+  Vector3, Vector2,
+} from 'three'
 import { MapControls } from 'three/examples/jsm/controls/MapControls'
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry'
 import { FontLoader, Font } from 'three/examples/jsm/loaders/FontLoader'
@@ -42,6 +47,11 @@ type ObjectUserData = {
   type: ObjectUserDataType.Sector,
   ownership: string,
   name: string,
+
+  /**
+   * 缩放后的半径
+  */
+  radius: number,
 } | {
   type: ObjectUserDataType.ClusterHexagonEdge |
   ObjectUserDataType.SectorHexagonEdge |
@@ -62,7 +72,11 @@ class ThreeContext {
 
   mapControls: MapControls;
 
-  font: Font|undefined;
+  raycaster: Raycaster;
+
+  pointer: Vector2;
+
+  font: Font | undefined;
 
   /**
    * 构造一个预先配置好的集合
@@ -87,6 +101,13 @@ class ThreeContext {
     controls.maxDistance = CAMERA_FAR;
     controls.maxPolarAngle = Math.PI / 2;
     this.mapControls = controls;
+
+    this.raycaster = new Raycaster();
+    this.pointer = new Vector2();
+    window.addEventListener('mousemove', e => {
+      this.pointer.x = (e.clientX / window.innerWidth) * 2 - 1;
+      this.pointer.y = -(e.clientY / window.innerHeight) * 2 + 1;
+    });
 
     this.font = undefined;
   }
@@ -113,6 +134,8 @@ export class App3D {
 
   boundRenderLoop: (time: number) => void;
 
+  lastIntersectSector: Object3D|undefined;
+
   /**
    * @param galaxyMap 游戏地图数据
    * @param threeContext Three.js对象集合，其中所有对象都应该已经初始化完成
@@ -122,6 +145,7 @@ export class App3D {
     this.threeContext = new ThreeContext();
     this.mapMetaData = new MapMetadata(galaxyMap);
     this.boundRenderLoop = this.renderLoop.bind(this);
+    this.lastIntersectSector = undefined;
   }
 
   async loadAssets (): Promise<void> {
@@ -138,7 +162,124 @@ export class App3D {
   }
 
   render (time: number): void {
+    // 处理射线捡取
+    this.threeContext.raycaster.setFromCamera(this.threeContext.pointer, this.threeContext.camera);
+    const intersects = this.threeContext.raycaster.intersectObjects(this.threeContext.scene.children);
+
+    this.updateSectorName(intersects);
+
     this.threeContext.renderer.render(this.threeContext.scene, this.threeContext.camera);
+  }
+
+  updateSectorName (intersects: Intersection<Object3D>[]) {
+    let currentIntersectSector: Object3D|undefined;
+    for (let i = 0; i < intersects.length; i++) {
+      const object = intersects[i].object;
+      const userData = object.userData as ObjectUserData;
+      if (userData.type === ObjectUserDataType.SectorHexagonPlane) {
+        if (!object.parent) {
+          throw new Error('Sector plane should have parent');
+        }
+        currentIntersectSector = object.parent;
+      }
+    }
+    
+    if (currentIntersectSector) {
+      // 鼠标与某个sector相交
+      if (currentIntersectSector === this.lastIntersectSector) {
+        // 还是同一个sector，什么都不需要做
+      } else {
+        // 不是同一个sector
+        const currentIntersectSectorNameObject = currentIntersectSector.children.find(childObject => (childObject.userData as ObjectUserData).type === ObjectUserDataType.SectorName);
+        if (!currentIntersectSectorNameObject) {
+          throw new Error('Sector should have sector name (current intersect sector)');
+        }
+        currentIntersectSectorNameObject.visible = true;
+        if (this.lastIntersectSector) {
+          // 鼠标移动到新的sector，隐藏上一个sector的名称
+          const lastIntersectSectorNameObject = this.lastIntersectSector.children.find(childObject => (childObject.userData as ObjectUserData).type === ObjectUserDataType.SectorName);
+          if (!lastIntersectSectorNameObject) {
+            throw new Error('Sector should have sector name (last intersect sector)');
+          }
+          lastIntersectSectorNameObject.visible = false;
+        } else {
+          // 从无到有，没有上一个sector名称可以隐藏
+        }
+        this.lastIntersectSector = currentIntersectSector;
+      }
+    } else {
+      // 鼠标不与某个sector相交
+      if (this.lastIntersectSector) {
+        // 隐藏上一个sector的名称
+        const lastIntersectSectorNameObject = this.lastIntersectSector.children.find(childObject => (childObject.userData as ObjectUserData).type === ObjectUserDataType.SectorName);
+        if (!lastIntersectSectorNameObject) {
+          throw new Error('Sector should have sector name (last intersect sector)');
+        }
+        lastIntersectSectorNameObject.visible = false;
+        this.lastIntersectSector = undefined;
+      }
+    }
+  
+    // 更新当前鼠标所指星区的名称大小，使得星区名称不管距离相机多远，其视觉上的大小始终保持不变
+    // 同时，使星区名称尽可能正对相机
+    if (this.lastIntersectSector) {
+      const userData = this.lastIntersectSector.userData as ObjectUserData;
+      if (userData.type !== ObjectUserDataType.Sector) {
+        throw new Error(`Unexpected userData.type: ${userData.type} (calculate possible locations)`);
+      }
+      // 星区名称有6个可能的位置，每个位置对应六边形的一条边
+      let possibleLocations = [{
+        vector: new Vector3(0, 0, userData.radius), // 位置1
+        rotation: 0,
+      }, {
+        vector: new Vector3(0, 0, userData.radius).applyAxisAngle(new Vector3(0, 1, 0), Math.PI / 3), // 位置2
+        rotation: Math.PI / 3,
+      }, {
+        vector: new Vector3(0, 0, userData.radius).applyAxisAngle(new Vector3(0, 1, 0), Math.PI / 3 * 2), // 位置3
+        rotation: Math.PI / 3 * 2,
+      }, {
+        vector: new Vector3(0, 0, userData.radius).applyAxisAngle(new Vector3(0, 1, 0), Math.PI), // 位置4
+        rotation: Math.PI,
+      }, {
+        vector: new Vector3(0, 0, userData.radius).applyAxisAngle(new Vector3(0, 1, 0), -Math.PI / 3), // 位置5（此处旋转角度超过 PI 应该从另一个方向旋转）
+        rotation: -Math.PI / 3,
+      }, {
+        vector: new Vector3(0, 0, userData.radius).applyAxisAngle(new Vector3(0, 1, 0), -Math.PI / 3 * 2), // 位置6（此处旋转角度超过 PI 应该从另一个方向旋转）
+        rotation: -Math.PI / 3 * 2,
+      }];
+      // 遍历每一个可能的位置，找到最正对摄像机的那一个
+      const cameraDirection = new Vector3(0, 0, -1);
+      cameraDirection.applyQuaternion(this.threeContext.camera.quaternion);
+      const vector0 = new Vector2(cameraDirection.x, cameraDirection.z).normalize(); // 相机的方向向量
+      let maxCosIndex = 0, maxCos = Number.NEGATIVE_INFINITY;
+      for (let i = 0; i < possibleLocations.length; ++i) {
+        const possibleLocation = possibleLocations[i];
+        const vector1 = new Vector2(possibleLocation.vector.x, possibleLocation.vector.z).normalize(); // 从星区中心到可能位置的向量
+        const cos = vector0.x * vector1.x + vector0.y * vector1.y; // 计算两个向量夹角的cos值，这个值越大，就意味着这个位置越正对摄像机
+        if (cos > maxCos) {
+          maxCosIndex = i;
+          maxCos = cos;
+        }
+      }
+      const bestLocation = possibleLocations[maxCosIndex].vector;
+      // 找到星区名称对象，设置新的位置
+      const sectorNameObject = this.lastIntersectSector.children.find(obj => (obj.userData as ObjectUserData).type === ObjectUserDataType.SectorName);
+      if (!sectorNameObject) {
+        throw new Error('Sector should have sector name (last intersect sector)');
+      }
+      sectorNameObject.position.set(bestLocation.x, bestLocation.y, bestLocation.z);
+      sectorNameObject.setRotationFromAxisAngle(new Vector3(0, 1, 0), possibleLocations[maxCosIndex].rotation);
+      // 根据新的位置计算scale
+      // TODO: 这个计算方式有问题，靠近屏幕中心的文字明显比靠近屏幕边缘的文字要小
+      const sectorNameObjectWorldPosition = new Vector3();
+      sectorNameObject.getWorldPosition(sectorNameObjectWorldPosition);
+      const cameraWorldPosition = new Vector3();
+      this.threeContext.camera.getWorldPosition(cameraWorldPosition);
+      const textScale = sectorNameObjectWorldPosition.distanceTo(cameraWorldPosition) / 8000;
+      sectorNameObject.scale.set(textScale, textScale, textScale);
+      // sector的名称比六边形的边、六边形的面都要高
+      sectorNameObject.position.y = SECTOR_NAME_Y_OFFSET;
+    }
   }
 
   /**
@@ -225,6 +366,7 @@ export class App3D {
           type: ObjectUserDataType.Sector,
           ownership: sectorDef.ownership,
           name: sectorDef.name,
+          radius: -1.
         };
         sector.userData = sectorUserData;
         cluster.add(sector);
@@ -249,12 +391,13 @@ export class App3D {
         };
         sectorName.userData = sectorNameUserData;
         sectorName.position.y = SECTOR_NAME_Y_OFFSET;
+        sectorName.visible = false; // 星区名称只在鼠标悬浮在星区上时才显示
         sector.add(sectorName);
 
         ++sectorCount;
       });
 
-      // 根据sectorCount的值，再补充sector的边和面
+      // 根据sectorCount的值，再补充sector的边、面，以及缩放后的半径
       for (const child of cluster.children) {
         const userData = child.userData as ObjectUserData;
         if (userData.type !== ObjectUserDataType.Sector) {
@@ -266,18 +409,30 @@ export class App3D {
         if (sectorCount === 1) {
           sectorHexagonEdge = new Mesh(sector1RingGeometry, materials.sectorHexagonEdge[userData.ownership]);
           sectorHexagonPlane = new Mesh(sector1PlaneGeometry, materials.sectorHexagonPlane[userData.ownership]);
+          userData.radius = this.mapMetaData.sectorRadius1;
         } else if (sectorCount === 2) {
           sectorHexagonEdge = new Mesh(sector2RingGeometry, materials.sectorHexagonEdge[userData.ownership]);
           sectorHexagonPlane = new Mesh(sector2PlaneGeometry, materials.sectorHexagonPlane[userData.ownership]);
+          userData.radius = this.mapMetaData.sectorRadius2;
         } else if (sectorCount === 3) {
           sectorHexagonEdge = new Mesh(sector3RingGeometry, materials.sectorHexagonEdge[userData.ownership]);
           sectorHexagonPlane = new Mesh(sector3PlaneGeometry, materials.sectorHexagonPlane[userData.ownership]);
+          userData.radius = this.mapMetaData.sectorRadius3;
         } else {
           throw new Error(`${App3D.name}.${this.initializeScene.name} requires a cluster has 1~3 sectors, but ${clusterId} has ${sectorCount} sectors`);
         }
         sectorHexagonEdge.position.y = SECTOR_EDGE_Y_OFFSET;
+        const sectorHexagonEdgeUserData: ObjectUserData = {
+          type: ObjectUserDataType.SectorHexagonEdge,
+        };
+        sectorHexagonEdge.userData = sectorHexagonEdgeUserData;
+        sector.add(sectorHexagonEdge);
         sectorHexagonPlane.position.y = SECTOR_PLANE_Y_OFFSET;
-        sector.add(sectorHexagonEdge, sectorHexagonPlane);
+        const sectorHexagonPlaneUserData: ObjectUserData = {
+          type: ObjectUserDataType.SectorHexagonPlane,
+        };
+        sectorHexagonPlane.userData = sectorHexagonPlaneUserData;
+        sector.add(sectorHexagonPlane);
       }
 
       // 根据sector原始坐标之间的相对位置，重新设置sector的坐标，使得每一个sector都位于地图上的正确位置
@@ -364,6 +519,7 @@ export class App3D {
 
     // 坐标轴辅助
     const axesHelper = new AxesHelper(5000);
+    axesHelper.position.y -= 5000;
     this.threeContext.scene.add(axesHelper);
   }
 };
