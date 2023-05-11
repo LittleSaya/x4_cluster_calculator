@@ -134,7 +134,25 @@ export class App3D {
 
   boundRenderLoop: (time: number) => void;
 
-  lastIntersectSector: Object3D|undefined;
+  /**
+   * 在当前帧，鼠标与哪个sector相交
+   */
+  currentIntersectSector: Object3D | undefined;
+
+  /**
+   * 在当前帧，如果鼠标与某个sector相交的话，交点的坐标
+   */
+  currentIntersectSectorPosition: Vector3 | undefined;
+
+  /**
+   * 在上一帧，鼠标与哪个sector相交
+   */
+  lastIntersectSector: Object3D | undefined;
+  
+  /**
+   * DOM Events
+   */
+  eventQueue: Array<Event>;
 
   /**
    * @param galaxyMap 游戏地图数据
@@ -145,7 +163,12 @@ export class App3D {
     this.threeContext = new ThreeContext();
     this.mapMetaData = new MapMetadata(galaxyMap);
     this.boundRenderLoop = this.renderLoop.bind(this);
+    this.currentIntersectSector = undefined;
     this.lastIntersectSector = undefined;
+
+    this.eventQueue = new Array<Event>();
+    window.addEventListener('mousedown', ev => this.eventQueue.push(ev));
+    window.addEventListener('mouseup', ev => this.eventQueue.push(ev));
   }
 
   async loadAssets (): Promise<void> {
@@ -166,13 +189,19 @@ export class App3D {
     this.threeContext.raycaster.setFromCamera(this.threeContext.pointer, this.threeContext.camera);
     const intersects = this.threeContext.raycaster.intersectObjects(this.threeContext.scene.children);
 
-    this.updateSectorName(intersects);
+    this.updateIntersectSector(intersects);
+    this.updateSectorName();
+
+    this.processInput();
 
     this.threeContext.renderer.render(this.threeContext.scene, this.threeContext.camera);
+
+    this.lastIntersectSector = this.currentIntersectSector;
   }
 
-  updateSectorName (intersects: Intersection<Object3D>[]) {
-    let currentIntersectSector: Object3D|undefined;
+  updateIntersectSector (intersects: Intersection<Object3D>[]) {
+    let currentIntersectSector: Object3D | undefined;
+    let intersectPosition: Vector3 | undefined;
     for (let i = 0; i < intersects.length; i++) {
       const object = intersects[i].object;
       const userData = object.userData as ObjectUserData;
@@ -181,16 +210,22 @@ export class App3D {
           throw new Error('Sector plane should have parent');
         }
         currentIntersectSector = object.parent;
+        // 将交点从世界坐标转换为相对于sector的坐标
+        intersectPosition = object.parent.worldToLocal(intersects[i].point);
       }
     }
-    
-    if (currentIntersectSector) {
+    this.currentIntersectSector = currentIntersectSector;
+    this.currentIntersectSectorPosition = intersectPosition;
+  }
+
+  updateSectorName () {
+    if (this.currentIntersectSector) {
       // 鼠标与某个sector相交
-      if (currentIntersectSector === this.lastIntersectSector) {
+      if (this.currentIntersectSector === this.lastIntersectSector) {
         // 还是同一个sector，什么都不需要做
       } else {
-        // 不是同一个sector
-        const currentIntersectSectorNameObject = currentIntersectSector.children.find(childObject => (childObject.userData as ObjectUserData).type === ObjectUserDataType.SectorName);
+        // 不是同一个sector，显示当前sector的名称
+        const currentIntersectSectorNameObject = this.currentIntersectSector.children.find(childObject => (childObject.userData as ObjectUserData).type === ObjectUserDataType.SectorName);
         if (!currentIntersectSectorNameObject) {
           throw new Error('Sector should have sector name (current intersect sector)');
         }
@@ -205,7 +240,6 @@ export class App3D {
         } else {
           // 从无到有，没有上一个sector名称可以隐藏
         }
-        this.lastIntersectSector = currentIntersectSector;
       }
     } else {
       // 鼠标不与某个sector相交
@@ -216,14 +250,13 @@ export class App3D {
           throw new Error('Sector should have sector name (last intersect sector)');
         }
         lastIntersectSectorNameObject.visible = false;
-        this.lastIntersectSector = undefined;
       }
     }
   
     // 更新当前鼠标所指星区的名称大小，使得星区名称不管距离相机多远，其视觉上的大小始终保持不变
     // 同时，使星区名称尽可能正对相机
-    if (this.lastIntersectSector) {
-      const userData = this.lastIntersectSector.userData as ObjectUserData;
+    if (this.currentIntersectSector) {
+      const userData = this.currentIntersectSector.userData as ObjectUserData;
       if (userData.type !== ObjectUserDataType.Sector) {
         throw new Error(`Unexpected userData.type: ${userData.type} (calculate possible locations)`);
       }
@@ -263,7 +296,7 @@ export class App3D {
       }
       const bestLocation = possibleLocations[maxCosIndex].vector;
       // 找到星区名称对象，设置新的位置
-      const sectorNameObject = this.lastIntersectSector.children.find(obj => (obj.userData as ObjectUserData).type === ObjectUserDataType.SectorName);
+      const sectorNameObject = this.currentIntersectSector.children.find(obj => (obj.userData as ObjectUserData).type === ObjectUserDataType.SectorName);
       if (!sectorNameObject) {
         throw new Error('Sector should have sector name (last intersect sector)');
       }
@@ -279,6 +312,19 @@ export class App3D {
       sectorNameObject.scale.set(textScale, textScale, textScale);
       // sector的名称比六边形的边、六边形的面都要高
       sectorNameObject.position.y = SECTOR_NAME_Y_OFFSET;
+    }
+  }
+
+  processInput () {
+    while (this.eventQueue.length) {
+      const ev = this.eventQueue[0];
+      this.eventQueue.splice(0, 1);
+      if (ev.type === 'mousedown') {
+      } else if (ev.type === 'mouseup') {
+        if (this.currentIntersectSector) {
+          console.log('mouse click on sector', this.currentIntersectSector, this.currentIntersectSectorPosition);
+        }
+      }
     }
   }
 
