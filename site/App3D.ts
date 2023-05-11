@@ -59,6 +59,10 @@ type ObjectUserData = {
   ObjectUserDataType.SectorName
 }
 
+enum Operation {
+  SingleClick,
+};
+
 /**
  * Renderer、Scene、Camera及其他辅助对象的集合
  */
@@ -104,10 +108,6 @@ class ThreeContext {
 
     this.raycaster = new Raycaster();
     this.pointer = new Vector2();
-    window.addEventListener('mousemove', e => {
-      this.pointer.x = (e.clientX / window.innerWidth) * 2 - 1;
-      this.pointer.y = -(e.clientY / window.innerHeight) * 2 + 1;
-    });
 
     this.font = undefined;
   }
@@ -167,6 +167,7 @@ export class App3D {
     this.lastIntersectSector = undefined;
 
     this.eventQueue = new Array<Event>();
+    window.addEventListener('mousemove', ev => this.eventQueue.push(ev));
     window.addEventListener('mousedown', ev => this.eventQueue.push(ev));
     window.addEventListener('mouseup', ev => this.eventQueue.push(ev));
   }
@@ -319,7 +320,10 @@ export class App3D {
     while (this.eventQueue.length) {
       const ev = this.eventQueue[0];
       this.eventQueue.splice(0, 1);
-      if (ev.type === 'mousedown') {
+      if (ev.type === 'mousemove') {
+        this.threeContext.pointer.x = ((ev as MouseEvent).clientX / window.innerWidth) * 2 - 1;
+        this.threeContext.pointer.y = -((ev as MouseEvent).clientY / window.innerHeight) * 2 + 1;
+      } else if (ev.type === 'mousedown') {
       } else if (ev.type === 'mouseup') {
         if (this.currentIntersectSector) {
           console.log('mouse click on sector', this.currentIntersectSector, this.currentIntersectSectorPosition);
