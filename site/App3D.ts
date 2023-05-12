@@ -36,6 +36,7 @@ enum ObjectUserDataType {
   /*       */ SectorHexagonEdge,
   /*       */ SectorHexagonPlane,
   /*       */ SectorName,
+  /*       */ Factory,
 };
 
 /**
@@ -152,7 +153,7 @@ export class App3D {
   currentIntersectSector: Object3D | undefined;
 
   /**
-   * 在当前帧，如果鼠标与某个sector相交的话，交点的坐标
+   * 在当前帧，如果鼠标与某个sector相交的话，交点的坐标（相对于sector的坐标）
    */
   currentIntersectSectorPosition: Vector3 | undefined;
 
@@ -387,11 +388,22 @@ export class App3D {
           this.inputStatus.type = InputStatusType.None;
         } else if (this.inputStatus.type === InputStatusType.MouseDown) {
           this.inputStatus.type = InputStatusType.None;
-          if (this.currentIntersectSector) {
+          if (this.operationMode === OperationMode.PutFactory) {
+            if (this.currentIntersectSector && this.currentIntersectSectorPosition) {
+              this.putFactory(this.currentIntersectSector, this.currentIntersectSectorPosition);
+            }
           }
         }
       }
     }
+  }
+
+  /**
+   * @param sector 
+   * @param position 相对于sector的坐标
+   */
+  putFactory (sector: Object3D, position: Vector3) {
+
   }
 
   /**
