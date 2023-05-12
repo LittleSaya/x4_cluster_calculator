@@ -15,6 +15,7 @@ import {
 import { MapControls } from 'three/examples/jsm/controls/MapControls'
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry'
 import { FontLoader, Font } from 'three/examples/jsm/loaders/FontLoader'
+import GUI from 'lil-gui'
 
 const CAMERA_FOV = 75;
 const CAMERA_NEAR = 100;
@@ -59,8 +60,19 @@ type ObjectUserData = {
   ObjectUserDataType.SectorName
 }
 
-enum Operation {
-  SingleClick,
+enum InputStatusType {
+  None,
+  MouseDown,
+  Dragging,
+};
+
+type InputStatus = {
+  type: InputStatusType.None | InputStatusType.MouseDown | InputStatusType.Dragging,
+};
+
+enum OperationMode {
+  View,
+  PutFactory,
 };
 
 /**
@@ -154,6 +166,16 @@ export class App3D {
    */
   eventQueue: Array<Event>;
 
+  inputStatus: InputStatus;
+
+  operationMode: OperationMode;
+
+  guiObj: Object;
+
+  gui: GUI;
+
+  statusEl: HTMLElement;
+
   /**
    * @param galaxyMap 游戏地图数据
    * @param threeContext Three.js对象集合，其中所有对象都应该已经初始化完成
@@ -170,6 +192,31 @@ export class App3D {
     window.addEventListener('mousemove', ev => this.eventQueue.push(ev));
     window.addEventListener('mousedown', ev => this.eventQueue.push(ev));
     window.addEventListener('mouseup', ev => this.eventQueue.push(ev));
+    this.inputStatus = { type: InputStatusType.None };
+
+    this.operationMode = OperationMode.View;
+
+    this.guiObj = {
+      enterViewMode: () => {
+        this.operationMode = OperationMode.View;
+        this.setStatusText('当前模式：观察模式');
+      },
+      enterPutFactoryMode: () => {
+        this.operationMode = OperationMode.PutFactory;
+        this.setStatusText('当前模式：布局模式');
+      }
+    };
+    this.gui = new GUI();
+    this.gui.add(this.guiObj, 'enterViewMode');
+    this.gui.add(this.guiObj, 'enterPutFactoryMode');
+
+    const statusDiv = document.createElement('div');
+    statusDiv.id = 'status';
+    statusDiv.style.padding = '0 4px 0 4px';
+    statusDiv.style.margin = '4px 0 4px 0';
+    this.gui.$title.after(statusDiv);
+    this.statusEl = statusDiv;
+    this.setStatusText('当前模式：观察模式');
   }
 
   async loadAssets (): Promise<void> {
@@ -178,6 +225,10 @@ export class App3D {
 
   getCanvas (): HTMLCanvasElement {
     return this.threeContext.renderer.domElement;
+  }
+
+  setStatusText (text: string) {
+    this.statusEl.innerText = text;
   }
 
   renderLoop (time: number): void {
@@ -321,12 +372,23 @@ export class App3D {
       const ev = this.eventQueue[0];
       this.eventQueue.splice(0, 1);
       if (ev.type === 'mousemove') {
+        // 射线捡取
         this.threeContext.pointer.x = ((ev as MouseEvent).clientX / window.innerWidth) * 2 - 1;
         this.threeContext.pointer.y = -((ev as MouseEvent).clientY / window.innerHeight) * 2 + 1;
+        if (this.inputStatus.type === InputStatusType.MouseDown) {
+          this.inputStatus.type = InputStatusType.Dragging;
+        }
       } else if (ev.type === 'mousedown') {
+        if (this.inputStatus.type === InputStatusType.None) {
+          this.inputStatus.type = InputStatusType.MouseDown;
+        }
       } else if (ev.type === 'mouseup') {
-        if (this.currentIntersectSector) {
-          console.log('mouse click on sector', this.currentIntersectSector, this.currentIntersectSectorPosition);
+        if (this.inputStatus.type === InputStatusType.Dragging) {
+          this.inputStatus.type = InputStatusType.None;
+        } else if (this.inputStatus.type === InputStatusType.MouseDown) {
+          this.inputStatus.type = InputStatusType.None;
+          if (this.currentIntersectSector) {
+          }
         }
       }
     }
