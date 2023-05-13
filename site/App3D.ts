@@ -5,16 +5,19 @@
 import { ClusterId, ClusterDef, SectorDef, SectorId } from './util/map_data_parser'
 import { MapMetadata, CLUSTER_RING_WIDTH, SECTOR1_RING_WIDTH, SECTOR2_RING_WIDTH, SECTOR3_RING_WIDTH, RAW_RESIZE_RATIO } from './util/MapMetadata'
 import { COS_30 } from './util/math_constants'
+import { isChildOf } from './App3D/scene_operation'
 import * as materials from './App3D/materials'
+import { FactoryData } from './types/FactoryData'
 import {
   WebGLRenderer, Scene, PerspectiveCamera,
-  RingGeometry, CircleGeometry, Object3D, Mesh, AxesHelper,
+  RingGeometry, CircleGeometry, Object3D, Mesh, AxesHelper, BoxGeometry,
   Raycaster, Intersection,
   Vector3, Vector2,
 } from 'three'
 import { MapControls } from 'three/examples/jsm/controls/MapControls'
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry'
 import { FontLoader, Font } from 'three/examples/jsm/loaders/FontLoader'
+import { TransformControls } from 'three/examples/jsm/controls/TransformControls'
 import GUI from 'lil-gui'
 
 const CAMERA_FOV = 75;
@@ -48,18 +51,30 @@ type ObjectUserData = {
 } | {
   type: ObjectUserDataType.Sector,
   ownership: string,
+
+  /**
+   * 星区的名称
+   */
   name: string,
 
   /**
    * 缩放后的半径
   */
   radius: number,
+
+  /**
+   * 该星区内工厂方块的大小
+   */
+  factoryCubeSize: number,
 } | {
   type: ObjectUserDataType.ClusterHexagonEdge |
   ObjectUserDataType.SectorHexagonEdge |
   ObjectUserDataType.SectorHexagonPlane |
   ObjectUserDataType.SectorName
-}
+} | {
+  type: ObjectUserDataType.Factory,
+  factory: FactoryData,
+};
 
 enum InputStatusType {
   None,
@@ -72,8 +87,9 @@ type InputStatus = {
 };
 
 enum OperationMode {
-  View,
+  General,
   PutFactory,
+  MoveFactory,
 };
 
 /**
@@ -92,6 +108,11 @@ class ThreeContext {
   raycaster: Raycaster;
 
   pointer: Vector2;
+
+  /**
+   * 原始的鼠标相对于窗口左上角的坐标
+   */
+  pointerRaw: Vector2;
 
   font: Font | undefined;
 
@@ -121,6 +142,7 @@ class ThreeContext {
 
     this.raycaster = new Raycaster();
     this.pointer = new Vector2();
+    this.pointerRaw = new Vector2();
 
     this.font = undefined;
   }
@@ -178,6 +200,20 @@ export class App3D {
   statusEl: HTMLElement;
 
   /**
+   * 在当前帧，鼠标与哪个factory相交
+   */
+  currentIntersectFactory: Object3D | undefined;
+
+  /**
+   * 用于展示工厂名称的元素
+   */
+  factoryNameEl: HTMLElement;
+
+  transformControls: TransformControls;
+
+  isMouseOnTransformControls: Boolean;
+
+  /**
    * @param galaxyMap 游戏地图数据
    * @param threeContext Three.js对象集合，其中所有对象都应该已经初始化完成
    */
@@ -195,17 +231,17 @@ export class App3D {
     window.addEventListener('mouseup', ev => this.eventQueue.push(ev));
     this.inputStatus = { type: InputStatusType.None };
 
-    this.operationMode = OperationMode.View;
+    this.operationMode = OperationMode.General;
 
     this.guiObj = {
       enterViewMode: () => {
-        this.operationMode = OperationMode.View;
-        this.setStatusText('当前模式：观察模式');
+        this.operationMode = OperationMode.General;
+        this.setStatusText('当前模式：通用模式');
       },
       enterPutFactoryMode: () => {
         this.operationMode = OperationMode.PutFactory;
         this.setStatusText('当前模式：布局模式');
-      }
+      },
     };
     this.gui = new GUI();
     this.gui.add(this.guiObj, 'enterViewMode');
@@ -217,7 +253,26 @@ export class App3D {
     statusDiv.style.margin = '4px 0 4px 0';
     this.gui.$title.after(statusDiv);
     this.statusEl = statusDiv;
-    this.setStatusText('当前模式：观察模式');
+    this.setStatusText('当前模式：通用模式');
+
+    this.currentIntersectFactory = undefined;
+
+    const factoryNameDiv = document.createElement('div');
+    factoryNameDiv.id = 'factoryName';
+    factoryNameDiv.style.display = 'none';
+    factoryNameDiv.style.position = 'fixed';
+    factoryNameDiv.style.zIndex = '1';
+    factoryNameDiv.style.padding = '0.25em 0.5em';
+    factoryNameDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+    factoryNameDiv.style.color = 'white';
+    factoryNameDiv.innerText = '（工厂）';
+    document.body.append(factoryNameDiv);
+    this.factoryNameEl = factoryNameDiv;
+
+    this.transformControls = new TransformControls(this.threeContext.camera, this.threeContext.renderer.domElement);
+    this.transformControls.space = 'local';
+
+    this.isMouseOnTransformControls = false;
   }
 
   async loadAssets (): Promise<void> {
@@ -242,8 +297,9 @@ export class App3D {
     this.threeContext.raycaster.setFromCamera(this.threeContext.pointer, this.threeContext.camera);
     const intersects = this.threeContext.raycaster.intersectObjects(this.threeContext.scene.children);
 
-    this.updateIntersectSector(intersects);
+    this.updateIntersects(intersects);
     this.updateSectorName();
+    this.updateFactoryName();
 
     this.processInput();
 
@@ -252,23 +308,41 @@ export class App3D {
     this.lastIntersectSector = this.currentIntersectSector;
   }
 
-  updateIntersectSector (intersects: Intersection<Object3D>[]) {
+  updateIntersects (intersects: Intersection<Object3D>[]) {
     let currentIntersectSector: Object3D | undefined;
     let intersectPosition: Vector3 | undefined;
+    let currentIntersectFactory: Object3D | undefined;
+    let isMouseOnTransformControls = false;
     for (let i = 0; i < intersects.length; i++) {
       const object = intersects[i].object;
       const userData = object.userData as ObjectUserData;
       if (userData.type === ObjectUserDataType.SectorHexagonPlane) {
+        // 处理与sector平面的相交
         if (!object.parent) {
           throw new Error('Sector plane should have parent');
         }
         currentIntersectSector = object.parent;
         // 将交点从世界坐标转换为相对于sector的坐标
         intersectPosition = object.parent.worldToLocal(intersects[i].point);
+      } else if (userData.type === ObjectUserDataType.Factory) {
+        // 处理与factory的相交
+        currentIntersectFactory = object;
+      }
+
+      if (this.transformControls.visible &&
+        !isMouseOnTransformControls &&
+        (object instanceof Mesh) &&
+        isChildOf(object, this.transformControls) &&
+        (object.name === 'X' || object.name === 'Y' || object.name === 'Z' || object.name === 'XY' || object.name === 'YZ' || object.name === 'XZ' || object.name === 'XYZ')
+      ) {
+        // 在Transform Controls可见、并且尚未确认鼠标是否位于Transform Controls上时，如果现在鼠标所指的对象是一个Mesh并且是Transform Controls的子对象，并且对象有特定的名称，则认为鼠标位于Transform Controls之上
+        isMouseOnTransformControls = true;
       }
     }
     this.currentIntersectSector = currentIntersectSector;
     this.currentIntersectSectorPosition = intersectPosition;
+    this.currentIntersectFactory = currentIntersectFactory;
+    this.isMouseOnTransformControls = isMouseOnTransformControls;
   }
 
   updateSectorName () {
@@ -368,6 +442,21 @@ export class App3D {
     }
   }
 
+  updateFactoryName () {
+    if (this.currentIntersectFactory) {
+      this.factoryNameEl.style.display = 'inline-block';
+      this.factoryNameEl.style.left = this.threeContext.pointerRaw.x + 'px';
+      this.factoryNameEl.style.top = this.threeContext.pointerRaw.y + 'px';
+      const userData = this.currentIntersectFactory.userData as ObjectUserData;
+      if (userData.type !== ObjectUserDataType.Factory) {
+        throw new Error(`${App3D.name}.${this.updateFactoryName.name} requires member 'currentIntersectFactory' is a factory`);
+      }
+      this.factoryNameEl.innerText = userData.factory.name;
+    } else {
+      this.factoryNameEl.style.display = 'none';
+    }
+  }
+
   processInput () {
     while (this.eventQueue.length) {
       const ev = this.eventQueue[0];
@@ -376,23 +465,55 @@ export class App3D {
         // 射线捡取
         this.threeContext.pointer.x = ((ev as MouseEvent).clientX / window.innerWidth) * 2 - 1;
         this.threeContext.pointer.y = -((ev as MouseEvent).clientY / window.innerHeight) * 2 + 1;
+        this.threeContext.pointerRaw.x = (ev as MouseEvent).clientX;
+        this.threeContext.pointerRaw.y = (ev as MouseEvent).clientY;
         if (this.inputStatus.type === InputStatusType.MouseDown) {
           this.inputStatus.type = InputStatusType.Dragging;
         }
       } else if (ev.type === 'mousedown') {
+        // 按下鼠标
         if (this.inputStatus.type === InputStatusType.None) {
           this.inputStatus.type = InputStatusType.MouseDown;
+        }
+        if (this.operationMode === OperationMode.MoveFactory) {
+          // 在移动工厂模式下
+          if (this.isMouseOnTransformControls) {
+            // 鼠标位于Transform Controls上，则禁用Map Controls
+            this.threeContext.mapControls.enabled = false;
+          }
         }
       } else if (ev.type === 'mouseup') {
         if (this.inputStatus.type === InputStatusType.Dragging) {
           this.inputStatus.type = InputStatusType.None;
         } else if (this.inputStatus.type === InputStatusType.MouseDown) {
+          // 鼠标点击事件
           this.inputStatus.type = InputStatusType.None;
           if (this.operationMode === OperationMode.PutFactory) {
-            if (this.currentIntersectSector && this.currentIntersectSectorPosition) {
+            // 摆放工厂模式
+            if (this.currentIntersectSector && this.currentIntersectSectorPosition && !this.currentIntersectFactory) {
+              // 当用户点击某个sector的未被其他工厂占用的区域时，为这个sector添加一个工厂
               this.putFactory(this.currentIntersectSector, this.currentIntersectSectorPosition);
             }
+          } else if (this.operationMode === OperationMode.General) {
+            // 通用模式
+            if (this.currentIntersectFactory) {
+              // 当用户点击某个工厂时，将transformController附加到这个工厂上，并进入移动工厂模式
+              this.transformControls.attach(this.currentIntersectFactory);
+              this.operationMode = OperationMode.MoveFactory;
+            }
+          } else if (this.operationMode === OperationMode.MoveFactory) {
+            // 在移动工厂模式下
+            if (!this.currentIntersectFactory && !this.isMouseOnTransformControls) {
+              // 鼠标没有点击工厂，并且没有点击Transform Controls，则隐藏Transform Controls，并回到通用模式
+              this.transformControls.detach();
+              this.operationMode = OperationMode.General;
+            }
           }
+        }
+
+        // 操作模式为移动工厂时，不管在何种状态下松开鼠标，都启用一次Map Controls
+        if (this.operationMode === OperationMode.MoveFactory) {
+          this.threeContext.mapControls.enabled = true;
         }
       }
     }
@@ -403,7 +524,26 @@ export class App3D {
    * @param position 相对于sector的坐标
    */
   putFactory (sector: Object3D, position: Vector3) {
+    const userData = sector.userData as ObjectUserData;
+    if (userData.type !== ObjectUserDataType.Sector) {
+      throw new Error(`${App3D.name}.${this.putFactory.name} only accepts a Sector as its first parameter`);
+    }
+    const cubeSize = userData.factoryCubeSize;
+    const geometry = new BoxGeometry(cubeSize, cubeSize, cubeSize);
+    const factory = new Mesh(geometry, materials.factory);
 
+    // 计算当前sector下工厂的数量，自动生成新的工厂名称
+    const currentFactoryCount = sector.children.filter(obj => (obj.userData as ObjectUserData).type === ObjectUserDataType.Factory).length;
+    const sectorName = userData.name;
+    const newFactoryName = sectorName + ' 工厂 ' + (currentFactoryCount + 1);
+
+    const factoryUserData: ObjectUserData = {
+      type: ObjectUserDataType.Factory,
+      factory: new FactoryData(newFactoryName),
+    };
+    factory.userData = factoryUserData;
+    factory.position.copy(position);
+    sector.add(factory);
   }
 
   /**
@@ -490,7 +630,8 @@ export class App3D {
           type: ObjectUserDataType.Sector,
           ownership: sectorDef.ownership,
           name: sectorDef.name,
-          radius: -1.
+          radius: -1,
+          factoryCubeSize: -1,
         };
         sector.userData = sectorUserData;
         cluster.add(sector);
@@ -521,7 +662,7 @@ export class App3D {
         ++sectorCount;
       });
 
-      // 根据sectorCount的值，再补充sector的边、面，以及缩放后的半径
+      // 根据sectorCount的值，再补充sector的边、面，以及缩放后的半径等等
       for (const child of cluster.children) {
         const userData = child.userData as ObjectUserData;
         if (userData.type !== ObjectUserDataType.Sector) {
@@ -534,14 +675,17 @@ export class App3D {
           sectorHexagonEdge = new Mesh(sector1RingGeometry, materials.sectorHexagonEdge[userData.ownership]);
           sectorHexagonPlane = new Mesh(sector1PlaneGeometry, materials.sectorHexagonPlane[userData.ownership]);
           userData.radius = this.mapMetaData.sectorRadius1;
+          userData.factoryCubeSize = userData.radius / 20;
         } else if (sectorCount === 2) {
           sectorHexagonEdge = new Mesh(sector2RingGeometry, materials.sectorHexagonEdge[userData.ownership]);
           sectorHexagonPlane = new Mesh(sector2PlaneGeometry, materials.sectorHexagonPlane[userData.ownership]);
           userData.radius = this.mapMetaData.sectorRadius2;
+          userData.factoryCubeSize = userData.radius / 20;
         } else if (sectorCount === 3) {
           sectorHexagonEdge = new Mesh(sector3RingGeometry, materials.sectorHexagonEdge[userData.ownership]);
           sectorHexagonPlane = new Mesh(sector3PlaneGeometry, materials.sectorHexagonPlane[userData.ownership]);
           userData.radius = this.mapMetaData.sectorRadius3;
+          userData.factoryCubeSize = userData.radius / 20;
         } else {
           throw new Error(`${App3D.name}.${this.initializeScene.name} requires a cluster has 1~3 sectors, but ${clusterId} has ${sectorCount} sectors`);
         }
@@ -645,5 +789,8 @@ export class App3D {
     const axesHelper = new AxesHelper(5000);
     axesHelper.position.y -= 5000;
     this.threeContext.scene.add(axesHelper);
+
+    // Transform Controls
+    this.threeContext.scene.add(this.transformControls);
   }
 };
