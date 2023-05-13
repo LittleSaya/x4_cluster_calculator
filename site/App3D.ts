@@ -87,9 +87,20 @@ type InputStatus = {
 };
 
 enum OperationMode {
+  /**
+   * 通用模式，用户可以移动地图、选中视线范围内的工厂
+   */
   General,
+
+  /**
+   * 摆放工厂，用户可以放置新的工厂
+   */
   PutFactory,
-  MoveFactory,
+
+  /**
+   * 选择工厂，某个工厂被选中时进入此状态，用户可以移动工厂、删除工厂
+   */
+  SelectFactory,
 };
 
 /**
@@ -214,6 +225,11 @@ export class App3D {
   isMouseOnTransformControls: Boolean;
 
   /**
+   * 用户当前选中的工厂
+   */
+  selectedFactory: Object3D | undefined;
+
+  /**
    * @param galaxyMap 游戏地图数据
    * @param threeContext Three.js对象集合，其中所有对象都应该已经初始化完成
    */
@@ -229,6 +245,8 @@ export class App3D {
     window.addEventListener('mousemove', ev => this.eventQueue.push(ev));
     window.addEventListener('mousedown', ev => this.eventQueue.push(ev));
     window.addEventListener('mouseup', ev => this.eventQueue.push(ev));
+    window.addEventListener('keydown', ev => this.eventQueue.push(ev));
+    window.addEventListener('keyup', ev => this.eventQueue.push(ev));
     this.inputStatus = { type: InputStatusType.None };
 
     this.operationMode = OperationMode.General;
@@ -273,6 +291,7 @@ export class App3D {
     this.transformControls.space = 'local';
 
     this.isMouseOnTransformControls = false;
+    this.selectedFactory = undefined;
   }
 
   async loadAssets (): Promise<void> {
@@ -475,8 +494,8 @@ export class App3D {
         if (this.inputStatus.type === InputStatusType.None) {
           this.inputStatus.type = InputStatusType.MouseDown;
         }
-        if (this.operationMode === OperationMode.MoveFactory) {
-          // 在移动工厂模式下
+        if (this.operationMode === OperationMode.SelectFactory) {
+          // 在选中工厂模式下
           if (this.isMouseOnTransformControls) {
             // 鼠标位于Transform Controls上，则禁用Map Controls
             this.threeContext.mapControls.enabled = false;
@@ -497,23 +516,40 @@ export class App3D {
           } else if (this.operationMode === OperationMode.General) {
             // 通用模式
             if (this.currentIntersectFactory) {
-              // 当用户点击某个工厂时，将transformController附加到这个工厂上，并进入移动工厂模式
+              // 当用户点击某个工厂时，将transformController附加到这个工厂上，并进入选中工厂模式
               this.transformControls.attach(this.currentIntersectFactory);
-              this.operationMode = OperationMode.MoveFactory;
+              this.selectedFactory = this.currentIntersectFactory;
+              this.operationMode = OperationMode.SelectFactory;
             }
-          } else if (this.operationMode === OperationMode.MoveFactory) {
-            // 在移动工厂模式下
+          } else if (this.operationMode === OperationMode.SelectFactory) {
+            // 在选中工厂模式下
             if (!this.currentIntersectFactory && !this.isMouseOnTransformControls) {
               // 鼠标没有点击工厂，并且没有点击Transform Controls，则隐藏Transform Controls，并回到通用模式
               this.transformControls.detach();
+              this.selectedFactory = undefined;
               this.operationMode = OperationMode.General;
             }
           }
         }
 
-        // 操作模式为移动工厂时，不管在何种状态下松开鼠标，都启用一次Map Controls
-        if (this.operationMode === OperationMode.MoveFactory) {
+        // 操作模式为选中工厂时，不管在何种状态下松开鼠标，都启用一次Map Controls
+        if (this.operationMode === OperationMode.SelectFactory) {
           this.threeContext.mapControls.enabled = true;
+        }
+      } else if (ev.type === 'keyup') {
+        // 松开按键
+        if ((ev as KeyboardEvent).key === 'Delete') {
+          // 松开Delete键
+          if (this.operationMode === OperationMode.SelectFactory) {
+            // 选中工厂时，删除工厂，并回到通用模式
+            this.transformControls.detach();
+            if (!this.selectedFactory) {
+              throw new Error('Property \'selectedFactory\' should have a valid value when \'operationMode\' is \'SelectFactory\'');
+            }
+            this.selectedFactory.removeFromParent();
+            this.selectedFactory = undefined;
+            this.operationMode = OperationMode.General;
+          }
         }
       }
     }
