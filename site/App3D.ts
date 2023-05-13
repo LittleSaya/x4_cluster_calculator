@@ -269,10 +269,29 @@ export class App3D {
       enterPutFactoryMode: () => {
         this.operationMode = OperationMode.PutFactory;
       },
+      editFactory: () => {
+        if (!this.selectedFactory) {
+          alert('请先选中一个工厂');
+          return;
+        }
+        window.postMessage({ type: 'START_EDIT_FACTORY' });
+        // 隐藏canvas和gui
+        this.threeContext.renderer.domElement.style.display = 'none';
+        this.gui.domElement.style.display = 'none';
+      }
     };
+    // 监听结束编辑工厂的消息
+    window.addEventListener('message', ev => {
+      if (ev.type === 'FINISH_EDIT_FACTORY') {
+        // 显示canvas和gui
+        this.threeContext.renderer.domElement.style.display = 'block';
+        this.gui.domElement.style.display = 'flex';
+      }
+    });
     this.gui = new GUI();
     this.gui.add(this.guiObj, 'enterViewMode');
     this.gui.add(this.guiObj, 'enterPutFactoryMode');
+    this.gui.add(this.guiObj, 'editFactory');
 
     const statusDiv = document.createElement('div');
     statusDiv.id = 'status';
