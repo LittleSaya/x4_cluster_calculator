@@ -202,7 +202,16 @@ export class App3D {
 
   inputStatus: InputStatus;
 
-  operationMode: OperationMode;
+  _operationMode: OperationMode;
+
+  set operationMode (val: OperationMode) {
+    this._operationMode = val;
+    this.updateStatusText();
+  }
+
+  get operationMode () {
+    return this._operationMode;
+  }
 
   guiObj: Object;
 
@@ -230,6 +239,7 @@ export class App3D {
   selectedFactory: Object3D | undefined;
 
   /**
+   * 构造函数初始化成员的顺序与成员的声明顺序基本相同
    * @param galaxyMap 游戏地图数据
    * @param threeContext Three.js对象集合，其中所有对象都应该已经初始化完成
    */
@@ -239,6 +249,7 @@ export class App3D {
     this.mapMetaData = new MapMetadata(galaxyMap);
     this.boundRenderLoop = this.renderLoop.bind(this);
     this.currentIntersectSector = undefined;
+    this.currentIntersectSectorPosition = undefined;
     this.lastIntersectSector = undefined;
 
     this.eventQueue = new Array<Event>();
@@ -249,16 +260,14 @@ export class App3D {
     window.addEventListener('keyup', ev => this.eventQueue.push(ev));
     this.inputStatus = { type: InputStatusType.None };
 
-    this.operationMode = OperationMode.General;
+    this._operationMode = OperationMode.General;
 
     this.guiObj = {
       enterViewMode: () => {
         this.operationMode = OperationMode.General;
-        this.setStatusText('当前模式：通用模式');
       },
       enterPutFactoryMode: () => {
         this.operationMode = OperationMode.PutFactory;
-        this.setStatusText('当前模式：布局模式');
       },
     };
     this.gui = new GUI();
@@ -271,7 +280,7 @@ export class App3D {
     statusDiv.style.margin = '4px 0 4px 0';
     this.gui.$title.after(statusDiv);
     this.statusEl = statusDiv;
-    this.setStatusText('当前模式：通用模式');
+    this.updateStatusText();
 
     this.currentIntersectFactory = undefined;
 
@@ -302,7 +311,14 @@ export class App3D {
     return this.threeContext.renderer.domElement;
   }
 
-  setStatusText (text: string) {
+  updateStatusText () {
+    let text: string;
+    switch (this.operationMode) {
+      case OperationMode.General: text = '当前模式：通用模式'; break;
+      case OperationMode.PutFactory: text = '当前模式：摆放工厂模式'; break;
+      case OperationMode.SelectFactory: text = '当前模式：选择工厂模式'; break;
+      default: text = '错误：无法识别的模式：' + this.operationMode;
+    }
     this.statusEl.innerText = text;
   }
 
