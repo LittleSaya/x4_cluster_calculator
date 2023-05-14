@@ -1,0 +1,23 @@
+{
+  "include": [
+    "site/**/*.ts",
+    "site/**/*.vue",
+    "site/**/*.json",
+    "data_manually_modified/**/*.json",
+    "data_converted/**/*.json",
+    "vite.config.ts"
+  ],
+  "compilerOptions": {
+    "paths": {
+      "@/*": [ "./*" ]
+    },
+    "composite": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "types": ["node"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "isolatedModules": true
+  }
+}

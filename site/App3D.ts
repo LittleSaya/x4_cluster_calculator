@@ -254,8 +254,8 @@ export class App3D {
 
     this.eventQueue = new Array<Event>();
     window.addEventListener('mousemove', ev => this.eventQueue.push(ev));
-    window.addEventListener('mousedown', ev => this.eventQueue.push(ev));
-    window.addEventListener('mouseup', ev => this.eventQueue.push(ev));
+    this.threeContext.renderer.domElement.addEventListener('mousedown', ev => this.eventQueue.push(ev));
+    this.threeContext.renderer.domElement.addEventListener('mouseup', ev => this.eventQueue.push(ev));
     window.addEventListener('keydown', ev => this.eventQueue.push(ev));
     window.addEventListener('keyup', ev => this.eventQueue.push(ev));
     this.inputStatus = { type: InputStatusType.None };
@@ -274,7 +274,15 @@ export class App3D {
           alert('请先选中一个工厂');
           return;
         }
-        window.postMessage({ type: 'START_EDIT_FACTORY' });
+        const userData = this.selectedFactory.userData as ObjectUserData;
+        if (userData.type !== ObjectUserDataType.Factory) {
+          console.error(this.selectedFactory);
+          throw new Error('Function \'editFactory\' requires selected factory is a factory');
+        }
+        window.postMessage({
+          type: 'START_EDIT_FACTORY',
+          factory: userData.factory,
+        });
         // 隐藏canvas和gui
         this.threeContext.renderer.domElement.style.display = 'none';
         this.gui.domElement.style.display = 'none';
@@ -282,10 +290,20 @@ export class App3D {
     };
     // 监听结束编辑工厂的消息
     window.addEventListener('message', ev => {
-      if (ev.type === 'FINISH_EDIT_FACTORY') {
+      if (ev.data.type === 'FINISH_EDIT_FACTORY') {
         // 显示canvas和gui
         this.threeContext.renderer.domElement.style.display = 'block';
         this.gui.domElement.style.display = 'flex';
+        // 获取修改后的工厂信息
+        if (!this.selectedFactory) {
+          throw new Error('Message handler of \'FINISH_EDIT_FACTORY\' message requires a selected factory');
+        }
+        const userData = this.selectedFactory.userData as ObjectUserData;
+        if (userData.type !== ObjectUserDataType.Factory) {
+          console.error(this.selectedFactory);
+          throw new Error('Message handler of \'FINISH_EDIT_FACTORY\' message requires the selected factory is a factory');
+        }
+        userData.factory = ev.data.factory;
       }
     });
     this.gui = new GUI();
@@ -373,6 +391,7 @@ export class App3D {
       if (userData.type === ObjectUserDataType.SectorHexagonPlane) {
         // 处理与sector平面的相交
         if (!object.parent) {
+          console.error(object);
           throw new Error('Sector plane should have parent');
         }
         currentIntersectSector = object.parent;
@@ -408,6 +427,7 @@ export class App3D {
         // 不是同一个sector，显示当前sector的名称
         const currentIntersectSectorNameObject = this.currentIntersectSector.children.find(childObject => (childObject.userData as ObjectUserData).type === ObjectUserDataType.SectorName);
         if (!currentIntersectSectorNameObject) {
+          console.error(this.currentIntersectSector);
           throw new Error('Sector should have sector name (current intersect sector)');
         }
         currentIntersectSectorNameObject.visible = true;
@@ -415,6 +435,7 @@ export class App3D {
           // 鼠标移动到新的sector，隐藏上一个sector的名称
           const lastIntersectSectorNameObject = this.lastIntersectSector.children.find(childObject => (childObject.userData as ObjectUserData).type === ObjectUserDataType.SectorName);
           if (!lastIntersectSectorNameObject) {
+            console.error(this.lastIntersectSector);
             throw new Error('Sector should have sector name (last intersect sector)');
           }
           lastIntersectSectorNameObject.visible = false;
@@ -428,6 +449,7 @@ export class App3D {
         // 隐藏上一个sector的名称
         const lastIntersectSectorNameObject = this.lastIntersectSector.children.find(childObject => (childObject.userData as ObjectUserData).type === ObjectUserDataType.SectorName);
         if (!lastIntersectSectorNameObject) {
+          console.error(this.lastIntersectSector);
           throw new Error('Sector should have sector name (last intersect sector)');
         }
         lastIntersectSectorNameObject.visible = false;
@@ -479,6 +501,7 @@ export class App3D {
       // 找到星区名称对象，设置新的位置
       const sectorNameObject = this.currentIntersectSector.children.find(obj => (obj.userData as ObjectUserData).type === ObjectUserDataType.SectorName);
       if (!sectorNameObject) {
+        console.error(this.currentIntersectSector);
         throw new Error('Sector should have sector name (last intersect sector)');
       }
       sectorNameObject.position.set(bestLocation.x, bestLocation.y, bestLocation.z);
@@ -499,10 +522,11 @@ export class App3D {
   updateFactoryName () {
     if (this.currentIntersectFactory) {
       this.factoryNameEl.style.display = 'inline-block';
-      this.factoryNameEl.style.left = this.threeContext.pointerRaw.x + 'px';
-      this.factoryNameEl.style.top = this.threeContext.pointerRaw.y + 'px';
+      this.factoryNameEl.style.left = (this.threeContext.pointerRaw.x + 12) + 'px'; // 给予一定的偏移量，使click事件不被工厂名称挡住
+      this.factoryNameEl.style.top = (this.threeContext.pointerRaw.y + 12) + 'px';
       const userData = this.currentIntersectFactory.userData as ObjectUserData;
       if (userData.type !== ObjectUserDataType.Factory) {
+        console.error(this.currentIntersectFactory);
         throw new Error(`${App3D.name}.${this.updateFactoryName.name} requires member 'currentIntersectFactory' is a factory`);
       }
       this.factoryNameEl.innerText = userData.factory.name;
@@ -597,6 +621,7 @@ export class App3D {
   putFactory (sector: Object3D, position: Vector3) {
     const userData = sector.userData as ObjectUserData;
     if (userData.type !== ObjectUserDataType.Sector) {
+      console.error(sector);
       throw new Error(`${App3D.name}.${this.putFactory.name} only accepts a Sector as its first parameter`);
     }
     const cubeSize = userData.factoryCubeSize;
@@ -845,11 +870,13 @@ export class App3D {
         sectorArray[1].newCoordinate = new Vector3(x1, 0, z1);
         sectorArray[2].newCoordinate = new Vector3(x2, 0, z2);
       } else {
+        console.error(sectorArray);
         throw new Error(`Variable 'sectorArray' has a length of ${sectorArray.length}, which is unexpected`);
       }
 
       for (const i of sectorArray) {
         if (!i.newCoordinate) {
+          console.error(sectorArray);
           throw new Error('Expression \'i.newCoordinate\' is equivalent to false, which is unexpected');
         }
         i.sectorRef.position.copy(i.newCoordinate);

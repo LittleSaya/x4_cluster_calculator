@@ -1,16 +1,12 @@
-import { HabitatModule } from './HabitatModule'
-import { ProductionModule } from './ProductionModule'
-import { StorageModule } from './StorageModule'
-
 export class FactoryData {
 
   name: string;
 
-  habitatModules: Array<HabitatModule>;
+  habitatModules: string[];
 
-  productionModules: Array<ProductionModule>;
+  productionModules: string[];
 
-  storageModules: Array<StorageModule>;
+  storageModules: string[];
 
   constructor (name: string) {
     this.name = name;
