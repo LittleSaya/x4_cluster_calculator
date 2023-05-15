@@ -1,7 +1,7 @@
 <template>
   <div
     :style="{ display: isAppDisplayed ? 'block' : 'none' }"
-    class="container-app"
+    class="container-app-factory-edit"
   >
     <div class="factory-modules">
       <div class="habitat-modules">
@@ -225,7 +225,7 @@ function addProductionModule (ev: MouseEvent) {
 </script>
 
 <style scoped>
-.container-app {
+.container-app-factory-edit {
   position: fixed;
   width: 80vw;
   height: 90vh;

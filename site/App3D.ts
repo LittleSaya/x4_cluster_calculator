@@ -5,9 +5,12 @@
 import { ClusterId, ClusterDef, SectorDef, SectorId } from './util/map_data_parser'
 import { MapMetadata, CLUSTER_RING_WIDTH, SECTOR1_RING_WIDTH, SECTOR2_RING_WIDTH, SECTOR3_RING_WIDTH, RAW_RESIZE_RATIO } from './util/MapMetadata'
 import { COS_30 } from './util/math_constants'
-import { isChildOf } from './App3D/scene_operation'
+import { isChildOf, findAllObjectsSatisfy } from './App3D/scene_operation'
 import * as materials from './App3D/materials'
 import { FactoryData } from './types/FactoryData'
+import { ObjectUserDataType } from './types/ObjectUserDataType'
+import { ObjectUserData } from './types/ObjectUserData'
+import { ExportedData } from './types/ExportedData'
 import {
   WebGLRenderer, Scene, PerspectiveCamera,
   RingGeometry, CircleGeometry, Object3D, Mesh, AxesHelper, BoxGeometry,
@@ -28,53 +31,6 @@ const CAMERA_INIT_POS = new Vector3(0, -20000, -100);
 const SECTOR_EDGE_Y_OFFSET = -20;
 const SECTOR_PLANE_Y_OFFSET = -10;
 const SECTOR_NAME_Y_OFFSET = -30;
-
-/**
- * 场景中的对象类型，缩进代表了对象的上下级关系
- */
-enum ObjectUserDataType {
-  Cluster,
-  /* */ ClusterHexagonEdge,
-  /* */ Sector,
-  /*       */ SectorHexagonEdge,
-  /*       */ SectorHexagonPlane,
-  /*       */ SectorName,
-  /*       */ Factory,
-};
-
-/**
- * Three.js对象中的userData属性中存储的数据
- */
-type ObjectUserData = {
-  type: ObjectUserDataType.Cluster,
-  ownership: string,
-} | {
-  type: ObjectUserDataType.Sector,
-  ownership: string,
-
-  /**
-   * 星区的名称
-   */
-  name: string,
-
-  /**
-   * 缩放后的半径
-  */
-  radius: number,
-
-  /**
-   * 该星区内工厂方块的大小
-   */
-  factoryCubeSize: number,
-} | {
-  type: ObjectUserDataType.ClusterHexagonEdge |
-  ObjectUserDataType.SectorHexagonEdge |
-  ObjectUserDataType.SectorHexagonPlane |
-  ObjectUserDataType.SectorName
-} | {
-  type: ObjectUserDataType.Factory,
-  factory: FactoryData,
-};
 
 enum InputStatusType {
   None,
@@ -264,10 +220,10 @@ export class App3D {
 
     this.guiObj = {
       enterViewMode: () => {
-        this.operationMode = OperationMode.General;
+        this.unselectFactory(OperationMode.General);
       },
       enterPutFactoryMode: () => {
-        this.operationMode = OperationMode.PutFactory;
+        this.unselectFactory(OperationMode.PutFactory);
       },
       editFactory: () => {
         if (!this.selectedFactory) {
@@ -283,17 +239,50 @@ export class App3D {
           type: 'START_EDIT_FACTORY',
           factory: userData.factory,
         });
-        // 隐藏canvas和gui
-        this.threeContext.renderer.domElement.style.display = 'none';
-        this.gui.domElement.style.display = 'none';
-      }
+        this.hide();
+      },
+      export: () => {
+        // 收集需要导出的数据，组合成一个json字符串
+        const exportedData: ExportedData = [];
+        findAllObjectsSatisfy(this.threeContext.scene, obj => (obj.userData as ObjectUserData).type === ObjectUserDataType.Sector)
+          .forEach(sector => {
+            const sectorUserData = sector.userData as ObjectUserData;
+            if (sectorUserData.type !== ObjectUserDataType.Sector) {
+              console.error(sector);
+              throw new Error('Function \'export\' requires a sector is a sector');
+            }
+            const sectorId = sectorUserData.id;
+            // 所有工厂
+            for (const child of sector.children) {
+              const childUserData = child.userData as ObjectUserData;
+              if (childUserData.type !== ObjectUserDataType.Factory) {
+                continue;
+              }
+              const factoryPosition = child.position;
+              const factoryData = childUserData.factory;
+              exportedData.push({
+                sectorId,
+                position: factoryPosition,
+                factoryData,
+              });
+            }
+          });
+        const exportedString = JSON.stringify(exportedData, undefined, 2);
+        // 打开导出界面
+        window.postMessage({
+          type: 'START_EXPORT',
+          exportedString,
+        });
+        this.hide();
+      },
+      import: () => {
+        alert('导入');
+      },
     };
-    // 监听结束编辑工厂的消息
     window.addEventListener('message', ev => {
       if (ev.data.type === 'FINISH_EDIT_FACTORY') {
-        // 显示canvas和gui
-        this.threeContext.renderer.domElement.style.display = 'block';
-        this.gui.domElement.style.display = 'flex';
+        // 监听工厂编辑完成的消息
+        this.show();
         // 获取修改后的工厂信息
         if (!this.selectedFactory) {
           throw new Error('Message handler of \'FINISH_EDIT_FACTORY\' message requires a selected factory');
@@ -304,12 +293,17 @@ export class App3D {
           throw new Error('Message handler of \'FINISH_EDIT_FACTORY\' message requires the selected factory is a factory');
         }
         userData.factory = ev.data.factory;
+      } else if (ev.data.type === 'FINISH_EXPORT') {
+        // 监听导出完成的消息
+        this.show();
       }
     });
     this.gui = new GUI();
     this.gui.add(this.guiObj, 'enterViewMode');
     this.gui.add(this.guiObj, 'enterPutFactoryMode');
     this.gui.add(this.guiObj, 'editFactory');
+    this.gui.add(this.guiObj, 'export');
+    this.gui.add(this.guiObj, 'import');
 
     const statusDiv = document.createElement('div');
     statusDiv.id = 'status';
@@ -576,17 +570,13 @@ export class App3D {
             // 通用模式
             if (this.currentIntersectFactory) {
               // 当用户点击某个工厂时，将transformController附加到这个工厂上，并进入选中工厂模式
-              this.transformControls.attach(this.currentIntersectFactory);
-              this.selectedFactory = this.currentIntersectFactory;
-              this.operationMode = OperationMode.SelectFactory;
+              this.selectFactory(this.currentIntersectFactory);
             }
           } else if (this.operationMode === OperationMode.SelectFactory) {
             // 在选中工厂模式下
             if (!this.currentIntersectFactory && !this.isMouseOnTransformControls) {
               // 鼠标没有点击工厂，并且没有点击Transform Controls，则隐藏Transform Controls，并回到通用模式
-              this.transformControls.detach();
-              this.selectedFactory = undefined;
-              this.operationMode = OperationMode.General;
+              this.unselectFactory(OperationMode.General);
             }
           }
         }
@@ -601,13 +591,11 @@ export class App3D {
           // 松开Delete键
           if (this.operationMode === OperationMode.SelectFactory) {
             // 选中工厂时，删除工厂，并回到通用模式
-            this.transformControls.detach();
             if (!this.selectedFactory) {
               throw new Error('Property \'selectedFactory\' should have a valid value when \'operationMode\' is \'SelectFactory\'');
             }
             this.selectedFactory.removeFromParent();
-            this.selectedFactory = undefined;
-            this.operationMode = OperationMode.General;
+            this.unselectFactory(OperationMode.General);
           }
         }
       }
@@ -728,6 +716,7 @@ export class App3D {
           name: sectorDef.name,
           radius: -1,
           factoryCubeSize: -1,
+          id: sectorId,
         };
         sector.userData = sectorUserData;
         cluster.add(sector);
@@ -890,5 +879,39 @@ export class App3D {
 
     // Transform Controls
     this.threeContext.scene.add(this.transformControls);
+  }
+
+  /**
+   * 隐藏3D应用程序的界面和DOM元素
+   */
+  hide () {
+    this.threeContext.renderer.domElement.style.display = 'none';
+    this.gui.domElement.style.display = 'none';
+  }
+
+  /**
+   * 展示3D应用程序的界面和DOM元素
+   */
+  show () {
+    this.threeContext.renderer.domElement.style.display = 'block';
+    this.gui.domElement.style.display = 'flex';
+  }
+
+  /**
+   * 选中指定的工厂，并进入选中工厂模式
+   */
+  selectFactory (factory: Object3D) {
+    this.transformControls.attach(factory);
+    this.selectedFactory = factory;
+    this.operationMode = OperationMode.SelectFactory;
+  }
+
+  /**
+   * 取消选中当前选中的工厂，并切换到指定的模式
+   */
+  unselectFactory (targetOperationMode: OperationMode) {
+    this.transformControls.detach();
+    this.selectedFactory = undefined;
+    this.operationMode = targetOperationMode;
   }
 };
