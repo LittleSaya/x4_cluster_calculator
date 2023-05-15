@@ -364,7 +364,14 @@
     "prod_gen_scrap_recycler_macro": {
       "name": "废料再生设施",
       "production_queue": [
-        {}
+        {
+          "ware": "claytronics",
+          "method": "recycling"
+        },
+        {
+          "ware": "hullparts",
+          "method": "recycling"
+        }
       ],
       "max_workforce": 1250
     },
@@ -677,7 +684,14 @@
     "prod_ter_scrap_recycler_macro": {
       "name": "Terran 废料再生设施",
       "production_queue": [
-        {}
+        {
+          "ware": "computronicsubstrate",
+          "method": "recycling"
+        },
+        {
+          "ware": "siliconcarbide",
+          "method": "recycling"
+        }
       ],
       "max_workforce": 1250
     },

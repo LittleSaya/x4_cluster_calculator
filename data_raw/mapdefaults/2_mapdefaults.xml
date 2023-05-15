@@ -336,6 +336,9 @@ Moon Names from Page 20402
   <dataset macro="Cluster_604_Sector001_macro">
     <properties>
       <identification name="{20004,6040011}" description="{20004,6040012}" />
+      <worlds>
+        <world part="part_oof_planet"/>
+      </worlds>
     </properties>
   </dataset>
 

@@ -55,8 +55,8 @@ for (const production_macro_file of production_macro_files) {
   const queue = production_macro_jobj.macros.macro.properties.production.queue;
   parsedModules.production[production_macro_jobj.macros.macro['@_name']] = {
     name: util.translate(production_macro_jobj.macros.macro.properties.identification['@_name']),
-    production_queue: Array.isArray(queue) ?
-      queue.map(item => ({
+    production_queue: queue.item ?
+      queue.item.map(item => ({
         ware: item['@_ware'],
         method: item['@_method']
       })) :
