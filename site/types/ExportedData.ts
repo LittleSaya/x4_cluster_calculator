@@ -1,8 +1,10 @@
 import { Vector3 } from 'three';
 import { FactoryData } from './FactoryData';
 
-export type ExportedData = {
+export type ExportedDatum = {
   sectorId: string,
   position: Vector3,
   factoryData: FactoryData,
-}[];
+};
+
+export type ExportedData = ExportedDatum[];

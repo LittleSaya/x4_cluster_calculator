@@ -10,7 +10,7 @@ import * as materials from './App3D/materials'
 import { FactoryData } from './types/FactoryData'
 import { ObjectUserDataType } from './types/ObjectUserDataType'
 import { ObjectUserData } from './types/ObjectUserData'
-import { ExportedData } from './types/ExportedData'
+import { ExportedDatum, ExportedData } from './types/ExportedData'
 import {
   WebGLRenderer, Scene, PerspectiveCamera,
   RingGeometry, CircleGeometry, Object3D, Mesh, AxesHelper, BoxGeometry,
@@ -276,7 +276,11 @@ export class App3D {
         this.hide();
       },
       import: () => {
-        alert('导入');
+        // 打开导入界面
+        window.postMessage({
+          type: 'START_IMPORT',
+        });
+        this.hide();
       },
     };
     window.addEventListener('message', ev => {
@@ -295,6 +299,38 @@ export class App3D {
         userData.factory = ev.data.factory;
       } else if (ev.data.type === 'FINISH_EXPORT') {
         // 监听导出完成的消息
+        this.show();
+      } else if (ev.data.type === 'FINISH_IMPORT') {
+        // 监听导入完成的消息
+        const importedString = ev.data.importedString;
+        if (!importedString) {
+          this.show();
+          return;
+        }
+        const importedData = JSON.parse(importedString) as ExportedData;
+        // 将ExportedData转换成一个key为sectorId，value为ExportedDatum[]的map，一个sector为一组
+        const importedDataMap: Map<string, ExportedDatum[]> = new Map();
+        for (const importedDatum of importedData) {
+          if (importedDataMap.has(importedDatum.sectorId)) {
+            importedDataMap.get(importedDatum.sectorId).push(importedDatum);
+          } else {
+            importedDataMap.set(importedDatum.sectorId, [importedDatum]);
+          }
+        }
+        // 将导入的数据放进场景里
+        findAllObjectsSatisfy(this.threeContext.scene, obj => (obj.userData as ObjectUserData).type === ObjectUserDataType.Sector)
+          .forEach(sector => {
+            const sectorUserData = sector.userData as ObjectUserData;
+            if (sectorUserData.type !== ObjectUserDataType.Sector) {
+              console.error(sector);
+              throw new Error('Message handler of \'FINISH_IMPORT\' message requires a sector is a sector');
+            }
+            if (importedDataMap.has(sectorUserData.id)) {
+              importedDataMap.get(sectorUserData.id).forEach(importedDatum => {
+                this.putFactory(sector, importedDatum.position, importedDatum.factoryData);
+              });
+            }
+          });
         this.show();
       }
     });
@@ -605,8 +641,9 @@ export class App3D {
   /**
    * @param sector 
    * @param position 相对于sector的坐标
+   * @param factoryData
    */
-  putFactory (sector: Object3D, position: Vector3) {
+  putFactory (sector: Object3D, position: Vector3, factoryData: FactoryData | undefined = undefined) {
     const userData = sector.userData as ObjectUserData;
     if (userData.type !== ObjectUserDataType.Sector) {
       console.error(sector);
@@ -623,7 +660,7 @@ export class App3D {
 
     const factoryUserData: ObjectUserData = {
       type: ObjectUserDataType.Factory,
-      factory: new FactoryData(newFactoryName),
+      factory: factoryData ? factoryData : new FactoryData(newFactoryName),
     };
     factory.userData = factoryUserData;
     factory.position.copy(position);
