@@ -1,6 +1,6 @@
 import rawMapData from '../data_manually_modified/full-map-manually.json'
 import { parseMapData } from './util/map_data_parser'
-import { App3D } from './App3D'
+import { App3D } from './App3D/main'
 
 const mapData = parseMapData(rawMapData);
 

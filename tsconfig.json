@@ -1,6 +1,7 @@
 {
   "include": [
     "site/**/*.ts",
+    "site/**/*.js",
     "site/**/*.vue",
     "site/**/*.json",
     "data_manually_modified/**/*.json",

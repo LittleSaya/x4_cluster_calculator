@@ -2,22 +2,22 @@
  * 该类型提供展示地图、操作地图、摆放工厂、配置工厂、导出工厂数据的功能
  */
 
-import { ClusterId, ClusterDef, SectorDef, SectorId } from './util/map_data_parser'
-import { MapMetadata, CLUSTER_RING_WIDTH, SECTOR1_RING_WIDTH, SECTOR2_RING_WIDTH, SECTOR3_RING_WIDTH, RAW_RESIZE_RATIO } from './util/MapMetadata'
-import { COS_30 } from './util/math_constants'
-import { isChildOf, findAllObjectsSatisfy } from './App3D/scene_operation'
-import * as materials from './App3D/materials'
-import { FactoryData } from './types/FactoryData'
-import { ObjectUserDataType } from './types/ObjectUserDataType'
-import { ObjectUserData } from './types/ObjectUserData'
-import { ExportedDatum, ExportedData } from './types/ExportedData'
+import { ClusterId, ClusterDef, SectorDef, SectorId } from '../util/map_data_parser'
+import { MapMetadata, CLUSTER_RING_WIDTH, SECTOR1_RING_WIDTH, SECTOR2_RING_WIDTH, SECTOR3_RING_WIDTH, RAW_RESIZE_RATIO } from '../util/MapMetadata'
+import { COS_30 } from '../util/math_constants'
+import { isChildOf, findAllObjectsSatisfy } from './scene_operation'
+import * as materials from './materials'
+import { FactoryData } from '../types/FactoryData'
+import { ObjectUserDataType } from '../types/ObjectUserDataType'
+import { ObjectUserData } from '../types/ObjectUserData'
+import { ExportedDatum, ExportedData } from '../types/ExportedData'
 import {
   WebGLRenderer, Scene, PerspectiveCamera,
   RingGeometry, CircleGeometry, Object3D, Mesh, AxesHelper, BoxGeometry,
   Raycaster, Intersection,
   Vector3, Vector2,
 } from 'three'
-import { MapControls } from 'three/examples/jsm/controls/MapControls'
+import { MapControls } from '../util/CustomMapControls'
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry'
 import { FontLoader, Font } from 'three/examples/jsm/loaders/FontLoader'
 import { TransformControls } from 'three/examples/jsm/controls/TransformControls'
@@ -27,6 +27,7 @@ const CAMERA_FOV = 75;
 const CAMERA_NEAR = 100;
 const CAMERA_FAR = 100000;
 const CAMERA_INIT_POS = new Vector3(0, -20000, -100);
+const CAMERA_BASE_SPEED = 1000;
 
 const SECTOR_EDGE_Y_OFFSET = -20;
 const SECTOR_PLANE_Y_OFFSET = -10;
@@ -163,6 +164,7 @@ export class App3D {
   set operationMode (val: OperationMode) {
     this._operationMode = val;
     this.updateStatusText();
+    this.disableWASDMove = val === OperationMode.SelectFactory;
   }
 
   get operationMode () {
@@ -193,6 +195,17 @@ export class App3D {
    * 用户当前选中的工厂
    */
   selectedFactory: Object3D | undefined;
+
+  cameraMove: {
+    w: boolean,
+    a: boolean,
+    s: boolean,
+    d: boolean,
+  };
+
+  lastTimestamp: number;
+
+  disableWASDMove: boolean;
 
   /**
    * 构造函数初始化成员的顺序与成员的声明顺序基本相同
@@ -368,6 +381,15 @@ export class App3D {
 
     this.isMouseOnTransformControls = false;
     this.selectedFactory = undefined;
+
+    this.cameraMove = {
+      w: false,
+      a: false,
+      s: false,
+      d: false,
+    };
+    this.lastTimestamp = performance.now();
+    this.disableWASDMove = false;
   }
 
   async loadAssets (): Promise<void> {
@@ -404,10 +426,13 @@ export class App3D {
     this.updateFactoryName();
 
     this.processInput();
+    this.updateCameraPosition((time - this.lastTimestamp) / 1000);
 
     this.threeContext.renderer.render(this.threeContext.scene, this.threeContext.camera);
 
     this.lastIntersectSector = this.currentIntersectSector;
+
+    this.lastTimestamp = time;
   }
 
   updateIntersects (intersects: Intersection<Object3D>[]) {
@@ -621,6 +646,14 @@ export class App3D {
         if (this.operationMode === OperationMode.SelectFactory) {
           this.threeContext.mapControls.enabled = true;
         }
+      } else if (ev.type === 'keydown') {
+        switch ((ev as KeyboardEvent).key) {
+          case 'w': this.cameraMove.w = true; break;
+          case 'a': this.cameraMove.a = true; break;
+          case 's': this.cameraMove.s = true; break;
+          case 'd': this.cameraMove.d = true; break;
+          default: break;
+        }
       } else if (ev.type === 'keyup') {
         // 松开按键
         if ((ev as KeyboardEvent).key === 'Delete') {
@@ -634,8 +667,31 @@ export class App3D {
             this.unselectFactory(OperationMode.General);
           }
         }
+
+        switch ((ev as KeyboardEvent).key) {
+          case 'w': this.cameraMove.w = false; break;
+          case 'a': this.cameraMove.a = false; break;
+          case 's': this.cameraMove.s = false; break;
+          case 'd': this.cameraMove.d = false; break;
+          default: break;
+        }
       }
     }
+  }
+
+  /**
+   * @param deltaTime 经过的时间（秒）
+   */
+  updateCameraPosition (deltaTime: number) {
+    // 使用修改过的MapControls实现WASD移动
+    if (this.disableWASDMove) {
+      // 由于目前不清楚的原因，在编辑工厂时更新相机位置会导致界面十分卡顿，因此选中工厂时禁用WASD移动
+      return;
+    }
+    const deltaX = (this.cameraMove.a ? -1 : 0) + (this.cameraMove.d ? 1 : 0);
+    const deltaY = (this.cameraMove.s ? -1 : 0) + (this.cameraMove.w ? 1 : 0);
+    this.threeContext.mapControls.pan(-deltaX * deltaTime * CAMERA_BASE_SPEED, deltaY * deltaTime * CAMERA_BASE_SPEED);
+    this.threeContext.mapControls.update();
   }
 
   /**
