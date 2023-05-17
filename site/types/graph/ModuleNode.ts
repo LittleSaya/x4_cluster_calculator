@@ -56,12 +56,36 @@ export class ModuleNode {
   calculateInputOutput (bannedWares: Set<string>) {
     // 去除了banned wares之后，完成一轮生产所需的总时间（一轮生产可能不止一个货物，例如废料再生模块一轮会生产船体部件+电子粘土）
     const totalRoundTime = this.moduleRef.productionQueue
-      .filter(pq => !bannedWares.has(pq.ware))
+      .filter(pq => !bannedWares.has(pq.ware)) // production queue代表模块的产品，此处去除被禁用的货物
       .map(pq => this.wareRef.get(pq.ware).production.get(pq.method).time)
       .reduce((accumulator, currentValue) => accumulator + currentValue);
-    this.moduleRef.
-    for (const pq of this.moduleRef.productionQueue) {
-
-    }
+    this.moduleRef.productionQueue
+      .filter(pq => !bannedWares.has(pq.ware))
+      .forEach(pq => {
+        const ware = this.wareRef.get(pq.ware);
+        const productionMethod = ware.production.get(pq.method);
+        // 检查该production queue所需的输入货物是否被禁用
+        let isInputBanned = false;
+        productionMethod.input.forEach((_, inputWareId) => {
+          if (bannedWares.has(inputWareId)) {
+            isInputBanned = true;
+          }
+        });
+        if (isInputBanned) {
+          // 该production queue无法生产
+          return;
+        }
+        this.equation.addOutput(pq.ware, productionMethod.amount);
+        productionMethod.input.forEach((num, inputWareId) => this.equation.addInput(inputWareId, num));
+      });
+    // 此时equation存储的是一轮的输入输出数量，还需要进一步计算每小时的吞吐量，以及多个模块的吞吐量之和
+    const roundCount = 3600 / totalRoundTime;
+    const coef = roundCount * this.moduleCount;
+    this.equation.inputMap.forEach((num, wareId, map) => {
+      map.set(wareId, num * coef);
+    });
+    this.equation.outputMap.forEach((num, wareId, map) => {
+      map.set(wareId, num * coef);
+    });
   }
 }
