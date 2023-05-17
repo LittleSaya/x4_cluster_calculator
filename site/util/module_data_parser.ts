@@ -2,29 +2,57 @@
  * 以统一的方式去解析etl工具生成的模块数据文件
  */
 
-export type HabitatModule = {
-  id: string,
-  name: string,
-  race: string,
-  capacity: number,
+export class Module {
+
+  id: string;
+
+  name: string;
+
+  constructor (id: string, name: string) {
+    this.id = id;
+    this.name = name;
+  }
 };
 
-export type ProductionModule = {
-  id: string,
-  name: string,
+export class HabitatModule extends Module {
+
+  race: string;
+
+  capacity: number;
+
+  constructor (id: string, name: string, race: string, capacity: number) {
+    super(id, name);
+    this.race = race;
+    this.capacity = capacity;
+  }
+};
+
+export class ProductionModule extends Module {
+
   productionQueue: {
     ware: string,
     method: string,
-  }[],
-  maxWorkforce: number,
+  }[];
+
+  maxWorkforce: number;
+
+  constructor (id: string, name: string, productionQueue: { ware: string, method: string }[], maxWorkforce: number) {
+    super(id, name);
+    this.productionQueue = productionQueue;
+    this.maxWorkforce = maxWorkforce;
+  }
 };
 
-export type StorageModule = {
-  id: string,
-  name: string,
+export class StorageModule extends Module {
+
   cargo: {
     max: number,
     tags: string,
+  };
+
+  constructor (id: string, name: string, cargo: { max: number, tags: string }) {
+    super(id, name);
+    this.cargo = cargo;
   }
 };
 
@@ -52,7 +80,7 @@ export function parseModuleData (json: any): AllModules {
       name: json.production[moduleId].name,
       productionQueue: json.production[moduleId].production_queue.map(queue => ({
         ware: queue.ware,
-        method: queue.method,
+        method: queue.method ? queue.method : 'default',
       })),
       maxWorkforce: json.production[moduleId].max_workforce,
     });

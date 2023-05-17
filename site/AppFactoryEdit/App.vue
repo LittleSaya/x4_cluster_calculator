@@ -40,7 +40,13 @@
         </select>
         <button @click="addProductionModule">+</button>
       </div>
-      <div class="statistics"></div>
+      <div class="statistics">
+        <Statistics
+          :habitatModules="habitatModules"
+          :productionModules="productionModules"
+          :storageModules="storageModules"
+        />
+      </div>
     </div>
     <div class="actions">
       工厂名称：<input v-model="factoryName" />
@@ -54,6 +60,7 @@ import { Ref, ref } from 'vue'
 import { FactoryData } from '../types/FactoryData'
 import rawModuleData from '@/data_converted/full-modules.json'
 import { parseModuleData } from '@/site/util/module_data_parser'
+import Statistics from './Statistics.vue'
 
 // ==================== 进入和离开页面 ====================
 
