@@ -22,68 +22,6 @@ export class Equation {
     this.outputMap = new Map();
   }
 
-  // TODO: 注释掉，之后移动到具体的ModuleNode、FactoryNode和ClusterNode之中
-  // /**
-  //  * 计算本节点的输入和输出
-  //  */
-  // calculateInputOutput () {
-  //   if (!this.children.length) {
-  //     return;
-  //   }
-  //   this.inputMap.clear();
-  //   this.outputMap.clear();
-  //   for (const child of this.children) {
-  //     child.calculateInputOutput();
-  //     child.inputMap.forEach((num, type) => {
-  //       if (this.inputMap.has(type)) {
-  //         this.inputMap.set(type, this.inputMap.get(type) + num);
-  //       } else {
-  //         this.inputMap.set(type, num);
-  //       }
-  //     });
-  //     child.outputMap.forEach((num, type) => {
-  //       if (this.outputMap.has(type)) {
-  //         this.outputMap.set(type, this.outputMap.get(type) + num);
-  //       } else {
-  //         this.outputMap.set(type, num);
-  //       }
-  //     });
-  //   }
-  //   // 查找并去除本节点输入输出重合的部分
-  //   const overlapTypes: Set<string> = new Set();
-  //   this.inputMap.forEach((_, type) => overlapTypes.add(type));
-  //   this.outputMap.forEach((_, type) => {
-  //     if (!overlapTypes.has(type)) {
-  //       overlapTypes.delete(type);
-  //     }
-  //   });
-  //   overlapTypes.forEach(type => {
-  //     const inputNum = this.inputMap.get(type);
-  //     const outputNum = this.outputMap.get(type);
-  //     if (inputNum === outputNum) {
-  //       // 对于该种类型的输入输出，本节点可以自给自足
-  //       this.inputMap.delete(type);
-  //       this.outputMap.delete(type);
-  //     } else if (inputNum > outputNum) {
-  //       // 内部供给不足，需要外部输入
-  //       this.outputMap.delete(type);
-  //       this.inputMap.set(type, inputNum - outputNum);
-  //     } else {
-  //       // 内部消耗后能够向外输出
-  //       this.inputMap.delete(type);
-  //       this.outputMap.set(type, outputNum - inputNum);
-  //     }
-  //   });
-  // }
-
-  // addChild (node: Node) {
-  //   this.children.push(node);
-  // }
-
-  // clearChildren () {
-  //   this.children = [];
-  // }
-
   addOutput (type: string, num: number) {
     if (num <= 0) {
       throw new Error(`${Node.name}.${this.addOutput} requires parameter 'num' > 0. type = ${type}, num = ${num}`);
@@ -170,5 +108,10 @@ export class Equation {
         this.inputMap.set(type, inputNum - num);
       }
     }
+  }
+
+  clear () {
+    this.inputMap.clear();
+    this.outputMap.clear();
   }
 }
