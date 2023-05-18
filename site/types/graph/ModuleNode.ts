@@ -4,10 +4,8 @@ import { Ware } from '../../util/ware_data_parser'
 
 /**
  * 表示一个模块的节点，模块节点不包括子节点
- * 模块节点的输入和输出数量为每小时的数量，该数量：
- * 一、没有乘以模块数量，
- * 二、并且不受劳动力影响
- * 由于工厂可以不为某类货物分配空间，因此模块的实际输入输出值需要结合工厂的状态即时计算
+ * 模块节点的输入和输出数量为每小时的数量，该数量“是所有模块吞吐量的总和”
+ * 由于工厂可以不为某类货物分配空间，同一个模块生产的多个不同产品受劳动力影响的程度也可能不相同，因此模块的实际吞吐量需要结合工厂的状态即时计算
  */
 export class ModuleNode {
 
@@ -52,19 +50,22 @@ export class ModuleNode {
   /**
    * 计算该模块节点的输入输出
    * @param bannedWares 所属工厂不予分配仓储空间的货物列表，这部分货物不参与运算
+   * @param workforceFillRatio 劳动力填充率，大于等于0，小于1
    */
-  calculateInputOutput (bannedWares: Set<string>) {
+  calculateInputOutput (bannedWares: Set<string>, workforceFillRatio: number) {
+    this.equation.clear();
     // 去除了banned wares之后，完成一轮生产所需的总时间（一轮生产可能不止一个货物，例如废料再生模块一轮会生产船体部件+电子粘土）
     const totalRoundTime = this.moduleRef.productionQueue
       .filter(pq => !bannedWares.has(pq.ware)) // production queue代表模块的产品，此处去除被禁用的货物
       .map(pq => this.wareRef.get(pq.ware).production.get(pq.method).time)
-      .reduce((accumulator, currentValue) => accumulator + currentValue);
+      .reduce((acc, cur) => acc + cur, 0);
     this.moduleRef.productionQueue
       .filter(pq => !bannedWares.has(pq.ware))
       .forEach(pq => {
         const ware = this.wareRef.get(pq.ware);
         const productionMethod = ware.production.get(pq.method);
-        // 检查该production queue所需的输入货物是否被禁用
+        // 检查该production queue所需的输入货物是否被禁用，
+        // 即使输出的产品没有被禁用，输入原料被禁用的话该production queue也无法进行生产
         let isInputBanned = false;
         productionMethod.input.forEach((_, inputWareId) => {
           if (bannedWares.has(inputWareId)) {
@@ -75,7 +76,8 @@ export class ModuleNode {
           // 该production queue无法生产
           return;
         }
-        this.equation.addOutput(pq.ware, productionMethod.amount);
+        // 计算带有劳动力加成的产出
+        this.equation.addOutput(pq.ware, productionMethod.amount * (1 + workforceFillRatio * productionMethod.effect.work));
         productionMethod.input.forEach((num, inputWareId) => this.equation.addInput(inputWareId, num));
       });
     // 此时equation存储的是一轮的输入输出数量，还需要进一步计算每小时的吞吐量，以及多个模块的吞吐量之和
