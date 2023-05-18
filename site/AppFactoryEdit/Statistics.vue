@@ -92,16 +92,7 @@ watch(currentWorkforce, () => {
 // 计算并产出工厂的统计数据
 function generateStatisticsInfo () {
   factoryNode.calculateInputOutput();
-  const info: string[] = [];
-  info.push('输出');
-  factoryNode.equation.outputMap.forEach((num, wareId) => {
-    info.push(`    ${wareRef.get(wareId).name} x ${num} / 小时`);
-  });
-  info.push('输入');
-  factoryNode.equation.inputMap.forEach((num, wareId) => {
-    info.push(`    ${wareRef.get(wareId).name} x ${num} / 小时`);
-  });
-  statisticsInfo.value = info.join('\r\n');
+  statisticsInfo.value = factoryNode.equation.toStatisticsInfoString();
 }
 
 defineExpose({

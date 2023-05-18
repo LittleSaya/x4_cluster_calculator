@@ -295,6 +295,24 @@ export class App3D {
         });
         this.hide();
       },
+      clusterAnalyze: () => {
+        // 获取场景内所有工厂
+        const factoryArray = findAllObjectsSatisfy(this.threeContext.scene, obj => (obj.userData as ObjectUserData).type === ObjectUserDataType.Factory);
+        const factoryDataArray: FactoryData[] = [];
+        for (const factory of factoryArray) {
+          const factoryUserData = factory.userData as ObjectUserData;
+          if (factoryUserData.type !== ObjectUserDataType.Factory) {
+            throw new Error('Function \'clusterAnalyze\' requires a factory is a factory');
+          }
+          factoryDataArray.push(factoryUserData.factory);
+        }
+        // 打开集群分析界面
+        window.postMessage({
+          type: 'START_CLUSTER_ANALYZE',
+          factoryDataArray,
+        });
+        this.hide();
+      },
     };
     window.addEventListener('message', ev => {
       if (ev.data.type === 'FINISH_EDIT_FACTORY') {
@@ -345,6 +363,9 @@ export class App3D {
             }
           });
         this.show();
+      } else if (ev.data.type === 'FINISH_CLUSTER_ANALYZE') {
+        // 监听集群分析界面关闭的事件
+        this.show();
       }
     });
     this.gui = new GUI();
@@ -353,6 +374,7 @@ export class App3D {
     this.gui.add(this.guiObj, 'editFactory');
     this.gui.add(this.guiObj, 'export');
     this.gui.add(this.guiObj, 'import');
+    this.gui.add(this.guiObj, 'clusterAnalyze');
 
     const statusDiv = document.createElement('div');
     statusDiv.id = 'status';

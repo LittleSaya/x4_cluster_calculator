@@ -1,5 +1,6 @@
 import { Equation } from './Equation'
 import { ModuleNode } from './ModuleNode'
+import { FactoryData } from '../FactoryData'
 import { getParsedModuleMap, ParsedModuleMap } from '../../util/module_data_parser'
 import { getParsedWareMap, Ware } from '../../util/ware_data_parser'
 
@@ -80,5 +81,51 @@ export class FactoryNode {
       mod.equation.inputMap.forEach((num, wareId) => this.equation.addInput(wareId, num));
       mod.equation.outputMap.forEach((num, wareId) => this.equation.addOutput(wareId, num));
     });
+  }
+
+  static createFromFactoryData (factoryData: FactoryData): FactoryNode {
+    const wareRef = getParsedWareMap();
+    const moduleRef = getParsedModuleMap();
+
+    const factoryNode = new FactoryNode(factoryData.name);
+
+    // 计算生产模块每类多少个
+    const productionModules: Map<string, number> = new Map();
+    for (const moduleId of factoryData.productionModules) {
+      if (productionModules.has(moduleId)) {
+        productionModules.set(moduleId, productionModules.get(moduleId) + 1);
+      } else {
+        productionModules.set(moduleId, 1);
+      }
+    }
+
+    // 计算居住模块每类多少个
+    const habitatModules: Map<string, number> = new Map();
+    for (const moduleId of factoryData.habitatModules) {
+      if (habitatModules.has(moduleId)) {
+        habitatModules.set(moduleId, habitatModules.get(moduleId) + 1);
+      } else {
+        habitatModules.set(moduleId, 1);
+      }
+    }
+
+    // 填充模块子节点
+    productionModules.forEach((num, moduleId) => {
+      factoryNode.children.push(new ModuleNode(
+        moduleRef.production.get(moduleId),
+        num,
+        wareRef,
+      ));
+    });
+  
+    // 计算最大工人数
+    let maxWorkforce = 0;
+    habitatModules.forEach((moduleCount, moduleId) => maxWorkforce += moduleRef.habitat.get(moduleId).capacity * moduleCount);
+    factoryNode.maxWorkforce = maxWorkforce;
+
+    // 工厂当前工人数
+    factoryNode.currentWorkforce = factoryData.currentWorkforce;
+    
+    return factoryNode;
   }
 }

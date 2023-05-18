@@ -1,3 +1,5 @@
+import { getParsedWareMap } from "@/site/util/ware_data_parser";
+
 /**
  * 等式有输入和输出，是一种抽象的表达，表示一种类似于“3*A+2*B=>5*C+4*D”的关系，
  * 其中左侧是输入，右侧是输出，字母是输入/输出的类型，数字是输入/输出的量
@@ -113,5 +115,20 @@ export class Equation {
   clear () {
     this.inputMap.clear();
     this.outputMap.clear();
+  }
+
+  toStatisticsInfoString (): string {
+    const wareRef = getParsedWareMap();
+    
+    const info: string[] = [];
+    info.push('输出');
+    this.outputMap.forEach((num, wareId) => {
+      info.push(`    ${wareRef.get(wareId).name} x ${num} / 小时`);
+    });
+    info.push('输入');
+    this.inputMap.forEach((num, wareId) => {
+      info.push(`    ${wareRef.get(wareId).name} x ${num} / 小时`);
+    });
+    return info.join('\r\n');
   }
 }
