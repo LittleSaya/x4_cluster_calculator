@@ -7,7 +7,7 @@
       <div class="habitat-modules">
         <div>居住模块</div>
         <ol>
-          <li v-for="mod of habitatModules" :key="mod.moduleId">
+          <li v-for="(mod, index) of habitatModules" :key="mod.moduleId" @click="removeHabitatModule(index)">
             {{ moduleIdToName(mod.moduleId) }} x {{ mod.count }}
           </li>
         </ol>
@@ -19,7 +19,7 @@
       <div class="storage-modules">
         <div>仓储模块</div>
         <ol>
-          <li v-for="mod of storageModules">
+          <li v-for="(mod, index) of storageModules" :key="mod.moduleId" @click="removeStorageModule(index)">
             {{ moduleIdToName(mod.moduleId) }} x {{ mod.count }}
           </li>
         </ol>
@@ -31,7 +31,7 @@
       <div class="production-modules">
         <div>生产模块</div>
         <ol>
-          <li v-for="mod of productionModules">
+          <li v-for="(mod, index) of productionModules" :key="mod.moduleId" @click="removeProductionModule(index)">
             {{ moduleIdToName(mod.moduleId) }} x {{ mod.count }}
           </li>
         </ol>
@@ -238,6 +238,31 @@ function addProductionModule (ev: MouseEvent) {
     return;
   }
   productionModules.value.push({ moduleId, count: 1 });
+}
+
+// ==================== 移除模块 ====================
+function removeHabitatModule (index: number) {
+  if (habitatModules.value[index].count === 1) {
+    habitatModules.value.splice(index, 1);
+  } else {
+    habitatModules.value[index].count -= 1;
+  }
+}
+
+function removeStorageModule (index: number) {
+  if (storageModules.value[index].count === 1) {
+    storageModules.value.splice(index, 1);
+  } else {
+    storageModules.value[index].count -= 1;
+  }
+}
+
+function removeProductionModule (index: number) {
+  if (productionModules.value[index].count === 1) {
+    productionModules.value.splice(index, 1);
+  } else {
+    productionModules.value[index].count -= 1;
+  }
 }
 </script>
 
