@@ -103,6 +103,16 @@ function generateStatisticsInfo () {
   });
   statisticsInfo.value = info.join('\r\n');
 }
+
+defineExpose({
+  setCurrentWorkforce (num: number) {
+    currentWorkforce.value = num;
+  },
+  
+  getCurrentWorkforce () {
+    return currentWorkforce.value;
+  }
+});
 </script>
 
 <style scoped>

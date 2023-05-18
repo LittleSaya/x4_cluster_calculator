@@ -45,6 +45,7 @@
           :habitatModules="habitatModules"
           :productionModules="productionModules"
           :storageModules="storageModules"
+          ref="statistics"
         />
       </div>
     </div>
@@ -56,10 +57,12 @@
 </template>
 
 <script setup lang="ts">
-import { Ref, ref } from 'vue'
+import { Ref, nextTick, ref } from 'vue'
 import { FactoryData } from '../types/FactoryData'
 import { getParsedModuleArray } from '@/site/util/module_data_parser'
 import Statistics from './Statistics.vue'
+
+let statistics = ref<InstanceType<typeof Statistics> | null>(null);
 
 // ==================== 进入和离开页面 ====================
 
@@ -72,6 +75,7 @@ const factoryName: Ref<string> = ref('');
 const habitatModules: Ref<{ moduleId: string, count: number }[]> = ref([]);
 const storageModules: Ref<{ moduleId: string, count: number }[]> = ref([]);
 const productionModules: Ref<{ moduleId: string, count: number }[]> = ref([]);
+let currentWorkforce = 0; // 当前劳动力，由外部将初始值传入Statistics组件，完成编辑时再从Statistics组件内取出
 
 // 监听编辑工厂的消息，消息传来时显示界面
 window.addEventListener('message', ev => {
@@ -81,6 +85,7 @@ window.addEventListener('message', ev => {
     habitatModules.value = [];
     storageModules.value = [];
     productionModules.value = [];
+    currentWorkforce = 0;
 
     isAppDisplayed.value = true;
     const factory = ev.data.factory as FactoryData;
@@ -121,6 +126,11 @@ window.addEventListener('message', ev => {
     productionModulesCount.forEach((count, moduleId) => {
       productionModules.value.push({ moduleId, count });
     });
+
+    currentWorkforce = factory.currentWorkforce;
+    nextTick(() => {
+      statistics.value.setCurrentWorkforce(currentWorkforce);
+    });
   }
 });
 
@@ -152,6 +162,7 @@ function finishEditFactory () {
     habitatModules: outputHabitatModules,
     storageModules: outputStorageModules,
     productionModules: outputProductionModules,
+    currentWorkforce: statistics.value.getCurrentWorkforce(),
   };
   window.postMessage({
     type: 'FINISH_EDIT_FACTORY',
