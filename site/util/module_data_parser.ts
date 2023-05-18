@@ -1,7 +1,7 @@
 /**
  * 以统一的方式去解析etl工具生成的模块数据文件
  */
-import rawModuleData from '@/data_converted/full-modules.json'
+import rawModuleData from '@/data_manually_modified/full-modules-manually.json'
 
 export class Module {
 

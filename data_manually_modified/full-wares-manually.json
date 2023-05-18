@@ -1,0 +1,1632 @@
+{
+  "advancedcomposites": {
+    "name": "先进复合材料",
+    "transport": "container",
+    "volume": 32,
+    "group": "hightech",
+    "price": {
+      "min": "432",
+      "average": "540",
+      "max": "648"
+    },
+    "production": {
+      "default": {
+        "time": 300,
+        "amount": 54,
+        "effect": {
+          "work": 0.34
+        },
+        "input": {
+          "energycells": 50,
+          "graphene": 80,
+          "refinedmetals": 80
+        }
+      },
+      "teladi": {
+        "time": 300,
+        "amount": 54,
+        "effect": {
+          "work": 0.34
+        },
+        "input": {
+          "energycells": 50,
+          "graphene": 80,
+          "teladianium": 58
+        }
+      }
+    }
+  },
+  "advancedelectronics": {
+    "name": "先进电子设备",
+    "transport": "container",
+    "volume": 30,
+    "group": "shiptech",
+    "price": {
+      "min": "710",
+      "average": "1014",
+      "max": "1318"
+    },
+    "production": {
+      "default": {
+        "time": 720,
+        "amount": 54,
+        "effect": {
+          "work": 0.36
+        },
+        "input": {
+          "energycells": 60,
+          "microchips": 44,
+          "quantumtubes": 20
+        }
+      }
+    }
+  },
+  "antimattercells": {
+    "name": "反物质单元",
+    "transport": "container",
+    "volume": 18,
+    "group": "refined",
+    "price": {
+      "min": "121",
+      "average": "202",
+      "max": "282"
+    },
+    "production": {
+      "default": {
+        "time": 120,
+        "amount": 99,
+        "effect": {
+          "work": 0.35
+        },
+        "input": {
+          "energycells": 100,
+          "hydrogen": 320
+        }
+      }
+    }
+  },
+  "antimatterconverters": {
+    "name": "反物质转换器",
+    "transport": "container",
+    "volume": 10,
+    "group": "shiptech",
+    "price": {
+      "min": "248",
+      "average": "354",
+      "max": "461"
+    },
+    "production": {
+      "default": {
+        "time": 300,
+        "amount": 133,
+        "effect": {
+          "work": 0.39
+        },
+        "input": {
+          "advancedcomposites": 20,
+          "energycells": 80,
+          "microchips": 30
+        }
+      }
+    }
+  },
+  "claytronics": {
+    "name": "电子黏土",
+    "transport": "container",
+    "volume": 24,
+    "group": "shiptech",
+    "price": {
+      "min": "1734",
+      "average": "2040",
+      "max": "2346"
+    },
+    "production": {
+      "default": {
+        "time": 900,
+        "amount": 108,
+        "effect": {
+          "work": 0.34
+        },
+        "input": {
+          "antimattercells": 100,
+          "energycells": 140,
+          "microchips": 160,
+          "quantumtubes": 100
+        }
+      },
+      "recycling": {
+        "time": 300,
+        "amount": 60,
+        "effect": {
+          "work": 0.34
+        },
+        "input": {
+          "energycells": 12000,
+          "scrapmetal": 300
+        }
+      }
+    }
+  },
+  "dronecomponents": {
+    "name": "无人机组件",
+    "transport": "container",
+    "volume": 30,
+    "group": "shiptech",
+    "price": {
+      "min": "685",
+      "average": "914",
+      "max": "1142"
+    },
+    "production": {
+      "default": {
+        "time": 1200,
+        "amount": 105,
+        "effect": {
+          "work": 0.43
+        },
+        "input": {
+          "energycells": 60,
+          "engineparts": 20,
+          "hullparts": 20,
+          "microchips": 20,
+          "scanningarrays": 40
+        }
+      }
+    }
+  },
+  "energycells": {
+    "name": "能量电池",
+    "transport": "container",
+    "volume": 1,
+    "group": "energy",
+    "price": {
+      "min": "10",
+      "average": "16",
+      "max": "22"
+    },
+    "production": {
+      "default": {
+        "time": 60,
+        "amount": 175,
+        "effect": {
+          "sunlight": 1,
+          "work": 0.43
+        }
+      },
+      "terran": {
+        "time": 60,
+        "amount": 50,
+        "effect": {
+          "sunlight": 1,
+          "work": 0.43
+        }
+      }
+    }
+  },
+  "engineparts": {
+    "name": "引擎部件",
+    "transport": "container",
+    "volume": 15,
+    "group": "hightech",
+    "price": {
+      "min": "128",
+      "average": "182",
+      "max": "237"
+    },
+    "production": {
+      "default": {
+        "time": 900,
+        "amount": 208,
+        "effect": {
+          "work": 0.47
+        },
+        "input": {
+          "antimattercells": 80,
+          "energycells": 60,
+          "refinedmetals": 96
+        }
+      },
+      "teladi": {
+        "time": 900,
+        "amount": 208,
+        "effect": {
+          "work": 0.47
+        },
+        "input": {
+          "antimattercells": 80,
+          "energycells": 60,
+          "teladianium": 70
+        }
+      }
+    }
+  },
+  "fieldcoils": {
+    "name": "励磁线圈",
+    "transport": "container",
+    "volume": 15,
+    "group": "shiptech",
+    "price": {
+      "min": "247",
+      "average": "412",
+      "max": "576"
+    },
+    "production": {
+      "default": {
+        "time": 600,
+        "amount": 175,
+        "effect": {
+          "work": 0.43
+        },
+        "input": {
+          "energycells": 60,
+          "plasmaconductors": 40,
+          "quantumtubes": 43
+        }
+      }
+    }
+  },
+  "foodrations": {
+    "name": "食品配给",
+    "transport": "container",
+    "volume": 1,
+    "group": "food",
+    "price": {
+      "min": "12",
+      "average": "21",
+      "max": "29"
+    },
+    "production": {
+      "argon": {
+        "time": 240,
+        "amount": 460,
+        "effect": {
+          "work": 0.35
+        },
+        "input": {
+          "energycells": 100,
+          "meat": 40,
+          "spices": 40,
+          "wheat": 40
+        }
+      }
+    }
+  },
+  "graphene": {
+    "name": "石墨",
+    "transport": "container",
+    "volume": 20,
+    "group": "refined",
+    "price": {
+      "min": "100",
+      "average": "166",
+      "max": "233"
+    },
+    "production": {
+      "default": {
+        "time": 240,
+        "amount": 96,
+        "effect": {
+          "work": 0.46
+        },
+        "input": {
+          "energycells": 80,
+          "methane": 320
+        }
+      }
+    }
+  },
+  "helium": {
+    "name": "氦",
+    "transport": "liquid",
+    "volume": 6,
+    "group": "gases",
+    "price": {
+      "min": "37",
+      "average": "44",
+      "max": "51"
+    }
+  },
+  "hullparts": {
+    "name": "船体部件",
+    "transport": "container",
+    "volume": 12,
+    "group": "hightech",
+    "price": {
+      "min": "146",
+      "average": "209",
+      "max": "272"
+    },
+    "production": {
+      "default": {
+        "time": 900,
+        "amount": 294,
+        "effect": {
+          "work": 0.37
+        },
+        "input": {
+          "energycells": 80,
+          "graphene": 40,
+          "refinedmetals": 280
+        }
+      },
+      "recycling": {
+        "time": 300,
+        "amount": 200,
+        "effect": {
+          "work": 0.37
+        },
+        "input": {
+          "energycells": 3500,
+          "scrapmetal": 75
+        }
+      },
+      "teladi": {
+        "time": 900,
+        "amount": 294,
+        "effect": {
+          "work": 0.37
+        },
+        "input": {
+          "energycells": 80,
+          "graphene": 40,
+          "teladianium": 204
+        }
+      }
+    }
+  },
+  "hydrogen": {
+    "name": "氢",
+    "transport": "liquid",
+    "volume": 6,
+    "group": "gases",
+    "price": {
+      "min": "49",
+      "average": "58",
+      "max": "67"
+    }
+  },
+  "ice": {
+    "name": "冰",
+    "transport": "solid",
+    "volume": 8,
+    "group": "ice",
+    "price": {
+      "min": "26",
+      "average": "30",
+      "max": "35"
+    }
+  },
+  "majadust": {
+    "name": "艳耀星尘",
+    "transport": "container",
+    "volume": 6,
+    "group": "pharmaceutical",
+    "price": {
+      "min": "94",
+      "average": "208",
+      "max": "323"
+    },
+    "production": {
+      "paranid": {
+        "time": 600,
+        "amount": 64,
+        "effect": {
+          "work": 0.75
+        },
+        "input": {
+          "energycells": 40,
+          "majasnails": 120,
+          "spices": 60
+        }
+      }
+    }
+  },
+  "majasnails": {
+    "name": "艳耀蜗牛",
+    "transport": "container",
+    "volume": 6,
+    "group": "agricultural",
+    "price": {
+      "min": "35",
+      "average": "58",
+      "max": "81"
+    },
+    "production": {
+      "paranid": {
+        "time": 450,
+        "amount": 146,
+        "effect": {
+          "work": 0.59
+        },
+        "input": {
+          "energycells": 40,
+          "water": 100
+        }
+      }
+    }
+  },
+  "meat": {
+    "name": "食用肉",
+    "transport": "container",
+    "volume": 6,
+    "group": "agricultural",
+    "price": {
+      "min": "29",
+      "average": "48",
+      "max": "68"
+    },
+    "production": {
+      "argon": {
+        "time": 450,
+        "amount": 290,
+        "effect": {
+          "work": 0.33
+        },
+        "input": {
+          "energycells": 80,
+          "water": 100
+        }
+      }
+    }
+  },
+  "medicalsupplies": {
+    "name": "医疗物资",
+    "transport": "container",
+    "volume": 2,
+    "group": "pharmaceutical",
+    "price": {
+      "min": "43",
+      "average": "66",
+      "max": "89"
+    },
+    "production": {
+      "default": {
+        "time": 300,
+        "amount": 208,
+        "effect": {
+          "work": 0.28
+        },
+        "input": {
+          "energycells": 100,
+          "spices": 40,
+          "water": 60,
+          "wheat": 30
+        }
+      },
+      "paranid": {
+        "time": 300,
+        "amount": 208,
+        "effect": {
+          "work": 0.28
+        },
+        "input": {
+          "energycells": 100,
+          "sojabeans": 10,
+          "spices": 40,
+          "water": 60
+        }
+      },
+      "teladi": {
+        "time": 300,
+        "amount": 208,
+        "effect": {
+          "work": 0.28
+        },
+        "input": {
+          "energycells": 100,
+          "spices": 40,
+          "sunriseflowers": 12,
+          "water": 60
+        }
+      },
+      "boron": {
+        "time": 300,
+        "amount": 208,
+        "effect": {
+          "work": 0.28
+        },
+        "input": {
+          "energycells": 100,
+          "plankton": 95,
+          "water": 60
+        }
+      },
+      "split": {
+        "time": 300,
+        "amount": 208,
+        "effect": {
+          "work": 0.28
+        },
+        "input": {
+          "energycells": 100,
+          "scruffinfruits": 30,
+          "spices": 60,
+          "water": 60
+        }
+      },
+      "terran": {
+        "time": 300,
+        "amount": 140,
+        "effect": {
+          "work": 0.59
+        },
+        "input": {
+          "energycells": 100,
+          "ice": 50,
+          "proteinpaste": 24
+        }
+      }
+    }
+  },
+  "methane": {
+    "name": "甲烷",
+    "transport": "liquid",
+    "volume": 6,
+    "group": "gases",
+    "price": {
+      "min": "41",
+      "average": "48",
+      "max": "55"
+    }
+  },
+  "microchips": {
+    "name": "微芯片",
+    "transport": "container",
+    "volume": 22,
+    "group": "hightech",
+    "price": {
+      "min": "805",
+      "average": "948",
+      "max": "1090"
+    },
+    "production": {
+      "default": {
+        "time": 600,
+        "amount": 72,
+        "effect": {
+          "work": 0.36
+        },
+        "input": {
+          "energycells": 50,
+          "siliconwafers": 200
+        }
+      }
+    }
+  },
+  "missilecomponents": {
+    "name": "导弹部件",
+    "transport": "container",
+    "volume": 2,
+    "group": "shiptech",
+    "price": {
+      "min": "6",
+      "average": "9",
+      "max": "13"
+    },
+    "production": {
+      "default": {
+        "time": 900,
+        "amount": 281,
+        "effect": {
+          "work": 0.53
+        },
+        "input": {
+          "advancedcomposites": 2,
+          "energycells": 20,
+          "hullparts": 2
+        }
+      }
+    }
+  },
+  "nividium": {
+    "name": "N矿",
+    "transport": "solid",
+    "volume": 10,
+    "group": "minerals",
+    "price": {
+      "min": "434",
+      "average": "510",
+      "max": "587"
+    }
+  },
+  "nostropoil": {
+    "name": "滋养油",
+    "transport": "container",
+    "volume": 1,
+    "group": "food",
+    "price": {
+      "min": "20",
+      "average": "34",
+      "max": "47"
+    },
+    "production": {
+      "teladi": {
+        "time": 300,
+        "amount": 500,
+        "effect": {
+          "work": 0.2
+        },
+        "input": {
+          "energycells": 100,
+          "spices": 40,
+          "sunriseflowers": 40,
+          "water": 60
+        }
+      }
+    }
+  },
+  "ore": {
+    "name": "金属矿石",
+    "transport": "solid",
+    "volume": 10,
+    "group": "minerals",
+    "price": {
+      "min": "43",
+      "average": "50",
+      "max": "58"
+    }
+  },
+  "plasmaconductors": {
+    "name": "等离子导体",
+    "transport": "container",
+    "volume": 32,
+    "group": "hightech",
+    "price": {
+      "min": "769",
+      "average": "1026",
+      "max": "1282"
+    },
+    "production": {
+      "default": {
+        "time": 900,
+        "amount": 44,
+        "effect": {
+          "work": 0.43
+        },
+        "input": {
+          "energycells": 60,
+          "graphene": 96,
+          "superfluidcoolant": 140
+        }
+      }
+    }
+  },
+  "quantumtubes": {
+    "name": "量子管",
+    "transport": "container",
+    "volume": 22,
+    "group": "hightech",
+    "price": {
+      "min": "225",
+      "average": "300",
+      "max": "375"
+    },
+    "production": {
+      "default": {
+        "time": 720,
+        "amount": 94,
+        "effect": {
+          "work": 0.53
+        },
+        "input": {
+          "energycells": 40,
+          "graphene": 116,
+          "superfluidcoolant": 30
+        }
+      }
+    }
+  },
+  "refinedmetals": {
+    "name": "精炼金属",
+    "transport": "container",
+    "volume": 14,
+    "group": "refined",
+    "price": {
+      "min": "89",
+      "average": "148",
+      "max": "207"
+    },
+    "production": {
+      "default": {
+        "time": 150,
+        "amount": 88,
+        "effect": {
+          "work": 0.43
+        },
+        "input": {
+          "energycells": 90,
+          "ore": 240
+        }
+      }
+    }
+  },
+  "scanningarrays": {
+    "name": "扫描阵列",
+    "transport": "container",
+    "volume": 38,
+    "group": "hightech",
+    "price": {
+      "min": "842",
+      "average": "1053",
+      "max": "1264"
+    },
+    "production": {
+      "default": {
+        "time": 600,
+        "amount": 36,
+        "effect": {
+          "work": 0.38
+        },
+        "input": {
+          "energycells": 60,
+          "refinedmetals": 100,
+          "siliconwafers": 60
+        }
+      },
+      "teladi": {
+        "time": 600,
+        "amount": 36,
+        "effect": {
+          "work": 0.38
+        },
+        "input": {
+          "energycells": 60,
+          "siliconwafers": 60,
+          "teladianium": 73
+        }
+      }
+    }
+  },
+  "scrapmetal": {
+    "name": "废金属",
+    "transport": "solid",
+    "volume": 10,
+    "group": "refined",
+    "price": {
+      "min": "318",
+      "average": "375",
+      "max": "431"
+    },
+    "production": {
+      "processing": {
+        "time": 60,
+        "amount": 1,
+        "input": {
+          "energycells": 10,
+          "rawscrap": 1
+        }
+      }
+    }
+  },
+  "shieldcomponents": {
+    "name": "护盾部件",
+    "transport": "container",
+    "volume": 10,
+    "group": "shiptech",
+    "price": {
+      "min": "113",
+      "average": "188",
+      "max": "264"
+    },
+    "production": {
+      "default": {
+        "time": 1200,
+        "amount": 193,
+        "effect": {
+          "work": 0.43
+        },
+        "input": {
+          "energycells": 70,
+          "plasmaconductors": 20,
+          "quantumtubes": 20
+        }
+      }
+    }
+  },
+  "silicon": {
+    "name": "硅",
+    "transport": "solid",
+    "volume": 10,
+    "group": "minerals",
+    "price": {
+      "min": "111",
+      "average": "130",
+      "max": "150"
+    }
+  },
+  "siliconwafers": {
+    "name": "硅晶片",
+    "transport": "container",
+    "volume": 18,
+    "group": "refined",
+    "price": {
+      "min": "180",
+      "average": "299",
+      "max": "419"
+    },
+    "production": {
+      "default": {
+        "time": 180,
+        "amount": 107,
+        "effect": {
+          "work": 0.37
+        },
+        "input": {
+          "energycells": 90,
+          "silicon": 240
+        }
+      }
+    }
+  },
+  "smartchips": {
+    "name": "智能芯片",
+    "transport": "container",
+    "volume": 2,
+    "group": "shiptech",
+    "price": {
+      "min": "46",
+      "average": "57",
+      "max": "69"
+    },
+    "production": {
+      "default": {
+        "time": 600,
+        "amount": 143,
+        "effect": {
+          "work": 0.37
+        },
+        "input": {
+          "energycells": 50,
+          "siliconwafers": 20
+        }
+      }
+    }
+  },
+  "sojabeans": {
+    "name": "白豆",
+    "transport": "container",
+    "volume": 5,
+    "group": "agricultural",
+    "price": {
+      "min": "40",
+      "average": "67",
+      "max": "93"
+    },
+    "production": {
+      "paranid": {
+        "time": 300,
+        "amount": 104,
+        "effect": {
+          "work": 0.48
+        },
+        "input": {
+          "energycells": 30,
+          "water": 80
+        }
+      }
+    }
+  },
+  "sojahusk": {
+    "name": "白豆荚",
+    "transport": "container",
+    "volume": 1,
+    "group": "food",
+    "price": {
+      "min": "19",
+      "average": "32",
+      "max": "45"
+    },
+    "production": {
+      "paranid": {
+        "time": 300,
+        "amount": 350,
+        "effect": {
+          "work": 0.37
+        },
+        "input": {
+          "energycells": 80,
+          "majasnails": 50,
+          "sojabeans": 40,
+          "spices": 20
+        }
+      }
+    }
+  },
+  "spacefuel": {
+    "name": "太空燃料",
+    "transport": "container",
+    "volume": 2,
+    "group": "pharmaceutical",
+    "price": {
+      "min": "60",
+      "average": "133",
+      "max": "207"
+    },
+    "production": {
+      "argon": {
+        "time": 480,
+        "amount": 98,
+        "effect": {
+          "work": 0.69
+        },
+        "input": {
+          "energycells": 40,
+          "water": 100,
+          "wheat": 80
+        }
+      }
+    }
+  },
+  "spaceweed": {
+    "name": "太空烟草",
+    "transport": "container",
+    "volume": 3,
+    "group": "pharmaceutical",
+    "price": {
+      "min": "75",
+      "average": "166",
+      "max": "257"
+    },
+    "production": {
+      "teladi": {
+        "time": 600,
+        "amount": 183,
+        "effect": {
+          "work": 0.7
+        },
+        "input": {
+          "energycells": 140,
+          "spices": 40,
+          "swampplant": 120
+        }
+      }
+    }
+  },
+  "spices": {
+    "name": "香料",
+    "transport": "container",
+    "volume": 3,
+    "group": "agricultural",
+    "price": {
+      "min": "12",
+      "average": "20",
+      "max": "28"
+    },
+    "production": {
+      "default": {
+        "time": 600,
+        "amount": 500,
+        "effect": {
+          "work": 0.4
+        },
+        "input": {
+          "energycells": 40,
+          "water": 80
+        }
+      }
+    }
+  },
+  "sunriseflowers": {
+    "name": "日出花",
+    "transport": "container",
+    "volume": 5,
+    "group": "agricultural",
+    "price": {
+      "min": "48",
+      "average": "80",
+      "max": "112"
+    },
+    "production": {
+      "teladi": {
+        "time": 300,
+        "amount": 100,
+        "effect": {
+          "work": 0.28
+        },
+        "input": {
+          "energycells": 30,
+          "water": 80
+        }
+      }
+    }
+  },
+  "superfluidcoolant": {
+    "name": "超流体冷却剂",
+    "transport": "container",
+    "volume": 16,
+    "group": "refined",
+    "price": {
+      "min": "90",
+      "average": "150",
+      "max": "211"
+    },
+    "production": {
+      "default": {
+        "time": 240,
+        "amount": 95,
+        "effect": {
+          "work": 0.49
+        },
+        "input": {
+          "energycells": 60,
+          "helium": 320
+        }
+      }
+    }
+  },
+  "swampplant": {
+    "name": "沼泽植物",
+    "transport": "container",
+    "volume": 6,
+    "group": "agricultural",
+    "price": {
+      "min": "50",
+      "average": "84",
+      "max": "117"
+    },
+    "production": {
+      "teladi": {
+        "time": 450,
+        "amount": 120,
+        "effect": {
+          "work": 0.59
+        },
+        "input": {
+          "energycells": 40,
+          "water": 100
+        }
+      }
+    }
+  },
+  "teladianium": {
+    "name": "T材料",
+    "transport": "container",
+    "volume": 16,
+    "group": "refined",
+    "price": {
+      "min": "121",
+      "average": "202",
+      "max": "283"
+    },
+    "production": {
+      "teladi": {
+        "time": 120,
+        "amount": 70,
+        "effect": {
+          "work": 0.43
+        },
+        "input": {
+          "energycells": 45,
+          "ore": 280
+        }
+      }
+    }
+  },
+  "turretcomponents": {
+    "name": "炮塔部件",
+    "transport": "container",
+    "volume": 20,
+    "group": "shiptech",
+    "price": {
+      "min": "164",
+      "average": "273",
+      "max": "383"
+    },
+    "production": {
+      "default": {
+        "time": 1800,
+        "amount": 170,
+        "effect": {
+          "work": 0.53
+        },
+        "input": {
+          "energycells": 60,
+          "microchips": 20,
+          "quantumtubes": 20,
+          "scanningarrays": 10
+        }
+      }
+    }
+  },
+  "water": {
+    "name": "水",
+    "transport": "container",
+    "volume": 6,
+    "group": "water",
+    "price": {
+      "min": "32",
+      "average": "53",
+      "max": "74"
+    },
+    "production": {
+      "default": {
+        "time": 120,
+        "amount": 193,
+        "effect": {
+          "work": 0.43
+        },
+        "input": {
+          "energycells": 60,
+          "ice": 320
+        }
+      }
+    }
+  },
+  "weaponcomponents": {
+    "name": "武器部件",
+    "transport": "container",
+    "volume": 20,
+    "group": "shiptech",
+    "price": {
+      "min": "171",
+      "average": "285",
+      "max": "399"
+    },
+    "production": {
+      "default": {
+        "time": 1800,
+        "amount": 170,
+        "effect": {
+          "work": 0.53
+        },
+        "input": {
+          "energycells": 60,
+          "hullparts": 20,
+          "plasmaconductors": 30
+        }
+      }
+    }
+  },
+  "wheat": {
+    "name": "小麦",
+    "transport": "container",
+    "volume": 4,
+    "group": "agricultural",
+    "price": {
+      "min": "19",
+      "average": "31",
+      "max": "44"
+    },
+    "production": {
+      "argon": {
+        "time": 300,
+        "amount": 310,
+        "effect": {
+          "work": 0.28
+        },
+        "input": {
+          "energycells": 60,
+          "water": 80
+        }
+      }
+    }
+  },
+  "workunit_busy": {
+    "name": "繁忙的工作单元",
+    "transport": "workunit",
+    "volume": 1,
+    "price": {
+      "min": "68",
+      "average": "68",
+      "max": "68"
+    },
+    "production": {
+      "default": {
+        "time": 600,
+        "amount": 200,
+        "input": {
+          "foodrations": 75,
+          "medicalsupplies": 45
+        }
+      },
+      "paranid": {
+        "time": 600,
+        "amount": 200,
+        "input": {
+          "medicalsupplies": 45,
+          "sojahusk": 48
+        }
+      },
+      "teladi": {
+        "time": 600,
+        "amount": 200,
+        "input": {
+          "medicalsupplies": 45,
+          "nostropoil": 38
+        }
+      },
+      "boron": {
+        "time": 600,
+        "amount": 200,
+        "input": {
+          "bofu": 15,
+          "medicalsupplies": 33,
+          "water": 27
+        }
+      },
+      "split": {
+        "time": 600,
+        "amount": 200,
+        "input": {
+          "cheltmeat": 17,
+          "medicalsupplies": 45,
+          "scruffinfruits": 23
+        }
+      },
+      "terran": {
+        "time": 600,
+        "amount": 200,
+        "input": {
+          "medicalsupplies": 45,
+          "terranmre": 43
+        }
+      }
+    }
+  },
+  "workunit_idle": {
+    "name": "闲置的工作单元",
+    "transport": "workunit",
+    "volume": 1,
+    "price": {
+      "min": "45",
+      "average": "45",
+      "max": "45"
+    },
+    "production": {
+      "default": {
+        "time": 600,
+        "amount": 200,
+        "input": {
+          "foodrations": 50,
+          "medicalsupplies": 30
+        }
+      },
+      "paranid": {
+        "time": 600,
+        "amount": 200,
+        "input": {
+          "medicalsupplies": 30,
+          "sojahusk": 32
+        }
+      },
+      "teladi": {
+        "time": 600,
+        "amount": 200,
+        "input": {
+          "medicalsupplies": 30,
+          "nostropoil": 25
+        }
+      },
+      "boron": {
+        "time": 600,
+        "amount": 200,
+        "input": {
+          "bofu": 10,
+          "medicalsupplies": 22,
+          "water": 18
+        }
+      },
+      "split": {
+        "time": 600,
+        "amount": 200,
+        "input": {
+          "cheltmeat": 13,
+          "medicalsupplies": 30,
+          "scruffinfruits": 10
+        }
+      },
+      "terran": {
+        "time": 600,
+        "amount": 200,
+        "input": {
+          "medicalsupplies": 30,
+          "terranmre": 28
+        }
+      }
+    }
+  },
+  "bofu": {
+    "name": "Bo腐",
+    "transport": "container",
+    "volume": 4,
+    "group": "food",
+    "price": {
+      "min": "61",
+      "average": "101",
+      "max": "142"
+    },
+    "production": {
+      "default": {
+        "time": 240,
+        "amount": 82,
+        "effect": {
+          "work": 0.38
+        },
+        "input": {
+          "bogas": 40,
+          "energycells": 40,
+          "plankton": 120
+        }
+      }
+    }
+  },
+  "bogas": {
+    "name": "Bo气",
+    "transport": "container",
+    "volume": 4,
+    "group": "refined",
+    "price": {
+      "min": "44",
+      "average": "73",
+      "max": "102"
+    },
+    "production": {
+      "default": {
+        "time": 150,
+        "amount": 110,
+        "effect": {
+          "work": 0.46
+        },
+        "input": {
+          "energycells": 40,
+          "water": 100
+        }
+      }
+    }
+  },
+  "plankton": {
+    "name": "浮游生物",
+    "transport": "container",
+    "volume": 1,
+    "group": "agricultural",
+    "price": {
+      "min": "11",
+      "average": "18",
+      "max": "25"
+    },
+    "production": {
+      "default": {
+        "time": 400,
+        "amount": 275,
+        "effect": {
+          "work": 0.4
+        },
+        "input": {
+          "energycells": 20,
+          "water": 50
+        }
+      }
+    }
+  },
+  "cheltmeat": {
+    "name": "钳鱼肉",
+    "transport": "container",
+    "volume": 7,
+    "group": "agricultural",
+    "price": {
+      "min": "31",
+      "average": "51",
+      "max": "72"
+    },
+    "production": {
+      "default": {
+        "time": 450,
+        "amount": 209,
+        "effect": {
+          "work": 0.6
+        },
+        "input": {
+          "energycells": 50,
+          "water": 120
+        }
+      }
+    }
+  },
+  "scruffinfruits": {
+    "name": "颈鳍果",
+    "transport": "container",
+    "volume": 6,
+    "group": "agricultural",
+    "price": {
+      "min": "17",
+      "average": "28",
+      "max": "40"
+    },
+    "production": {
+      "default": {
+        "time": 300,
+        "amount": 255,
+        "effect": {
+          "work": 0.53
+        },
+        "input": {
+          "energycells": 30,
+          "water": 80
+        }
+      }
+    }
+  },
+  "computronicsubstrate": {
+    "name": "电子基质",
+    "transport": "container",
+    "volume": 50,
+    "group": "hightech",
+    "price": {
+      "min": "7452",
+      "average": "8280",
+      "max": "9108"
+    },
+    "production": {
+      "default": {
+        "time": 600,
+        "amount": 98,
+        "effect": {
+          "work": 0.1
+        },
+        "input": {
+          "energycells": 4000,
+          "hydrogen": 2000,
+          "ore": 3000,
+          "silicon": 3000
+        }
+      },
+      "recycling": {
+        "time": 300,
+        "amount": 50,
+        "effect": {
+          "work": 0.1
+        },
+        "input": {
+          "energycells": 12500,
+          "scrapmetal": 1000
+        }
+      }
+    }
+  },
+  "metallicmicrolattice": {
+    "name": "金属微晶",
+    "transport": "container",
+    "volume": 1,
+    "group": "hightech",
+    "price": {
+      "min": "42",
+      "average": "50",
+      "max": "57"
+    },
+    "production": {
+      "default": {
+        "time": 180,
+        "amount": 190,
+        "effect": {
+          "work": 0.2
+        },
+        "input": {
+          "energycells": 50,
+          "helium": 130,
+          "ore": 50
+        }
+      }
+    }
+  },
+  "proteinpaste": {
+    "name": "蛋白糊",
+    "transport": "container",
+    "volume": 4,
+    "group": "agricultural",
+    "price": {
+      "min": "57",
+      "average": "96",
+      "max": "134"
+    },
+    "production": {
+      "default": {
+        "time": 300,
+        "amount": 219,
+        "effect": {
+          "work": 0.3
+        },
+        "input": {
+          "energycells": 80,
+          "ice": 80,
+          "methane": 200
+        }
+      }
+    }
+  },
+  "siliconcarbide": {
+    "name": "碳化硅",
+    "transport": "container",
+    "volume": 20,
+    "group": "hightech",
+    "price": {
+      "min": "1202",
+      "average": "1414",
+      "max": "1627"
+    },
+    "production": {
+      "default": {
+        "time": 300,
+        "amount": 48,
+        "effect": {
+          "work": 0.2
+        },
+        "input": {
+          "energycells": 200,
+          "metallicmicrolattice": 2,
+          "methane": 400,
+          "silicon": 300
+        }
+      },
+      "recycling": {
+        "time": 300,
+        "amount": 60,
+        "effect": {
+          "work": 0.2
+        },
+        "input": {
+          "energycells": 4000,
+          "scrapmetal": 250
+        }
+      }
+    }
+  },
+  "stimulants": {
+    "name": "兴奋剂",
+    "transport": "container",
+    "volume": 12,
+    "group": "pharmaceutical",
+    "price": {
+      "min": "153",
+      "average": "340",
+      "max": "527"
+    },
+    "production": {
+      "default": {
+        "time": 300,
+        "amount": 98,
+        "effect": {
+          "work": 0.65
+        },
+        "input": {
+          "energycells": 80,
+          "helium": 400,
+          "silicon": 20
+        }
+      }
+    }
+  },
+  "terranmre": {
+    "name": "Terran即食餐",
+    "transport": "container",
+    "volume": 2,
+    "group": "food",
+    "price": {
+      "min": "32",
+      "average": "54",
+      "max": "75"
+    },
+    "production": {
+      "default": {
+        "time": 240,
+        "amount": 175,
+        "effect": {
+          "work": 0.42
+        },
+        "input": {
+          "energycells": 60,
+          "proteinpaste": 60
+        }
+      }
+    }
+  },
+  "condensate": {
+    "name": "戍子",
+    "transport": "condensate",
+    "volume": 10,
+    "price": {
+      "min": "22500",
+      "average": "25000",
+      "max": "27500"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 /**
  * 货物数据统一通过该文件提供的解析函数读取
  */
-import rawWareData from '@/data_converted/full-map.json'
+import rawWareData from '@/data_manually_modified/full-wares-manually.json'
 
 export class ProductionMethod {
 
@@ -82,11 +82,17 @@ export function getParsedWareMap (): Map<string, Ware> {
     const wareTransport = wareObj.transport;
     const wareVolume = wareObj.volume;
     const wareGroup = wareObj.group;
-    const warePrice = {
-      min: Number(wareObj.price.min),
-      average: Number(wareObj.price.average),
-      max: Number(wareObj.price.max),
-    };
+    let warePrice;
+    try {
+      warePrice  = {
+        min: Number(wareObj.price.min),
+        average: Number(wareObj.price.average),
+        max: Number(wareObj.price.max),
+      };
+    } catch (err) {
+      console.error(wareName);
+      throw err;
+    }
     const wareProductionObj = wareObj.production;
     const wareProduction: Map<string, ProductionMethod> = new Map();
     for (const methodName in wareProductionObj) {
