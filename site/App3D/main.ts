@@ -980,6 +980,7 @@ export class App3D {
   hide () {
     this.threeContext.renderer.domElement.style.display = 'none';
     this.gui.domElement.style.display = 'none';
+    this.disableWASDMove = true;
   }
 
   /**
@@ -988,6 +989,7 @@ export class App3D {
   show () {
     this.threeContext.renderer.domElement.style.display = 'block';
     this.gui.domElement.style.display = 'flex';
+    this.disableWASDMove = false;
   }
 
   /**
