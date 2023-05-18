@@ -2,16 +2,26 @@
 
 <template>
   <div>工厂统计信息</div>
-  <div>居住模块数量：{{ habitatModules.length }}</div>
-  <div>生产模块数量：{{ productionModules.length }}</div>
-  <div>仓储模块数量：{{ storageModules.length }}</div>
+  <div>
+    当前劳动力：<input type="number" v-model="currentWorkforce" :max="maxWorkforce" /><br/>
+    最大可容纳劳动力：{{ maxWorkforce }}<br/>
+    达到最高效率所需劳动力：{{ maxEfficiencyWorkforce }}
+  </div>
+  <pre>{{ statisticsInfo }}</pre>
 </template>
 
 <script setup lang="ts">
-import { HabitatModule, ProductionModule, StorageModule } from '../util/module_data_parser'
 import { getParsedWareMap } from '../util/ware_data_parser'
-import { getParsedModuleArray } from '../util/module_data_parser'
-import { watch } from 'vue'
+import { getParsedModuleMap } from '../util/module_data_parser'
+import { FactoryNode } from '../types/graph/FactoryNode'
+import { ModuleNode } from '../types/graph/ModuleNode'
+import { watch, ref } from 'vue'
+
+// 用于参考的货物信息
+const wareRef = getParsedWareMap();
+
+// 用于参考的模块信息
+const moduleRef = getParsedModuleMap();
 
 // 通过props接收工厂的模块数据
 const props = defineProps<{
@@ -20,33 +30,79 @@ const props = defineProps<{
   storageModules: { moduleId: string, count: number }[],
 }>();
 
-const moduleIdCount = {
-  habitat: new Map<string, number>(),
-  production: new Map<string, number>(),
-  storage: new Map<string, number>(),
-};
+/**
+ * 工厂的最大劳动力数量
+ */
+const maxWorkforce = ref(0);
 
-// 读取货物的基本信息
-const wareDataMap = getParsedWareMap();
+/**
+ * 工厂的当前劳动力数量
+ */
+const currentWorkforce = ref(0);
 
-// 读取模块的基本信息
-const moduleData = getParsedModuleArray();
+/**
+ * 达到最高效率所需的劳动力数量
+ */
+const maxEfficiencyWorkforce = ref(0);
+
+/**
+ * 工厂的统计信息
+ */
+const statisticsInfo = ref('');
 
 // 构造工厂节点
-
-// 工人填充率
-
-// 需求信息
-
-// 产出信息
+let factoryNode: FactoryNode | undefined = undefined;
 
 // 监听props变化
-watch(() => ({
-  habitatModules: props.habitatModules,
-  productionModules: props.productionModules,
-  storageModules: props.storageModules
-}), () => {
+watch(props, () => {
+  // 重新构造工厂节点和模块节点
+  // TODO：这里显示工厂的真实名称
+  factoryNode = new FactoryNode('工厂名称（占位符）');
+  for (const pm of props.productionModules) {
+    factoryNode.children.push(new ModuleNode(
+      moduleRef.production.get(pm.moduleId),
+      pm.count,
+      wareRef,
+    ));
+  }
+
+  // 每一次变动，都重新计算最大劳动力数量并将当前劳动力数量设置为0
+  maxWorkforce.value = props.habitatModules
+    .map(({ moduleId, count }) => moduleRef.habitat.get(moduleId).capacity * count)
+    .reduce((acc, cur) => acc + cur, 0);
+  currentWorkforce.value = 0;
+
+  // 设置工厂的劳动力状态
+  factoryNode.maxWorkforce = maxWorkforce.value;
+  factoryNode.currentWorkforce = currentWorkforce.value;
+
+  // 进行一次计算
+  generateStatisticsInfo();
+
+  maxEfficiencyWorkforce.value = factoryNode.maxEfficiencyWorkforce;
 });
+
+// 监听当前劳动力数量变化
+watch(currentWorkforce, () => {
+  factoryNode.currentWorkforce = currentWorkforce.value;
+  generateStatisticsInfo();
+  maxEfficiencyWorkforce.value = factoryNode.maxEfficiencyWorkforce;
+});
+
+// 计算并产出工厂的统计数据
+function generateStatisticsInfo () {
+  factoryNode.calculateInputOutput();
+  const info: string[] = [];
+  info.push('输出');
+  factoryNode.equation.outputMap.forEach((num, wareId) => {
+    info.push(`    ${wareRef.get(wareId).name} x ${num} / 小时`);
+  });
+  info.push('输入');
+  factoryNode.equation.inputMap.forEach((num, wareId) => {
+    info.push(`    ${wareRef.get(wareId).name} x ${num} / 小时`);
+  });
+  statisticsInfo.value = info.join('\r\n');
+}
 </script>
 
 <style scoped>

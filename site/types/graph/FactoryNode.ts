@@ -31,6 +31,11 @@ export class FactoryNode {
   currentWorkforce: number;
 
   /**
+   * 达到最高效率所需的劳动力数量
+   */
+  maxEfficiencyWorkforce: number;
+
+  /**
    * 属于该工厂节点的子模块节点
    */
   children: ModuleNode[];
@@ -61,11 +66,14 @@ export class FactoryNode {
   calculateInputOutput () {
     this.equation.clear();
     // 计算所有下属模块达到最高效率所需的总劳动力
-    const maxEfficiencyWorkforce = this.children
-      .map(m => this.moduleRef.production.get(m.moduleId).maxWorkforce)
+    this.maxEfficiencyWorkforce = this.children
+      .map(m => this.moduleRef.production.get(m.moduleId).maxWorkforce * m.moduleCount)
       .reduce((acc, cur) => acc + cur, 0);
-    // 以工厂当前的劳动力数量，可以达到最高效率的百分之几
-    const efficiencyRatio = this.currentWorkforce / maxEfficiencyWorkforce;
+    // 以工厂当前的劳动力数量，可以达到最高效率的百分之几（最多100%）
+    let efficiencyRatio = this.currentWorkforce / this.maxEfficiencyWorkforce;
+    if (efficiencyRatio > 1) {
+      efficiencyRatio = 1;
+    }
     // 计算每一个模块的输入和输出，并将其合并至工厂的总吞吐量
     this.children.forEach(mod => {
       mod.calculateInputOutput(this.bannedWares, efficiencyRatio);
