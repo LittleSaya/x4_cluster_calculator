@@ -58,8 +58,7 @@
 <script setup lang="ts">
 import { Ref, ref } from 'vue'
 import { FactoryData } from '../types/FactoryData'
-import rawModuleData from '@/data_converted/full-modules.json'
-import { parseModuleData } from '@/site/util/module_data_parser'
+import { getParsedModuleArray } from '@/site/util/module_data_parser'
 import Statistics from './Statistics.vue'
 
 // ==================== 进入和离开页面 ====================
@@ -165,7 +164,7 @@ function finishEditFactory () {
 const availableHabitatModules: Ref<{ moduleId: string, moduleName: string }[]> = ref([]);
 const availableStorageModules: Ref<{ moduleId: string, moduleName: string }[]> = ref([]);
 const availableProductionModules: Ref<{ moduleId: string, moduleName: string }[]> = ref([]);
-const moduleData = parseModuleData(rawModuleData);
+const moduleData = getParsedModuleArray();
 const moduleIdNameMap: Map<string, string> = new Map();
 
 for (const module of moduleData.habitat) {

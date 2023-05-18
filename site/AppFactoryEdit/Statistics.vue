@@ -9,10 +9,8 @@
 
 <script setup lang="ts">
 import { HabitatModule, ProductionModule, StorageModule } from '../util/module_data_parser'
-import { parseWareDataReturnMap } from '../util/ware_data_parser'
-import { parseModuleData } from '../util/module_data_parser'
-import rawWareData from '@/data_converted/full-wares.json'
-import rawModuleData from '@/data_converted/full-modules.json'
+import { getParsedWareMap } from '../util/ware_data_parser'
+import { getParsedModuleArray } from '../util/module_data_parser'
 import { watch } from 'vue'
 
 // 通过props接收工厂的模块数据
@@ -29,10 +27,10 @@ const moduleIdCount = {
 };
 
 // 读取货物的基本信息
-const wareDataMap = parseWareDataReturnMap(rawWareData);
+const wareDataMap = getParsedWareMap();
 
 // 读取模块的基本信息
-const moduleData = parseModuleData(rawModuleData);
+const moduleData = getParsedModuleArray();
 
 // 构造工厂节点
 

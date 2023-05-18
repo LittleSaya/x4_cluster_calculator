@@ -1,6 +1,7 @@
 /**
  * 以统一的方式去解析etl工具生成的模块数据文件
  */
+import rawModuleData from '@/data_converted/full-modules.json'
 
 export class Module {
 
@@ -56,48 +57,109 @@ export class StorageModule extends Module {
   }
 };
 
-export type AllModules = {
+export type ParsedModuleArray = {
   habitat: HabitatModule[],
   production: ProductionModule[],
   storage: StorageModule[],
 };
 
-export function parseModuleData (json: any): AllModules {
+export type ParsedModuleMap = {
+  habitat: Map<string, HabitatModule>,
+  production: Map<string, ProductionModule>,
+  storage: Map<string, StorageModule>,
+};
+
+let parsedArray: ParsedModuleArray | undefined = undefined;
+let parsedMap: ParsedModuleMap | undefined = undefined;
+
+export function getParsedModuleArray (): ParsedModuleArray {
+  if (parsedArray) {
+    return parsedArray;
+  }
+  console.log('Parsing module data (return array)');
+
   const habitatModules: HabitatModule[] = [];
   const productionModules: ProductionModule[] = [];
   const storageModules: StorageModule[] = [];
-  for (const moduleId in json.habitat) {
+  for (const moduleId in rawModuleData.habitat) {
     habitatModules.push({
       id: moduleId,
-      name: json.habitat[moduleId].name,
-      race: json.habitat[moduleId].race,
-      capacity: json.habitat[moduleId].capacity,
+      name: rawModuleData.habitat[moduleId].name,
+      race: rawModuleData.habitat[moduleId].race,
+      capacity: rawModuleData.habitat[moduleId].capacity,
     });
   }
-  for (const moduleId in json.production) {
+  for (const moduleId in rawModuleData.production) {
     productionModules.push({
       id: moduleId,
-      name: json.production[moduleId].name,
-      productionQueue: json.production[moduleId].production_queue.map(queue => ({
+      name: rawModuleData.production[moduleId].name,
+      productionQueue: rawModuleData.production[moduleId].production_queue.map(queue => ({
         ware: queue.ware,
         method: queue.method ? queue.method : 'default',
       })),
-      maxWorkforce: json.production[moduleId].max_workforce,
+      maxWorkforce: rawModuleData.production[moduleId].max_workforce,
     });
   }
-  for (const moduleId in json.storage) {
+  for (const moduleId in rawModuleData.storage) {
     storageModules.push({
       id: moduleId,
-      name: json.storage[moduleId].name,
+      name: rawModuleData.storage[moduleId].name,
       cargo: {
-        max: json.storage[moduleId].cargo.max,
-        tags: json.storage[moduleId].cargo.tags,
+        max: rawModuleData.storage[moduleId].cargo.max,
+        tags: rawModuleData.storage[moduleId].cargo.tags,
       }
     });
   }
-  return {
+  parsedArray = {
     habitat: habitatModules,
     production: productionModules,
     storage: storageModules,
   };
+  return parsedArray;
+}
+
+export function getParsedModuleMap (): ParsedModuleMap {
+  if (parsedMap) {
+    return parsedMap;
+  }
+  console.log('Parsing module data (return map)');
+  
+  const habitatModules: Map<string, HabitatModule> = new Map();
+  const productionModules: Map<string, ProductionModule> = new Map();
+  const storageModules: Map<string, StorageModule> = new Map();
+  for (const moduleId in rawModuleData.habitat) {
+    habitatModules.set(moduleId, {
+      id: moduleId,
+      name: rawModuleData.habitat[moduleId].name,
+      race: rawModuleData.habitat[moduleId].race,
+      capacity: rawModuleData.habitat[moduleId].capacity,
+    });
+  }
+  for (const moduleId in rawModuleData.production) {
+    productionModules.set(moduleId, {
+      id: moduleId,
+      name: rawModuleData.production[moduleId].name,
+      productionQueue: rawModuleData.production[moduleId].production_queue.map(queue => ({
+        ware: queue.ware,
+        method: queue.method ? queue.method : 'default',
+      })),
+      maxWorkforce: rawModuleData.production[moduleId].max_workforce,
+    });
+  }
+  for (const moduleId in rawModuleData.storage) {
+    storageModules.set(moduleId, {
+      id: moduleId,
+      name: rawModuleData.storage[moduleId].name,
+      cargo: {
+        max: rawModuleData.storage[moduleId].cargo.max,
+        tags: rawModuleData.storage[moduleId].cargo.tags,
+      }
+    });
+  }
+  parsedMap = {
+    habitat: habitatModules,
+    production: productionModules,
+    storage: storageModules,
+  };
+  return parsedMap;
 }

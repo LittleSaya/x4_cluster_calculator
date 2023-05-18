@@ -3,6 +3,7 @@
  */
 
 import { Vector3 } from 'three'
+import rawMapData from '@/data_manually_modified/full-map-manually.json'
 
 export type ClusterId = string;
 
@@ -44,14 +45,17 @@ export class ClusterDef {
   }
 };
 
-/**
- * @param json 原始的地图数据
- * @returns 
- */
-export function parseMapData (json: any): Map<ClusterId, ClusterDef> {
+let parsedMap: Map<ClusterId, ClusterDef> | undefined = undefined;
+
+export function getParsedMap (): Map<ClusterId, ClusterDef> {
+  if (parsedMap) {
+    return parsedMap;
+  }
+  console.log('Parsing map data');
+
   const galaxyMap = new Map<ClusterId, ClusterDef>();
-  for (const clusterId in json) {
-    const clusterObj = json[clusterId];
+  for (const clusterId in rawMapData) {
+    const clusterObj = rawMapData[clusterId];
     const sectorsMap = new Map<SectorId, SectorDef>();
     const coordinate = clusterObj.coordinate;
     const ownership = clusterObj.ownership;
@@ -73,5 +77,6 @@ export function parseMapData (json: any): Map<ClusterId, ClusterDef> {
       ownership
     ));
   }
-  return galaxyMap;
+  parsedMap = galaxyMap;
+  return parsedMap;
 }
