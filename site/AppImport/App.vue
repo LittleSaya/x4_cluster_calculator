@@ -4,7 +4,7 @@
     class="container"
   >
     <input type="file" @change="onFileInputChange" />
-    <button @click="close">关闭导入界面</button>
+    <button @click="close" style="margin-left: 0.5em;">关闭导入界面</button>
   </div>
 </template>
 

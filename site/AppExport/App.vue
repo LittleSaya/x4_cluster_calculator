@@ -4,7 +4,7 @@
     class="container"
   >
     <a :href="exportedString" :download="filename">点击导出工厂配置</a>
-    <button @click="close">关闭导出界面</button>
+    <button @click="close" style="margin-left: 0.5em;">关闭导出界面</button>
   </div>
 </template>
 

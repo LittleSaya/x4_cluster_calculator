@@ -6,39 +6,39 @@
     <div class="factory-modules">
       <div class="habitat-modules">
         <div>居住模块</div>
+        <select v-model="selectedHabitatModule">
+          <option v-for="mod of availableHabitatModules" :key="mod.moduleId" :value="mod.moduleId">{{ mod.moduleName }}</option>
+        </select>
+        <button @click="addHabitatModule" style="margin-left: 0.5em;">+</button>
         <ol>
           <li v-for="(mod, index) of habitatModules" :key="mod.moduleId" @click="removeHabitatModule(index)">
             {{ moduleIdToName(mod.moduleId) }} x {{ mod.count }}
           </li>
         </ol>
-        <select v-model="selectedHabitatModule">
-          <option v-for="mod of availableHabitatModules" :key="mod.moduleId" :value="mod.moduleId">{{ mod.moduleName }}</option>
-        </select>
-        <button @click="addHabitatModule">+</button>
       </div>
       <div class="storage-modules">
         <div>仓储模块</div>
+        <select v-model="selectedStorageModule">
+          <option v-for="mod of availableStorageModules" :key="mod.moduleId" :value="mod.moduleId">{{ mod.moduleName }}</option>
+        </select>
+        <button @click="addStorageModule" style="margin-left: 0.5em;">+</button>
         <ol>
           <li v-for="(mod, index) of storageModules" :key="mod.moduleId" @click="removeStorageModule(index)">
             {{ moduleIdToName(mod.moduleId) }} x {{ mod.count }}
           </li>
         </ol>
-        <select v-model="selectedStorageModule">
-          <option v-for="mod of availableStorageModules" :key="mod.moduleId" :value="mod.moduleId">{{ mod.moduleName }}</option>
-        </select>
-        <button @click="addStorageModule">+</button>
       </div>
       <div class="production-modules">
         <div>生产模块</div>
+        <select v-model="selectedProductionModule">
+          <option v-for="mod of availableProductionModules" :key="mod.moduleId" :value="mod.moduleId">{{ mod.moduleName }}</option>
+        </select>
+        <button @click="addProductionModule" style="margin-left: 0.5em;">+</button>
         <ol>
           <li v-for="(mod, index) of productionModules" :key="mod.moduleId" @click="removeProductionModule(index)">
             {{ moduleIdToName(mod.moduleId) }} x {{ mod.count }}
           </li>
         </ol>
-        <select v-model="selectedProductionModule">
-          <option v-for="mod of availableProductionModules" :key="mod.moduleId" :value="mod.moduleId">{{ mod.moduleName }}</option>
-        </select>
-        <button @click="addProductionModule">+</button>
       </div>
       <div class="statistics">
         <Statistics
@@ -50,8 +50,8 @@
       </div>
     </div>
     <div class="actions">
-      工厂名称：<input v-model="factoryName" />
-      <button @click="finishEditFactory">完成编辑</button>
+      工厂名称：<input v-model="factoryName" style="width: 24em;" />
+      <button @click="finishEditFactory" style="margin-left: 0.5em;">完成编辑</button>
     </div>
   </div>
 </template>
@@ -272,5 +272,9 @@ function removeProductionModule (index: number) {
 .factory-modules {
   display: flex;
   justify-content: space-between;
+}
+
+.factory-modules > div {
+  width: 25%;
 }
 </style>

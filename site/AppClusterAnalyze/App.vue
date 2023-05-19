@@ -4,7 +4,7 @@
     class="container"
   >
     <pre>{{ statisticsInfo }}</pre>
-    <button @click="close">关闭工厂集群分析界面</button>
+    <button @click="close" style="margin-left: 0.5em;">关闭工厂集群分析界面</button>
   </div>
 </template>
 

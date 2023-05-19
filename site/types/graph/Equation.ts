@@ -123,10 +123,12 @@ export class Equation {
     const info: string[] = [];
     info.push('输出');
     this.outputMap.forEach((num, wareId) => {
+      num = Math.trunc(num * 100) / 100; // 保留两位小数
       info.push(`    ${wareRef.get(wareId).name} x ${num} / 小时`);
     });
     info.push('输入');
     this.inputMap.forEach((num, wareId) => {
+      num = Math.trunc(num * 100) / 100; // 保留两位小数
       info.push(`    ${wareRef.get(wareId).name} x ${num} / 小时`);
     });
     return info.join('\r\n');

@@ -1,13 +1,15 @@
 .container {
   position: fixed;
+  z-index: 1;
   width: 80vw;
   height: 90vh;
   left: 10vw;
   top: 5vh;
-  z-index: 1;
+
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
+  padding: 12px;
 }

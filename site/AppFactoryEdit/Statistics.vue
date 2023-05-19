@@ -3,7 +3,7 @@
 <template>
   <div>工厂统计信息</div>
   <div>
-    当前劳动力：<input type="number" v-model="currentWorkforce" :max="maxWorkforce" /><br/>
+    当前劳动力：<input type="number" v-model="currentWorkforce" :min="0" :max="maxWorkforce" style="width: 6em;" /><br/>
     最大可容纳劳动力：{{ maxWorkforce }}<br/>
     达到最高效率所需劳动力：{{ maxEfficiencyWorkforce }}
   </div>
