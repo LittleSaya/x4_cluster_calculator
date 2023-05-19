@@ -2,22 +2,20 @@
 
 <template>
   <div>工厂统计信息</div>
-  <div>
+  <div class="workforce">
     当前劳动力：<input type="number" v-model="currentWorkforce" :min="0" :max="maxWorkforce" style="width: 6em;" /><br/>
     最大可容纳劳动力：{{ maxWorkforce }}<br/>
     达到最高效率所需劳动力：{{ maxEfficiencyWorkforce }}
   </div>
-  <div>
+  <div class="banned-wares">
+    禁用货物：
     <select v-model="selectedBannedWareId">
       <option v-for="ware of availableBannedWares" :key="ware.id" :value="ware.id">{{ ware.name }}</option>
     </select>
     <button style="margin-left: 0.5em;" @click="addBannedWare">+</button><br/>
-    禁用货物：<br/>
-    <pre>
-      <span v-for="(ware, index) of bannedWaresArray" :key="ware.id" @click="removeBannedWare(index)">{{ ware.name }}</span>
-    </pre>
+    <pre><span v-for="(ware, index) of bannedWaresArray" :key="ware.id" @click="removeBannedWare(index)">{{ ware.name }}</span></pre>
   </div>
-  <pre>{{ statisticsInfo }}</pre>
+  <pre class="statistics">{{ statisticsInfo }}</pre>
 </template>
 
 <script setup lang="ts">
@@ -25,7 +23,7 @@ import { getParsedWareMap, getParsedWareArray, Ware } from '../util/ware_data_pa
 import { getParsedModuleMap } from '../util/module_data_parser'
 import { FactoryNode } from '../types/graph/FactoryNode'
 import { ModuleNode } from '../types/graph/ModuleNode'
-import { watch, ref, computed, Ref } from 'vue'
+import { watch, ref, Ref } from 'vue'
 
 // 用于参考的货物信息
 const wareRef = getParsedWareMap();
@@ -170,4 +168,9 @@ defineExpose({
 </script>
 
 <style scoped>
+.workforce, .banned-wares, .statistics {
+  margin: 1em 0 1em 0;
+  padding: 12px;
+  border: 1px solid black;
+}
 </style>
