@@ -1,4 +1,4 @@
 node_modules
-logs/*
-data_intermediate/*
-dist/*
+logs
+data_intermediate
+dist
