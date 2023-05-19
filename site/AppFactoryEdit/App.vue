@@ -60,7 +60,10 @@
 import { Ref, nextTick, ref } from 'vue'
 import { FactoryData } from '../types/FactoryData'
 import { getParsedModuleArray } from '@/site/util/module_data_parser'
+import { getParsedWareMap } from '../util/ware_data_parser'
 import Statistics from './Statistics.vue'
+
+const wareRef = getParsedWareMap();
 
 let statistics = ref<InstanceType<typeof Statistics> | null>(null);
 
@@ -130,6 +133,7 @@ window.addEventListener('message', ev => {
     currentWorkforce = factory.currentWorkforce;
     nextTick(() => {
       statistics.value.setCurrentWorkforce(currentWorkforce);
+      statistics.value.setBannedWaresArray(factory.bannedWaresIdArray.map(wareId => wareRef.get(wareId)));
     });
   }
 });
@@ -163,6 +167,7 @@ function finishEditFactory () {
     storageModules: outputStorageModules,
     productionModules: outputProductionModules,
     currentWorkforce: statistics.value.getCurrentWorkforce(),
+    bannedWaresIdArray: statistics.value.getBannedWaresArray().map(w => w.id),
   };
   window.postMessage({
     type: 'FINISH_EDIT_FACTORY',

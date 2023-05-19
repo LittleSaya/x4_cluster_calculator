@@ -7,15 +7,25 @@
     最大可容纳劳动力：{{ maxWorkforce }}<br/>
     达到最高效率所需劳动力：{{ maxEfficiencyWorkforce }}
   </div>
+  <div>
+    <select v-model="selectedBannedWareId">
+      <option v-for="ware of availableBannedWares" :key="ware.id" :value="ware.id">{{ ware.name }}</option>
+    </select>
+    <button style="margin-left: 0.5em;" @click="addBannedWare">+</button><br/>
+    禁用货物：<br/>
+    <pre>
+      <span v-for="(ware, index) of bannedWaresArray" :key="ware.id" @click="removeBannedWare(index)">{{ ware.name }}</span>
+    </pre>
+  </div>
   <pre>{{ statisticsInfo }}</pre>
 </template>
 
 <script setup lang="ts">
-import { getParsedWareMap } from '../util/ware_data_parser'
+import { getParsedWareMap, getParsedWareArray, Ware } from '../util/ware_data_parser'
 import { getParsedModuleMap } from '../util/module_data_parser'
 import { FactoryNode } from '../types/graph/FactoryNode'
 import { ModuleNode } from '../types/graph/ModuleNode'
-import { watch, ref } from 'vue'
+import { watch, ref, computed, Ref } from 'vue'
 
 // 用于参考的货物信息
 const wareRef = getParsedWareMap();
@@ -44,6 +54,41 @@ const currentWorkforce = ref(0);
  * 达到最高效率所需的劳动力数量
  */
 const maxEfficiencyWorkforce = ref(0);
+
+/**
+ * 工厂禁用的货物
+ */
+const bannedWaresArray: Ref<Ware[]> = ref([]);
+
+/**
+ * 所有可选的禁用货物列表
+ */
+const availableBannedWares: Ref<Ware[]> = ref(getParsedWareArray());
+
+/**
+ * 用户当前在下拉框内选择的禁用货物的ID
+ */
+const selectedBannedWareId = ref('');
+
+/**
+ * 添加禁用的货物
+ */
+function addBannedWare () {
+  if (!selectedBannedWareId.value) {
+    return;
+  }
+  if (bannedWaresArray.value.find(ware => ware.id === selectedBannedWareId.value)) {
+    return;
+  }
+  bannedWaresArray.value.push(wareRef.get(selectedBannedWareId.value));
+}
+
+/**
+ * 移除禁用的货物
+ */
+function removeBannedWare (index: number) {
+  bannedWaresArray.value.splice(index, 1);
+}
 
 /**
  * 工厂的统计信息
@@ -89,6 +134,16 @@ watch(currentWorkforce, () => {
   maxEfficiencyWorkforce.value = factoryNode.maxEfficiencyWorkforce;
 });
 
+// 监听禁用货物列表的变化
+watch(bannedWaresArray, () => {
+  const bannedWareIdSet: Set<string> = new Set();
+  for (const ware of bannedWaresArray.value) {
+    bannedWareIdSet.add(ware.id);
+  }
+  factoryNode.bannedWares = bannedWareIdSet;
+  generateStatisticsInfo();
+}, { deep: true });
+
 // 计算并产出工厂的统计数据
 function generateStatisticsInfo () {
   factoryNode.calculateInputOutput();
@@ -102,7 +157,15 @@ defineExpose({
   
   getCurrentWorkforce () {
     return currentWorkforce.value;
-  }
+  },
+
+  setBannedWaresArray (arr: Ware[]) {
+    bannedWaresArray.value = arr;
+  },
+
+  getBannedWaresArray () {
+    return bannedWaresArray.value;
+  },
 });
 </script>
 

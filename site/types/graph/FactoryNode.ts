@@ -125,6 +125,11 @@ export class FactoryNode {
 
     // 工厂当前工人数
     factoryNode.currentWorkforce = factoryData.currentWorkforce;
+
+    // 读取禁用的货物列表
+    const bannedWaresSet: Set<string> = new Set();
+    factoryData.bannedWaresIdArray.forEach(wareId => bannedWaresSet.add(wareId));
+    factoryNode.bannedWares = bannedWaresSet;
     
     return factoryNode;
   }

@@ -10,11 +10,14 @@ export class FactoryData {
 
   currentWorkforce: number;
 
+  bannedWaresIdArray: string[];
+
   constructor (name: string) {
     this.name = name;
     this.habitatModules = [];
     this.productionModules = [];
     this.storageModules = [];
     this.currentWorkforce = 0;
+    this.bannedWaresIdArray = [];
   }
 }
