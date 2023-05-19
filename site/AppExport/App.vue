@@ -1,7 +1,7 @@
 <template>
   <div
     :style="{ display: isAppDisplayed ? 'block' : 'none' }"
-    class="container-app-export"
+    class="container"
   >
     <a :href="exportedString" :download="filename">点击导出工厂配置</a>
     <button @click="close">关闭导出界面</button>
@@ -39,17 +39,5 @@ function close () {
 </script>
 
 <style>
-.container-app-export {
-  position: fixed;
-  width: 80vw;
-  height: 90vh;
-  left: 10vw;
-  top: 5vh;
-  z-index: 1;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-}
+@import '../vue-common.css';
 </style>

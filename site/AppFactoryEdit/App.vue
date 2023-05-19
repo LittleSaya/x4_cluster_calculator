@@ -1,7 +1,7 @@
 <template>
   <div
     :style="{ display: isAppDisplayed ? 'block' : 'none' }"
-    class="container-app-factory-edit"
+    class="container"
   >
     <div class="factory-modules">
       <div class="habitat-modules">
@@ -267,19 +267,7 @@ function removeProductionModule (index: number) {
 </script>
 
 <style scoped>
-.container-app-factory-edit {
-  position: fixed;
-  width: 80vw;
-  height: 90vh;
-  left: 10vw;
-  top: 5vh;
-  z-index: 1;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-}
+@import '../vue-common.css';
 
 .factory-modules {
   display: flex;

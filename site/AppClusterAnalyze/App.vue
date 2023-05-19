@@ -1,7 +1,7 @@
 <template>
   <div
     :style="{ display: isAppDisplayed ? 'block' : 'none' }"
-    class="container-app-cluster-analyze"
+    class="container"
   >
     <pre>{{ statisticsInfo }}</pre>
     <button @click="close">关闭工厂集群分析界面</button>
@@ -40,17 +40,5 @@ function close () {
 </script>
 
 <style>
-.container-app-cluster-analyze {
-  position: fixed;
-  width: 80vw;
-  height: 90vh;
-  left: 10vw;
-  top: 5vh;
-  z-index: 1;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-}
+@import '../vue-common.css';
 </style>
