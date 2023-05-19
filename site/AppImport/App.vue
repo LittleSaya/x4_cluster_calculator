@@ -1,11 +1,11 @@
 <template>
   <div
-    :style="{ display: isAppDisplayed ? 'block' : 'none' }"
+    :style="{ display: isAppDisplayed ? 'flex' : 'none' }"
     class="container"
   >
     <input type="file" @change="onFileInputChange" />
-    <button @click="doImport" style="margin-left: 0.5em;">导入数据并回到地图界面</button>
-    <button @click="cancelImport" style="margin-left: 0.5em;">取消导入并回到地图界面</button>
+    <button @click="doImport" style="margin-top: 0.5em;">导入数据并回到地图界面</button>
+    <button @click="cancelImport" style="margin-top: 0.5em;">取消导入并回到地图界面</button>
   </div>
 </template>
 

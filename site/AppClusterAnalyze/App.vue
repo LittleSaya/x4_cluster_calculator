@@ -1,10 +1,10 @@
 <template>
   <div
-    :style="{ display: isAppDisplayed ? 'block' : 'none' }"
+    :style="{ display: isAppDisplayed ? 'flex' : 'none' }"
     class="container"
   >
     <pre>{{ statisticsInfo }}</pre>
-    <button @click="close" style="margin-left: 0.5em;">关闭工厂集群分析界面</button>
+    <button @click="close" style="margin-top: 0.5em;">关闭工厂集群分析界面</button>
   </div>
 </template>
 

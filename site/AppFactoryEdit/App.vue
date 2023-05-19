@@ -1,6 +1,6 @@
 <template>
   <div
-    :style="{ display: isAppDisplayed ? 'block' : 'none' }"
+    :style="{ display: isAppDisplayed ? 'flex' : 'none' }"
     class="container"
   >
     <div class="factory-modules">
