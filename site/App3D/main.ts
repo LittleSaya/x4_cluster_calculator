@@ -335,6 +335,7 @@ export class App3D {
         // 监听导入完成的消息
         const importedString = ev.data.importedString;
         if (!importedString) {
+          // 没有输入数据，取消导入
           this.show();
           return;
         }
